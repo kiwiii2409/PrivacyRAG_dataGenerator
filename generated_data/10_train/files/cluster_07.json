@@ -1,0 +1,117 @@
+{
+  "documents": [
+    {
+      "id": "cluster_7_doc1",
+      "content": "The provider report documents a patient with recurring corneal erosions undergoing phototherapeutic keratectomy. The procedure was performed on May 15, 2023 at the Mountain View Eye Institute. The patient resides at 2834 Oakridge Lane and has insurance policy number PR-8891-223X. Follow-up appointments revealed significant improvement in visual acuity.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_7_doc2",
+      "content": "An insurance memo dated June 2023 highlights new coverage guidelines for corneal procedures in patients over 40 within the Mountain View network. Policy PR-8891-223X shows exceptional approval rate for advanced ocular surgeries. The quality assurance team noted this case involved innovative dry eye management techniques.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_7_doc3",
+      "content": "Patient survey from August 2023 indicates high satisfaction with corneal treatment outcomes at Mountain View Eye Institute. The respondent mentioned significant reduction in light sensitivity and credited the new bandage contact lens protocol. Survey ID VX-45-927 referenced policy PR-8891-223X in comments about coverage experience.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_7_doc4",
+      "content": "Research note from October 2023 documents a 12-month study on phototherapeutic keratectomy outcomes in patients with autoimmune comorbidities. Participant #2834 from Oakridge Lane showed optimal epithelial healing rates. The study coordinates with Mountain View provider quality initiatives.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_7_doc5",
+      "content": "News article from November 2023 reports the Mountain View network achieving 98% successful corneal surgery outcomes. The piece highlights innovative dry eye management techniques developed through collaboration between ophthalmologists and rheumatologists. Detailed data shows particularly strong results for policy holders aged 40-60.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_7",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Patient journey for corneal treatment with connections to policy changes, provider outcomes, and research studies in the Mountain View network",
+    "person": {
+      "entities": [
+        [
+          "2834 Oakridge Lane",
+          "ADDRESS"
+        ],
+        [
+          "PR-8891-223X",
+          "PROCESS_ID"
+        ],
+        [
+          "Mountain View Eye Institute",
+          "LOCATION"
+        ],
+        [
+          "VX-45-927",
+          "PATIENT_ID"
+        ],
+        [
+          "May 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "phototherapeutic keratectomy",
+          "EVENT"
+        ],
+        [
+          "recurring corneal erosions",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "dry eye management",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment was performed on May 15, 2023 for the patient at 2834 Oakridge Lane?",
+        "a": "Phototherapeutic keratectomy for recurring corneal erosions",
+        "sources": [
+          "cluster_7_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new protocol received patient praise in August 2023 surveys from Mountain View Eye Institute?",
+        "a": "Bandage contact lens protocol for corneal treatment",
+        "sources": [
+          "cluster_7_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two medical conditions were treated through policy PR-8891-223X's coverage?",
+        "a": "Recurring corneal erosions and dry eye management",
+        "sources": [
+          "cluster_7_doc1",
+          "cluster_7_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two specialties collaborated on the innovative techniques featured in November 2023 Mountain View network reports?",
+        "a": "Ophthalmologists and rheumatologists developed dry eye management",
+        "sources": [
+          "cluster_7_doc2",
+          "cluster_7_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

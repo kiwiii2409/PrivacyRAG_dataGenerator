@@ -1,0 +1,145 @@
+{
+  "documents": [
+    {
+      "id": "cluster_0_doc1",
+      "content": "Patient Fabrizio Wasicki presented with persistent neuropathy and rare antibody deficiency following an experimental gene therapy at Polk Health Network. Treatment included monthly immunoglobulin infusions and neuropathic pain management. Initial claims were denied due to experimental procedure coding, but later approved under policy exception #4419-7Q2. Last consultation on 11/15/2023 noted improvement in antibody levels.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_0_doc2",
+      "content": "Internal memo from Polk Health Network dated 12/01/2023 outlines new coverage exemptions for patients enrolled in the Advanced Gene Therapy Outcomes Study (AGTO-2217). Patients with dual neuropathy/immunodeficiency diagnoses are prioritized for expedited review. Refer to policy exception codes 4400-4500 series. Contact lead coordinator Margo Vescovi at m.vescovi@polkhealth.org for approvals.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_0_doc3",
+      "content": "AGTO-2217 research update shows 78% efficacy in neuropathy reduction among participants with concomitant immunodeficiency. Study cohort includes 12 patients from Polk Health Network, half over age 50. Notable outlier: one male participant (patient ID PX-908712) required extended immunotherapy beyond protocol guidelines.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_0_doc4",
+      "content": "Claims audit report identifies 19 Polk Health Network patients affected by quarterly policy update Q4-2023-7R. Three outstanding claims for neuropathic treatments under exception #4419-7Q2 were processed on 11/20/2023. Audit coordinator Darren Kwok flagged one case for additional documentation review due to multiple biologic therapies.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_0_doc5",
+      "content": "Medical Tribune article 02/2024 highlights Polk Health Network's gene therapy outcomes. Specialist Dr. Elias Tan remarks: 'Our most complex case involved a patient requiring concurrent neuropathic care and antibody replacement, dramatically improving after 7 months.' Study identifies age 50+ subgroup as highest responders.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_0",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's journey through experimental gene therapy, claim processing challenges, and related policy changes at Polk Health Network",
+    "person": {
+      "entities": [
+        [
+          "Fabrizio Wasicki",
+          "NAME"
+        ],
+        [
+          "PX-908712",
+          "PATIENT_ID"
+        ],
+        [
+          "Polk Health Network",
+          "LOCATION"
+        ],
+        [
+          "11/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "neuropathy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "antibody deficiency",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Margot Vescovi",
+          "NAME"
+        ],
+        [
+          "m.vescovi@polkhealth.org",
+          "EMAIL"
+        ],
+        [
+          "AGTO-2217",
+          "PROCESS_ID"
+        ],
+        [
+          "Darren Kwok",
+          "NAME"
+        ],
+        [
+          "Q4-2023-7R",
+          "PROCESS_ID"
+        ],
+        [
+          "4419-7Q2",
+          "PROCESS_ID"
+        ],
+        [
+          "Elias Tan",
+          "NAME"
+        ],
+        [
+          "50+",
+          "AGE"
+        ],
+        [
+          "gene therapy",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment protocol was used for Fabrizio Wasicki's neuropathy and antibody deficiency at Polk Health Network?",
+        "a": "Monthly immunoglobulin infusions and neuropathic pain management.",
+        "sources": [
+          "cluster_0_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What age group showed highest response rates in AGTO-2217 gene therapy outcomes at Polk Health Network?",
+        "a": "Participants over age 50 demonstrated highest response rates.",
+        "sources": [
+          "cluster_0_doc5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two identifiers link Fabrizio Wasicki's approved claims to the Q4-2023-7R policy update?",
+        "a": "Patient ID PX-908712 and policy exception #4419-7Q2.",
+        "sources": [
+          "cluster_0_doc1",
+          "cluster_0_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What organizational changes affected neuropathic treatment claims processing in Q4 2023?",
+        "a": "New coverage exemptions prioritized patients with dual neuropathy/immunodeficiency diagnoses.",
+        "sources": [
+          "cluster_0_doc2",
+          "cluster_0_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "Rivertown Clinic submitted a batch of claims for enhanced diabetes management programs in Q3 2023. The initiative focused on nutritional counseling and continuous glucose monitoring for middle-aged patients. Approval rates were 15% higher than standard treatment claims during this period.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "A 58-year-old participant in the MetroCare diabetes study showed improved HbA1c levels after 12 weeks. The program combined biweekly telehealth checkups with personalized meal plans. Clinic notes indicate reduced medication dependency in 68% of similar cases.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Effective August 2023, Frontier Health revised coverage for continuous glucose monitors. The new policy requires prior authorization documenting failed oral medication trials. Rivertown Clinic providers attended training sessions on updated submission requirements.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Quarterly provider network analysis showed Rivertown Clinic's diabetes program reduced ER visits by 22% compared to baseline. The clinic now handles 83% of moderate-complexity cases in-house, referring only advanced complications to specialists.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_1_doc5",
+      "content": "Patient satisfaction surveys from Q3 2023 highlighted appreciation for Rivertown's evening diabetes education workshops. 92% of respondents aged 55-65 reported better understanding of medication timing and carbohydrate counting techniques.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_1_doc6",
+      "content": "The Health Policy Journal featured an article about successful regional diabetes initiatives, highlighting Rivertown Clinic's 2023 outcomes. Their model of combining dietary support with remote monitoring is being considered for broader adoption.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "LOW",
+    "content_summary": "Diabetes management program at Rivertown Clinic with policy changes and patient outcomes in Q3 2023",
+    "person": {
+      "entities": [
+        [
+          "58",
+          "AGE"
+        ],
+        [
+          "type 2 diabetes",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Rivertown Clinic",
+          "LOCATION"
+        ],
+        [
+          "Q3 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "MetroCare diabetes study",
+          "EVENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the average HbA1c improvement for 58-year-olds in the MetroCare diabetes study?",
+        "a": "Participants showed improved HbA1c levels after 12 weeks.",
+        "sources": [
+          "cluster_1_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change affected diabetes device coverage in August 2023?",
+        "a": "Prior authorization now required for continuous glucose monitors.",
+        "sources": [
+          "cluster_1_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which clinic achieved 22% reduced ER visits through their diabetes program in late 2023?",
+        "a": "Rivertown Clinic's program lowered ER visits by 22%.",
+        "sources": [
+          "cluster_1_doc4",
+          "cluster_1_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the key outcomes from diabetes programs and patient surveys in Q3 2023?",
+        "a": "Improved glycemic control, reduced ER visits, and high patient satisfaction.",
+        "sources": [
+          "cluster_1_doc2",
+          "cluster_1_doc4",
+          "cluster_1_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

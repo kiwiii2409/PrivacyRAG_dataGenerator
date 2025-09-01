@@ -1,0 +1,128 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Aetna claim form #CHI-2209-5893 details ER visit for patient Kieran Voss (DOB 03/15/2012) at UnityPoint Health-Cedar Rapids following seizure episode. Preauthorization granted for 72-hour EEG monitoring. Service code G40.812 confirmed for Lennox-Gastaut syndrome complications.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Neurology consult report from UI Stead Family Children's Hospital indicates Kieran Voss (MRN 44578Y) showed positive response to fenfluramine add-on therapy. New prior authorization required for off-label protocol. Care team includes Dr. Elise Warren (epileptology) and Dr. Raj Mehta (genetics).",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Cigna policy memo ID 4892-LGS outlines new pediatric seizure disorder coverage exceptions effective Q2 2023. Requires genetic confirmation and failed trials of 4+ anticonvulsants. Cedar Rapids region showing 12 active cases meeting criteria - including patient #44578Y.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Midwest Pediatric Epilepsy Consortium study #MPEC-23-108 tracks 8 patients on combined cannabidiol/fenfluramine regimen. Participant KV (age 12) achieved 58% seizure reduction. Next monitoring appointment scheduled 09/30/2023 at UIHC's Level 4 Epilepsy Center.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "HIGH",
+    "content_summary": "Pediatric epilepsy patient journey involving rare disease treatment, insurance policy updates, and clinical research participation across multiple care settings",
+    "person": {
+      "entities": [
+        [
+          "Kieran Voss",
+          "NAME"
+        ],
+        [
+          "03/15/2012",
+          "BIRTHDATE"
+        ],
+        [
+          "12",
+          "AGE"
+        ],
+        [
+          "44578Y",
+          "PATIENT_ID"
+        ],
+        [
+          "Lennox-Gastaut syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "fenfluramine",
+          "UNIQUE_FACT"
+        ],
+        [
+          "UnityPoint Health-Cedar Rapids",
+          "LOCATION"
+        ],
+        [
+          "Elise Warren",
+          "NAME"
+        ],
+        [
+          "Raj Mehta",
+          "NAME"
+        ],
+        [
+          "UI Stead Family Children's Hospital",
+          "LOCATION"
+        ],
+        [
+          "MPEC-23-108",
+          "PROCESS_ID"
+        ],
+        [
+          "09/30/2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two specialists are managing treatment for Kieran Voss (patient #44578Y) with Lennox-Gastaut syndrome?",
+        "a": "Dr. Elise Warren (epileptology) and Dr. Raj Mehta (genetics)",
+        "sources": [
+          "cluster_2_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new requirements did Cigna policy 4892-LGS introduce for pediatric seizure disorder coverage in Q2 2023?",
+        "a": "Genetic confirmation and failed trials of 4+ anticonvulsants",
+        "sources": [
+          "cluster_2_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment combination showed 58% seizure reduction for participant KV in the MPEC study at UIHC's epilepsy center?",
+        "a": "Combined cannabidiol and fenfluramine regimen",
+        "sources": [
+          "cluster_2_doc2",
+          "cluster_2_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What evidence demonstrates the multi-faceted care approach for Lennox-Gastaut patients in Cedar Rapids?",
+        "a": "ER visits, specialized monitoring, off-label therapies, and clinical trial participation",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc2",
+          "cluster_2_doc3",
+          "cluster_2_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

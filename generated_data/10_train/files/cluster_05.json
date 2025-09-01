@@ -1,0 +1,118 @@
+{
+  "documents": [
+    {
+      "id": "cluster_5_doc1",
+      "content": "Claim submitted for Kristof Varga (ID# PAT67843R) regarding advanced immunotherapy at Crescent Medical Center. Treatment dates: March 12-19, 2024. Billing code ZJ45T requires prior authorization due to policy update HCAR-2024-039. Patient resides at 1880 Aspen Ridge Lane. Provider network alert: limited specialists at this facility for complex autoimmune cases.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_5_doc2",
+      "content": "Crescent Medical Center research brief: 42-year-old male (DOB 08/15/1981) enrolled in CAR-T cell therapy trial NCT05673287. Unusual presentation of autoimmune encephalitis with prior refractive rituximab treatment. Requires coordination between neurology and rheumatology departments. Next evaluation scheduled April 5, 2024. Contact: trial_coord@crescentmed.org",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_5_doc3",
+      "content": "Policy memorandum HCAR-2024-039 restricts cellular immunotherapy coverage to tertiary centers effective Q2 2024. Requires documented treatment failure of two biologics. Exception process: submit via portal REF882-CD with hematology consult. Impacts 18 patients in Mountain West region. Implementation date: May 1, 2024.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_5_doc4",
+      "content": "News article: Crescent Medical Center faces staffing challenges in specialized immunology services. Recent $2M grant expands CAR-T capabilities but nurse specialist shortage persists, particularly impacting autoimmune patients from rural areas. Community outreach program launches June 2024 (contact: 555-201-6789 x415 for referrals).",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_5",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex immunotherapy case with policy changes, research involvement, and healthcare system challenges",
+    "person": {
+      "entities": [
+        [
+          "Kristof Varga",
+          "NAME"
+        ],
+        [
+          "PAT67843R",
+          "PATIENT_ID"
+        ],
+        [
+          "1880 Aspen Ridge Lane",
+          "ADDRESS"
+        ],
+        [
+          "08/15/1981",
+          "BIRTHDATE"
+        ],
+        [
+          "42",
+          "AGE"
+        ],
+        [
+          "CAR-T cell therapy trial NCT05673287",
+          "UNIQUE_FACT"
+        ],
+        [
+          "autoimmune encephalitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "refractive rituximab treatment",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Mountain West region",
+          "LOCATION"
+        ],
+        [
+          "May 1, 2024",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What is the exception process for policy HCAR-2024-039 regarding cellular immunotherapy at Crescent Medical Center?",
+        "a": "Submit via portal REF882-CD with hematology consult.",
+        "sources": [
+          "cluster_5_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What staffing challenges are impacting specialized immunology services in the Mountain West region?",
+        "a": "Nurse specialist shortage persists, particularly affecting autoimmune patients from rural areas.",
+        "sources": [
+          "cluster_5_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatments and clinical trial details are documented for Kristof Varga (PAT67843R) at Crescent Medical Center?",
+        "a": "Advanced immunotherapy plus CAR-T cell trial NCT05673287 for autoimmune encephalitis after rituximab failure.",
+        "sources": [
+          "cluster_5_doc1",
+          "cluster_5_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy changes and implementation dates affect immunotherapy coverage in Q2 2024?",
+        "a": "HCAR-2024-039 restricts coverage to tertiary centers effective May 1, 2024.",
+        "sources": [
+          "cluster_5_doc1",
+          "cluster_5_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

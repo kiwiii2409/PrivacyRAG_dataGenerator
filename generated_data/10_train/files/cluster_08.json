@@ -1,0 +1,118 @@
+{
+  "documents": [
+    {
+      "id": "cluster_8_doc1",
+      "content": "A recent policy update (POL-2023-7H41) requires prior authorization for advanced imaging in all non-emergency cases. This change affects providers within the CoastalCare network starting November 2023. Claims submitted without proper documentation will be automatically denied, per updated system protocols. The imaging utilization review committee noted a 22% increase in unnecessary scans over the past fiscal quarter.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_8_doc2",
+      "content": "Patient 48923-RTZ (DOB 08/14/1978) presented with atypical chest pain at Oceanside Medical Center. Initial cardiac workup was inconclusive. Ordered CT angiography (protocol 788-41H) under new prior authorization requirements. Final claim processed through CoastalCare network with processing ID CI-88342-1, showing partial reimbursement due to missing documentation.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_8_doc3",
+      "content": "Research tracking identifier TC-7741 shows 38% of patients with inconclusive cardiac workups receive subsequent advanced imaging within 90 days. This CoastalCare network study found prior authorization delays average 4.2 business days at participating facilities. Researchers noted particular challenges at mid-sized community hospitals compared to urban centers.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_8_doc4",
+      "content": "Oceanside Tribune reports imaging wait times increased 15% since POL-2023-7H41 implementation. CoastalCare spokesperson confirmed they're processing 210 pending exception requests through expedited review (process ID REV-449P). Patient advocates note particular concerns about delayed cancer screenings in the 45-60 age demographic.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_8",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Policy change impacts on imaging authorization within CoastalCare network, including patient case, research data, and media coverage",
+    "person": {
+      "entities": [
+        [
+          "48923-RTZ",
+          "PATIENT_ID"
+        ],
+        [
+          "08/14/1978",
+          "BIRTHDATE"
+        ],
+        [
+          "Oceanside Medical Center",
+          "LOCATION"
+        ],
+        [
+          "CT angiography (protocol 788-41H)",
+          "UNIQUE_FACT"
+        ],
+        [
+          "POL-2023-7H41",
+          "PROCESS_ID"
+        ],
+        [
+          "CoastalCare",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "CI-88342-1",
+          "PROCESS_ID"
+        ],
+        [
+          "atypical chest pain",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "TC-7741",
+          "PROCESS_ID"
+        ],
+        [
+          "45-60 age demographic",
+          "DEMOGRAPHIC"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What imaging protocol was ordered for patient 48923-RTZ at Oceanside Medical Center and under what policy requirements?",
+        "a": "CT angiography (protocol 788-41H) under POL-2023-7H41 prior authorization requirements.",
+        "sources": [
+          "cluster_8_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage increase in imaging wait times did Oceanside Tribune report after POL-2023-7H41 implementation?",
+        "a": "15% increase in imaging wait times.",
+        "sources": [
+          "cluster_8_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What two identifiers connect patient 48923-RTZ's care to wider network research about imaging delays?",
+        "a": "CoastalCare network and research tracking identifier TC-7741.",
+        "sources": [
+          "cluster_8_doc2",
+          "cluster_8_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What system changes affected both claim processing and research findings about imaging utilization?",
+        "a": "POL-2023-7H41 policy requiring prior authorization for advanced imaging.",
+        "sources": [
+          "cluster_8_doc1",
+          "cluster_8_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

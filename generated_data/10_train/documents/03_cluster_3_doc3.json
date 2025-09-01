@@ -1,0 +1,7 @@
+{
+  "id": "cluster_3_doc3",
+  "content": "Patient portal messages for #KF2390JL reveal challenges coordinating endocrinology visits at Brigham Falls Clinic, with three appointment cancellations during February-March 2024. Messages reference delayed medication adjustments due to system interoperability issues between EMR platforms. Case manager notes from 03/15/24 indicate resolution after switching to network provider using compatible software, with glucose monitoring data successfully transmitted.",
+  "metadata": {
+    "format": "medical_record"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Patient 47823-9K underwent targeted immunotherapy at Silver Pine Clinic in March 2022. The treatment was part of a research study on rare autoimmune responses. Records indicate the patient resides at 2254 Willow Lane and had previously exhausted conventional treatment options. Provider notes mention concerns about possible hyper-inflammatory reactions requiring close monitoring.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Silver Pine Clinic reported 14 adverse events in Q2 2022 related to experimental autoimmune therapies, with one requiring ICU transfer. This prompted network-wide protocol updates effective August 2022. Claims processors were instructed to flag cases with diagnosis codes 994.2 and 999.3 for additional clinical review before approval.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "A patient survey from 2254 Willow Lane indicates satisfaction with care coordination but frustration with prior authorization delays for research-based treatments. Respondent noted 6-week wait times for specialty drug approvals despite urgent medical need.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Policy update CM-8871 now requires pre-authorization genetic testing for all patients entering immunotherapy protocols. This applies specifically to Silver Pine Clinic and two other research facilities. Implementation began October 15 with a 30-day grace period.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_2_doc5",
+      "content": "Local news outlet River Times reported on March 5 about increased insurance denials for novel autoimmune treatments at Silver Pine Clinic. The article referenced patient advocates arguing these decisions counter recent research findings published in Clinical Immunology Reviews.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Patient undergoing experimental immunotherapy at Silver Pine Clinic, associated policy changes, and systemic response to adverse events",
+    "person": {
+      "entities": [
+        [
+          "47823-9K",
+          "PATIENT_ID"
+        ],
+        [
+          "2254 Willow Lane",
+          "ADDRESS"
+        ],
+        [
+          "March 2022",
+          "EVENT_DATE"
+        ],
+        [
+          "targeted immunotherapy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "autoimmune responses",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "hyper-inflammatory reactions",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Silver Pine Clinic",
+          "LOCATION"
+        ],
+        [
+          "6-week",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the street address of the patient who underwent targeted immunotherapy at Silver Pine Clinic in March 2022?",
+        "a": "2254 Willow Lane",
+        "sources": [
+          "cluster_2_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy reference number introduced genetic testing requirements for immunotherapy protocols?",
+        "a": "CM-8871 implemented October 15 with grace period",
+        "sources": [
+          "cluster_2_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two medical concerns were documented for patient 47823-9K during immunotherapy treatment?",
+        "a": "Rare autoimmune responses and possible hyper-inflammatory reactions",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What operational changes occurred at Silver Pine Clinic after Q2 2022 adverse events?",
+        "a": "Protocol updates and mandatory clinical review for specific diagnosis codes",
+        "sources": [
+          "cluster_2_doc2",
+          "cluster_2_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

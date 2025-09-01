@@ -1,0 +1,124 @@
+{
+  "documents": [
+    {
+      "id": "cluster_6_doc1",
+      "content": "A new telehealth coverage policy was introduced for chronic condition management in rural areas effective March 2024. The policy expansion specifically includes remote monitoring for patients with rare neurological disorders, addressing gaps in provider access. Claims processing system updates are scheduled for Q2 rollout to accommodate the changes.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_6_doc2",
+      "content": "A research study conducted at Mountainview Regional Hospital examined outcomes for 45-60 year-old patients receiving virtual cognitive behavioral therapy. Preliminary findings show 32% reduction in hospital readmissions among participants with treatment-resistant depression, notably those living 50+ miles from specialty centers.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_6_doc3",
+      "content": "Claim #CT-8824 was processed for a 52-year-old male receiving transcranial magnetic stimulation treatments via telehealth. Documentation confirms coordination between neurology and psychiatry departments, with billing adjustments made according to the new rural coverage policy.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_6_doc4",
+      "content": "Provider network analysis reveals 12 new telehealth providers specializing in neurological care joined the Mountainview region network in Q1 2024. This expansion correlates with a 18% increase in prior authorization requests for non-invasive brain stimulation therapies.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_6_doc5",
+      "content": "Patient satisfaction survey from April 2024 shows 89% approval rating for virtual cognitive therapy services among rural residents with treatment-resistant depression. Common feedback highlighted reduced travel burdens and improved medication adherence tracking through remote monitoring platforms.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_6_doc6",
+      "content": "Audit of neurology claims processed under policy #N-207T found 92% compliance with new documentation requirements for telehealth services. Three cases required re-submission due to missing remote monitoring consent forms, all resolved within 7 business days.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_6",
+    "cluster_risk": "LOW",
+    "content_summary": "Telehealth policy changes and implementation for neurological care in rural areas, including claims processing, provider network expansion, and patient outcomes research",
+    "person": {
+      "entities": [
+        [
+          "52-year-old",
+          "AGE"
+        ],
+        [
+          "male",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "CT-8824",
+          "PROCESS_ID"
+        ],
+        [
+          "transcranial magnetic stimulation",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "treatment-resistant depression",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Mountainview region",
+          "LOCATION"
+        ],
+        [
+          "rural areas",
+          "LOCATION"
+        ],
+        [
+          "N-207T",
+          "PROCESS_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What specific treatments were covered under claim #CT-8824 for the 52-year-old male patient?",
+        "a": "Transcranial magnetic stimulation treatments via telehealth",
+        "sources": [
+          "cluster_6_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of neurology claims met new telehealth documentation requirements under policy #N-207T?",
+        "a": "92% compliance with documentation requirements",
+        "sources": [
+          "cluster_6_doc6"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "How did the new rural coverage policy impact both provider network expansion and patient treatment options in the Mountainview region?",
+        "a": "Added 12 telehealth providers and enabled non-invasive brain stimulation therapies",
+        "sources": [
+          "cluster_6_doc1",
+          "cluster_6_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the key findings from both the research study and patient surveys regarding telehealth outcomes?",
+        "a": "32% reduction in readmissions and 89% patient satisfaction for virtual therapy",
+        "sources": [
+          "cluster_6_doc2",
+          "cluster_6_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

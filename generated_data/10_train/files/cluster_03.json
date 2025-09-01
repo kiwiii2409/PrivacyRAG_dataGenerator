@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "The Brigham Falls Medical Group reported an 18% increase in preventive care claims during Q2 2023, attributed to their enhanced outreach program targeting adults 45-65 with metabolic syndrome. Process #CT-8829L covers comprehensive screenings, including lipid panels and HbA1c tests. Patient ID #KF2390JL completed all recommended follow-ups within 90 days of initial assessment, demonstrating improved outcomes compared to baseline metrics.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "November 2023 policy update INT-POL-3342 now requires pre-authorization for bariatric procedures at Network Facility #1125 due to higher-than-average complications. The change affects patients with BMI ≥40 documented through two independent assessments. Claims processor notes indicate a 23% reduction in immediate approvals since implementation, with increased documentation requirements extending processing times by 12 working days on average.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Patient portal messages for #KF2390JL reveal challenges coordinating endocrinology visits at Brigham Falls Clinic, with three appointment cancellations during February-March 2024. Messages reference delayed medication adjustments due to system interoperability issues between EMR platforms. Case manager notes from 03/15/24 indicate resolution after switching to network provider using compatible software, with glucose monitoring data successfully transmitted.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "The Northeastern Health Journal published findings showing metabolic syndrome patients in Network Region 7B receiving coordinated care had 34% fewer hospitalizations compared to standard care. Study protocol #NHJ-4492 tracked outcomes for 412 participants using wearable glucose monitors and blended payment models. Researchers noted significant variation in provider compliance with assessment timelines, particularly in rural service areas.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Metabolic syndrome care coordination tracking through claims data, policy changes, and research outcomes in Brigham Falls network region",
+    "person": {
+      "entities": [
+        [
+          "#KF2390JL",
+          "PATIENT_ID"
+        ],
+        [
+          "Brigham Falls",
+          "LOCATION"
+        ],
+        [
+          "metabolic syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "45-65",
+          "AGE"
+        ],
+        [
+          "CT-8829L",
+          "PROCESS_ID"
+        ],
+        [
+          "February-March 2024",
+          "EVENT_DATE"
+        ],
+        [
+          "Network Facility #1125",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "INT-POL-3342",
+          "PROCESS_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What Process ID covers comprehensive preventive screenings for metabolic syndrome patients at Brigham Falls Medical Group?",
+        "a": "Process #CT-8829L covers comprehensive preventive screenings.",
+        "sources": [
+          "cluster_3_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage reduction in hospitalizations did coordinated care achieve for metabolic syndrome patients in Network Region 7B?",
+        "a": "Coordinated care achieved 34% fewer hospitalizations.",
+        "sources": [
+          "cluster_3_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two challenges did patient #KF2390JL face regarding endocrinology care coordination between February-March 2024?",
+        "a": "Three appointment cancellations and medication adjustment delays due to EMR incompatibilities.",
+        "sources": [
+          "cluster_3_doc1",
+          "cluster_3_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did policy INT-POL-3342 impact bariatric procedure approval rates at Network Facility #1125?",
+        "a": "It caused a 23% reduction in immediate approvals.",
+        "sources": [
+          "cluster_3_doc2",
+          "cluster_3_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "cluster_1_doc1",
+  "content": "The patient with PATIENT_ID 7XG9T23R presented at Maplewood Clinic on 2023-11-15 with persistent lower back pain and limited mobility. Initial assessments suggest possible spinal stenosis, with referral to orthopedic specialist Dr. Alvarez. Prior physical therapy at Oakridge Rehabilitation showed minimal improvement. Current prescription: gabapentin 300mg twice daily. Updated insurance pre-authorization pending for MRI scan.",
+  "metadata": {
+    "format": "medical_record"
+  }
+}

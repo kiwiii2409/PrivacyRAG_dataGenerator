@@ -1,0 +1,7 @@
+{
+  "id": "cluster_2_doc2",
+  "content": "Silver Pine Clinic reported 14 adverse events in Q2 2022 related to experimental autoimmune therapies, with one requiring ICU transfer. This prompted network-wide protocol updates effective August 2022. Claims processors were instructed to flag cases with diagnosis codes 994.2 and 999.3 for additional clinical review before approval.",
+  "metadata": {
+    "format": "insurance_memo"
+  }
+}

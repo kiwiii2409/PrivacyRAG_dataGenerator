@@ -1,0 +1,124 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "The Silverpine Regional Health Network implemented Policy RX-45B in Q2 2023, streamlining biologic therapy approvals for autoimmune conditions. New requirements include pretreatment lab panels and step therapy documentation. Average approval times decreased from 14 to 8 business days post-implementation.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Clinical report for 58-year-old female patient receiving infliximab infusions every 6 weeks at Silverpine Specialty Clinic. Treatment initiated 03/15/2023 after failed methotrexate therapy. Notable improvement in RA-DAS scores from 5.2 to 3.1 after three infusion cycles.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "Quarterly provider network analysis shows 23% increase in rheumatology visits within Silverpine network. 68% of biologic therapy approvals under Policy RX-45B were processed within 7 days. Three providers accounted for 82% of infusion center referrals.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Patient survey from Silverpine infusion center participants showed 74% reported ≥50% reduction in joint pain after 12 weeks of biologic therapy. 62% expressed concerns about copay consistency across treatment phases. Survey conducted from 04/2023-06/2023.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_4_doc5",
+      "content": "Claims analysis reveals Paperwork Group ID 8822-45T processing outliers: 12% of biologic therapy claims required additional documentation versus 6% network average. Root cause analysis points to inconsistent specialty pharmacy billing practices.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc6",
+      "content": "Longitudinal study of autoimmune patients (n=412) shows biologic therapy adherence rates of 83% in Silverpine network versus 74% nationally. Study period covered 2020-2023. Medicare Advantage plans showed highest persistence rates among payers.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "LOW",
+    "content_summary": "Rheumatoid arthritis care coordination and policy changes in Silverpine network featuring biologic therapy outcomes",
+    "person": {
+      "entities": [
+        [
+          "58-year-old",
+          "AGE"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "infliximab",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "03/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Silverpine",
+          "LOCATION"
+        ],
+        [
+          "RA-DAS 5.2 to 3.1",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Paperwork Group ID 8822-45T",
+          "PROCESS_ID"
+        ],
+        [
+          "Policy RX-45B",
+          "PROCESS_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What biologic medication showed 83% adherence in Silverpine network patients according to the 2020-2023 study?",
+        "a": "Infliximab showed 83% adherence in Silverpine network.",
+        "sources": [
+          "cluster_4_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of biologic therapy approvals were processed within 7 days under Policy RX-45B?",
+        "a": "68% of approvals were processed within 7 days.",
+        "sources": [
+          "cluster_4_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two metrics demonstrate the effectiveness of infliximab for the 58-year-old patient in Silverpine?",
+        "a": "RA-DAS improved from 5.2 to 3.1 after three infusion cycles.",
+        "sources": [
+          "cluster_4_doc2",
+          "cluster_4_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did Policy RX-45B affect overall approval times and documentation requirements?",
+        "a": "Reduced approval times from 14 to 8 days with new lab and step therapy requirements.",
+        "sources": [
+          "cluster_4_doc1",
+          "cluster_4_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

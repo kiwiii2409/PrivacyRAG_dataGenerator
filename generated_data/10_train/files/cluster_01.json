@@ -1,0 +1,148 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "Beacon Health reimbursement form 4892-6RQ details 12 weeks of physical therapy for Miranda Kjeldsen (patient ID BKJ-227H) at Boston Spine & Joint Clinic. Treatment includes aquatic therapy and kinesio taping protocols for hypermobile Ehlers-Danlos syndrome. Authored by Dr. Ellen Park on 06/15/2023 with referral from Dr. Amir Gupta at Commonwealth Cardiology.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "Commonwealth Cardiology progress notes report Miranda Kjeldsen's POTS management regimen including Ivabradine 5mg BID and compression garments. Patient resides at 184 Marlborough St #4, Boston (617-555-0184). Lab results from 08/01/2023 show orthostatic hypotension improvement. Next follow-up scheduled for November 2023.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Beacon Health internal memo from 09/2023 announces new prior authorization requirements for kinesiology tape reimbursement. Policy change based on recent research from Tufts University showing 400% increase in EDS-related claims since 2021. Effective 01/01/2024 for all Massachusetts providers.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Orthopedic consultation report details Miranda Kjeldsen's recurrent shoulder dislocations treated with glenohumeral corticosteroid injections (03/2023) and stabilization braces. Coordinated care with Rheumatology confirms hEDS diagnosis. Patient-employed.textile.conservator@protonmail.com provided updated occupational constraints.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_1_doc5",
+      "content": "Patient satisfaction survey from Boston Spine & Joint Clinic highlights challenges securing durable medical equipment for EDS patients. Specific praise for PT team's gait training approach. Notes insurance denial of custom orthotics request (process ID BOS-3390-XT). Survey completed 10/05/2023.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_1_doc6",
+      "content": "Tufts Medical Center research abstract reveals 22% increase in GC injections for hypermobile patients under 40 at Boston-area clinics. Study period Q2-Q3 2023 attributes trend to delayed pandemic care and new hEDS diagnostic criteria. Recommends updated billing guidelines.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient journey for hypermobile EDS with POTS comorbidity, including multi-specialty care, insurance policy changes, and regional treatment trends",
+    "person": {
+      "entities": [
+        [
+          "Miranda Kjeldsen",
+          "NAME"
+        ],
+        [
+          "BKJ-227H",
+          "PATIENT_ID"
+        ],
+        [
+          "textile.conservator@protonmail.com",
+          "EMAIL"
+        ],
+        [
+          "617-555-0184",
+          "PHONE_NUMBER"
+        ],
+        [
+          "184 Marlborough St #4, Boston",
+          "ADDRESS"
+        ],
+        [
+          "05/18/1992",
+          "BIRTHDATE"
+        ],
+        [
+          "31",
+          "AGE"
+        ],
+        [
+          "hypermobile Ehlers-Danlos syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "POTS",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Boston Spine & Joint Clinic",
+          "LOCATION"
+        ],
+        [
+          "06/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "03/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "textile conservator",
+          "UNIQUE_FACT"
+        ],
+        [
+          "BOS-3390-XT",
+          "PROCESS_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the dosage of Ivabradine prescribed to Miranda Kjeldsen for POTS management?",
+        "a": "Ivabradine 5mg twice daily as documented by Commonwealth Cardiology.",
+        "sources": [
+          "cluster_1_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new Beacon Health policy requires pre-authorization for kinesiology tape claims?",
+        "a": "Prior authorization mandatory for kinesiology tape reimbursement effective 01/01/2024.",
+        "sources": [
+          "cluster_1_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two specialists treated Miranda Kjeldsen's recurrent shoulder dislocations in 2023?",
+        "a": "Dr. Ellen Park (Orthopedics) and Dr. Amir Gupta (Cardiology) coordinated care.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Why did Boston-area clinics report increased GC injections for young adults in Q3 2023?",
+        "a": "Delayed pandemic care and new hEDS diagnostic criteria drove 22% increase.",
+        "sources": [
+          "cluster_1_doc6",
+          "cluster_1_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}
