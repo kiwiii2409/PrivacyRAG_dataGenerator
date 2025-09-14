@@ -1,0 +1,144 @@
+{
+  "documents": [
+    {
+      "id": "cluster_13_doc1",
+      "content": "A claims review for patient #783492 revealed two emergency room visits at Granite Falls General on 04/12/2023 and 05/03/2023 related to severe migraines with aura. The attending physician noted an unusual correlation with barometric pressure changes. Physical therapy approvals were pending as of the report date.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_13_doc2",
+      "content": "Granite Falls General internal memo: Neurology department expanding migraine treatment protocols effective Q2 2023. New requirement for atmospheric pressure tracking in headache-related ER visits. Research collaboration established with regional weather stations to study meteorological triggers.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_13_doc3",
+      "content": "Patient survey from Granite Falls area: 42-year-old female reported 80% reduction in migraine frequency after starting magnesium supplements and pressure-trigger avoidance training. Notes difficulty obtaining insurance coverage for non-pharmaceutical interventions despite provider recommendation.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_13_doc4",
+      "content": "Provider report from Dr. Ellen Voss at Mountain Neurology Associates: Detailed treatment plan for refractory migraine case including botulinum toxin injections scheduled every 12 weeks. Patient demonstrates weather pattern sensitivity. Next appointment scheduled for November 7, 2023.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_13_doc5",
+      "content": "Policy update bulletin: Effective January 2024, Blue Horizon mandates pre-authorization for all botulinum toxin treatments exceeding quarterly administration. Exception process available for patients with documented meteorological correlation. Claims without atmospheric data will be denied.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_13_doc6",
+      "content": "Regional health newsletter article: Granite Falls seeing 300% increase in weather-related migraine ER visits since 2021. Local clinics piloting pressure-change alert systems. Insurance providers coordinating with National Weather Service for predictive modeling project.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_13",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Migraine treatment ecosystem with weather sensitivity correlations, including claims data, provider reports, policy changes, and regional trends",
+    "person": {
+      "entities": [
+        [
+          "783492",
+          "PATIENT_ID"
+        ],
+        [
+          "42-year-old",
+          "AGE"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "severe migraines with aura",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Granite Falls area",
+          "LOCATION"
+        ],
+        [
+          "botulinum toxin injections",
+          "TREATMENT"
+        ],
+        [
+          "November 7, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "04/12/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "05/03/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "magnesium supplements",
+          "TREATMENT"
+        ],
+        [
+          "pressure-trigger avoidance training",
+          "TREATMENT"
+        ],
+        [
+          "weather pattern sensitivity",
+          "UNIQUE_FACT"
+        ],
+        [
+          "80% reduction in migraine frequency",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two dates did patient #783492 visit the ER at Granite Falls General for migraine treatment?",
+        "a": "April 12, 2023 and May 3, 2023",
+        "sources": [
+          "cluster_13_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new protocol requirement did Granite Falls General implement for headache-related ER visits in Q2 2023?",
+        "a": "Atmospheric pressure tracking for migraine cases",
+        "sources": [
+          "cluster_13_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which treatments and scheduling frequency did Dr. Ellen Voss prescribe for the weather-sensitive migraine patient, and what policy applies?",
+        "a": "Botulinum toxin injections every 12 weeks, pre-authorization required",
+        "sources": [
+          "cluster_13_doc4",
+          "cluster_13_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two initiatives are Granite Falls clinics implementing regarding weather-related migraines?",
+        "a": "Pressure-change alert systems and predictive modeling with weather service",
+        "sources": [
+          "cluster_13_doc6",
+          "cluster_13_doc2"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

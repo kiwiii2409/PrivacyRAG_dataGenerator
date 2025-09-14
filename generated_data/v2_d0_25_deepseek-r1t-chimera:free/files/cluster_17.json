@@ -1,0 +1,134 @@
+{
+  "documents": [
+    {
+      "id": "cluster_17_doc1",
+      "content": "Pre-authorization request submitted for comprehensive genetic testing (BRCA1/BRCA2 panel) at Windrose Genomics for patient HK72093. Patient presented with documented strong family history of breast and ovarian cancers across three generations. Initial claim paperwork submitted through Blue Monarch Insurance's specialty diagnostics portal on 02/15/2024, with preoperative genetics team contacting provider for additional testing justification documents. Patient enrolled in Emerging Diagnostic Technologies pilot program with 80% coverage.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_17_doc2",
+      "content": "Advisory memo from Blue Monarch's molecular diagnostics committee: New coverage guidelines for multi-gene panels effective March 2024 require documented family history in first-degree relatives or positive variant in maternal lineage. Windrose Genomics added as Tier 2 provider with specific CPT codes requiring pre-authorization. Claims processed after 3/1/2024 must include pedigree chart and previous single-gene test results if available.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_17_doc3",
+      "content": "Research summary from Emerging Tech pilot: 32% of participants in genetic testing program demonstrated clinically actionable variants identified through expanded panel testing versus standard single-gene approaches. Notable finding: Younger cohort (38-45) showed higher rates of variant interpretation changes compared to older participants. Program utilization highest at Templeton Cancer Center and affiliate clinics. Interim reimbursement rates set at $1,250 per full panel.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_17_doc4",
+      "content": "News article from Medical Innovation Daily: Blue Monarch Insurance faces provider network scrutiny after implementing new pre-authorization requirements for advanced cancer screening tests. Windrose Genomics reports 42% increase in claim denials following policy changes. Patient advocacy groups cite case of young mother denied coverage despite documented family cancer history spanning multiple geographic regions. Appeals process lengthened to 28 business days.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_17",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Genetic testing coverage ecosystem involving pre-authorization challenges, policy changes, pilot programs, and provider network dynamics",
+    "person": {
+      "entities": [
+        [
+          "HK72093",
+          "PATIENT_ID"
+        ],
+        [
+          "BRCA1/BRCA2 panel",
+          "TREATMENT"
+        ],
+        [
+          "Windrose Genomics",
+          "PROVIDER"
+        ],
+        [
+          "02/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "Emerging Diagnostic Technologies pilot program",
+          "EVENT"
+        ],
+        [
+          "38-45",
+          "AGE"
+        ],
+        [
+          "Templeton Cancer Center",
+          "LOCATION"
+        ],
+        [
+          "$1,250",
+          "UNIQUE_FACT"
+        ],
+        [
+          "young mother",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "breast cancer",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "ovarian cancer",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "80% coverage",
+          "UNIQUE_FACT"
+        ],
+        [
+          "three generations",
+          "UNIQUE_FACT"
+        ],
+        [
+          "pre-authorization request",
+          "EVENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What testing program gives HK72093 80% coverage for BRCA panel testing and through which portal was their claim submitted?",
+        "a": "Emerging Diagnostic Technologies pilot via Blue Monarch's specialty diagnostics portal",
+        "sources": [
+          "cluster_17_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What geographic locations showed highest utilization of Blue Monarch's genetic testing pilot program?",
+        "a": "Templeton Cancer Center and affiliate clinics",
+        "sources": [
+          "cluster_17_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What testing program gives HK72093 80% coverage and what new coverage elements were added after March 2024?",
+        "a": "Program: Emerging Diagnostic Technologies pilot. Coverage: Pedigree charts and prior single-gene results.",
+        "sources": [
+          "cluster_17_doc1",
+          "cluster_17_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new coverage guidelines were introduced for multi-gene tests after March 2024 and what operational impacts followed?",
+        "a": "New guidelines: pedigree and prior tests. Impact: 42% denial increase, 28-day appeals.",
+        "sources": [
+          "cluster_17_doc2",
+          "cluster_17_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

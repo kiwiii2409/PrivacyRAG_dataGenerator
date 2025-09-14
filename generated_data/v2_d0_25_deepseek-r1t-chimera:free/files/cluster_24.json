@@ -1,0 +1,136 @@
+{
+  "documents": [
+    {
+      "id": "cluster_24_doc1",
+      "content": "A 48-year-old electrician from Brighton underwent an L4-L5 microdiscectomy on 2023-05-12 at Lakeside Surgical Center. Post-operative care included physical therapy sessions at Harbor Recovery Clinic twice weekly for six weeks. The patient's policy under group #GHI-789-22-RT initially denied coverage for aquatic therapy, citing lack of medical necessity documentation.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_24_doc2",
+      "content": "Provider network update: As of 2023-06-01, Harbor Recovery Clinic will implement new protocols for workers' compensation cases requiring pre-authorization for all lumbar spine rehabilitation services. This affects approximately 120 active patients in their Brighton facility, including case #GHI-789-22-RT which was appealed successfully after submitting functional capacity evaluation results.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_24_doc3",
+      "content": "Research note: Brighton-area patients with post-microdiscectomy rehabilitation needs showed 28% faster recovery times when combining land-based PT with aquatic therapy. Study participants aged 40-50 with physically demanding jobs benefited most, particularly those enrolled within 14 days post-surgery. Policy implications for disability durations are under review.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_24_doc4",
+      "content": "Patient survey response dated 2023-07-18 reports significant improvement in mobility after completing Phase 2 aquatic therapy at Harbor Recovery Clinic. Notes frustration with initial coverage denial and appreciation for the appeal process. Mentions positive experience with therapist Dr. Margolis at the Brighton location (contact: 555-612-3084).",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_24_doc5",
+      "content": "Audit report flags 12 cases where aquatic therapy approvals for lumbar conditions required multiple appeals between 2023-05 and 2023-08. Brighton location accounted for 58% of these cases. Recommendation to streamline documentation requirements for workers with physically demanding occupations presenting with post-surgical functional limitations.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_24_doc6",
+      "content": "Local news article highlights successful recovery of union electrician who championed expanded access to aquatic therapy through his workers' compensation case. Features interview with Dr. Ellen Margolis of Harbor Recovery Clinic about policy changes benefiting blue-collar workers in construction-related fields. Published 2023-08-30 in Brighton Daily Press.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_24",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Brighton electrician's lumbar surgery rehabilitation journey through claims denials, appeals process, provider network changes, and policy impacts on workers' compensation cases",
+    "person": {
+      "entities": [
+        [
+          "48-year-old",
+          "AGE"
+        ],
+        [
+          "electrician",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "union electrician",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Brighton",
+          "LOCATION"
+        ],
+        [
+          "L4-L5 microdiscectomy",
+          "TREATMENT"
+        ],
+        [
+          "2023-05-12",
+          "EVENT_DATE"
+        ],
+        [
+          "GHI-789-22-RT",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "Phase 2 aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "2023-07-18",
+          "EVENT_DATE"
+        ],
+        [
+          "2023-08-30",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What rehabilitation treatment was prescribed to the 48-year-old electrician from Brighton after lumbar surgery?",
+        "a": "Physical therapy sessions at Harbor Recovery Clinic.",
+        "sources": [
+          "cluster_24_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which provider performed the electrician's surgery and which therapist oversaw his rehabilitation at Harbor Recovery Clinic?",
+        "a": "Lakeside Surgical Center performed the surgery and Dr. Margolis oversaw therapy.",
+        "sources": [
+          "cluster_24_doc1",
+          "cluster_24_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of aquatic therapy appeals for lumbar conditions originated from Brighton in mid-2023?",
+        "a": "58% of appeals were from Brighton cases.",
+        "sources": [
+          "cluster_24_doc5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What policy change and research finding impacted rehabilitation services for physically demanding occupations in Brighton?",
+        "a": "New pre-authorization protocols and 28% faster recovery with aquatic therapy.",
+        "sources": [
+          "cluster_24_doc2",
+          "cluster_24_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

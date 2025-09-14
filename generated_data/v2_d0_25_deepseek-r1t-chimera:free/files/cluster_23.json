@@ -1,0 +1,138 @@
+{
+  "documents": [
+    {
+      "id": "cluster_23_doc1",
+      "content": "Golden State Insurance confirmed a new process for out-of-network claims requiring pre-approval for rare autoimmune therapies. Dr. Evelyn Marsh at Coastal Immunology Center submitted a claim for patient ID#4582-9173, a 62-year-old with refractory myasthenia gravis, denied on 03/15/2024 due to missing specialist certification. The memo notes exceptional cases may appeal with neurology consult notes and plasma exchange records.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_23_doc2",
+      "content": "April 2024 provider bulletin announced expanded coverage for IV immunoglobulin (Gammagard) at Tier 2 copay when prescribed by board-certified immunologists for myasthenia gravis patients. This change applies specifically to members in Southern California regions. Claims must include treatment frequency documentation and physician NPI# 1234567890 for eligibility verification.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_23_doc3",
+      "content": "Patient survey from Dana Point resident Margaret Villegas (DOB 10/22/1961) reported 4-month delay in IVIG authorization despite neurologist Dr. Park's recommendations. Survey notes transportation challenges to Coastal Immunology Center and $12,000 in out-of-pocket costs before policy update. Marked as 'high priority' for grievance resolution.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_23_doc4",
+      "content": "Clinical trial NCT04560123 at Coastal Immunology Center enrolled 142 participants with refractory neuromuscular conditions. Interim analysis showed 68% reduction in crisis episodes with biweekly Gammagard infusions. Research team: Principal Investigator Dr. R. Srinivasan, Sub-Investigator Dr. E. Marsh. IRB approval granted through 06/2025.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_23",
+    "cluster_risk": "HIGH",
+    "content_summary": "A patient's journey through autoimmune treatment authorization challenges, policy changes for IVIG coverage, and participation in a clinical trial at Coastal Immunology Center.",
+    "person": {
+      "entities": [
+        [
+          "Margaret Villegas",
+          "NAME"
+        ],
+        [
+          "10/22/1961",
+          "BIRTHDATE"
+        ],
+        [
+          "4582-9173",
+          "PATIENT_ID"
+        ],
+        [
+          "refractory myasthenia gravis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "62-year-old",
+          "AGE"
+        ],
+        [
+          "$12,000",
+          "UNIQUE_FACT"
+        ],
+        [
+          "4-month delay",
+          "UNIQUE_FACT"
+        ],
+        [
+          "03/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "denied",
+          "EVENT"
+        ],
+        [
+          "Coastal Immunology Center",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Evelyn Marsh",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Park",
+          "PROVIDER"
+        ],
+        [
+          "Gammagard",
+          "TREATMENT"
+        ],
+        [
+          "IVIG authorization",
+          "EVENT"
+        ],
+        [
+          "Dana Point",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the reason for the initial denial of IVIG treatment for patient ID#4582-9173 at Coastal Immunology Center?",
+        "a": "Missing specialist certification and neurology consult notes.",
+        "sources": [
+          "cluster_23_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What April 2024 policy change affected Southern California patients requiring Gammagard infusions?",
+        "a": "Expanded Tier 2 copay coverage with immunologist certification.",
+        "sources": [
+          "cluster_23_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two providers at Coastal Immunology Center are associated with patient Margaret Villegas's care and the clinical trial?",
+        "a": "Dr. Evelyn Marsh and Dr. R. Srinivasan.",
+        "sources": [
+          "cluster_23_doc1",
+          "cluster_23_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change and financial/logistical challenges were reported in Dana Point patient surveys related to autoimmune therapies?",
+        "a": "Expanded Tier 2 copay coverage and $12,000 out-of-pocket costs, plus transportation difficulties.",
+        "sources": [
+          "cluster_23_doc2",
+          "cluster_23_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

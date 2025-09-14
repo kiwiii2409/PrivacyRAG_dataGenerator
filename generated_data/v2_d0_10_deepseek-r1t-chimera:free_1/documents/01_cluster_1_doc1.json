@@ -1,0 +1,7 @@
+{
+  "id": "cluster_1_doc1",
+  "content": "Patient 45-8923 filed a claim for arrhythmia treatment at Pacific Heart Institute on March 15, 2023. The claim includes cardiac ablation under physician Dr. M. Hernandez. Patient has a history of hypertension and is enrolled in SilverCare Plus plan. Billing department noted incomplete prior authorization documentation requiring follow-up.",
+  "metadata": {
+    "format": "claim_form"
+  }
+}

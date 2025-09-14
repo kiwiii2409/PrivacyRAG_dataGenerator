@@ -1,0 +1,7 @@
+{
+  "id": "cluster_9_doc1",
+  "content": "A recent audit of outpatient claims revealed inconsistencies in billing for aquatic therapy sessions at Lakeside Rehabilitation Center. Therapist notes indicated sessions lasting 55 minutes were billed as 60-minute sessions. Provider network contracts specify a maximum reimbursement rate of $145 for 60-minute sessions. This pattern was observed in 22% of claims submitted between August 2022 and March 2023.",
+  "metadata": {
+    "format": "audit_report"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "documents": [
+    {
+      "id": "cluster_6_doc1",
+      "content": "New policy update from Arlington Health Network requires prior authorization for all spinal cord stimulation procedures effective October 1st. This change impacts approximately 15% of chronic pain patients in the Northeast region. Documentation must include failed conservative therapy attempts and multidisciplinary team approval. Claims submitted without proper authorization will be denied starting Q4.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_6_doc2",
+      "content": "Patient BW-4829 (DOB 05/12/1985) presented to Metro Pain Specialists with refractory neuropathic pain following lumbar arachnoiditis diagnosis. Treatment plan includes spinal cord stimulator implantation after unsuccessful gabapentin and physical therapy trials. Dr. Elena Vasquez noted unique presentation with concurrent eosinophilic esophagitis requiring coordinated care with gastroenterology.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_6_doc3",
+      "content": "Internal audit revealed 23 denied spinal stimulation claims from Northeast providers in November. 18 denials stemmed from missing prior auth, including case BW-4829 processed 11/15. Two-tier appeals process now requires VP review for high-dollar neuromodulation denials. Claims department alerted to watch for similar cases from Metro Pain Specialists.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_6_doc4",
+      "content": "Research brief: Northeast patients with lumbar arachnoiditis showed 42% better pain control outcomes with early spinal cord stimulation vs medication alone. Study cohort included 28 patients from Metro Pain Specialists. Dr. Vasquez presenting findings at National Pain Symposium on 12/04. Insurance coverage variability identified as major access barrier.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_6_doc5",
+      "content": "News Article: Arlington Health faces criticism for new prior authorization rules as patient advocacy groups protest outside corporate HQ. BW-4829 spokesperson cited during rally: 'This policy delays life-changing treatment'. Network officials cite 200% increase in spinal stimulation claims since 2022 as justification for utilization controls.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_6",
+    "cluster_risk": "HIGH",
+    "content_summary": "Chronic pain patient's treatment journey intersecting with policy changes for spinal cord stimulation, including denied claims, research outcomes, and public response",
+    "person": {
+      "entities": [
+        [
+          "BW-4829",
+          "PATIENT_ID"
+        ],
+        [
+          "05/12/1985",
+          "BIRTHDATE"
+        ],
+        [
+          "lumbar arachnoiditis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "eosinophilic esophagitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Elena Vasquez",
+          "PROVIDER"
+        ],
+        [
+          "Metro Pain Specialists",
+          "PROVIDER"
+        ],
+        [
+          "11/15",
+          "EVENT_DATE"
+        ],
+        [
+          "Northeast",
+          "LOCATION"
+        ],
+        [
+          "refractory neuropathic pain",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "spinal cord stimulator implantation",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two conditions complicate the treatment plan for patient BW-4829 requiring coordinated care?",
+        "a": "Lumbar arachnoiditis and eosinophilic esophagitis require coordinated gastroenterology care.",
+        "sources": [
+          "cluster_6_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of chronic pain patients are affected by Arlington Health's new prior authorization policy?",
+        "a": "15% of chronic pain patients in the Northeast region are affected.",
+        "sources": [
+          "cluster_6_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What condition and denial reasons are documented for BW-4829's spinal stimulation claim?",
+        "a": "Lumbar arachnoiditis case denied due to missing prior auth on 11/15.",
+        "sources": [
+          "cluster_6_doc2",
+          "cluster_6_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What outcome statistic and public protest are reported regarding spinal cord stimulation in the Northeast?",
+        "a": "42% better pain control; protest at Arlington HQ on 12/04.",
+        "sources": [
+          "cluster_6_doc4",
+          "cluster_6_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

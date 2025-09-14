@@ -1,0 +1,84 @@
+{
+  "documents": [
+    {
+      "id": "cluster_0_doc0",
+      "content": "The recent policy update for Sunshine Health mandates pre-authorization for all advanced imaging requests submitted after March 2024. Providers must now include detailed clinical justification and prior treatment history. Exception requests require review by a specialist panel and take 5-7 business days to process. This change aims to reduce unnecessary imaging by 15% annually.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_0_doc1",
+      "content": "Silver Pine Medical Center reported a 22% increase in telehealth utilization among patients aged 55-70 during Q2 2024. Most visits addressed chronic condition management, particularly diabetes and hypertension. The center plans to expand their virtual care team by adding two endocrinologists and upgrading their patient portal interface by September.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_0_doc2",
+      "content": "A research study at Coastal University (protocol #CU-HI-2248) is investigating outcomes of bundled payment models for knee replacement surgeries. Preliminary data shows reduced hospital stays but higher readmission rates for patients over 65. The study will conclude in December 2024 with final recommendations for payers.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_0_doc3",
+      "content": "Sunshine Health denied 18% of physical therapy claims in the Mountain Valley region last quarter due to missing functional progress reports. Appeals require submission of standardized assessment tools and treatment logs. Providers can access new template documents through the payer's online portal starting April 15th.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_0_doc4",
+      "content": "The National Health Journal featured an article about innovative prior authorization systems being tested in the Southwest. One pilot program reduced processing times by 40% using AI-assisted clinical reviews. Participating providers reported higher satisfaction but noted challenges integrating the technology with existing EHR systems.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_0",
+    "cluster_risk": "LOW",
+    "content_summary": "Policy changes and provider network developments affecting imaging authorization, telehealth expansion, bundled payments research, and physical therapy claims processing",
+    "person": {
+      "entities": []
+    },
+    "questions": [
+      {
+        "q": "What documentation changes starting April 15th affect physical therapy claims with Sunshine Health in Mountain Valley?",
+        "a": "New template documents for functional progress reports accessible online",
+        "sources": [
+          "cluster_0_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of telehealth utilization increase did Silver Pine Medical Center report for patients aged 55-70 in Q2 2024?",
+        "a": "22% increase in telehealth utilization",
+        "sources": [
+          "cluster_0_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two deadlines (month/year) appear in both the imaging policy update and the bundled payments research study?",
+        "a": "March 2024 and December 2024",
+        "sources": [
+          "cluster_0_doc0",
+          "cluster_0_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What trends are emerging regarding payment models and care delivery innovations across these documents?",
+        "a": "Bundled payments reducing stays but increasing readmissions; AI speeding prior authorizations",
+        "sources": [
+          "cluster_0_doc2",
+          "cluster_0_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "A recent audit report on orthopedics claims at St. Michael's Hospital revealed a 40% increase in spinal fusion surgeries among patients aged 45-55 in Q2 2024. The report notes inconsistent pre-authorization documentation, particularly for patients with degenerative disc disease. Provider Dr. Elena Vasquez accounted for 28% of these procedures. Claims processing delays averaged 14 days due to missing surgical notes.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Patient #P-88234 (DOB 03/15/1979) underwent a two-level lumbar fusion on 05/12/2024 at St. Michael's Hospital. The procedure was performed by Dr. Vasquez following 6 months of conservative treatment failure. Post-op recovery included 3 days inpatient stay and referral to Lakeside Rehab facility. Prior authorization was granted under policy #ORTH-2024-45A.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "Lakeside Rehab facility (License #CA-882HX) reported a 55% occupancy rate for spinal surgery patients in June 2024. New evidence-based protocols reduced average length of stay by 2.4 days compared to 2023. The facility's outcomes coordinator cited improved pain management and earlier mobility interventions as key factors.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Policy update #ORTH-2024-45A effective 04/01/2024 requires second-opinion MRI reviews for all spinal fusion candidates over 40 years old. The change addresses concerns about overutilization highlighted in recent CMS data. Providers must submit both radiologist reports and original imaging files through the OrthoNet portal.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc5",
+      "content": "The Daily Medical Journal reports that degenerative disc disease patients in the Midwest show 22% faster recovery times when using the new FlexiCore rehabilitation protocol versus traditional methods. The study tracked 150 patients across 8 facilities, including Lakeside Rehab, from January to June 2024.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Orthopedic care pathway involving spinal fusion surgery, rehabilitation outcomes, and related policy changes",
+    "person": {
+      "entities": [
+        [
+          "P-88234",
+          "PATIENT_ID"
+        ],
+        [
+          "03/15/1979",
+          "BIRTHDATE"
+        ],
+        [
+          "degenerative disc disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "St. Michael's Hospital",
+          "LOCATION"
+        ],
+        [
+          "Lakeside Rehab",
+          "LOCATION"
+        ],
+        [
+          "ORTH-2024-45A",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "05/12/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "45-55",
+          "AGE"
+        ],
+        [
+          "Dr. Vasquez",
+          "PROVIDER"
+        ],
+        [
+          "two-level lumbar fusion",
+          "TREATMENT"
+        ],
+        [
+          "3 days inpatient stay",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What procedure did patient P-88234 undergo and to which rehab facility were they referred after surgery?",
+        "a": "A two‑level lumbar fusion at St. Michael's Hospital, then referral to Lakeside Rehab.",
+        "sources": [
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change affected spinal fusion pre‑authorization requirements in April 2024?",
+        "a": "Required second‑opinion MRI reviews for candidates over 40.",
+        "sources": [
+          "cluster_4_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What is the license number of the rehab facility where patient P‑88234 was referred, and which hospital performed the surgery?",
+        "a": "Lakeside Rehab (License #CA‑882HX) and St. Michael's Hospital.",
+        "sources": [
+          "cluster_4_doc2",
+          "cluster_4_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "By how much did spinal fusion surgeries increase among patients aged 45‑55 in Q2 2024, and how many days was the average length of stay reduced at Lakeside Rehab compared to 2023?",
+        "a": "Surgeries rose 40%, and stay reduced by 2.4 days.",
+        "sources": [
+          "cluster_4_doc1",
+          "cluster_4_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

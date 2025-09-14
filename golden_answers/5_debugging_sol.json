@@ -1,0 +1,140 @@
+{
+  "entities": [
+    "0.017% prevalence",
+    "1985-07-22",
+    "2016-09-22",
+    "2023",
+    "2023-09",
+    "2023-09-15",
+    "2023-11",
+    "2023-11-15",
+    "2024-01",
+    "2024-01-10",
+    "2024-02",
+    "2024-02-15",
+    "2024-03",
+    "2024-03-22",
+    "2024-04",
+    "2024-04-15",
+    "423-555-0198",
+    "4892-TS-5561",
+    "57",
+    "588 Pinecrest Drive, Knoxville TN",
+    "62",
+    "7",
+    "778 Elm Road",
+    "7R9T2P4E",
+    "7XG9T23R",
+    "ASD",
+    "Aaliyah Khoury",
+    "Cedars-Sinai Medical Center",
+    "Central Valley Behavioral Health",
+    "Clarkston Valley",
+    "Dr. Alvarez",
+    "Ezra Mendoza",
+    "Fresno County",
+    "HEA-8812",
+    "cerebrospinal fluid leakage",
+    "HL21-9872B",
+    "KT-334",
+    "KUB229744",
+    "Knoxville",
+    "Lakeside Rehab Center",
+    "Maplewood Clinic",
+    "Mendoza family",
+    "NR-882",
+    "Oakridge Rehabilitation",
+    "PT-4557-23CY",
+    "PT44821",
+    "Riverstone Wellness Center",
+    "Rochester",
+    "XQR88932",
+    "anxiety",
+    "arachnoid cysts",
+    "autoimmune encephalopathy",
+    "bilateral knee osteoarthritis",
+    "female",
+    "gabapentin",
+    "gamma knife treatments",
+    "neuro.research@cedars.net",
+    "overweight",
+    "post-stroke rehabilitation",
+    "prion disease",
+    "spinal stenosis",
+    "vestibular schwannoma"
+  ],
+  "links": [
+    [
+      "cluster_0_doc1",
+      "cluster_0_doc2"
+    ],
+    [
+      "cluster_0_doc1",
+      "cluster_0_doc4"
+    ],
+    [
+      "cluster_0_doc2",
+      "cluster_0_doc4"
+    ],
+    [
+      "cluster_1_doc1",
+      "cluster_1_doc2"
+    ],
+    [
+      "cluster_1_doc1",
+      "cluster_1_doc4"
+    ],
+    [
+      "cluster_1_doc2",
+      "cluster_1_doc5"
+    ],
+    [
+      "cluster_2_doc3",
+      "cluster_2_doc5"
+    ],
+    [
+      "cluster_3_doc1",
+      "cluster_3_doc2"
+    ],
+    [
+      "cluster_3_doc2",
+      "cluster_3_doc4"
+    ],
+    [
+      "cluster_4_doc1",
+      "cluster_4_doc2"
+    ]
+  ],
+  "redaction": [
+    "Aaliyah Khoury",
+    "7R9T2P4E",
+    "1985-07-22",
+    "neuro.research@cedars.net",
+    "XQR88932",
+    "7XG9T23R",
+    "588 Pinecrest Drive, Knoxville TN",
+    "62",
+    "KT-334",
+    "KUB229744",
+    "HEA-8812",
+    "PT44821",
+    "57",
+    "female",
+    "bilateral knee osteoarthritis",
+    "Rochester",
+    "Lakeside Rehab Center",
+    "post-stroke rehabilitation",
+    "overweight",
+    "2024-04",
+    "2023",
+    "Ezra Mendoza",
+    "4892-TS-5561",
+    "2016-09-22",
+    "7",
+    "HL21-9872B",
+    "Mendoza family",
+    "PT-4557-23CY",
+    "778 Elm Road",
+    "423-555-0198"
+  ]
+}

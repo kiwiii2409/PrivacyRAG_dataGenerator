@@ -1,0 +1,144 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "The recent policy update requires pre-authorization for all outpatient mental health services exceeding 12 sessions annually. Providers must submit detailed treatment plans for review under new guidelines effective July 2024. This change impacts approximately 15% of current behavioral health claims in the Pacific Northwest region. Documentation must include session frequency and measurable progress indicators.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "A 58-year-old male with recurrent major depressive disorder initiated intensive outpatient program (IOP) at Cascade Behavioral Health Center in September 2023. Treatment plan includes weekly individual therapy, biweekly group sessions, and medication management. Initial assessment shows PHQ-9 score of 18 with significant sleep disturbance and anhedonia.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Claim #BH44567 for 14 IOP sessions at Cascade Behavioral Health was denied due to missing pre-authorization documentation. The attending psychiatrist Dr. Ellen Voss provided supplemental clinical notes demonstrating medical necessity. Appeals department is reviewing for possible exception under transitional care provisions.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Regional utilization review shows 22% increase in behavioral health claims among adults 55-65 in Q4 2023. Cascade Behavioral Health accounts for 38% of these cases. Common diagnoses include adjustment disorders and treatment-resistant depression. Average length of stay is 8 weeks with 62% improvement in functional assessments.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_1_doc5",
+      "content": "Waived authorization requirements for existing patients transitioning to new mental health policy through December 31, 2024. This applies to members currently enrolled in IOP programs with demonstrated clinical need. Providers must flag claims with special code MH-TRANS and include baseline assessment scores.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_1_doc6",
+      "content": "The Portland Tribune reports local mental health providers expressed concerns about new insurance requirements delaying care. Cascade Behavioral Health's medical director cited a 30% increase in administrative workload since policy implementation. Patient advocacy groups are monitoring outcomes for seniors with chronic conditions.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "LOW",
+    "content_summary": "Policy changes affecting mental health coverage, a patient's IOP treatment journey, and regional behavioral health trends",
+    "person": {
+      "entities": [
+        [
+          "58",
+          "AGE"
+        ],
+        [
+          "male",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "recurrent major depressive disorder",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Cascade Behavioral Health Center",
+          "PROVIDER"
+        ],
+        [
+          "September 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "PHQ-9 score of 18",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Dr. Ellen Voss",
+          "PROVIDER"
+        ],
+        [
+          "BH44567",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "intensive outpatient program (IOP)",
+          "TREATMENT"
+        ],
+        [
+          "weekly individual therapy",
+          "TREATMENT"
+        ],
+        [
+          "biweekly group sessions",
+          "TREATMENT"
+        ],
+        [
+          "medication management",
+          "TREATMENT"
+        ],
+        [
+          "14 IOP sessions",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What special code must providers use to flag waived authorization claims for existing IOP patients?",
+        "a": "Use special code MH-TRANS.",
+        "sources": [
+          "cluster_1_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which patient and which providers/services are involved in the denied claim BH44567 for depression treatment?",
+        "a": "58‑year‑old male patient; Cascade Behavioral Health and psychiatrist Dr. Ellen Voss.",
+        "sources": [
+          "cluster_1_doc2",
+          "cluster_1_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What was the percentage increase in behavioral health claims among adults aged 55‑65 in Q4 2023?",
+        "a": "22% increase.",
+        "sources": [
+          "cluster_1_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "How does the new pre‑authorization policy affect administrative workload for Portland‑area mental health providers?",
+        "a": "Policy adds pre‑authorization; workload rose 30%.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

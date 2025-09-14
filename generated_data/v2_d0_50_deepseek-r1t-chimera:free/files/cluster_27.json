@@ -1,0 +1,129 @@
+{
+  "documents": [
+    {
+      "id": "cluster_27_doc1",
+      "content": "The claims audit for Q3 highlighted an increase in prior authorization requests for biologics at Mountain View Regional. Dr. Elara Koshy noted a 28% rise in rheumatology referrals, particularly for psoriatic arthritis patients. The audit flagged Policy #BIOL-441 revisions requiring step therapy attempts before biologic approvals. Systems memo attached shows data integration gaps between Epic and the regional provider network portal.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_27_doc2",
+      "content": "Patient 88742-LZW (DOB 04/15/1987) presented with persistent dactylitis and nail pitting at Banner Arthritis Center. Initial treatment plan included methotrexate + prednisone taper. Prior auth submitted for TNF inhibitor under exception criteria per Policy #BIOL-441. Provider phone: 602-555-0187. Next follow-up scheduled 12 weeks post-treatment initiation.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_27_doc3",
+      "content": "Mountain View Rheumatology quarterly review shows 62% of psoriatic arthritis patients required therapy adjustments within first 3 months. Research collaboration with Banner initiated to track outcomes of Policy #BIOL-441 implementation. Study ID: ARTH-339. Contact research coordinator at rcoordinators@bannerarth.edu for participation details.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_27_doc4",
+      "content": "Patient survey response from 88742-LZW: 'Medication prior authorization process took 11 days, delaying my treatment. Dr. Koshy’s team eventually secured approval for monthly injections.' Address: 4427 Silverado Trail, Fountain Hills, AZ. Survey submitted via portal on 10/22/2023.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_27_doc5",
+      "content": "Phoenix Healthcare Journal reports Mountain View Regional testing new prior authorization AI platform targeting rheumatology claims. Pilot reduced decision time by 40% for Policy #BIOL-441 cases. Implementation challenges include EHR mapping discrepancies and staff training needs. Full rollout expected Q2 2024.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_27",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Psoriatic arthritis treatment journey involving biologic prior authorization under Policy #BIOL-441, with connections between patient care, provider network challenges, and research study ARTH-339",
+    "person": {
+      "entities": [
+        [
+          "88742-LZW",
+          "PATIENT_ID"
+        ],
+        [
+          "04/15/1987",
+          "BIRTHDATE"
+        ],
+        [
+          "4427 Silverado Trail, Fountain Hills, AZ",
+          "ADDRESS"
+        ],
+        [
+          "psoriatic arthritis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "dactylitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "methotrexate",
+          "TREATMENT"
+        ],
+        [
+          "prednisone taper",
+          "TREATMENT"
+        ],
+        [
+          "TNF inhibitor",
+          "TREATMENT"
+        ],
+        [
+          "Mountain View Regional",
+          "LOCATION"
+        ],
+        [
+          "Banner Arthritis Center",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Elara Koshy",
+          "PROVIDER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What new AI implementation reduced decision times for Policy #BIOL-441 rheumatology claims?",
+        "a": "Mountain View Regional's prior authorization AI platform reduced decision time by 40%.",
+        "sources": [
+          "cluster_27_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of rheumatology referrals increased at Mountain View Regional?",
+        "a": "Dr. Elara Koshy noted a 28% rise in rheumatology referrals.",
+        "sources": [
+          "cluster_27_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which treatments were prescribed and what was the patient’s experience regarding prior authorization for patient 88742-LZW through Banner Arthritis Center under Policy #BIOL-441?",
+        "a": "Methotrexate + prednisone taper; prior authorization took 11 days.",
+        "sources": [
+          "cluster_27_doc2",
+          "cluster_27_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What challenges were reported during Policy #BIOL-441 implementation across documents?",
+        "a": "Data integration gaps and EHR mapping discrepancies.",
+        "sources": [
+          "cluster_27_doc1",
+          "cluster_27_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

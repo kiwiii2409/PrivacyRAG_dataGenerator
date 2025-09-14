@@ -1,0 +1,137 @@
+{
+  "documents": [
+    {
+      "id": "cluster_21_doc1",
+      "content": "The quarterly claims report from Horizon Medical Group shows a spike in genetic testing approvals for pediatric patients in Tempe following the 2023 Arizona Genomics Initiative. Patient PX-8824, a 12-year-old covered under SilverCare policy SC-77409, underwent exome sequencing and metabolic panel testing in March. The claim was processed under new prior authorization rules requiring genetic counselor review.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_21_doc2",
+      "content": "Clinical notes from Dr. Elise Parkerson at Tempe Pediatric Genetics indicate successful management of patient PX-8824's inborn error of metabolism through custom dietary plans and weekly supplement protocols. Visit summaries from April-June detail adjustments based on specific genetic markers identified in the exome sequencing results.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_21_doc3",
+      "content": "SilverCare internal audit reveals 82% of genetic testing claims from Horizon Medical Group were approved under the Genomics Initiative fast-track program, compared to 35% at non-network providers. The audit flags potential overutilization of CPT 81416 for Tier 2 metabolic panels approved without full documentation.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_21_doc4",
+      "content": "Tempe Daily News article from August 15 reports on protests against SilverCare's genetic testing policy changes, quoting parent advocate Gavin Torrence who claims the new requirements create barriers for families dealing with rare metabolic disorders.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_21_doc5",
+      "content": "SilverCare policy update 2034-C outlines new documentation requirements for tiered genetic tests, mandating specialist letters and lab correlation studies for CPT 81416 approvals. The policy cites concerns about inappropriate screening in pediatric populations without clear clinical indicators.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_21_doc6",
+      "content": "Research protocol GEN-22A approved by St. Marianne's IRB investigates outcomes of early exome sequencing in pediatric metabolic disorders. The study lists PX-8824 as Cohort B participant, tracking dietary compliance, neurological development, and hospital admission rates over 18 months.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_21",
+    "cluster_risk": "HIGH",
+    "content_summary": "Pediatric genetic testing case linked through patient journey, policy changes, and community impact in Tempe",
+    "person": {
+      "entities": [
+        [
+          "PX-8824",
+          "PATIENT_ID"
+        ],
+        [
+          "12-year-old",
+          "AGE"
+        ],
+        [
+          "inborn error of metabolism",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "exome sequencing",
+          "TREATMENT"
+        ],
+        [
+          "metabolic panel testing",
+          "TREATMENT"
+        ],
+        [
+          "weekly supplement protocols",
+          "TREATMENT"
+        ],
+        [
+          "SilverCare policy SC-77409",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "2023 Arizona Genomics Initiative",
+          "EVENT"
+        ],
+        [
+          "March",
+          "EVENT_DATE"
+        ],
+        [
+          "April-June",
+          "EVENT_DATE"
+        ],
+        [
+          "Cohort B participant",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What specific metabolic disorder treatment protocol was adjusted for patient PX-8824 based on genetic markers identified in April-June?",
+        "a": "Weekly supplement protocols combined with custom dietary plans were adjusted.",
+        "sources": [
+          "cluster_21_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What was the approval rate difference for genetic testing claims between Horizon Medical Group and non-network providers under the Genomics Initiative?",
+        "a": "82% approval at Horizon vs. 35% at non-network providers.",
+        "sources": [
+          "cluster_21_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which interventions were involved in managing PX-8824's genetic metabolic condition across clinical and research settings?",
+        "a": "Exome sequencing, weekly supplement protocols, and dietary compliance monitoring.",
+        "sources": [
+          "cluster_21_doc1",
+          "cluster_21_doc2",
+          "cluster_21_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What changes did policy update 2034-C introduce for CPT 81416 genetic testing, and what concerns were highlighted about its use?",
+        "a": "Mandatory specialist letters, lab correlation studies, and concerns over overutilization of CPT 81416.",
+        "sources": [
+          "cluster_21_doc3",
+          "cluster_21_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

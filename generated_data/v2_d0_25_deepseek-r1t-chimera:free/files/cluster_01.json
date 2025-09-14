@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "A patient with refractory epilepsy underwent vagus nerve stimulation at Lakeside Regional Medical Center on March 15, 2023. The procedure was covered under policy #CT-9821-RV, with Dr. Elena Vargas as the attending neurologist. Post-operative care included weekly monitoring for cardiac arrhythmias, a known complication of this treatment.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "Policy update memo: Effective June 1, 2023, all neuromodulation devices require prior authorization with documented treatment failure of at least two anti-seizure medications. This change impacts 12% of active neurology patients in Region 4. Claims submitted without proper documentation will be denied.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Claim #48922-LK for vagus nerve stimulator implantation was denied on July 10, 2023 due to insufficient documentation of prior treatment attempts. Patient ID RV-8427 appealed the decision with supplemental records showing trials of levetiracetam and lacosamide.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Research note: Regional epilepsy treatment audit found 18 cases of VNS-related bradycardia among adults aged 25-40 at Lakeside Regional between 2020-2023. These accounted for 34% of all reported device complications in the tri-state area during this period.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_1_doc5",
+      "content": "Provider network alert: Dr. Vargas's neurology practice at 450 Westview Drive is closing effective December 31, 2023. Patients requiring follow-up for implanted devices will be transitioned to specialists at Riverstone Neuroscience Associates.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Neuromodulation treatment journey involving policy changes, claim denial, and provider transitions for epilepsy patient RV-8427",
+    "person": {
+      "entities": [
+        [
+          "Patient ID RV-8427",
+          "PATIENT_ID"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "July 10, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Lakeside Regional Medical Center",
+          "LOCATION"
+        ],
+        [
+          "Riverstone Neuroscience Associates",
+          "LOCATION"
+        ],
+        [
+          "refractory epilepsy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "cardiac arrhythmias",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "VNS-related bradycardia",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "vagus nerve stimulation",
+          "TREATMENT"
+        ],
+        [
+          "vagus nerve stimulator implantation",
+          "TREATMENT"
+        ],
+        [
+          "levetiracetam",
+          "TREATMENT"
+        ],
+        [
+          "lacosamide",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What complications required monitoring after patient RV-8427's procedure at Lakeside Regional?",
+        "a": "Weekly monitoring for cardiac arrhythmias was required post-operation.",
+        "sources": [
+          "cluster_1_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of Region 4 neurology patients were affected by the June 2023 policy change?",
+        "a": "12% of active neurology patients in Region 4 were affected.",
+        "sources": [
+          "cluster_1_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which prior anti‑seizure medications were documented before the VNS implant claim for patient RV‑8427?",
+        "a": "The patient tried levetiracetam and lacosamide before approval.",
+        "sources": [
+          "cluster_1_doc2",
+          "cluster_1_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the temporal and geographic patterns of VNS complications in Lakeside Regional's research?",
+        "a": "18 cases occurred between 2020-2023, accounting for 34% of tri‑state area complications.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

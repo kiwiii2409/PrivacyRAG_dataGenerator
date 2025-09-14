@@ -1,0 +1,7 @@
+{
+  "id": "cluster_2_doc2",
+  "content": "Patient 991-34M submitted a claim denial appeal for cardiac MRI services at Valley Heart Institute on 10/15. Records show the 58-year-old was prescribed warfarin following atrial fibrillation diagnosis. The imaging request lacked required pre-authorization form SV572, identical to three other appeals processed this month.",
+  "metadata": {
+    "format": "claim_form"
+  }
+}

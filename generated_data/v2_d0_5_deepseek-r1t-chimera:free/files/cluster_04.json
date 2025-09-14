@@ -1,0 +1,140 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "Silvervale Health Network reported a 28% increase in prior authorization requests for genetic testing during Q3 2023, particularly for BRCA mutation screening in patients under 45 following revised coverage guidelines under policy GH-2281. Three affiliated clinics accounted for 62% of these requests.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Patient #4548-ZT underwent BRCA1 testing at Clearwater Diagnostics on 08/14/2023 after presenting with early-onset breast cancer at age 42. The claim was processed under genetic counseling benefit code TC-45X with 80% coverage. Referring provider: Dr. Miriam Kellerman [ID#P8842].",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "Research bulletin from NE Metro Health District shows BRCA-positive patients under 45 required twice as many supplemental imaging studies compared to older cohorts. Data includes 37 cases from Silvervale Network providers between 2021-2023.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Policy alert: GH-2281 revised genetic testing criteria effective 06/01/2023 now require documented family history + predictive risk score ≥7.5 for coverage. Shared via portal message #4452-8T to all Silvervale-affiliated providers.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc5",
+      "content": "Quality improvement report indicates Silvervale's Maplewood Clinic achieved 94% compliance with new genetic counseling documentation requirements, compared to 67% network-wide average. Reviewed 88 cases between 07-09/2023.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc6",
+      "content": "Email correspondence shows patient #4548-ZT required pre-authorization appeal for MRI breast screening following positive BRCA result. Case escalated to medical director on 09/05/2023 due to imaging frequency exceeding policy limits.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Genetic testing policy changes and patient journey through BRCA screening, authorization appeals, and associated research findings within Silvervale Health Network",
+    "person": {
+      "entities": [
+        [
+          "4548-ZT",
+          "PATIENT_ID"
+        ],
+        [
+          "42",
+          "AGE"
+        ],
+        [
+          "BRCA1",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "early-onset breast cancer",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "08/14/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "TC-45X",
+          "TREATMENT"
+        ],
+        [
+          "MRI breast screening",
+          "TREATMENT"
+        ],
+        [
+          "09/05/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "pre-authorization appeal",
+          "EVENT"
+        ],
+        [
+          "case escalated to medical director",
+          "EVENT"
+        ],
+        [
+          "positive BRCA result",
+          "UNIQUE_FACT"
+        ],
+        [
+          "imaging frequency exceeding policy limits",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which genetic counseling benefit code and coverage percentage applied to patient 4548-ZT's BRCA1 testing?",
+        "a": "Code TC-45X with 80% coverage",
+        "sources": [
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two documentation compliance rates were reported for Silvervale Network's new genetic testing requirements?",
+        "a": "94% at Maplewood Clinic versus 67% network-wide",
+        "sources": [
+          "cluster_4_doc5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which provider and testing facility handled patient 4548-ZT's BRCA evaluation that later required imaging appeal?",
+        "a": "Dr. Miriam Kellerman at Clearwater Diagnostics",
+        "sources": [
+          "cluster_4_doc2",
+          "cluster_4_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy revision and date drove increased genetic testing requests in Silvervale Network?",
+        "a": "Policy GH-2281 with criteria changes effective 06/01/2023",
+        "sources": [
+          "cluster_4_doc1",
+          "cluster_4_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

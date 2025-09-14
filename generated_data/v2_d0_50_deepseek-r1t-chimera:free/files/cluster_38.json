@@ -1,0 +1,121 @@
+{
+  "documents": [
+    {
+      "id": "cluster_38_doc1",
+      "content": "Austin Allergy Center submitted claim 4782-331 for a 32-year-old patient with seasonal allergies receiving immunotherapy injections. The claim includes details of three visits between March-April 2023 with copay amounts of $40 per session. Treatment plan authorization was approved under policy group TX-ALL-2022.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_38_doc2",
+      "content": "Clinical notes from Travis County Health indicate a patient with comorbid seasonal allergies and migraines showed improvement after 12 weeks of sublingual immunotherapy. Concurrent prescription for antihistamines was refilled twice during observation period. Next follow-up scheduled for July 2023.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_38_doc3",
+      "content": "Internal memo regarding policy update 23-ALG-REF: Effective June 2023, Travis County providers must document treatment duration expectations before authorizing extended allergy immunotherapy. Implementation impacts approximately 15% of current authorization requests.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_38_doc4",
+      "content": "Research brief: Patients completing full 3-year allergy immunotherapy course in Central Texas demonstrated 60% reduction in related medication usage. Study period covered 2020-2023 across 8 clinics. Demographic breakdown showed highest adherence rates in 30-39 age group.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_38_doc5",
+      "content": "Local news report: Austin area sees 20% increase in allergy-related insurance denials following policy changes. Health advocates cite disparities in accessing newer immunotherapy options, particularly affecting residents in Travis County's northern districts.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_38",
+    "cluster_risk": "LOW",
+    "content_summary": "Documentation related to allergy treatment protocols, insurance claims, and policy changes affecting Travis County patients",
+    "person": {
+      "entities": [
+        [
+          "32",
+          "AGE"
+        ],
+        [
+          "seasonal allergies",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "migraines",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "immunotherapy injections",
+          "TREATMENT"
+        ],
+        [
+          "sublingual immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "antihistamines",
+          "TREATMENT"
+        ],
+        [
+          "three visits",
+          "EVENT"
+        ],
+        [
+          "March-April 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "July 2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the copay amount for immunotherapy sessions at Austin Allergy Center during March-April 2023?",
+        "a": "$40 per immunotherapy session.",
+        "sources": [
+          "cluster_38_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change was implemented in June 2023 affecting allergy immunotherapy authorizations in Travis County?",
+        "a": "Policy required treatment duration documentation.",
+        "sources": [
+          "cluster_38_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment improvement was observed for the 32-year-old patient with seasonal allergies and migraines, and what percentage reduction in medication usage was reported for patients completing a full 3-year allergy immunotherapy course?",
+        "a": "12 weeks sublingual immunotherapy; 60% medication reduction after 3-year course.",
+        "sources": [
+          "cluster_38_doc2",
+          "cluster_38_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change was implemented in June 2023 affecting allergy immunotherapy authorizations, and what denial trend followed this change?",
+        "a": "Policy required treatment duration documentation; denials rose 20% in northern districts.",
+        "sources": [
+          "cluster_38_doc3",
+          "cluster_38_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

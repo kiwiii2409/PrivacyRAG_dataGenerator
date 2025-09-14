@@ -1,0 +1,114 @@
+{
+  "documents": [
+    {
+      "id": "cluster_39_doc1",
+      "content": "Fortis Health memo regarding policy update BH-2437 affecting telehealth coverage for psychiatric evaluations in Ohio. Implementation begins July 2024 with mandatory provider certification. The change impacts 12% of current network psychiatrists lacking required credentialing. Audit reports suggest potential gaps in rural access post-implementation. Providers can submit exemption requests through portal ID PSY-EXM by May 15.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_39_doc2",
+      "content": "Patient 78543-992 (DOB 08/1988) presented with atypical dissociative episodes and comorbid insulin resistance. Initial telehealth consult occurred 02/2024 via Dr. Ellen Haskins at Beacon Behavioral. Treatment plan includes weekly psychotherapy sessions and metformin titration. Out-of-network exception granted for specialty care coordinator services through September 2024.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_39_doc3",
+      "content": "Buckeye Health Research Institute study on rural mental health access shows 39% decrease in follow-up adherence when telehealth policies require multiple certification steps. Data collected from 72 patients across 6 counties, including patient 78543-992. Findings under review for publication in Journal of Midwest Psychiatry.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_39_doc4",
+      "content": "Columbus Daily Tribune reports state Medicaid may align with BH-2437 requirements by Q3 2024. Article quotes legislative aide Rebecca Cho noting this could create hybrid access models for patients like those treated at Beacon Behavioral. Community health centers express concerns about credentialing costs.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_39",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Telehealth policy changes impacting psychiatric care access for patient with dissociative episodes and insulin resistance in Ohio",
+    "person": {
+      "entities": [
+        [
+          "78543-992",
+          "PATIENT_ID"
+        ],
+        [
+          "08/1988",
+          "BIRTHDATE"
+        ],
+        [
+          "atypical dissociative episodes",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "insulin resistance",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "metformin titration",
+          "TREATMENT"
+        ],
+        [
+          "weekly psychotherapy sessions",
+          "TREATMENT"
+        ],
+        [
+          "specialty care coordinator services",
+          "TREATMENT"
+        ],
+        [
+          "02/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "telehealth consult",
+          "EVENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment and exception were approved for patient 78543-992 with atypical dissociative episodes?",
+        "a": "Weekly psychotherapy and metformin titration; out-of-network care coordinator exception through September 2024.",
+        "sources": [
+          "cluster_39_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of network psychiatrists lack credentials required by BH-2437?",
+        "a": "12% of current network psychiatrists lack required credentialing.",
+        "sources": [
+          "cluster_39_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which patient was included in the rural mental health study and had initial telehealth consult with Dr. Ellen Haskins?",
+        "a": "Patient 78543-992 was in the study and consulted Dr. Haskins.",
+        "sources": [
+          "cluster_39_doc2",
+          "cluster_39_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "According to the Fortis Health memo and Columbus Daily Tribune, how might Ohio Medicaid policy changes affect hybrid access models?",
+        "a": "May create hybrid models aligning with BH-2437 requirements by Q3 2024.",
+        "sources": [
+          "cluster_39_doc1",
+          "cluster_39_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

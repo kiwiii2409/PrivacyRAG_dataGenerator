@@ -1,0 +1,118 @@
+{
+  "documents": [
+    {
+      "id": "cluster_9_doc1",
+      "content": "A recent audit of outpatient claims revealed inconsistencies in billing for aquatic therapy sessions at Lakeside Rehabilitation Center. Therapist notes indicated sessions lasting 55 minutes were billed as 60-minute sessions. Provider network contracts specify a maximum reimbursement rate of $145 for 60-minute sessions. This pattern was observed in 22% of claims submitted between August 2022 and March 2023.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_9_doc2",
+      "content": "Patient JM1987 reported significant improvement in chronic lower back pain after completing an 8-week aquatic therapy program. Treatment plan included aquatic exercises targeting core stabilization and gait training. Provider documentation shows sessions were scheduled for 55 minutes duration. Progress notes highlight reduced pain medication usage and increased mobility range by week 6.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_9_doc3",
+      "content": "Policy update effective January 2024 requires pre-authorization for aquatic therapy exceeding 6 sessions per condition. New billing guidelines mandate exact treatment duration documentation to the minute. Providers must submit video verification for sessions exceeding $150 reimbursement. Exception process available for patients with contraindications to land-based therapy.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_9_doc4",
+      "content": "The New Hampshire Health Bulletin featured Lakeside Rehabilitation Center's innovative aquatic therapy program in its March edition. The article highlighted success rates for chronic pain patients and referenced upcoming policy changes. Program director Lindsay Clarkson noted the facility treats over 200 patients monthly, with 50% reporting reduced opioid dependence.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_9",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Chronic back pain treatment through aquatic therapy at Lakeside Rehabilitation Center, including billing audit findings, patient outcomes, and policy changes",
+    "person": {
+      "entities": [
+        [
+          "JM1987",
+          "PATIENT_ID"
+        ],
+        [
+          "New Hampshire",
+          "LOCATION"
+        ],
+        [
+          "Lakeside Rehabilitation Center",
+          "PROVIDER"
+        ],
+        [
+          "chronic lower back pain",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "55 minutes",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "8-week aquatic therapy program",
+          "EVENT"
+        ],
+        [
+          "August 2022",
+          "EVENT_DATE"
+        ],
+        [
+          "March 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "week 6",
+          "INDIRECT_IDENTIFIER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What duration timing discrepancy was identified in aquatic therapy claims at Lakeside Rehabilitation Center between August 2022 and March 2023?",
+        "a": "55-minute sessions were billed as 60-minute sessions",
+        "sources": [
+          "cluster_9_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation requirement accompanies the January 2024 policy changes for aquatic therapy reimbursement?",
+        "a": "Video verification for sessions exceeding $150 reimbursement",
+        "sources": [
+          "cluster_9_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which improvements did patient JM1987 show after aquatic therapy, and how many patients does Lakeside treat monthly as reported in the New Hampshire Health Bulletin?",
+        "a": "Reduced pain medication usage, increased mobility; 200 patients monthly",
+        "sources": [
+          "cluster_9_doc2",
+          "cluster_9_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What program characteristics and health outcomes were highlighted in the New Hampshire Health Bulletin, and what billing discrepancies were identified in the audit of aquatic therapy claims?",
+        "a": "200 patients monthly, 50% opioid reduction; 55-minute sessions billed as 60-minute",
+        "sources": [
+          "cluster_9_doc1",
+          "cluster_9_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

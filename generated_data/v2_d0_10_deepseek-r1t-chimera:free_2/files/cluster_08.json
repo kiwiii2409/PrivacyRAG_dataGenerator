@@ -1,0 +1,121 @@
+{
+  "documents": [
+    {
+      "id": "cluster_8_doc1",
+      "content": "Avalon Health Group reported increased claims for ketamine infusions among patients aged 35-50 with treatment-resistant depression in the Pacific Northwest region. Provider audits revealed inconsistencies in documentation standards across clinics, particularly at Cascade Behavioral Health. New preauthorization requirements will take effect November 15th.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_8_doc2",
+      "content": "Patient TGN-8821 (Dr. Elise Varga) underwent six ketamine infusion sessions at Rainier Specialty Clinic between 09/15/2023 and 11/02/2023. Treatment notes indicate partial response but persistent symptoms. Second opinion requested from UW Medicine neuropsychiatry team. Address on file: 4517 Willow Lane, Seattle WA 98105.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_8_doc3",
+      "content": "Breaking: State insurance commissioner launches investigation into ketamine therapy billing practices following consumer complaints about surprise charges. Focus on three provider networks including Pacific Care Alliance. Official hearing scheduled for December 4th in Olympia.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_8_doc4",
+      "content": "UW Medicine research study NCT04567823 interim analysis shows 42% response rate to IV ketamine in patients with TRD who failed ≥4 antidepressants. Notable geographic clustering of responders in coastal WA. Final results expected Q2 2024.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_8_doc5",
+      "content": "Prior authorization appeal for TGN-8821 denied due to incomplete mood disorder severity scales. Case flagged for clinical review committee meeting on 11/28/2023. Contact provider: Dr. Varga's office at (206) 555-0187 for updated documentation.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_8",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's ketamine treatment journey intersecting with provider network audits, policy changes, and regional research findings",
+    "person": {
+      "entities": [
+        [
+          "TGN-8821",
+          "PATIENT_ID"
+        ],
+        [
+          "4517 Willow Lane, Seattle WA 98105",
+          "ADDRESS"
+        ],
+        [
+          "09/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "11/02/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "11/28/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "treatment-resistant depression",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "ketamine infusions",
+          "TREATMENT"
+        ],
+        [
+          "six ketamine infusion sessions",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Rainier Specialty Clinic",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment dates and location are documented for patient TGN-8821's ketamine therapy?",
+        "a": "09/15/2023 to 11/02/2023 at Rainier Specialty Clinic",
+        "sources": [
+          "cluster_8_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change affected ketamine infusion authorizations in the Pacific Northwest region?",
+        "a": "New preauthorization requirements effective November 15th",
+        "sources": [
+          "cluster_8_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What clinical factors impacted the prior authorization denial for TGN-8821 at phone number (206) 555-0187?",
+        "a": "Incomplete mood disorder severity scales requiring committee review",
+        "sources": [
+          "cluster_8_doc2",
+          "cluster_8_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What regional trends emerge in ketamine therapy research and regulatory actions?",
+        "a": "Coastal WA response clustering and state investigation into billing practices",
+        "sources": [
+          "cluster_8_doc3",
+          "cluster_8_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

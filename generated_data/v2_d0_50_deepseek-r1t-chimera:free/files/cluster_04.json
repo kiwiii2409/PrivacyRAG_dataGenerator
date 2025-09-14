@@ -1,0 +1,102 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "The preliminary report from Bay Area Health Consortium highlights an unusual cluster of prion disease cases in individuals aged 48-52. Patient RG-4782, a 49-year-old tech worker residing at 2245 Marina Blvd, reported initial symptoms in March 2023. Dr. Eleanor Voss from UCSF Neurosciences ordered specialized cerebrospinal fluid testing, noting the patient's unique occupational exposure to laboratory animals. Blue Shield memo flags these cases for urgent policy review due to experimental treatment costs.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Policy update 230445-BSH regarding neurodegenerative disorders takes effect November 15, 2023. Covers advanced diagnostic imaging and antisense oligonucleotide therapies for prion diseases under prior authorization. Special provisions apply for patients enrolled in UCSF study GN1209. Claims department contacts: Maria Torres (415) 555-0198 for inquiries, documents to be routed to neurocare@blueshieldca.com. Implementation coincides with affected employee support program at tech companies.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "San Francisco IHHQ audit revealed 47% increase in prior auth requests for neurodiagnostics July-September 2023. Notable concentration among tech sector employees covered under employer group plan GX-2295. Claims processor noted repeated consultations with UCSF Memory and Aging Center specialists, particularly for cases involving circadian rhythm disruptions. File cross-references community health report about abnormal prion protein findings in Mission Bay area lab workers.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Memo to UCSF provider network: Effective immediately, authorize genetic counseling code 96040 for all prion disease cases. Required documentation includes occupational history form PRION-OCC-v3 and baseline neuropsych testing. Exception process available for patients enrolled in the Moffitt Therapeutic Study through referral code MB2023. Contact Dr. Voss' team at (415) 555-6321 x809 for urgent consult coordination.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "HIGH",
+    "content_summary": "Unusual prion disease cluster among SF tech workers triggering policy changes and coordination between Blue Shield, UCSF, and employers",
+    "person": {
+      "entities": [
+        [
+          "RG-4782",
+          "PATIENT_ID"
+        ],
+        [
+          "2245 Marina Blvd",
+          "ADDRESS"
+        ],
+        [
+          "49-year-old",
+          "AGE"
+        ],
+        [
+          "prion disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "March 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "tech worker",
+          "INDIRECT_IDENTIFIER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What occupational exposure and specialist consultation were documented for patient RG-4782 in March 2023?",
+        "a": "Exposure to laboratory animals with consultation by Dr. Eleanor Voss at UCSF Neurosciences.",
+        "sources": [
+          "cluster_4_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy changes took effect on November 15, 2023 for UCSF study GN1209 participants?",
+        "a": "Coverage for antisense oligonucleotide therapies with prior authorization requirements.",
+        "sources": [
+          "cluster_4_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What genetic counseling code, exception process, and policy update apply to prion disease patients at Moffitt Therapeutic Study?",
+        "a": "Code 96040, exception MB2023, policy 230445-BSH.",
+        "sources": [
+          "cluster_4_doc4",
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What three trends were noted in the San Francisco IHHQ audit regarding neurodiagnostic requests, and which patient case was highlighted?",
+        "a": "47% increase, tech sector concentration, UCSF Memory Center, patient RG-4782.",
+        "sources": [
+          "cluster_4_doc3",
+          "cluster_4_doc1"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

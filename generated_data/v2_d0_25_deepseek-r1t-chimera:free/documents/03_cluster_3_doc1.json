@@ -1,0 +1,7 @@
+{
+  "id": "cluster_3_doc1",
+  "content": "A new outpatient treatment protocol for early-stage glioblastoma was approved by Silverpine Health Network, effective July 2023. The protocol combines targeted immunotherapy with reduced radiation exposure, requiring pre-authorization for patients aged 50-65. Dr. Elena Vargas from NeuroOncology Associates will oversee implementation at Ridgeview Medical Center. Claims submitted without CPT code 77385 will be automatically rejected.",
+  "metadata": {
+    "format": "insurance_memo"
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "id": "cluster_33_doc1",
+      "content": "A recent audit of claims processed through the RapidCare network in Albany revealed a 22% increase in genetic testing approvals for rare metabolic disorders during Q3 2023. The audit report highlighted inconsistent documentation practices across participating providers, particularly for patients receiving concurrent enzyme replacement therapies. Several cases showed missing prior authorization forms for Panel-8G tests, triggering automatic claim denials and subsequent appeals.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_33_doc2",
+      "content": "Provider memo dated 02/14/2024: Patient #RC-88345 (age 12) with confirmed xanthoprotease deficiency began biweekly Veltamase infusions at Albany Children's Specialty Clinic. Treatment plan includes quarterly metabolic panels and biannual liver function tests. Parents report improved school attendance since starting therapy. Prior authorization submitted under Policy #MET-445 revisions enacted 10/2023.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_33_doc3",
+      "content": "The state insurance commission approved coverage expansion for three-tiered genetic testing under Policy #MET-445 after advocacy from the Northeastern Metabolic Alliance. This change affects 17 pediatric practices in the Capital District. Implementation requires providers to submit treatment outcome data to the national Rare Disease Registry (ID# RDR-NE-889). Effective date: November 1, 2023.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_33_doc4",
+      "content": "Clinical trial NCT04883421 enrolled 23 participants with rare metabolic disorders from the Albany region, focusing on long-term outcomes of combined enzyme replacement and dietary therapies. Interim results show 78% of participants (median age 10) maintained stable biomarker levels. Study coordinators require participating insurers to share claims data through secure portal RS-Connect using authorization code AC883-45NY.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_33_doc5",
+      "content": "News Tribune health section (03/05/2024): Albany Children's Specialty Clinic received a $2.1M grant to establish the Northeast's first metabolic disease coordination center. The initiative will link regional providers through the MCareNet platform (access code: NY3345-ALB) and track treatment outcomes for 300+ rare disorder patients. First-phase launch expected September 2024.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_33",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Pediatric metabolic disorder treatment ecosystem involving patient case, policy changes, research study, audit findings, and clinic expansion",
+    "person": {
+      "entities": [
+        [
+          "RC-88345",
+          "PATIENT_ID"
+        ],
+        [
+          "12",
+          "AGE"
+        ],
+        [
+          "xanthoprotease deficiency",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Veltamase infusions",
+          "TREATMENT"
+        ],
+        [
+          "biweekly Veltamase infusions",
+          "TREATMENT"
+        ],
+        [
+          "quarterly metabolic panels",
+          "TREATMENT"
+        ],
+        [
+          "biannual liver function tests",
+          "TREATMENT"
+        ],
+        [
+          "Albany Children's Specialty Clinic",
+          "PROVIDER"
+        ],
+        [
+          "02/14/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "MET-445",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "10/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "improved school attendance",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment plan was established for patient RC-88345 at Albany Children's Specialty Clinic in February 2024?",
+        "a": "Biweekly Veltamase infusions with quarterly metabolic panels and biannual liver function tests.",
+        "sources": [
+          "cluster_33_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What issues affected Q3 2023 metabolic disorder claims processing in the RapidCare network?",
+        "a": "22% increase in approvals and coverage expansion under Policy #MET-445 effective Nov 1, 2023.",
+        "sources": [
+          "cluster_33_doc1",
+          "cluster_33_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two interventions are tracking xanthoprotease deficiency patients in Albany (clinical trial and clinic initiative)?",
+        "a": "NCT04883421 study and MCareNet platform through the new coordination center.",
+        "sources": [
+          "cluster_33_doc4",
+          "cluster_33_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What did the audit reveal about RapidCare network claims in Q3 2023?",
+        "a": "22% increase in approvals and missing prior authorization forms.",
+        "sources": [
+          "cluster_33_doc1"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

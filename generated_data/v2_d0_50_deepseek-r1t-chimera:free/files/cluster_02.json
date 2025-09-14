@@ -1,0 +1,136 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Memorial Regional Hospital submitted a claims adjustment for patient ID# P-88245-ZQT regarding a complex cardiac ablation procedure performed on 2023-09-14. The claim was initially denied due to missing pre-authorization documents from Dr. Elena Vasquez of Coastal Cardiology Associates. Patient demographics indicate a 62-year-old male residing at 2842 Ocean View Drive, Huntington Beach, CA.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Internal memo from BlueWave Insurance dated 2023-10-02 details policy changes for advanced cardiac procedures requiring dual specialist approval. The update specifically mentions Dr. Vasquez's utilization patterns for ablation treatments and introduces new documentation requirements for patients over 60 with arrhythmia histories. Huntington Beach providers will be priority targets for education sessions.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Huntington Beach Tribune health section reports on increased cardiac procedure denials (Oct 2023 edition). Article quotes patient advocate Derek Metcalf speaking about P-88245-ZQT's case: 'Insurers are creating unnecessary hurdles for essential treatments.' Mentions Coastal Cardiology's 40% appeal success rate for ablation claims over the past quarter.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Cardiology research note from 2023-08-15 documents P-88245-ZQT's diagnostic history including persistent atrial fibrillation and mild mitral valve regurgitation. Treatment protocol lists amiodarone 200mg daily and recommended ablation if medication proves insufficient. Signed by Dr. Raj Patel, MD at Memorial Regional's electrophysiology department.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_2_doc5",
+      "content": "Provider quality audit shows Coastal Cardiology's ablation procedures have 92% success rates but average $18,500 per case (Sept 2023 report). Notes outlier case P-88245-ZQT required extended operation time due to anatomical variations. Lists contact phone (714) 555-0198 for audit committee questions.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_2_doc6",
+      "content": "Patient satisfaction survey from 2842 Ocean View Drive completed 2023-11-01 mentions excellent nursing care but frustration with insurance approvals. Free text notes state: 'Almost cancelled my life-saving procedure because of BlueWave's paperwork delays.' Survey ID# S-77472-JVN.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex cardiac ablation case with associated insurance policy changes, provider audits, and media attention in Huntington Beach",
+    "person": {
+      "entities": [
+        [
+          "P-88245-ZQT",
+          "PATIENT_ID"
+        ],
+        [
+          "2842 Ocean View Drive, Huntington Beach, CA",
+          "ADDRESS"
+        ],
+        [
+          "62",
+          "AGE"
+        ],
+        [
+          "male",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "persistent atrial fibrillation",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "mild mitral valve regurgitation",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "amiodarone 200mg daily",
+          "TREATMENT"
+        ],
+        [
+          "cardiac ablation",
+          "TREATMENT"
+        ],
+        [
+          "2023-09-14",
+          "EVENT_DATE"
+        ],
+        [
+          "2023-11-01",
+          "EVENT_DATE"
+        ],
+        [
+          "S-77472-JVN",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two cardiac conditions and medication dose did patient P-88245-ZQT receive prior to their ablation procedure?",
+        "a": "Persistent atrial fibrillation, mild mitral valve regurgitation, and amiodarone 200mg daily.",
+        "sources": [
+          "cluster_2_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation requirements did BlueWave Insurance introduce in October 2023 for cardiac procedures?",
+        "a": "Dual specialist approvals and additional documentation for patients over 60 with arrhythmia.",
+        "sources": [
+          "cluster_2_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What complications, financial aspects, and initial claim denial reasons were noted in P-88245-ZQT's case audit?",
+        "a": "Extended operation time, $18,500 cost, and claim denied for missing pre-authorization.",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did media coverage characterize the insurance challenges for ablation treatments in Huntington Beach, including patient satisfaction and appeal success rates?",
+        "a": "Unnecessary hurdles, patient frustration with paperwork delays, and a 40% appeal success rate.",
+        "sources": [
+          "cluster_2_doc3",
+          "cluster_2_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

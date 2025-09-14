@@ -1,0 +1,120 @@
+{
+  "documents": [
+    {
+      "id": "cluster_22_doc1",
+      "content": "Urban Health Alliance implemented new teledermatology coverage policies effective May 2023, requiring pre-approval for patients under 50. The policy memo cites increased misuse in metropolitan areas with provider shortages. Approval codes must now include visual documentation for acne and psoriasis claims.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_22_doc2",
+      "content": "Claim #KU7821 for patient W9R04J was denied due to missing visual documentation for prescribed isotretinoin treatment. The 49-year-old landscaper from Cedar Heights Medical Group was treated for severe cystic acne and folliculitis in April 2023.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_22_doc3",
+      "content": "Research note: Dermatology Quarterly Review highlighted 37% higher Isotretinoin prescription rates among outdoor workers aged 40-55 in regions with high UV exposure. Study covered 22 clinics in the Midwest, including Cedar Heights facility.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_22_doc4",
+      "content": "Provider report from Dr. K. Ellison at Cedar Heights notes recurring equipment shortages impacting dermatology documentation quality. Specific challenges cited include outdated cameras and inconsistent EHR integration for teledermatology cases.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_22_doc5",
+      "content": "Patient survey response from W9R04J indicates dissatisfaction with delayed acne treatment approval process. Mentions three missed workdays due to severe facial inflammation in Q2 2023.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_22_doc6",
+      "content": "Audit report flags 114 teledermatology claims from Cedar Heights lacking proper visual documentation between March-July 2023. 89% involved acne treatments for patients aged 40-52 in high-sun exposure occupations.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_22",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Teledermatology policy changes impact acne treatment approvals for outdoor workers with documentation challenges at Cedar Heights facility",
+    "person": {
+      "entities": [
+        [
+          "W9R04J",
+          "PATIENT_ID"
+        ],
+        [
+          "49-year-old",
+          "AGE"
+        ],
+        [
+          "landscaper",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "severe cystic acne",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "folliculitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Q2 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "April 2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Why was claim #KU7821 for patient W9R04J denied under the new teledermatology policy?",
+        "a": "Missing visual documentation for isotretinoin treatment of severe cystic acne.",
+        "sources": [
+          "cluster_22_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What occupational group showed higher Isotretinoin prescription rates in Midwest clinics?",
+        "a": "Outdoor workers aged 40-55 in high UV exposure regions.",
+        "sources": [
+          "cluster_22_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What factors contributed to treatment delays for patient W9R04J according to provider and survey data?",
+        "a": "Equipment shortages at Cedar Heights and delayed approval process.",
+        "sources": [
+          "cluster_22_doc4",
+          "cluster_22_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What common issues were found in Cedar Heights teledermatology claims audit from March-July 2023?",
+        "a": "89% lacked proper visual documentation, mostly acne treatments for sun-exposed workers.",
+        "sources": [
+          "cluster_22_doc1",
+          "cluster_22_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_0_doc1",
+      "content": "Patient ID 8892-45F undergoing HIFU treatment for prostate issues at Mountainview Urology last quarter. Procedure delayed due to elevated PSA levels requiring additional biopsy. Rescheduled for April 2024 after corticosteroid course. Note: Patient declined standard radiation options due to proximity to Fernwood Radiation Center (25mi commute).",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_0_doc2",
+      "content": "Network memo: Fernwood Radiation Center to terminate partnership with Mountainview providers effective Q2 2024. Impacts 112 active patients. Alternative options at Lakeside Oncology (18mi radius) now being negotiated. Disclosure forms required for affected members over age 65.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_0_doc3",
+      "content": "Prostate treatment audit shows 23% increase in HIFU utilization among patients aged 58-72 in Northwest region since 2022. Review indicates higher out-of-network claims at independent urology clinics versus hospital-affiliated centers.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_0_doc4",
+      "content": "Prior authorization denied for patient (ID 8892-45F) regarding advanced imaging at Lakeside Oncology. Original approval for Mountainview services expired. Member contacted via client portal on March 12th with appeal instructions.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_0",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Prostate cancer treatment journey intersecting with provider network changes and prior authorization challenges",
+    "person": {
+      "entities": [
+        [
+          "8892-45F",
+          "PATIENT_ID"
+        ],
+        [
+          "HIFU",
+          "TREATMENT"
+        ],
+        [
+          "Mountainview Urology",
+          "PROVIDER"
+        ],
+        [
+          "Fernwood Radiation Center",
+          "PROVIDER"
+        ],
+        [
+          "April 2024",
+          "EVENT_DATE"
+        ],
+        [
+          "Lakeside Oncology",
+          "PROVIDER"
+        ],
+        [
+          "prostate",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "65",
+          "AGE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What reason was given for patient 8892-45F declining standard radiation options?",
+        "a": "25 mile commute to Fernwood Radiation Center",
+        "sources": [
+          "cluster_0_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage increase in HIFU utilization was reported in the Northwest region audit?",
+        "a": "23% increase since 2022",
+        "sources": [
+          "cluster_0_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two providers are impacted by the termination affecting patient 8892-45F's treatment?",
+        "a": "Mountainview Urology and Fernwood Radiation Center",
+        "sources": [
+          "cluster_0_doc1",
+          "cluster_0_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two factors contributed to documentation requirements during the provider network transition?",
+        "a": "Age over 65 and service relocation to Lakeside Oncology",
+        "sources": [
+          "cluster_0_doc2",
+          "cluster_0_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

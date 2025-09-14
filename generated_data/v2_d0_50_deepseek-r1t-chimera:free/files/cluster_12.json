@@ -1,0 +1,125 @@
+{
+  "documents": [
+    {
+      "id": "cluster_12_doc1",
+      "content": "Metro Health Urgent Care submitted claim 5X12-Q9R7 for nasal polyp removal on 03/15/2023. The procedure was performed in facility code WH-8812 by Dr. Amir Khan of Texas Sinus Institute. Patient insurance ID 8943-SNP displayed coverage under SilverPlus PPO plan. Documentation noted concurrent allergies to prednisone and shellfish.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_12_doc2",
+      "content": "Provider utilization report from Dallas-Fort Worth area shows increased endoscopic sinus procedures among asthmatics aged 35-40 since policy update STP-2022-11R. Covered medications now include budesonide rinses, while CT scan authorization requires case review for SilverPlus members under new imaging guidelines.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_12_doc3",
+      "content": "Patient satisfaction survey #4417 at Texas Sinus Institute mentioned long wait times for repeat procedures on chronic rhinosinusitis cases. Survey noted provider address 5507 LBJ Freeway, Dallas, TX and web portal registration difficulties for patients without active email contact information on file.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_12_doc4",
+      "content": "Clinical trial NCT04586613 enrolled SilverPlus members with refractory nasal polyps comparing surgical outcomes to biologic therapies. Research coordinator Dr. Elena Martinez noted higher satisfaction scores for research participants at Texas facilities compared to Midwest enrollment sites during Q2 2023.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_12_doc5",
+      "content": "SilverPlus Community Update newsletter highlighted their 'Sinus Care Initiative' program launching 04/01/2023, waiving specialist copays for PPO members at WH-8812 facility. Program requires enrollment through regional coordinators by phone (972) 555-0164 and provides comprehensive allergy testing for qualifying chronic conditions.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_12",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Patient journey involving chronic nasal polyps treatment in Dallas area under SilverPlus PPO plan, connecting claims, provider reports, research study participation, and insurance program changes",
+    "person": {
+      "entities": [
+        [
+          "8943-SNP",
+          "PATIENT_ID"
+        ],
+        [
+          "03/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "WH-8812",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "allergies to prednisone and shellfish",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Texas Sinus Institute",
+          "PROVIDER"
+        ],
+        [
+          "5507 LBJ Freeway, Dallas, TX",
+          "ADDRESS"
+        ],
+        [
+          "chronic rhinosinusitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "refractory nasal polyps",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "35-40",
+          "AGE"
+        ],
+        [
+          "5X12-Q9R7",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What medication was newly covered under policy STP-2022-11R for SilverPlus PPO members with asthma at Texas Sinus Institute?",
+        "a": "Budesonide rinses newly covered.",
+        "sources": [
+          "cluster_12_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What geographic difference emerged in participant satisfaction scores during Q2 2023 for nasal polyp trial NCT04586613?",
+        "a": "Texas facilities showed higher satisfaction than Midwest sites.",
+        "sources": [
+          "cluster_12_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What program benefits require phone enrollment at (972) 555-0164 for PPO members with chronic conditions at WH-8812 facility, and what wait times were reported for repeat procedures?",
+        "a": "Phone enrollment for waived specialist copays and allergy testing; long wait times for repeat procedures.",
+        "sources": [
+          "cluster_12_doc3",
+          "cluster_12_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did SilverPlus policy changes in 2023 impact care delivery for chronic sinus patients in Dallas?",
+        "a": "Added sinus care initiative waiving copays, modified CT scan authorization process.",
+        "sources": [
+          "cluster_12_doc2",
+          "cluster_12_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

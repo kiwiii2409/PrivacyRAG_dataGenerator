@@ -1,0 +1,7 @@
+{
+  "id": "cluster_1_doc1",
+  "content": "Marcus Veyrat, age 42 with patient ID PHV765432, was admitted to Alpine Medical Center on October 14, 2023 following complications from off-piste skiing injuries. Treatment included specialized limb reconstruction procedures and neurological assessments. Documentation shows two prior insurance claims this year under policy number INS-90876-23A related to extreme sports coverage limitations.",
+  "metadata": {
+    "format": "medical_record"
+  }
+}

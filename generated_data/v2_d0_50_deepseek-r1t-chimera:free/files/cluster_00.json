@@ -1,0 +1,118 @@
+{
+  "documents": [
+    {
+      "id": "cluster_0_doc0",
+      "content": "A recent audit of Mountain View Regional Hospital revealed increased telehealth utilization among rheumatology patients aged 45-60 since Q3 2023. The report flags inconsistent billing codes for combined physiotherapy sessions, particularly those involving patients with rare connective tissue disorders. Dr. Elena Kovac's department shows a 40% increase in prior authorization requests for specialized biologics.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_0_doc1",
+      "content": "Patient #77382 (52 y/o) received approval for off-label IVIG treatment following three peer-reviewed studies showing efficacy in refractory autoimmune cases. Treatment schedule coordinated through Valley Specialty Pharmacy includes biweekly infusions at coordinates 37.4085° N, 122.1450° W, with post-infusion monitoring required per new network guidelines.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_0_doc2",
+      "content": "Effective November 1st, Blue Cross updated coverage criteria for rheumatology biologics based on genomic markers. All claims involving patients with baseline CRP >10 mg/L require additional documentation from treating physicians. Network pharmacies must use verification code RHEUM-2023 when dispensing these medications.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_0_doc3",
+      "content": "The Quarterly Journal of Autoimmunology published findings showing 62% response rate to combinational immunosuppressants in patients with overlapping Sjögren's and CREST syndromes. Study led by the Palo Alto Medical Foundation tracked outcomes using mobile symptom tracking system SynchroHealth v2.3.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_0",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Rheumatology treatment innovations and policy changes centered around autoimmune therapies at Mountain View Regional & Palo Alto networks",
+    "person": {
+      "entities": [
+        [
+          "77382",
+          "PATIENT_ID"
+        ],
+        [
+          "52",
+          "AGE"
+        ],
+        [
+          "refractory autoimmune",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "biweekly infusions",
+          "TREATMENT"
+        ],
+        [
+          "Valley Specialty Pharmacy",
+          "PROVIDER"
+        ],
+        [
+          "37.4085° N, 122.1450° W",
+          "LOCATION"
+        ],
+        [
+          "Sjögren's",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "CREST",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "off-label IVIG treatment",
+          "TREATMENT"
+        ],
+        [
+          "post-infusion monitoring",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What infusion treatment frequency was approved for patient #77382 at Valley Specialty Pharmacy?",
+        "a": "Biweekly infusions with post-infusion monitoring.",
+        "sources": [
+          "cluster_0_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What genomic marker threshold triggers additional documentation for rheumatology biologics per November policy?",
+        "a": "Baseline CRP levels above 10 mg/L.",
+        "sources": [
+          "cluster_0_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two medical conditions does the SynchroHealth study target, and what infusion treatment frequency was approved for patient #77382 at Valley Specialty Pharmacy?",
+        "a": "Sjögren's syndrome, CREST syndrome; biweekly infusions.",
+        "sources": [
+          "cluster_0_doc1",
+          "cluster_0_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two changes occurred at Mountain View Regional regarding rheumatology care in Q3, and what verification code is required for dispensing biologics?",
+        "a": "40% increase in prior authorizations, inconsistent billing codes; RHEUM-2023 verification code.",
+        "sources": [
+          "cluster_0_doc0",
+          "cluster_0_doc2"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

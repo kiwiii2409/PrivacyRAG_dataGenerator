@@ -1,0 +1,122 @@
+{
+  "documents": [
+    {
+      "id": "cluster_44_doc1",
+      "content": "Harborview Orthopedic submitted claim VRX55721 for arthroscopic chondroplasty performed on 11/03/2023 at Seattle Specialty Surgical Center. The 52-year-old male construction worker presented with advanced osteochondral defects in both knees, a common occupational injury. Pre-authorization noted prior conservative treatments failed, with documentation including six weeks of physical therapy at Northwest Rehab Clinic.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_44_doc2",
+      "content": "Quality Assurance Review #4412 identified higher-than-average complications (18%) in articular cartilage procedures among manual laborers aged 50-54 at Seattle Specialty Surgical Center during Q4 2023. The report recommends enhanced post-op monitoring protocols and consideration of workplace accommodation consultations for this demographic group undergoing cartilage restoration surgeries.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_44_doc3",
+      "content": "Provider network update: Dr. Elena Marquez (orthopedic surgeon) has moved practice from Bellevue Bone & Joint to Seattle Specialty Surgical Center effective 10/15/2023. Her sub-specialty in occupational injury cartilage restoration makes her particularly valuable for construction and maritime industry workers. New NPI: 1123456789.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_44_doc4",
+      "content": "Construction Workers Health Initiative study (IRB# CHW-2023-44) shows 32% of knee procedures among union members involve osteochondral defects. Participants receive discounted copays through partnership with Northwest Labor Health Trust. Enrollment forms must include union ID and specify trade type (e.g., carpenter, welder).",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_44",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Occupational knee injury treatment journey including chondroplasty claim, surgical center quality findings, provider network update, and labor health research",
+    "person": {
+      "entities": [
+        [
+          "VRX55721",
+          "PATIENT_ID"
+        ],
+        [
+          "52-year-old",
+          "AGE"
+        ],
+        [
+          "male",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "construction worker",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "osteochondral defects",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Seattle Specialty Surgical Center",
+          "LOCATION"
+        ],
+        [
+          "Northwest Rehab Clinic",
+          "LOCATION"
+        ],
+        [
+          "Dr. Elena Marquez",
+          "PROVIDER"
+        ],
+        [
+          "11/03/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "arthroscopic chondroplasty",
+          "TREATMENT"
+        ],
+        [
+          "six weeks of physical therapy",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which procedure did patient VRX55721 undergo at Seattle Specialty Surgical Center on 11/03/2023?",
+        "a": "arthroscopic chondroplasty for osteochondral defects in both knees",
+        "sources": [
+          "cluster_44_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What complication rate did QA Review #4412 find for cartilage procedures among manual laborers aged 50-54?",
+        "a": "18% complications in Q4 2023",
+        "sources": [
+          "cluster_44_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two clinics handled the physical therapy and surgical treatment for patient VRX55721's knee condition, and what was the complication rate for cartilage procedures among manual laborers aged 50-54?",
+        "a": "Northwest Rehab Clinic and Seattle Specialty Surgical Center; 18% complications in Q4 2023",
+        "sources": [
+          "cluster_44_doc1",
+          "cluster_44_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new initiative provides discounted copays for construction workers needing knee procedures, and what complication rate did QA Review #4412 find for cartilage procedures among manual laborers aged 50-54?",
+        "a": "Construction Workers Health Initiative with Northwest Labor Health Trust; 18% complications in Q4 2023",
+        "sources": [
+          "cluster_44_doc2",
+          "cluster_44_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

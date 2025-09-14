@@ -1,0 +1,118 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Claim submitted for Lincoln Kaur (ID# PA-4892-LK) for experimental CAR-T cell therapy at Hemisphere Oncology. Treatment dates: 10/15/2023-11/03/2023. Attending physician: Dr. Elise Varga. Patient presents with refractory mantle cell lymphoma. Previous denials for this treatment were overturned after peer-to-peer review. Home health services coordinated through Brightview Care at 675 Magnolia Blvd., Suite 210.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Hemisphere Oncology policy memo dated 12/01/2023: All cellular therapy claims now require genetic biomarker documentation (CD19+ status) and pre-authorization from Dr. Varga's team. This change stems from the CARES-2 clinical trial data showing 40% improved outcomes with proper patient selection. Implementation effective immediately for all Medicaid Advantage policies.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Research note from CARES-2 trial: Participant PA-4892-LK showed complete response at day +90 post-CAR-T infusion. Unusual presentation with concurrent autoimmune thyroiditis. Protocol deviation approved due to this comorbidity. Next follow-up scheduled 02/20/2024. Contact researcher: tvarghese@hemisphere-research.org for additional data requests.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Medical Digest article 11/20/2023: Hemisphere Oncology expands CAR-T access following successful appeals process. Highlights case where genetic testing documentation (CD19+/CD22+) enabled coverage for PA-4892-LK despite initial denial. 87 similar cases pending nationwide. New provider network requirements being rolled out regionally starting Q1 2024.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's CAR-T therapy journey intersecting with policy changes, clinical research, and media coverage",
+    "person": {
+      "entities": [
+        [
+          "Lincoln Kaur",
+          "NAME"
+        ],
+        [
+          "PA-4892-LK",
+          "PATIENT_ID"
+        ],
+        [
+          "675 Magnolia Blvd., Suite 210",
+          "ADDRESS"
+        ],
+        [
+          "10/15/2023-11/03/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "mantle cell lymphoma",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "autoimmune thyroiditis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Dr. Elise Varga",
+          "PROVIDER"
+        ],
+        [
+          "tvarghese@hemisphere-research.org",
+          "EMAIL"
+        ],
+        [
+          "CAR-T cell therapy",
+          "TREATMENT"
+        ],
+        [
+          "CD19+",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What unusual comorbidity did patient PA-4892-LK present with during CAR-T cell therapy?",
+        "a": "Autoimmune thyroiditis concurrent with mantle cell lymphoma.",
+        "sources": [
+          "cluster_2_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation requirements did Hemisphere Oncology implement for cellular therapies in December 2023?",
+        "a": "Genetic biomarker documentation (CD19+ status) and pre-authorization from Dr. Varga's team.",
+        "sources": [
+          "cluster_2_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two medical professionals were involved in Lincoln Kaur's CAR-T treatment and research?",
+        "a": "Dr. Elise Varga (attending physician) and tvarghese@hemisphere-research.org (researcher).",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did policy changes and clinical trial data intersect in PA-4892-LK's case?",
+        "a": "CARES-2 trial data showing 40% improved outcomes led to overturned denial after biomarker documentation.",
+        "sources": [
+          "cluster_2_doc2",
+          "cluster_2_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

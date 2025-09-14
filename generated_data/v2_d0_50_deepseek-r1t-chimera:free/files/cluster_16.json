@@ -1,0 +1,77 @@
+{
+  "documents": [
+    {
+      "id": "cluster_16_doc1",
+      "content": "A retrospective analysis of telepresence therapy utilization in the Midwest region revealed a 22% increase in claims for speech pathology services among children aged 8-12 between Q3 2022 and Q1 2023. The study noted particular adoption spikes in Ohio following the implementation of the Medicare Coverage Improvement Initiative (MCII-45b). Providers reported reduced no-show rates for rural populations but expressed concerns about reimbursement delays.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_16_doc2",
+      "content": "BlueCross memo regarding network expansion: Effective October 1, 2023, seventeen new pediatric speech therapy centers will join the Ohio Preferred Network under service code SLP-9087v. This expansion specifically addresses feedback from last year's provider survey highlighting coverage gaps for developmental language disorders in Tier 2 counties.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_16_doc3",
+      "content": "Telehealth claims processing update: All speech pathology claims filed under benefit category T45-RV12 after 01/15/2023 must include new CPT modifiers for virtual caregiver participation. This change applies to six Midwestern states including Ohio, aligning with CMS remote service documentation requirements.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_16_doc4",
+      "content": "Community health brief: The Franklin County Children's Initiative published results showing 68% of families accessing speech services preferred hybrid delivery models. The report cites insurance reimbursement policy changes as a key factor enabling this shift, particularly among families with transportation challenges living outside urban centers.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_16",
+    "cluster_risk": "LOW",
+    "content_summary": "Telehealth expansion for pediatric speech services in Ohio under Medicare Coverage Improvement Initiative",
+    "person": {
+      "entities": []
+    },
+    "questions": [
+      {
+        "q": "What new requirement was introduced for speech pathology claims under category T45-RV12 after January 2023?",
+        "a": "Must include CPT modifiers for virtual caregiver participation.",
+        "sources": [
+          "cluster_16_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage increase was observed in telepresence therapy claims for children aged 8-12 in the Midwest?",
+        "a": "22% increase between Q3 2022 and Q1 2023.",
+        "sources": [
+          "cluster_16_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two Ohio-related changes addressed speech therapy coverage gaps in 2023?",
+        "a": "Medicare Coverage Improvement Initiative implementation and pediatric center network expansion under SLP-9087v.",
+        "sources": [
+          "cluster_16_doc1",
+          "cluster_16_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What factors contributed to increased hybrid service adoption in Franklin County?",
+        "a": "Reimbursement delays and transportation challenges.",
+        "sources": [
+          "cluster_16_doc1",
+          "cluster_16_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

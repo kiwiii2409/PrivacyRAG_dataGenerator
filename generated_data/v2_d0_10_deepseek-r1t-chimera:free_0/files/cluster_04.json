@@ -1,0 +1,138 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "PriorityHealth memo dated 2023-11-07: Patient Evelyn Torrence (ID# PH-7284-J) underwent a second round of immunotherapy at Lakeside Oncology Center following initial positive response. Treatment regimen includes pembrolizumab every 3 weeks. Research division notes connection to ongoing IMPACT-09 trial evaluating rare histiocytic disorders.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Provider report from Dr. Alvaro Mendoza: 68-year-old patient presenting with Erdheim-Chester disease (PH-7284-J) showed 40% tumor reduction post-6 cycles. Next genomic sequencing scheduled January 15th at Northwestern Precision Medicine Hub under research grant GNM-2280.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "Policy update effective February 1st: CAR-T therapies requiring prior auth will now be expedited for rare hematopoietic conditions. Impacts patients at 14 designated centers including Lakeside Oncology. Requires tertiary pathology review and EOC committee approval (reference: PHX-9901B).",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Chicago Tribune health section article (December 2023): Northwestern Medicine pioneering new dual-targeted therapy approach for histiocytosis patients. Mentions ongoing IMPACT-09 trial coordinator Dr. Rajiv Varma and 68-year-old participant achieving partial remission.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's journey with rare histiocytic disorder through specialized immunotherapy treatment, connected to research trial and policy changes for advanced therapies.",
+    "person": {
+      "entities": [
+        [
+          "Evelyn Torrence",
+          "NAME"
+        ],
+        [
+          "PH-7284-J",
+          "PATIENT_ID"
+        ],
+        [
+          "68-year-old",
+          "AGE"
+        ],
+        [
+          "Erdheim-Chester disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "pembrolizumab",
+          "TREATMENT"
+        ],
+        [
+          "Lakeside Oncology Center",
+          "PROVIDER"
+        ],
+        [
+          "Northwestern Precision Medicine Hub",
+          "PROVIDER"
+        ],
+        [
+          "IMPACT-09 trial",
+          "EVENT"
+        ],
+        [
+          "Dr. Alvaro Mendoza",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Rajiv Varma",
+          "PROVIDER"
+        ],
+        [
+          "GNM-2280",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "PHX-9901B",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "2023-11-07",
+          "EVENT_DATE"
+        ],
+        [
+          "January 15th",
+          "EVENT_DATE"
+        ],
+        [
+          "December 2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What rare condition and treatment response percentage were documented for patient PH-7284-J?",
+        "a": "Erdheim-Chester disease with 40% tumor reduction post-6 cycles.",
+        "sources": [
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new policy requirement affects CAR-T therapy approvals for rare blood conditions effective February?",
+        "a": "Requires tertiary pathology review and EOC committee approval.",
+        "sources": [
+          "cluster_4_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two providers and research trial are associated with Evelyn Torrence's immunotherapy treatment?",
+        "a": "Dr. Alvaro Mendoza, Dr. Rajiv Varma, and IMPACT-09 trial.",
+        "sources": [
+          "cluster_4_doc2",
+          "cluster_4_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which facility performs advanced genomic sequencing for histiocytosis patients, and what therapy approach was highlighted in the news article?",
+        "a": "Northwestern Precision Medicine Hub; news reported a dual‑targeted therapy approach for histiocytosis.",
+        "sources": [
+          "cluster_4_doc2",
+          "cluster_4_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

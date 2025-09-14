@@ -1,0 +1,140 @@
+{
+  "documents": [
+    {
+      "id": "cluster_26_doc1",
+      "content": "The standard claim form for Policy DH-445 shows coverage expansion for continuous glucose monitors effective Q2 2024. Tucson providers must submit prior authorization requests through Portal 12C. Updated form fields now require HbA1c values from the last 90 days for patients with dual diabetes/hypertension diagnoses.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_26_doc2",
+      "content": "Clinic notes from 5/15/2023 indicate stable blood pressure control in 43-year-old Hispanic female. Current regimen includes lisinopril 20mg daily and metformin 500mg BID. Patient enrolled in diabetes self-management program through Tucson Family Care network.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_26_doc3",
+      "content": "Provider network alert: Research study RS-22984 recruiting participants with treatment-resistant hypertension in Arizona. Six-month commitment required, includes telehealth monitoring and quarterly lab draws. Stipend covers copays for participating patients.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_26_doc4",
+      "content": "Quarterly provider report shows 18% increase in hybrid telehealth/in-person diabetes visits across Tucson network. Average HbA1c reduction of 1.2% observed in patients using continuous glucose monitors with DH-445 coverage.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_26_doc5",
+      "content": "Patient satisfaction survey: 92% rated dietitian-led diabetes education sessions helpful. Requests for evening appointment availability increased by 40% among working-age participants. Suggested improvements include Spanish-language materials for medication guides.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_26_doc6",
+      "content": "Interim research note: Study RS-22984 shows 0.8mmHg greater BP reduction with pharmacist-led med titration vs standard care in first 90 days. Final results expected 10/2024. Ethnicity-stratified analysis pending for Hispanic cohort.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_26",
+    "cluster_risk": "LOW",
+    "content_summary": "Diabetes/hypertension management with policy updates and research study participation in Tucson provider network",
+    "person": {
+      "entities": [
+        [
+          "43",
+          "AGE"
+        ],
+        [
+          "Hispanic",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Tucson",
+          "LOCATION"
+        ],
+        [
+          "hypertension",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "type 2 diabetes",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "metformin 500mg BID",
+          "TREATMENT"
+        ],
+        [
+          "2023-05-15",
+          "EVENT_DATE"
+        ],
+        [
+          "Tucson Family Care",
+          "PROVIDER"
+        ],
+        [
+          "RS-22984",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "lisinopril 20mg daily",
+          "TREATMENT"
+        ],
+        [
+          "diabetes self-management program",
+          "TREATMENT"
+        ],
+        [
+          "continuous glucose monitors",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which medication regimen was prescribed to the Hispanic patient at Tucson Family Care on 5/15/2023?",
+        "a": "Lisinopril 20mg daily and metformin 500mg BID.",
+        "sources": [
+          "cluster_26_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What was the average blood pressure reduction in the first 90 days of pharmacist-led medication titration in RS-22984?",
+        "a": "0.8mmHg greater reduction compared to standard care.",
+        "sources": [
+          "cluster_26_doc6"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What interventions were part of the Hispanic patient's diabetes management plan, and what was the satisfaction rate with dietitian-led education sessions?",
+        "a": "Medication regimen, diabetes self-management program, and 92% satisfaction with dietitian education.",
+        "sources": [
+          "cluster_26_doc2",
+          "cluster_26_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did Policy DH-445 impact documentation requirements for diabetic patients in Tucson, and what was the average HbA1c reduction observed?",
+        "a": "Required recent HbA1c, and average reduction 1.2%.",
+        "sources": [
+          "cluster_26_doc1",
+          "cluster_26_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

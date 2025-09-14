@@ -1,0 +1,138 @@
+{
+  "documents": [
+    {
+      "id": "cluster_20_doc1",
+      "content": "A recent audit of orthopedic claims in the Raleigh-Durham area revealed a 22% increase in prior authorization denials for spinal fusion surgeries since Q3 2023. BlueCross NC implemented new medical necessity criteria requiring failed conservative treatment documentation. Providers at Triangle Orthopedics report challenges adapting to the updated requirements, particularly for patients aged 40-55 with degenerative disc disease.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_20_doc2",
+      "content": "Patient HX98244 was approved for lumbar fusion surgery after completing 12 weeks of physical therapy at Durham Physical Medicine. The 48-year-old male with BMI 32 presented with severe radiculopathy and positive SLR test. Surgery scheduled for 10/15/2024 at UNC REX Hospital pending final insurer approval under policy RD-2024-04592.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_20_doc3",
+      "content": "New research from Duke Clinical Research Institute shows 37% reduced complication rates in spinal fusions when using intraoperative neuromonitoring. Study participants were aged 40-60 with single-level degenerative disease. Findings may impact BlueCross NC's 2025 coverage policies for advanced surgical technologies.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_20_doc4",
+      "content": "The Raleigh Tribune reports growing patient complaints about delayed spinal surgery approvals. One case highlighted: a construction worker with progressive nerve damage waited 14 weeks for authorization despite meeting all new BlueCross NC criteria. State insurance regulators plan to review the policy changes.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_20",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Orthopedic policy changes impacting spinal fusion approvals in Raleigh-Durham area, connected through patient case and research study",
+    "person": {
+      "entities": [
+        [
+          "HX98244",
+          "PATIENT_ID"
+        ],
+        [
+          "48-year-old",
+          "AGE"
+        ],
+        [
+          "male",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "degenerative disc disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "lumbar fusion surgery",
+          "TREATMENT"
+        ],
+        [
+          "10/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "UNC REX Hospital",
+          "LOCATION"
+        ],
+        [
+          "RD-2024-04592",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "BMI 32",
+          "UNIQUE_FACT"
+        ],
+        [
+          "severe radiculopathy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "positive SLR test",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Durham Physical Medicine",
+          "PROVIDER"
+        ],
+        [
+          "BlueCross NC",
+          "PROVIDER"
+        ],
+        [
+          "physical therapy",
+          "TREATMENT"
+        ],
+        [
+          "12 weeks",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What surgical approval challenges did the 48‑year‑old construction worker with degenerative disc disease face under BlueCross NC's new policy?",
+        "a": "Waited 14 weeks for authorization despite meeting all new criteria.",
+        "sources": [
+          "cluster_20_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What challenges did providers at Triangle Orthopedics and patients like the construction worker face under BlueCross NC's new policy?",
+        "a": "Providers faced higher denials; patients experienced delayed approvals.",
+        "sources": [
+          "cluster_20_doc1",
+          "cluster_20_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What age group showed reduced complication rates in Duke's spinal fusion research?",
+        "a": "Participants aged 40‑60 had reduced complication rates.",
+        "sources": [
+          "cluster_20_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What were the main effects on providers and patients due to BlueCross NC's new policy?",
+        "a": "Providers saw denials rise; patients reported approval delays.",
+        "sources": [
+          "cluster_20_doc1",
+          "cluster_20_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

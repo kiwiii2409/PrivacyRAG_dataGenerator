@@ -1,0 +1,156 @@
+{
+  "documents": [
+    {
+      "id": "cluster_47_doc1",
+      "content": "Pre-authorization form submitted for Gavin T. Wildermuth (Patient ID 487632WQ) regarding neuromodulation implant surgery at Alderwood Neurosciences. Procedure scheduled for April 22, 2024 under policy XG229-884P. Additional documentation required concerning prior denials for nerve ablation treatments in 2023. Contact provider office at 503-847-3391 for clarification.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_47_doc2",
+      "content": "Alderwood Neurosciences quarterly report notes 12% increase in neuromodulation procedures following recent FDA approval. Noteworthy case: G. Wildermuth (DOB 8/15/1978) with refractory neuropathic pain from lumbar disc degeneration responded exceptionally to trial therapy. Research team secured insurance coverage exception after multiple appeals.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_47_doc3",
+      "content": "Internal memo regarding policy XG229 revisions effective March 1, 2024: Expanded coverage for neuromodulation devices in patients under 60 with failed conventional therapies. Flags cases meeting new criteria - cross-reference with appeals in processing queue, including account 487632WQ (Wildermuth).",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_47_doc4",
+      "content": "Quality assurance report for Alderwood Neurosciences highlights complications in 3% of neuromodulation cases. Case review notes excellent recovery for patient residing at 1842 Crestview Lane, correlating with specialized post-op protocol development. Device rep training scheduled April 15, 2024.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_47_doc5",
+      "content": "Patient satisfaction survey from G. Wildermuth rates pain management 9/10 post-implant. Notes challenges navigating prior authorization process despite eventual approval. Suggests clearer timelines for experimental treatment approvals. Contact preference: gw78@protonmail.com.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_47_doc6",
+      "content": "Portland Tribune health section (April 10, 2024) features breakthrough pain management research at Alderwood Neurosciences. Mentions 45-year-old patient case study who regained functional mobility after novel implant protocol. Quotes lead researcher Dr. Eun-Ji Park on insurance coverage challenges.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_47",
+    "cluster_risk": "HIGH",
+    "content_summary": "Comprehensive documents tracing a patient's neuromodulation implant journey from pre-authorization through post-op outcomes, intersecting with policy changes, research protocols, and media coverage.",
+    "person": {
+      "entities": [
+        [
+          "Gavin T. Wildermuth",
+          "NAME"
+        ],
+        [
+          "487632WQ",
+          "PATIENT_ID"
+        ],
+        [
+          "8/15/1978",
+          "BIRTHDATE"
+        ],
+        [
+          "45",
+          "AGE"
+        ],
+        [
+          "gw78@protonmail.com",
+          "EMAIL"
+        ],
+        [
+          "1842 Crestview Lane",
+          "ADDRESS"
+        ],
+        [
+          "lumbar disc degeneration",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "refractory neuropathic pain",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Alderwood Neurosciences",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Eun-Ji Park",
+          "PROVIDER"
+        ],
+        [
+          "April 22, 2024",
+          "EVENT_DATE"
+        ],
+        [
+          "policy XG229-884P",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "neuromodulation implant surgery",
+          "TREATMENT"
+        ],
+        [
+          "nerve ablation treatments",
+          "TREATMENT"
+        ],
+        [
+          "trial therapy",
+          "TREATMENT"
+        ],
+        [
+          "post-op protocol",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What experimental treatment date and location were approved for Gavin T. Wildermuth's refractory neuropathic pain?",
+        "a": "April 22, 2024 at Alderwood Neurosciences.",
+        "sources": [
+          "cluster_47_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change in March 2024 affected neuromodulation device approvals?",
+        "a": "Expanded coverage for patients under 60 with failed conventional therapies.",
+        "sources": [
+          "cluster_47_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two medical professionals are associated with case ID 487632WQ's treatment and research?",
+        "a": "Dr. Eun-Ji Park and the Alderwood Neurosciences team.",
+        "sources": [
+          "cluster_47_doc2",
+          "cluster_47_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two developments were reported in April 2024 regarding neuromodulation implant cases?",
+        "a": "Specialized recovery protocol development and novel implant protocol coverage challenges.",
+        "sources": [
+          "cluster_47_doc4",
+          "cluster_47_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

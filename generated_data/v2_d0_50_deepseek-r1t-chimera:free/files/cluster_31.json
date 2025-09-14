@@ -1,0 +1,140 @@
+{
+  "documents": [
+    {
+      "id": "cluster_31_doc1",
+      "content": "A recent audit revealed delays in processing claims for pelvic floor dysfunction treatments at Pine Ridge Health System. Providers noted inconsistent documentation requirements under Policy PFD-312, particularly for patients aged 30-40 receiving biofeedback therapy. The audit tracked 47 cases between January and March 2024, showing an average processing time of 18 days compared to the network standard of 10 days. Adjusters flagged missing CPT codes for 32% of submissions.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_31_doc2",
+      "content": "Patient #M482-91B (DOB 08/19/1994) presented with chronic pelvic pain and subsequent pelvic floor dysfunction diagnosis. Initial treatment plan included weekly biofeedback sessions at Pine Ridge Health Physio Clinic (555-689-2341) starting 02/15/2024. Provider Dr. Elaine Torres noted potential correlation with patient's ultra-marathon training regimen. Claims submitted under Group ID XQZ-88230 with prior authorization granted for 12 sessions through June 2024.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_31_doc3",
+      "content": "Research study PFD-MYO-24 investigating myofascial release techniques for pelvic floor dysfunction updated inclusion criteria to require baseline pain scores ≥6 on VAS scale. Current enrollment stands at 17 participants from Pine Ridge Health System out of 40 target. Study coordinator reports challenges recruiting male patients (current ratio 1:16). Preliminary data shows 28% reduction in pain scores among completers at 8-week mark.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_31_doc4",
+      "content": "Policy bulletin 2024-041 issued revised documentation requirements for pelvic floor dysfunction treatments under PFD-312. Effective July 1st, all claims must include: 1) Pre-treatment urodynamic study results 2) Signed functional improvement plan 3) Monthly progress notes using standardized assessment tool available at prhs.com/forms/pfd. Enforcement grace period through September 30th for existing patients like #M482-91B transitioning care plans.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_31_doc5",
+      "content": "The Pine Ridge Journal reported community concerns about limited pelvic health specialist availability (current ratio 1:23,000 residents). Interviews highlighted challenges for athletes like ultra-marathoners needing specialized care. Health network CFO announced $2.1M expansion of physiotherapy services targeting underserved populations. Construction begins Q3 2024 at 3200 Sycamore Canyon Blvd with expected 40% increase in treatment capacity.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_31_doc6",
+      "content": "Internal memo dated May 2024 outlines provider education initiative for Policy PFD-312 compliance. Mandatory webinars scheduled June 4-6 cover: coding updates, documentation standards, and transitional requirements for grandfathered cases. Target groups include all urologists, OB/GYNs, and physical therapists treating pelvic floor dysfunction. Registration available through provider portal using NET-IDS issued after credentialing.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_31",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Pelvic floor dysfunction treatment ecosystem involving patient care continuum (including specific patient journey), policy updates, research study, provider education, and community healthcare access reporting",
+    "person": {
+      "entities": [
+        [
+          "M482-91B",
+          "PATIENT_ID"
+        ],
+        [
+          "1994-08-19",
+          "BIRTHDATE"
+        ],
+        [
+          "pelvic floor dysfunction",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "chronic pelvic pain",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "555-689-2341",
+          "PHONE_NUMBER"
+        ],
+        [
+          "ultra-marathon training",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Elaine Torres",
+          "PROVIDER"
+        ],
+        [
+          "biofeedback therapy",
+          "TREATMENT"
+        ],
+        [
+          "Pine Ridge Health Physio Clinic",
+          "LOCATION"
+        ],
+        [
+          "Pine Ridge Health System",
+          "LOCATION"
+        ],
+        [
+          "XQZ-88230",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "02/15/2024",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What unique fitness factor was noted in Patient M482-91B's medical record alongside their pelvic floor dysfunction diagnosis?",
+        "a": "The patient participated in ultra-marathon training.",
+        "sources": [
+          "cluster_31_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What community health access ratio for pelvic specialists was reported in Pine Ridge area?",
+        "a": "1 specialist per 23,000 residents.",
+        "sources": [
+          "cluster_31_doc5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which documentation requirements changed effective July 1st for Patient M482-91B's ongoing pelvic floor therapy under Policy PFD-312, and what prior authorization was granted?",
+        "a": "Urodynamic study, functional plan, monthly notes, 12-session authorization.",
+        "sources": [
+          "cluster_31_doc4",
+          "cluster_31_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two challenges did researchers encounter in Study PFD-MYO-24 at Pine Ridge Health System, and what audit delays were noted for pelvic floor dysfunction treatments?",
+        "a": "Male recruitment 1:16, enrollment 17/40; claim processing average 18 days, 32% missing CPT.",
+        "sources": [
+          "cluster_31_doc3",
+          "cluster_31_doc1"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

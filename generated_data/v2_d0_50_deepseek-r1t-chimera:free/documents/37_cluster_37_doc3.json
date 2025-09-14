@@ -1,0 +1,7 @@
+{
+  "id": "cluster_37_doc3",
+  "content": "Patient survey from PATIENT_ID XJ7294 indicates satisfactory recovery progress following arthroscopic surgery at Glen Oaks on EVENT_DATE 2023-07-12. The patient reported completion of 8 weeks of post-op physical therapy at ADDRESS 3400 Maple Lane Sport Therapy Clinic and plans to resume recreational badminton by EVENT_DATE 2023-11-01.",
+  "metadata": {
+    "format": "patient_survey"
+  }
+}

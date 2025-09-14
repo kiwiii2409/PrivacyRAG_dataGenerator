@@ -1,0 +1,7 @@
+{
+  "id": "cluster_36_doc3",
+  "content": "An audit of 89 anemia management claims at Coastal Renal Center revealed a 22% denial rate for ESA therapies, primarily due to insufficient lab documentation. Common issues included missing iron saturation percentages and incomplete transferrin receptor test results. The center has implemented new EHR prompts to capture required data fields automatically during provider order entry.",
+  "metadata": {
+    "format": "audit_report"
+  }
+}

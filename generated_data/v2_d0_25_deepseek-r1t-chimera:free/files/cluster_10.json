@@ -1,0 +1,129 @@
+{
+  "documents": [
+    {
+      "id": "cluster_10_doc1",
+      "content": "Prior authorization required from HorizonLife for advanced imaging procedures exceeding $2,500, effective July 1st, 2024. Regional compliance audit shows 42% of lumbar MRIs lacked proper documentation in Q2. Provider alerts issued to Rocky Mountain Imaging Network affiliates. Dr. Yvonne Keppler at Summit Radiology noted increased denial rates for non-emergent scans.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_10_doc2",
+      "content": "Patient ID 8824-5567H (Marguerite Villeneuve, DOB 06/12/1963) underwent three spinal injections at Alpine Pain Clinic between May-August 2024. Claim denied due to missing treatment justification documents. Clinic coordinator Darnell Watkins (darnell.w@alpinepain.co, 303-555-0184) appealed with operative notes showing radicular symptoms.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_10_doc3",
+      "content": "Cross-matched study shows 68% of chronic pain patients receiving interventional procedures in Aspen County had prior denials overturned through peer-to-peer reviews. Dr. Elaine Sorenson presenting findings at Western Pain Symposium (Sept 15, Denver Convention Center). Sample included 127 patients with failed back surgery syndrome across 8 clinics.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_10_doc4",
+      "content": "Internal memo highlights service disruptions at Alpine Pain Clinic during EMR transition (08/01-08/15/2024). Technical issues caused delayed claim submissions affecting 18% of Q3 patients. Resolution team deployed 08/16. Impact assessment required per contract section 4.7 with HorizonLife.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_10_doc5",
+      "content": "Healthcare Weekly Digest: HorizonLife implements new chronic pain management pathway for Colorado members. Combines procedure pre-approval algorithm with peer review escalation. Early results show 22% reduction in appeals for patients like 62-year-old Golden resident Marguerite V. undergoing spinal interventions.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_10",
+    "cluster_risk": "HIGH",
+    "content_summary": "Chronic pain treatment claims and policy changes involving patient Marguerite Villeneuve, Alpine Pain Clinic disruptions, and HorizonLife imaging authorization updates",
+    "person": {
+      "entities": [
+        [
+          "Marguerite Villeneuve",
+          "NAME"
+        ],
+        [
+          "Marguerite V.",
+          "NAME"
+        ],
+        [
+          "8824-5567H",
+          "PATIENT_ID"
+        ],
+        [
+          "06/12/1963",
+          "BIRTHDATE"
+        ],
+        [
+          "62-year-old",
+          "AGE"
+        ],
+        [
+          "Golden resident",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "failed back surgery syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "radicular symptoms",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "three spinal injections",
+          "TREATMENT"
+        ],
+        [
+          "spinal interventions",
+          "TREATMENT"
+        ],
+        [
+          "May-August 2024",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What is Marguerite Villeneuve's patient ID and what treatment procedure did her denied claim involve?",
+        "a": "Patient ID 8824-5567H, involving three spinal injections.",
+        "sources": [
+          "cluster_10_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What imaging policy change impacted providers in the Rocky Mountain Network?",
+        "a": "Prior authorization required for scans over $2,500 effective July 1st.",
+        "sources": [
+          "cluster_10_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two significant events affected treatment access for Marguerite Villeneuve in August 2024?",
+        "a": "EMR disruptions at Alpine Pain Clinic and HorizonLife's new pain pathway rollout.",
+        "sources": [
+          "cluster_10_doc4",
+          "cluster_10_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the findings about claim denials and peer review outcomes for chronic pain procedures in Aspen County?",
+        "a": "Claim denied for missing justification; 68% overturned via peer review in Aspen County.",
+        "sources": [
+          "cluster_10_doc2",
+          "cluster_10_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

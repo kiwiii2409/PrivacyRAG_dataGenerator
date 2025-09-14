@@ -1,0 +1,7 @@
+{
+  "id": "cluster_4_doc1",
+  "content": "PriorityHealth memo dated 2023-11-07: Patient Evelyn Torrence (ID# PH-7284-J) underwent a second round of immunotherapy at Lakeside Oncology Center following initial positive response. Treatment regimen includes pembrolizumab every 3 weeks. Research division notes connection to ongoing IMPACT-09 trial evaluating rare histiocytic disorders.",
+  "metadata": {
+    "format": "insurance_memo"
+  }
+}

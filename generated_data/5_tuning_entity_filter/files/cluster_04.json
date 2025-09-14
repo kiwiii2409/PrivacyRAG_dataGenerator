@@ -1,0 +1,132 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "A new telehealth reimbursement policy (POL-2023-089) was implemented effective January 2023, requiring prior authorization for virtual physical therapy sessions. Providers must submit session logs documenting functional improvements. Claims submitted without proper documentation will be denied starting April 15th. The policy applies specifically to patients aged 65+ in the Midwest region undergoing post-stroke rehabilitation.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Patient 88945-23A (DOB 07/15/1957) was admitted to Mercy Hospital (Peoria, IL) on 02/05/2023 following ischemic stroke. Treatment plan includes 8 weeks of virtual PT through RehabPlus Network. Provider documented measurable improvement in left-side mobility at 3-week mark. Secondary diagnosis of osteoporosis noted in treatment records.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "Quarterly audit of Midwest region claims shows 64% denial rate for telehealth PT services in Q2 2023. Primary reasons: missing progress notes (48%), incomplete functional assessments (32%). Mercy Hospital accounts for 22% of denied claims. System flags suggest documentation omissions particularly affect stroke rehabilitation cases.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Research study NCT04567823 preliminary findings: stroke patients receiving video-based PT showed equivalent outcomes to in-person care when protocols strictly followed. Study participant group (n=175) averaged 68yo with 83% being Medicare Advantage members. Key limitation: high attrition rate (37%) due to technology challenges among older patients.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_4_doc5",
+      "content": "Provider grievance filed 05/01/2023 (case GRV-IL-557): RehabPlus Network contesting denial of claims for PT session package (auth# PT445-9Z). Documentation submitted includes video recordings and CMS-1500 forms. Claim pertains to patient with stroke history completing 6-week virtual program. Grievance cites NCT04567823 research supporting treatment efficacy.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_4_doc6",
+      "content": "Midwest Healthcare Journal article (03/15/2023 edition) highlights disparities in telehealth access among rural stroke survivors. Features interview with Mercy Hospital PT director discussing challenges implementing POL-2023-089. Survey data shows 41% of elderly patients discontinued virtual PT due to documentation requirements, despite clinical improvement.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Virtual physical therapy policy changes intersecting with stroke rehabilitation outcomes, research validation, and elderly patient access challenges in the Midwest",
+    "person": {
+      "entities": [
+        [
+          "88945-23A",
+          "PATIENT_ID"
+        ],
+        [
+          "07/15/1957",
+          "BIRTHDATE"
+        ],
+        [
+          "Mercy Hospital (Peoria, IL)",
+          "LOCATION"
+        ],
+        [
+          "post-stroke rehabilitation",
+          "TREATMENT"
+        ],
+        [
+          "02/05/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "osteoporosis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "65+",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "RehabPlus Network",
+          "PROVIDER"
+        ],
+        [
+          "PT445-9Z",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Midwest",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the patient outcome at 3 weeks for stroke patient 88945-23A undergoing virtual PT?",
+        "a": "Measurable improvement in left-side mobility was documented.",
+        "sources": [
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What limitations did research study NCT04567823 identify regarding telehealth PT for elderly stroke patients?",
+        "a": "37% attrition rate due to technology challenges.",
+        "sources": [
+          "cluster_4_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two factors contributed to RehabPlus Network's grievance about denied claims for authorization PT445-9Z?",
+        "a": "Submitted video recordings and cited clinical research supporting virtual PT efficacy.",
+        "sources": [
+          "cluster_4_doc5",
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the two top reasons for claim denials under policy POL-2023-089 in Q2 2023?",
+        "a": "Missing progress notes (48%) and incomplete functional assessments (32%).",
+        "sources": [
+          "cluster_4_doc3",
+          "cluster_4_doc1"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

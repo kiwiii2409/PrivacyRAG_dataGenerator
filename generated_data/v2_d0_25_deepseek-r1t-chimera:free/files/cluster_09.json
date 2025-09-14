@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "id": "cluster_9_doc1",
+      "content": "Patient ID GH78312K was referred to Dr. Eleanor Voss at Northstar Specialty Care for severe aqueous deficiency syndrome. Initial consultation scheduled for March 15, 2023. Treatment plan includes hourly artificial tears and punctal plugs. Patient reported previous unsuccessful treatments at regional clinics. Current coverage under Platinum Plus plan with a $500 deductible requirement.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_9_doc2",
+      "content": "Policy memo 2284-QUJ effective April 1, 2023: All dry eye syndrome treatments now require prior authorization. Northstar Specialty Care added to Tier 1 provider network. New biosimilar artificial tear formulations added to formulary. Implementation affects 6,743 patients in the Midwest region. Compliance deadline set for June 30.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_9_doc3",
+      "content": "Patient satisfaction survey from GH78312K dated May 20, 2023: Rated Dr. Voss 4.8/5 for dry eye treatment. Reported 60% symptom improvement but noted insurance delays punctal plug approval. Requested extended clinic hours. Lives at 428 Willow Creek Lane, Iowa City. Travel Time: 45 minutes.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_9_doc4",
+      "content": "Provider network analysis Q2 2023: Northstar Specialty Care saw 412 dry eye patients last quarter, 18% increase from previous period. Treatment outcomes analysis shows punctal plugs effective in 79% of aqueous deficiency cases. Midwest region has highest prevalence (3.2 cases/1000). Analysis by Jessica Lin, Research Coordinator (jlin@hsanalytics.net).",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_9_doc5",
+      "content": "Insurance Times article June 1: Midwest insurers report 37% increase in dry eye claims post-pandemic. Iowa City seeing largest surge (122% increase) attributed to screen time and mask use. Northstar Specialty Care named regional Center of Excellence. 35% of patients report prior authorization delays over 3 weeks. Contact: 555-239-8004 for more data.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_9",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex dry eye treatment case involving specialized care, policy changes, research data, and regional trends in Iowa City",
+    "person": {
+      "entities": [
+        [
+          "GH78312K",
+          "PATIENT_ID"
+        ],
+        [
+          "428 Willow Creek Lane, Iowa City",
+          "ADDRESS"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "May 20, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "aqueous deficiency syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "60% symptom improvement",
+          "UNIQUE_FACT"
+        ],
+        [
+          "requested extended clinic hours",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Travel Time: 45 minutes",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Patient reported previous unsuccessful treatments at regional clinics",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Platinum Plus plan",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Dr. Eleanor Voss",
+          "PROVIDER"
+        ],
+        [
+          "Northstar Specialty Care",
+          "PROVIDER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment combination was prescribed to patient GH78312K for aqueous deficiency syndrome by Dr. Voss?",
+        "a": "Hourly artificial tears and punctal plugs.",
+        "sources": [
+          "cluster_9_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of dry eye patients reported symptom improvement with punctal plugs in the Midwest Q2 2023 analysis?",
+        "a": "79% of aqueous deficiency cases showed improvement.",
+        "sources": [
+          "cluster_9_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What barriers did patient GH78312K face regarding treatment?",
+        "a": "Deductible requirement and long travel time.",
+        "sources": [
+          "cluster_9_doc1",
+          "cluster_9_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What changes and trends affected dry eye treatment coverage and claims in policy 2284-QUJ implemented April 2023?",
+        "a": "Prior authorization, biosimilar tear addition, and 37% claim increase.",
+        "sources": [
+          "cluster_9_doc2",
+          "cluster_9_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

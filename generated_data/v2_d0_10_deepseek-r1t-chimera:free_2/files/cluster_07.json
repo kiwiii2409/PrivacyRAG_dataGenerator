@@ -1,0 +1,136 @@
+{
+  "documents": [
+    {
+      "id": "cluster_7_doc1",
+      "content": "Athena Health Network reported a 22% increase in referrals to sleep specialists during Q3 2023, with the highest volume from Coastal Sleep Institute. The memo highlights policy ID CTX-8873 requiring pre-authorization for in-lab polysomnography for patients under 18. Dr. Elara Voss noted an unusual pattern of adolescent referrals from the Brighton area.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_7_doc2",
+      "content": "Patient 8892-LEMON (DOB 04/2006) presented with idiopathic hypersomnia at Brighton Pediatrics. Initial treatment plan included modafinil 100mg BID pending sleep study results. Guardian phone 555-218-4490. Coastal Sleep Institute scheduled for 11/15/2023 under policy CTX-8873 exception.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_7_doc3",
+      "content": "Brighton Town Council health report shows zip code 23459 had 3x higher childhood sleep disorder rates than state average. Local schools implemented delayed start times in September 2023 following Pediatric Sleep Consortium recommendations.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_7_doc4",
+      "content": "Research note: Adolescent sleep study (IRB#SS-2204) found 48% of participants using melatonin supplements without medical supervision. Coastal region participants showed elevated rate of delayed sleep phase disorder (17% vs 9% national average).",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_7_doc5",
+      "content": "Pre-authorization denial letter for patient 8892-LEMON: Home sleep apnea test required before approving in-lab study per updated policy CTX-8873. Appeal option available through provider portal@athenahealth.net within 14 days.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_7_doc6",
+      "content": "Provider quality report Q3 2023: Coastal Sleep Institute scored 92% on patient satisfaction (ranking 4th statewide) but had 23% longer wait times than network average. New EEG technician hired 10/2023 to address capacity issues.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_7",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Adolescent sleep disorder case intersecting with policy changes, provider performance, and regional health trends",
+    "person": {
+      "entities": [
+        [
+          "8892-LEMON",
+          "PATIENT_ID"
+        ],
+        [
+          "04/2006",
+          "BIRTHDATE"
+        ],
+        [
+          "555-218-4490",
+          "PHONE_NUMBER"
+        ],
+        [
+          "Brighton Pediatrics",
+          "PROVIDER"
+        ],
+        [
+          "Coastal Sleep Institute",
+          "PROVIDER"
+        ],
+        [
+          "23459",
+          "LOCATION"
+        ],
+        [
+          "Brighton",
+          "LOCATION"
+        ],
+        [
+          "idiopathic hypersomnia",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "modafinil 100mg BID",
+          "TREATMENT"
+        ],
+        [
+          "11/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "CTX-8873",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What medication and dosage was prescribed to patient 8892-LEMON for idiopathic hypersomnia at initial presentation?",
+        "a": "modafinil 100mg BID pending sleep study results.",
+        "sources": [
+          "cluster_7_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What geographical area showed 3x higher childhood sleep disorder rates than state average in 2023?",
+        "a": "Zip code 23459 (Brighton area).",
+        "sources": [
+          "cluster_7_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What policy exception was requested for patient 8892-LEMON and what pre‑authorization condition did the insurer impose?",
+        "a": "Exception for in‑lab polysomnography under CTX‑8873; insurer required a home sleep apnea test first.",
+        "sources": [
+          "cluster_7_doc2",
+          "cluster_7_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were two notable sleep‑related trends in the Brighton area during Q3 2023 according to Athena Health Network and the town council report?",
+        "a": "22% rise in specialist referrals and a 3× higher childhood disorder rate in zip 23459.",
+        "sources": [
+          "cluster_7_doc1",
+          "cluster_7_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

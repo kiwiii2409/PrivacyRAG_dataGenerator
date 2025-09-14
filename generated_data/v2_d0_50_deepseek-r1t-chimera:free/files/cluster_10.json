@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_10_doc1",
+      "content": "A recent audit of claims processed through the Summit Health Network revealed discrepancies in billing for advanced imaging services. Patients aged 50-65 with spinal stenosis showed higher denial rates when referred by out-of-network providers. The report highlights inconsistent application of policy #SHN-4356 regarding prior authorizations for MRIs.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_10_doc2",
+      "content": "Riverside Orthopedics patient ID #PT-8842 (DOB 03/15/1968) was approved for lumbar epidural steroid injections following two prior denials. Documentation shows appeals success correlated with submission of detailed physical therapy progress notes from Fairview Rehabilitation Center.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_10_doc3",
+      "content": "New policy effective 10/01/2024 requires providers in the TN-12 region to use HealthBridge portal for all imaging pre-authorizations. This applies specifically to spinal procedures for patients over 45. Transition support available at (615) 442-8900 ext. 324.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_10_doc4",
+      "content": "Research note: Analysis of spinal stenosis treatment patterns shows 62% of patients receiving epidural injections required subsequent surgery within 3 years. Highest correlation found in cases where initial treatment was delayed beyond 6 weeks from diagnosis.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_10",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Spinal stenosis treatment patterns, policy changes, and claims processing in the TN-12 region",
+    "person": {
+      "entities": [
+        [
+          "PT-8842",
+          "PATIENT_ID"
+        ],
+        [
+          "03/15/1968",
+          "BIRTHDATE"
+        ],
+        [
+          "lumbar epidural steroid injections",
+          "TREATMENT"
+        ],
+        [
+          "Fairview Rehabilitation Center",
+          "PROVIDER"
+        ],
+        [
+          "spinal stenosis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Riverside Orthopedics",
+          "PROVIDER"
+        ],
+        [
+          "SHN-4356",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "age 50-65",
+          "DEMOGRAPHIC"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two medical providers were involved in the care of patient PT-8842?",
+        "a": "Riverside Orthopedics and Fairview Rehabilitation Center",
+        "sources": [
+          "cluster_10_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new authorization process takes effect October 2024 in the TN-12 region and how does it affect patients aged 50-65 with spinal stenosis?",
+        "a": "HealthBridge portal for spinal pre-authorizations; patients 50-65 with spinal stenosis require it.",
+        "sources": [
+          "cluster_10_doc3",
+          "cluster_10_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What combination of factors helped patient PT-8842 successfully appeal treatment denials?",
+        "a": "Detailed PT notes and policy SHN-4356 inconsistencies.",
+        "sources": [
+          "cluster_10_doc2",
+          "cluster_10_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What demographic and policy factors correlate with higher MRI denial rates?",
+        "a": "Patients 50-65 with spinal stenosis and policy SHN-4356 inconsistencies.",
+        "sources": [
+          "cluster_10_doc1"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

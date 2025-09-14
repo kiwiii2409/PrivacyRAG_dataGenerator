@@ -1,0 +1,152 @@
+{
+  "documents": [
+    {
+      "id": "cluster_0_doc1",
+      "content": "Patient Arlo Finch (ID H78456) visited Coastal Neurology Specialists on 03/15/2024 for progressive supranuclear palsy management. Dr. Mona Voss recommended an experimental treatment protocol involving monthly infusions. The claim was flagged for prior authorization due to off-label drug use. Patient resides at 2289 Bayview Drive, Seabrook, TX.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_0_doc2",
+      "content": "Memorandum to claims team: Effective April 1st, all off-label neurological treatments require submission of research study references. Exception requests for patients over 65 must include recent MRI results. This change impacts 12 providers in the Gulf Coast network, including Coastal Neurology Specialists.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_0_doc3",
+      "content": "Seabrook Daily News (04/02/2024): Local neurologists protest new insurance restrictions. Dr. Voss stated, 'Our PSP patients can't wait for bureaucratic approvals.' The policy affects 8 patients in Harris County currently receiving infusion therapies, including one participant in the NIH ProPSP trial.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_0_doc4",
+      "content": "Research note: ProPSP trial (NCT04599972) shows promise for combination therapy in supranuclear palsy. Participants require biweekly blood monitoring and monthly specialists visits. Current Gulf Coast enrollment includes 1 male patient aged 68 (H78456) with baseline UPDRS score of 52. Next assessment scheduled May 15th.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_0_doc5",
+      "content": "Prior authorization denied for Arlo Finch (H78456) - treatment code J1305. Reason: Insufficient evidence for off-label use in PSP. Appeal must include: 1) NIH trial documentation 2) Recent cognitive assessment 3) Provider network exception form. Patient may contact benefits@bluegulfhealth.com for assistance. Decision date: 04/05/2024.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_0_doc6",
+      "content": "Provider network report: Coastal Neurology Specialists have submitted 78 prior auth requests in Q2, with 42% denial rate. Neurology appeals take 18 days on average compared to 9 days for other specialties. Highest volume for PSP (12 cases) and ALS (9 cases) treatments in Harris County.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_0",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex case involving experimental PSP treatment, policy changes affecting Gulf Coast providers, and associated claims processing challenges",
+    "person": {
+      "entities": [
+        [
+          "Arlo Finch",
+          "NAME"
+        ],
+        [
+          "H78456",
+          "PATIENT_ID"
+        ],
+        [
+          "2289 Bayview Drive, Seabrook, TX",
+          "ADDRESS"
+        ],
+        [
+          "68",
+          "AGE"
+        ],
+        [
+          "progressive supranuclear palsy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "NCT04599972",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "03/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "infusion therapies",
+          "TREATMENT"
+        ],
+        [
+          "J1305",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "UPDRS score of 52",
+          "UNIQUE_FACT"
+        ],
+        [
+          "04/05/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "May 15th",
+          "EVENT_DATE"
+        ],
+        [
+          "monthly infusions",
+          "TREATMENT"
+        ],
+        [
+          "experimental treatment protocol",
+          "TREATMENT"
+        ],
+        [
+          "biweekly blood monitoring",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was Dr. Voss's recommended treatment protocol for Arlo Finch's supranuclear palsy?",
+        "a": "Monthly infusions under an experimental treatment protocol.",
+        "sources": [
+          "cluster_0_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation requirements took effect April 1st for neurology treatments?",
+        "a": "Research study references and MRI results for patients over 65.",
+        "sources": [
+          "cluster_0_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which trial is Arlo Finch enrolled in, and what documents are required for his appeal?",
+        "a": "ProPSP trial; NIH documentation, cognitive assessment, network exception form.",
+        "sources": [
+          "cluster_0_doc4",
+          "cluster_0_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How many patients are affected by the new insurance restrictions in Harris County, and what are the average appeal times for neurology versus other specialties?",
+        "a": "Eight patients; neurology 18 days, other specialties 9 days.",
+        "sources": [
+          "cluster_0_doc3",
+          "cluster_0_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

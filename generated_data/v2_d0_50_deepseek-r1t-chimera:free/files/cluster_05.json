@@ -1,0 +1,132 @@
+{
+  "documents": [
+    {
+      "id": "cluster_5_doc1",
+      "content": "Golden Bay Health System reported a 40% increase in endoscopic sinus surgeries among female patients aged 45-55 in Q3 2024. Dr. Mackenzie Voss noted this aligns with regional allergy trends but requires further investigation given prior stable rates. Policy updates now require prior authorization for these procedures under CPT 31256.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_5_doc2",
+      "content": "Patient I78723K94 (Lourdes Velasco, DOB 05/12/1980) underwent bilateral endoscopic sinus surgery on 03/15/2024 at Pacific Coast ENT Associates. Treatment included post-op corticosteroid irrigation and sequential immunotherapy. Claim initially denied due to missing allergen sensitivity documentation from University Allergy Center.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_5_doc3",
+      "content": "University Allergy Center report identifies environmental mold exposure in coastal Santa Barbara neighborhoods as primary trigger for severe chronic rhinosinusitis cases. Fungal cultures from homes on Cabrillo Blvd show particularly high spore counts. First documented correlation between housing density and allergenic exposure.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_5_doc4",
+      "content": "Golden Bay Networks newsletter announces new tiered coverage for immunotherapy starting April 2024. Patients in high-exposure ZIP codes (93101-93111) qualify for extended treatment cycles if diagnosed with mold-induced sinusitis. Savings projected at $1.2M annually through reduced surgical claims.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_5_doc5",
+      "content": "Lourdes Velasco's claim appeals case cites unique circumstances of documented home mold exposure (Cabrillo Blvd residence verified by inspector reports) with matching fungal cultures from surgery samples. Appeals panel recommends overturning denial based on emerging environmental health data.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_5_doc6",
+      "content": "Santa Barbara Public Health alerts from 2/2024 note record-breaking mold spore counts following winter storms. Coastal regions showed 300% above seasonal averages. School absences for respiratory issues peaked concurrently with adult ENT visits according to health system data.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_5",
+    "cluster_risk": "HIGH",
+    "content_summary": "Case study linking environmental mold exposure to surgical claims through patient journey, research findings, and policy adjustments",
+    "person": {
+      "entities": [
+        [
+          "Lourdes Velasco",
+          "NAME"
+        ],
+        [
+          "05/12/1980",
+          "BIRTHDATE"
+        ],
+        [
+          "I78723K94",
+          "PATIENT_ID"
+        ],
+        [
+          "endoscopic sinus surgery",
+          "TREATMENT"
+        ],
+        [
+          "Cabrillo Blvd",
+          "ADDRESS"
+        ],
+        [
+          "03/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "corticosteroid irrigation",
+          "TREATMENT"
+        ],
+        [
+          "mold-induced sinusitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "sequential immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "home mold exposure",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment combination was used for Lourdes Velasco (ID I78723K94) following her 03/15/2024 surgery?",
+        "a": "Post-op corticosteroid irrigation with sequential immunotherapy.",
+        "sources": [
+          "cluster_5_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What environmental factor triggered unprecedented allergy claims in Santa Barbara during Q1 2024?",
+        "a": "Record-breaking mold spore counts from winter storms.",
+        "sources": [
+          "cluster_5_doc6"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Why was Lourdes Velasco's initial claim denial overturned based on Cabrillo Blvd residence evidence and high mold spore counts?",
+        "a": "Verified mold exposure matched surgical sample cultures using inspector reports.",
+        "sources": [
+          "cluster_5_doc3",
+          "cluster_5_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which two policy changes addressed the surge in sinusitis treatment costs between March-April 2024?",
+        "a": "Prior authorization for CPT 31256 and extended immunotherapy for high-exposure ZIPs.",
+        "sources": [
+          "cluster_5_doc1",
+          "cluster_5_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

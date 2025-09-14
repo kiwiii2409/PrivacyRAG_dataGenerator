@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_36_doc1",
+      "content": "A research study published in the Journal of Clinical Pharmacy analyzed the effectiveness of biweekly darbepoetin alfa injections for anemia management in patients with stage 3 chronic kidney disease. The study cohort included 127 participants from Coastal Renal Center, with 72% showing improved hemoglobin levels within 12 weeks. Preliminary findings suggest this protocol reduces transfusion requirements by 34% compared to standard care. The study was partially funded through the CKD-ANEM-2022 grant.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_36_doc2",
+      "content": "CoastalCare Partners issued updated coverage guidelines for erythropoiesis-stimulating agents effective April 2023. Under policy CG-ESA-9.2RS, biweekly darbepoetin alfa is now preferred for members with stage 3 CKD and iron deficiency anemia. The change follows efficiency reviews showing this regimen decreased average monthly costs by $1,240 per patient while maintaining outcomes. Providers must submit Serum Transferrin Receptor testing for prior authorization.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_36_doc3",
+      "content": "An audit of 89 anemia management claims at Coastal Renal Center revealed a 22% denial rate for ESA therapies, primarily due to insufficient lab documentation. Common issues included missing iron saturation percentages and incomplete transferrin receptor test results. The center has implemented new EHR prompts to capture required data fields automatically during provider order entry.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_36_doc4",
+      "content": "Local health news outlet River Watch Daily reported on innovative anemia treatment protocols being adopted in the region. Coastal Renal Center's new care pathway, developed in collaboration with the National Kidney Foundation, reduced transfusion rates by 40% compared to state averages. The program utilizes point-of-care anemia testing devices and standardized ESA dosing algorithms.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_36",
+    "cluster_risk": "LOW",
+    "content_summary": "Chronic kidney disease anemia management involving research study, policy updates, claims auditing, and regional news coverage",
+    "person": {
+      "entities": [
+        [
+          "darbepoetin alfa",
+          "TREATMENT"
+        ],
+        [
+          "stage 3 chronic kidney disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Coastal Renal Center",
+          "PROVIDER"
+        ],
+        [
+          "CKD-ANEM-2022",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "CG-ESA-9.2RS",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "River Watch Daily",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "biweekly",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Serum Transferrin Receptor testing",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What new prior authorization requirement did CoastalCare Partners implement for darbepoetin alfa under policy CG-ESA-9.2RS?",
+        "a": "Providers must submit Serum Transferrin Receptor testing documentation.",
+        "sources": [
+          "cluster_36_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What journalism outlet covered recent anemia treatment advancements at Coastal Renal Center?",
+        "a": "River Watch Daily reported on the new protocols.",
+        "sources": [
+          "cluster_36_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two improvements were demonstrated by Coastal Renal Center's anemia program regarding monthly costs and transfusion rates?",
+        "a": "$1,240 monthly cost reduction and 34% fewer transfusions.",
+        "sources": [
+          "cluster_36_doc1",
+          "cluster_36_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the primary causes of ESA therapy claim denials and which lab test was required for prior authorization?",
+        "a": "Missing iron saturation and transferrin receptor tests; prior authorization requires transferrin receptor testing.",
+        "sources": [
+          "cluster_36_doc2",
+          "cluster_36_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

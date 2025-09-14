@@ -1,0 +1,129 @@
+{
+  "documents": [
+    {
+      "id": "cluster_7_doc1",
+      "content": "Rainier Health Network initiated a pilot program for chronic pain management in Tacoma facilities starting September 2023. The program emphasizes multidisciplinary approaches combining physical therapy, cognitive behavioral therapy, and non-opioid medications. Provider reports indicate a 28% reduction in opioid prescriptions among participants aged 45-65. Updated billing codes for these services took effect October 15, requiring modifier GP for all related claims.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_7_doc2",
+      "content": "Patient ID 7XT9B32 enrolled in the chronic pain program at Tacoma Medical Center on 2023-09-20. Treatment plan includes aquatic therapy sessions twice weekly and duloxetine 60mg daily. The patient previously received lumbar epidural steroid injections in April 2023 at South Sound Pain Clinic. Recent progress notes show improved mobility scores but persistent sleep disturbances.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_7_doc3",
+      "content": "Claims audit found inconsistent application of GP modifiers for Tacoma pain program services between October-December 2023. 42% of claims lacked required documentation showing multidisciplinary team involvement. Reviewers identified patterns where behavioral health components were frequently omitted from treatment summaries.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_7_doc4",
+      "content": "Tacoma Daily News reported unexpected waitlist growth for chronic pain services at Rainier Health facilities since program launch. The article cites increased demand from construction workers with repetitive stress injuries and veterans with service-related conditions. Network administrators anticipate expanding provider capacity by Q2 2024.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_7_doc5",
+      "content": "Research summary of duloxetine effectiveness in chronic pain populations shows best outcomes when combined with aquatic therapy (OR 2.3, CI 1.7-3.1). Study participants aged 50-65 demonstrated greater functional improvement than younger cohorts. Protocol recommends minimum 12-week trial before assessing efficacy.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_7",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Chronic pain management program implementation in Tacoma with patient case, claims issues, research evidence, and community impact",
+    "person": {
+      "entities": [
+        [
+          "7XT9B32",
+          "PATIENT_ID"
+        ],
+        [
+          "2023-09-20",
+          "EVENT_DATE"
+        ],
+        [
+          "Tacoma Medical Center",
+          "LOCATION"
+        ],
+        [
+          "duloxetine 60mg daily",
+          "TREATMENT"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "lumbar epidural steroid injections",
+          "TREATMENT"
+        ],
+        [
+          "April 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "South Sound Pain Clinic",
+          "LOCATION"
+        ],
+        [
+          "improved mobility scores",
+          "UNIQUE_FACT"
+        ],
+        [
+          "persistent sleep disturbances",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "chronic pain program",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two treatments were combined in patient 7XT9B32's chronic pain management plan at Tacoma Medical Center?",
+        "a": "Aquatic therapy sessions twice weekly and duloxetine 60mg daily.",
+        "sources": [
+          "cluster_7_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What modifier became required for chronic pain program claims starting October 15, 2023?",
+        "a": "Modifier GP for all related claims.",
+        "sources": [
+          "cluster_7_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which patient ID and prior treatment history are linked to the chronic pain program participation, and what billing modifier was required for claims?",
+        "a": "Patient 7XT9B32 previously received lumbar epidural steroid injections; modifier GP was required.",
+        "sources": [
+          "cluster_7_doc1",
+          "cluster_7_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What challenges emerged in both claims processing and service accessibility for the Tacoma chronic pain program?",
+        "a": "Inconsistent GP modifier use and unexpected waitlist growth occurred.",
+        "sources": [
+          "cluster_7_doc3",
+          "cluster_7_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

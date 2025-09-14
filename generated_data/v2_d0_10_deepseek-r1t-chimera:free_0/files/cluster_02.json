@@ -1,0 +1,114 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "A new policy PN-882R1K requires pre-authorization for advanced imaging referrals at Summit Valley facilities. The change affects patients over 55 on anticoagulant therapy, with exceptions for emergency cases. Implementation began September 1st, impacting several cardiology practices in the network. Providers must submit documentation through portal SV572 for review within 48 hours.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Patient 991-34M submitted a claim denial appeal for cardiac MRI services at Valley Heart Institute on 10/15. Records show the 58-year-old was prescribed warfarin following atrial fibrillation diagnosis. The imaging request lacked required pre-authorization form SV572, identical to three other appeals processed this month.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Summit Valley Regional reported 17% increase in anticoagulant therapy imaging disputes since policy PN-882R1K took effect. Research note #449 identifies 62% of affected patients fall in 55-65 age bracket. Submitted prior authorizations show average 2.3 day processing time, with 88% approval rate for completed applications.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Provider memo: Valley Heart Institute schedules mandatory training on imaging authorization process 11/7-11/9. Focus areas include anticoagulation patients and emergency exceptions. Contact Dr. Arroyo at referenced provider portal for clarification. Three staff members already completed competency certification for new workflow requirements.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Policy change impacts imaging authorizations for anticoagulant patients at Summit Valley facilities, including claim dispute patterns and provider training",
+    "person": {
+      "entities": [
+        [
+          "991-34M",
+          "PATIENT_ID"
+        ],
+        [
+          "58",
+          "AGE"
+        ],
+        [
+          "warfarin",
+          "TREATMENT"
+        ],
+        [
+          "atrial fibrillation",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "10/15",
+          "EVENT_DATE"
+        ],
+        [
+          "Valley Heart Institute",
+          "PROVIDER"
+        ],
+        [
+          "Summit Valley facilities",
+          "LOCATION"
+        ],
+        [
+          "PN-882R1K",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "cardiac MRI services",
+          "EVENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What patient identifier and medical condition describe the person who appealed their MRI denial at Valley Heart Institute on 10/15?",
+        "a": "Patient 991-34M with atrial fibrillation appealed the denial.",
+        "sources": [
+          "cluster_2_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of patients affected by policy PN-882R1K fall in the 55-65 age bracket?",
+        "a": "62% of affected patients are aged 55-65.",
+        "sources": [
+          "cluster_2_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which treatment and facility location connect the denied claim to the policy change impacting imaging authorizations?",
+        "a": "Warfarin treatment at Summit Valley facilities links both documents.",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What training dates and policy identifier relate to Valley Heart Institute's imaging authorization changes?",
+        "a": "Training occurs 11/7-11/9 under policy PN-882R1K.",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

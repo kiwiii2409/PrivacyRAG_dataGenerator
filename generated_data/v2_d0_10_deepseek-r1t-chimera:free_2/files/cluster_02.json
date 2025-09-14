@@ -1,0 +1,136 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Patient ER-22987, Marisol Vega (dob 05/12/1988), presented to Coastal Regional Hospital's rheumatology department with persistent joint inflammation and abnormal antibody levels. Initial assessment suggests potential overlap syndrome. Referred to Dr. Ethan Choi at Pacific Arthritis Center for specialized testing. Insurance prior authorization (#PA88234) required for IL-17 inhibitor therapy pending confirmatory diagnostics.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Provider network update: Effective Q2 2024, Pacific Arthritis Center joins Tier 1 specialty network under new value-based contract (VBC-7741). Includes performance incentives for reducing hospitalizations among autoimmune patients. Authorization exceptions granted for IL-17 inhibitors when prescribed by network rheumatologists meeting quality metrics.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Claims analysis shows 47% increase in prior auth appeals for biologic therapies in Southern California region (Q1 2024). Notable concentration around Coastal Regional Hospital referrals. Common denial reasons include incomplete antibody panels and missing treatment algorithms from prescribing providers.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Clinical trial NCT05677189 recruiting patients with seronegative arthropathies at Pacific Arthritis Center. Inclusion requires failed conventional DMARDs and elevated CRP (>10mg/L). Study compares IL-17 inhibitor sequencing strategies. Insurance coverage available through VBC-7741 participants with Prior Auth #PA-series.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_2_doc5",
+      "content": "Patient satisfaction survey response from Marisol Vega (ER-22987): Reported 3-week delay in medication approval process. Positive feedback about Pacific Arthritis Center staff but dissatisfaction with insurance coordinator responsiveness. Mentions difficulty navigating biologic coverage requirements despite provider network status.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_2_doc6",
+      "content": "Health News: Coastal Regional Hospital partners with Pacific Arthritis Center to launch autoimmune treatment pathway program. Initiative includes real-time insurance eligibility checks and dedicated prior auth specialists. First phase focuses on Southern California patients with complex antibody profiles requiring biologic therapies.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "HIGH",
+    "content_summary": "Autoimmune patient's treatment journey intersecting with provider network changes, prior authorization challenges, and clinical research participation",
+    "person": {
+      "entities": [
+        [
+          "Marisol Vega",
+          "NAME"
+        ],
+        [
+          "ER-22987",
+          "PATIENT_ID"
+        ],
+        [
+          "05/12/1988",
+          "BIRTHDATE"
+        ],
+        [
+          "Coastal Regional Hospital",
+          "PROVIDER"
+        ],
+        [
+          "Pacific Arthritis Center",
+          "PROVIDER"
+        ],
+        [
+          "overlap syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "IL-17 inhibitor therapy",
+          "TREATMENT"
+        ],
+        [
+          "PA88234",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "VBC-7741",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "NCT05677189",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Southern California",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What therapy was authorized for Marisol Vega (ER-22987) pending confirmatory diagnostics?",
+        "a": "IL-17 inhibitor therapy pending confirmatory diagnostics.",
+        "sources": [
+          "cluster_2_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What regional trend was identified in Q1 2024 prior authorization appeals for biologic therapies?",
+        "a": "47% increase concentrated around Coastal Regional Hospital referrals.",
+        "sources": [
+          "cluster_2_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two identifiers link Marisol Vega's clinical trial participation to her insurance coverage under VBC-7741?",
+        "a": "Prior Auth #PA-series (via VBC-7741) and trial NCT05677189.",
+        "sources": [
+          "cluster_2_doc4",
+          "cluster_2_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two developments regarding biologic therapy management in Southern California are highlighted in the partnership announcement and the Q1 2024 claims analysis?",
+        "a": "Real-time eligibility checks with dedicated prior auth specialists, and a 47% rise in appeals.",
+        "sources": [
+          "cluster_2_doc6",
+          "cluster_2_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "documents": [
+    {
+      "id": "cluster_46_doc1",
+      "content": "Recent policy updates highlight the expansion of telemedicine coverage for physical therapy services across Northern California starting September 2023. This change primarily benefits patients with chronic joint conditions requiring ongoing care. The Beacon Health Network reported a 22% increase in virtual visits since implementation, particularly in rural areas lacking specialist access.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_46_doc2",
+      "content": "A 47-year-old agricultural worker from Redding underwent bilateral knee arthroplasty at Shasta Orthopedic Center in August 2023. Post-surgical rehab included 12 weeks of aquatic therapy through Valley View Rehab, with claims processed under policy HD-4472KY. The case was noted for its successful return-to-work outcome within 16 weeks.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_46_doc3",
+      "content": "The Agricultural Workers' Health Initiative study (ID: AWH-2309) tracked musculoskeletal outcomes among 125 participants utilizing revised tele-rehab protocols. Preliminary findings showed 38% faster functional recovery rates when combining virtual PT with traditional care. Enrollment concluded in December 2023 with final results expected Q2 2024.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_46_doc4",
+      "content": "Beacon Health Network announced new quality standards for orthopedic rehab providers in its Northern California network. Effective March 2024, all facilities must demonstrate 85% patient satisfaction scores and maintain average return-to-work timelines below 18 weeks for joint replacement cases to remain in-network.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_46",
+    "cluster_risk": "LOW",
+    "content_summary": "Telemedicine policy changes, agricultural worker's knee treatment journey, and related research study on musculoskeletal rehab outcomes",
+    "person": {
+      "entities": [
+        [
+          "47-year-old",
+          "AGE"
+        ],
+        [
+          "agricultural worker",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Redding",
+          "LOCATION"
+        ],
+        [
+          "bilateral knee arthroplasty",
+          "TREATMENT"
+        ],
+        [
+          "Shasta Orthopedic Center",
+          "PROVIDER"
+        ],
+        [
+          "August 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Valley View Rehab",
+          "PROVIDER"
+        ],
+        [
+          "HD-4472KY",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "16 weeks",
+          "UNIQUE_FACT"
+        ],
+        [
+          "12 weeks",
+          "UNIQUE_FACT"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What telemedicine coverage expansion took effect in September 2023 for Northern California physical therapy services?",
+        "a": "Expanded telemedicine coverage for PT in Northern California, effective September 2023.",
+        "sources": [
+          "cluster_46_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two providers treated the agricultural worker from Redding under policy HD-4472KY?",
+        "a": "Shasta Orthopedic Center and Valley View Rehab.",
+        "sources": [
+          "cluster_46_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What telemedicine coverage expansion and quality standards were announced for Beacon Health Network orthopedic providers in March 2024?",
+        "a": "Coverage expansion for PT; 85% satisfaction, <18 weeks return.",
+        "sources": [
+          "cluster_46_doc1",
+          "cluster_46_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment, recovery timeline, and tele-rehab study results are recorded for the 47-year-old agricultural worker with HD-4472KY?",
+        "a": "Bilateral knee arthroplasty, 12-week aquatic therapy, 16-week return; study shows 38% faster recovery.",
+        "sources": [
+          "cluster_46_doc2",
+          "cluster_46_doc3"
+        ],
+        "type": "specific"
+      }
+    ]
+  }
+}

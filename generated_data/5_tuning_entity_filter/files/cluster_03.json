@@ -1,0 +1,124 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "Claim form submitted for ongoing biologic drug treatments (Cimzia) for rheumatoid arthritis management. Patient resides in Tacoma, WA with existing coverage under PlatinumPlus Plan. Initial authorization granted for 6-month duration pending quarterly reviews. Coordination between rheumatology dept at Tacoma General and outpatient infusion center noted.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "Medical records show rheumatoid arthritis diagnosis confirmed 11/2022 after failed methotrexate trial. Patient demographics: 48yo freelance graphic designer with history of moderate disease progression. Chart notes indicate preference for self-administered meds due to irregular work schedule. Recent labs show improved CRP levels.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Internal memo regarding 2023-11 SupremeDrug Co policy changes: Biologic medications now require prior genetic testing for all Northwest region patients. Grandfathering applies to existing auths until renewal. Impacts ~15% of RA patients in Pierce County. Implementation deadline 02/2024.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "Provider report from Tacoma Arthritis Center details treatment escalation path: NSAIDs → methotrexate → Cimzia over 18 months. Notes unusual work-related stress factors but good adherence. Recommends continued biweekly self-injections with quarterly monitoring.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc5",
+      "content": "Regional research brief: Rheumatoid arthritis cases in Pacific Northwest show 22% increase among 40-55yo creatives since 2020. Study correlates with work-from-home ergonomic factors. Data suggests earlier biologics use improves long-term outcomes in this subgroup.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_3_doc6",
+      "content": "Tacoma Tribune health section reports on local biologic medication access challenges. Mentions 3-month wait times at specialty pharmacies, particularly affecting autoimmune patients. Hospital system cites supply chain issues and increased demand since new insurance policies took effect.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "LOW",
+    "content_summary": "Middle-aged creative professional's rheumatoid arthritis treatment journey intersecting with regional policy changes and demographic trends",
+    "person": {
+      "entities": [
+        [
+          "PlatinumPlus Plan",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Tacoma, WA",
+          "LOCATION"
+        ],
+        [
+          "48",
+          "AGE"
+        ],
+        [
+          "freelance graphic designer",
+          "UNIQUE_FACT"
+        ],
+        [
+          "rheumatoid arthritis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "methotrexate",
+          "TREATMENT"
+        ],
+        [
+          "Cimzia",
+          "TREATMENT"
+        ],
+        [
+          "Tacoma Arthritis Center",
+          "PROVIDER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which biologic medication was prescribed to the freelance graphic designer in Tacoma after methotrexate?",
+        "a": "Cimzia was prescribed following methotrexate treatment.",
+        "sources": [
+          "cluster_3_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change in November 2023 affected coverage for biologic drugs in the Northwest region?",
+        "a": "Prior genetic testing became required for biologic medications.",
+        "sources": [
+          "cluster_3_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What two treatments did the Tacoma patient with rheumatoid arthritis receive before escalating to biologics?",
+        "a": "The patient received NSAIDs followed by methotrexate.",
+        "sources": [
+          "cluster_3_doc2",
+          "cluster_3_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which demographic showed the highest increase in rheumatoid arthritis diagnoses according to recent research in the Pacific Northwest?",
+        "a": "Creative professionals aged 40-55 showed a 22% increase.",
+        "sources": [
+          "cluster_3_doc5",
+          "cluster_3_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

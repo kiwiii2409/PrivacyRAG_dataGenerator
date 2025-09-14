@@ -1,0 +1,152 @@
+{
+  "documents": [
+    {
+      "id": "cluster_6_doc1",
+      "content": "A 42-year-old individual with recessive dystrophic epidermolysis bullosa underwent gene therapy at Pinnacle Genomics Institute under policy SBT-449Q. The treatment required prior authorization due to experimental status. Final approval came through on 03/15/2023 after appeals process. Clinical notes indicate compassionate use protocol adherence.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_6_doc2",
+      "content": "Patient C702-885J authorization timeline: Initial denial 02/01/2023 citing policy SBT-449Q section 12(b). Appeal submitted 02/15/2023 with additional biomarker evidence. Approval granted 03/15/2023 with 18-month monitoring requirement. Claims department flagged for potential duration exceedances.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_6_doc3",
+      "content": "Breakthrough therapy alert: Pinnacle Genomics reports improved mobility scores in epidermolysis bullosa patients after Hologene-7 therapy. Research ongoing for insurance coverage pathways. Conference presentation scheduled for 10/12/2023 at Chicago Gene Therapy Symposium.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_6_doc4",
+      "content": "Policy update SBT-449QRev2 effective 04/01/2023 adds post-treatment monitoring requirements for gene therapies. Applies retroactively to Q1 2023 approvals. Claims processing system updates scheduled for 03/25/2023. Providers must submit monthly progress reports for continued coverage.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_6_doc5",
+      "content": "Chicago Tribune health section 10/13/2023: 'Local patient becomes first in Midwest to receive experimental skin disorder treatment'. Article mentions Pinnacle Genomics Institute and policy challenges for rare disease patients. Quotes Dr. Elise Marlow regarding insurance barriers.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_6_doc6",
+      "content": "Quality audit file 33289: Verification needed for Hologene-7 treatment duration exceeding initial projections. Patient C702-885J authorized for 6 sessions but requested 9. Cross-reference with Pinnacle Genomics trial protocols required before final determination.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_6",
+    "cluster_risk": "HIGH",
+    "content_summary": "Gene therapy journey for rare skin disorder involving treatment approvals, policy changes, and media coverage",
+    "person": {
+      "entities": [
+        [
+          "C702-885J",
+          "PATIENT_ID"
+        ],
+        [
+          "42",
+          "AGE"
+        ],
+        [
+          "recessive dystrophic epidermolysis bullosa",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Hologene-7",
+          "TREATMENT"
+        ],
+        [
+          "Pinnacle Genomics Institute",
+          "PROVIDER"
+        ],
+        [
+          "SBT-449Q",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "02/01/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "02/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "03/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "03/25/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "04/01/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "10/12/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "10/13/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Chicago Gene Therapy Symposium",
+          "EVENT"
+        ],
+        [
+          "Chicago",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What experimental treatment did patient C702-885J receive?",
+        "a": "Hologene-7 gene therapy for recessive dystrophic epidermolysis bullosa.",
+        "sources": [
+          "cluster_6_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What monitoring requirement was added in policy SBT-449QRev2 for gene therapies?",
+        "a": "Monthly progress reports from providers for continued coverage.",
+        "sources": [
+          "cluster_6_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two significant dates relate to the treatment approval and research presentation for patient C702-885J's case?",
+        "a": "03/15/2023 approval date and 10/12/2023 symposium presentation.",
+        "sources": [
+          "cluster_6_doc2",
+          "cluster_6_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two developments occurred regarding rare disease treatments in October 2023 according to this cluster?",
+        "a": "Conference presentation on Hologene-7 and Chicago Tribune coverage.",
+        "sources": [
+          "cluster_6_doc3",
+          "cluster_6_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

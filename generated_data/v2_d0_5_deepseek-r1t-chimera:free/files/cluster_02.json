@@ -1,0 +1,126 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "A 34-year-old patient from Boulder (patient ID# CX4782) presented with recurrent pancreatitis and pancreatic pseudocysts. The case was escalated to Dr. Elena Varga at Midlands Gastro Specialists for endoscopic drainage. Prior authorization required four weeks due to policy AX-3319 requiring specialist review for recurrent pancreatic interventions.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Policy memo AX-3319 modified effective 2023-11-01: All pancreatic intervention requests beyond initial treatment require sub-specialist review within regional networks. Impact analysis shows 22% increase in Midlands region authorization delays. Affected providers include Midlands Gastro Specialists and Boulder Digestive Health.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Midlands Weekly Health Digest: Boulder resident experiences 32-day delay in pseudocyst drainage due to new authorization protocols. Patient advocates highlight systemic delays under policy AX-3319. Midlands Gastro Specialists report 18 similar pending cases as of 2023-11-15.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Claims audit CX4782 shows $14,220 in outstanding costs for repeated ER visits (03/2023-10/2023) related to pancreatic flare-ups. Authorization for definitive treatment approved 11/20/2023 after two appeals. Case flagged for quality review due to extended pre-treatment complication period.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "HIGH",
+    "content_summary": "Chronic pancreatitis case with extended authorization delays under new policy AX-3319, involving Midlands specialists and significant cost impacts",
+    "person": {
+      "entities": [
+        [
+          "CX4782",
+          "PATIENT_ID"
+        ],
+        [
+          "34-year-old",
+          "AGE"
+        ],
+        [
+          "recurrent pancreatitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "pancreatic pseudocysts",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "pancreatic flare-ups",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Boulder",
+          "LOCATION"
+        ],
+        [
+          "endoscopic drainage",
+          "TREATMENT"
+        ],
+        [
+          "ER visits",
+          "EVENT"
+        ],
+        [
+          "32-day delay",
+          "UNIQUE_FACT"
+        ],
+        [
+          "$14,220",
+          "UNIQUE_FACT"
+        ],
+        [
+          "03/2023-10/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "11/20/2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment delays did patient CX4782 experience under policy AX-3319?",
+        "a": "32-day delay in pseudocyst drainage for patient CX4782 requiring two authorization appeals",
+        "sources": [
+          "cluster_2_doc3",
+          "cluster_2_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which providers were most impacted by policy AX-3319 in the Midlands region?",
+        "a": "Midlands Gastro Specialists and Boulder Digestive Health",
+        "sources": [
+          "cluster_2_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What were the financial impacts of delayed treatment for CX4782's pancreatic condition?",
+        "a": "$14,220 in ER costs during 7-month pre-treatment period",
+        "sources": [
+          "cluster_2_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What systemic changes occurred after policy AX-3319 implementation for pancreatic care?",
+        "a": "32-day delay and increased specialist reviews",
+        "sources": [
+          "cluster_2_doc2",
+          "cluster_2_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

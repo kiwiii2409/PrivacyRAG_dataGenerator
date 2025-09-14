@@ -1,0 +1,100 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "The patient safety initiative at Lakeshore General Hospital revealed a 22% reduction in surgical site infections following the adoption of new sterile protocols in Q3. Dr. M. Eisenberg's study notes improved outcomes for complex laparoscopy cases among patients aged 45-65. Hospital administration credited policy UP-4419 for enabling faster equipment upgrades.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "Claim #H7742KL for patient ID 88945P (L. Whitman) was denied due to non-coverage of robotic-assisted hysterectomy under plan G22-Retro. Patient appeals cited recent policy memo UP-4419 regarding advanced surgical techniques. Final review pending with medical director Dr. V. Chaudhary.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Provider network alert: Lakeshore General Hospital now requiring all outpatient procedures to utilize UP-4419 compliance forms. Transition period until March 15. Contact: surgicalcoordinator@lakeshore.org or 716-555-0194 for certification questions. Non-compliant claims will be auto-denied starting April 1.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "Cartwright Digest article details how UP-4419 policy changes impacted 137 patients in Buffalo region. Features interview with patient L. Whitman about denied claim experience and subsequent successful appeal through patient advocacy group SURGical Rights.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_3_doc5",
+      "content": "Audit findings: 62% of UP-4419 related denials were overturned upon appeal in Q2. Pattern identified where pre-authorization specialists weren't applying 45-day lookback rule properly. Corrective training implemented June 5 across all Northeast regional offices.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc6",
+      "content": "Post-op survey from patient ID 88945P indicates excellent pain management but dissatisfaction with insurance delays. Notes 8-week wait for pre-authorization of prescribed physical therapy. Surgical team: Dr. Eisenberg (lead), Dr. Kwan (assist). Facility: Lakeshore General Women's Health Pavilion.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient L. Whitman's denied robotic hysterectomy claim under policy UP-4419 at Lakeshore General Hospital, including appeal process, related research outcomes, and regional audit findings",
+    "person": {
+      "entities": [
+        [
+          "L. Whitman",
+          "NAME"
+        ],
+        [
+          "88945P",
+          "PATIENT_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which surgical notification forms does Lakeshore General Hospital require under policy UP-4419 as of March?",
+        "a": "All outpatient procedures must use UP-4419 compliance forms.",
+        "sources": [
+          "cluster_3_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What two factors contributed to L. Whitman's successful insurance appeal for claim #H7742KL?",
+        "a": "Policy memo UP-4419 on advanced techniques and assistance from SURGical Rights.",
+        "sources": [
+          "cluster_3_doc2",
+          "cluster_3_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of UP-4419 denials were overturned in Q2 Northeast region audits?",
+        "a": "62% of denials were overturned upon appeal.",
+        "sources": [
+          "cluster_3_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did policy UP-4419 adoption affect surgical outcomes and outpatient procedure compliance at Lakeshore General Hospital?",
+        "a": "22% infection drop and mandatory UP‑4419 forms for all outpatient procedures.",
+        "sources": [
+          "cluster_3_doc1",
+          "cluster_3_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "documents": [
+    {
+      "id": "cluster_40_doc1",
+      "content": "Claim submitted for Russell Kowalski (PR-8892-346) for specialized infusion therapy at Desert Sage Neurology. Prior authorization required for ocrelizumab treatments administered bi-annually. Provider Dr. Elena Marquez noted concurrent fibromyalgia management affecting treatment schedule.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_40_doc2",
+      "content": "Patient PR-8892-346 chart shows worsening MS symptoms requiring adjusted medication dosages. Birthdate 1985-03-14. Current regimen includes pregabalin for fibromyalgia pain. Next infusion scheduled Q2 2024. Resides at 4352 Saguaro Vista, Phoenix.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_40_doc3",
+      "content": "Memo to adjust Phoenix-area policies: Effective April 2023, all infusion therapies for dual-diagnosis patients require additional outcome documentation. Impacts 14 current cases including patient russellk@phoenixmail.com.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_40_doc4",
+      "content": "Provider report from Desert Sage Neurology details exceptional-response case combining ocrelizumab with cognitive behavioral therapy for MS patient with fibromyalgia. Significant functional improvement in ADL scores over 12-month period.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_40_doc5",
+      "content": "12-month Phoenix observational study shows transportation barriers delay 38% of infusion appointments for patients requiring combination neurological/rheumatological care. Procrastination linked to 22% complication rate increase.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_40",
+    "cluster_risk": "HIGH",
+    "content_summary": "Multiple sclerosis and fibromyalgia treatment journey with infusion therapy challenges in Phoenix",
+    "person": {
+      "entities": [
+        [
+          "Russell Kowalski",
+          "NAME"
+        ],
+        [
+          "russellk@phoenixmail.com",
+          "EMAIL"
+        ],
+        [
+          "PR-8892-346",
+          "PATIENT_ID"
+        ],
+        [
+          "1985-03-14",
+          "BIRTHDATE"
+        ],
+        [
+          "4352 Saguaro Vista, Phoenix",
+          "ADDRESS"
+        ],
+        [
+          "multiple sclerosis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "fibromyalgia",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Dr. Elena Marquez",
+          "PROVIDER"
+        ],
+        [
+          "Desert Sage Neurology",
+          "PROVIDER"
+        ],
+        [
+          "pregabalin",
+          "TREATMENT"
+        ],
+        [
+          "ocrelizumab",
+          "TREATMENT"
+        ],
+        [
+          "cognitive behavioral therapy",
+          "TREATMENT"
+        ],
+        [
+          "Q2 2024",
+          "EVENT_DATE"
+        ],
+        [
+          "April 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "12-month period",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What infusion schedule did Russell Kowalski follow for multiple sclerosis at Desert Sage Neurology?",
+        "a": "Bi-annual ocrelizumab treatments with Q2 2024 next scheduled infusion.",
+        "sources": [
+          "cluster_40_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which policy update in April 2023 impacted prior authorization for infusion therapies?",
+        "a": "Additional outcome documentation required for dual-diagnosis infusion patients.",
+        "sources": [
+          "cluster_40_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two combination therapies were prescribed to patient PR-8892-346 for fibromyalgia and MS in 2023?",
+        "a": "Ocrelizumab infusions with pregabalin and cognitive behavioral therapy.",
+        "sources": [
+          "cluster_40_doc2",
+          "cluster_40_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy and transportation barriers affected Phoenix-area patients requiring dual-condition specialty infusions?",
+        "a": "Policy requires extra documentation; transportation delays affect 38% appointments.",
+        "sources": [
+          "cluster_40_doc3",
+          "cluster_40_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

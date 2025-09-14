@@ -1,0 +1,128 @@
+{
+  "documents": [
+    {
+      "id": "cluster_32_doc1",
+      "content": "Patient XB-4882371 initiated treatment for Wilson's disease at Midwestern Liver Institute on 03/15/2023, including chelation therapy and zinc acetate. Dr. Corinne Varga noted rare hepatic presentation with neurological involvement. Policy #WD-883 covers experimental protocols under research study LIVER-209. Preliminary authorization requires quarterly MRI and copper level checks.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_32_doc2",
+      "content": "Network memo from 08/2023 highlights increased referrals to Midwestern Liver Institute for Wilson's disease cases. Claims data shows 72% approval rate for WD-883 protocols, with denials primarily due to incomplete metabolic panels. Pharmacy coordinator Tyson Reece (tr@mwli.org) will implement new tracking system for zinc acetate prescriptions.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_32_doc3",
+      "content": "Research update: LIVER-209 study expanded to include patients with concurrent neurological symptoms after Policy WD-883 revision. 42 participants enrolled as of 11/2023, including Pt. XB-4882371. Dr. Varga presented preliminary findings at the International Hepatology Symposium in Prague, showing 34% reduction in copper levels among study cohort.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_32_doc4",
+      "content": "Provider reimbursement update: Effective 01/2024, Prior authorization form PA-WD883 rev 4 requires neurologist co-signature for Wilson's disease cases with CNS involvement. Midwestern Liver Institute providers should contact priorauth@insurer.com for training materials. This change stems from LIVER-209 study safety protocols.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_32_doc5",
+      "content": "The Chicago Tribune health section (12/05/2023) featured Wilson's disease treatment advances, highlighting Midwestern Liver Institute's work. Article quotes Dr. Varga discussing copper metabolism breakthroughs and mentions insurance hurdles for rare disease patients. Photos show laboratory technician Miriam Kolstad operating specialized testing equipment.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_32_doc6",
+      "content": "Audit found 18% of WD-883 claims lacked proper neurological evaluation documentation. Corrective action requires post-service review within 45 days for all claims exceeding $25k. Claims specialist Demarco Lee (312-555-0194) identified Pt. XB-4882371 as case requiring supplemental documentation due to atypical presentation.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_32",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex case involving Wilson's disease treatment, policy WD-883 updates, LIVER-209 research study, and associated provider network changes at Midwestern Liver Institute",
+    "person": {
+      "entities": [
+        [
+          "XB-4882371",
+          "PATIENT_ID"
+        ],
+        [
+          "Wilson's disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "03/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "chelation therapy",
+          "TREATMENT"
+        ],
+        [
+          "zinc acetate",
+          "TREATMENT"
+        ],
+        [
+          "MRI",
+          "TREATMENT"
+        ],
+        [
+          "copper level checks",
+          "TREATMENT"
+        ],
+        [
+          "neurological involvement",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "11/2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two treatments were approved under Policy WD-883 for patient XB-4882371's Wilson's disease?",
+        "a": "Chelation therapy and zinc acetate",
+        "sources": [
+          "cluster_32_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of WD-883 protocol claims were approved in 2023?",
+        "a": "72% approval rate for WD-883 protocols",
+        "sources": [
+          "cluster_32_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What new requirement was added to Policy WD-883 for patients with neurological involvement, and which patient was first treated under this policy?",
+        "a": "Neurologist co-signature; patient XB-4882371.",
+        "sources": [
+          "cluster_32_doc1",
+          "cluster_32_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two developments prompted changes to Wilson's disease treatment protocols in 2023?",
+        "a": "LIVER-209 study findings and insurance claim audit results",
+        "sources": [
+          "cluster_32_doc3",
+          "cluster_32_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

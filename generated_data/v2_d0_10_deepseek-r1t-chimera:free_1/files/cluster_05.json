@@ -1,0 +1,93 @@
+{
+  "documents": [
+    {
+      "id": "cluster_5_doc1",
+      "content": "Coastal Health Network's annual report highlights a 22% increase in coverage utilization for aquatic therapy programs in Brighton Beach following policy update CR-557T. Patients aged 45-65 showed notably improved mobility metrics after 12-week regimens. The network added two new providers specializing in marine rehabilitation techniques in Q3 2024.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_5_doc2",
+      "content": "Brighton Aquatic Center submitted 84 claims in October 2024 for saltwater pool therapy sessions under policy CR-557T, averaging $185 per session. Authorization requires documented diagnosis of chronic musculoskeletal conditions from a network rheumatologist. The center recently upgraded its hydrotherapy equipment to meet new standards.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_5_doc3",
+      "content": "Research note from the Brighton Orthopedic Group: Participants in aquatic therapy programs showed 40% less opioid usage compared to land-based PT groups. Study focused on patients with advanced osteoarthritis living within 5 miles of coastal facilities. Notable improvement in sleep quality metrics correlated with thrice-weekly sessions.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_5_doc4",
+      "content": "Internal audit of CR-557T implementation identified inconsistent documentation requirements across Brighton providers. While 92% of claims met medical necessity criteria, 18% lacked proper session duration documentation. Recommendations include standardized templates and additional coder training specific to marine therapy claims processing.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_5_doc5",
+      "content": "The Brighton Herald health section featured a story on community response to aquatic therapy access: 'Residents praise the coastal facility's new accessible pier entry system installed July 2024. Local fisherman Ray Kowski credits the program with restoring his ability to work after developing chronic shoulder inflammation.'",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_5",
+    "cluster_risk": "LOW",
+    "content_summary": "Implementation and impact of aquatic therapy policy CR-557T in Brighton Beach, including provider expansion, utilization trends, research findings, and community reception",
+    "person": {
+      "entities": [
+        [
+          "Ray Kowski",
+          "NAME"
+        ],
+        [
+          "chronic shoulder inflammation",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two facility upgrades were mentioned across the provider report and news article about Brighton Beach's aquatic therapy program?",
+        "a": "diagnosis documentation from rheumatologists and improved mobility metrics",
+        "sources": [
+          "cluster_5_doc1",
+          "cluster_5_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What documentation inconsistencies were found in the CR-557T policy audit?",
+        "a": "18% lacked proper session duration documentation",
+        "sources": [
+          "cluster_5_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two improvements did researchers note for Brighton osteoarthritis patients using aquatic therapy?",
+        "a": "40% less opioid usage and better sleep quality",
+        "sources": [
+          "cluster_5_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two facility upgrades were mentioned across the provider report and news article about Brighton Beach's aquatic therapy program?",
+        "a": "Accessible pier entry system and upgraded hydrotherapy equipment",
+        "sources": [
+          "cluster_5_doc2",
+          "cluster_5_doc5"
+        ],
+        "type": "specific"
+      }
+    ]
+  }
+}

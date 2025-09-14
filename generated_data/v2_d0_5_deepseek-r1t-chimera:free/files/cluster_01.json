@@ -1,0 +1,145 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "Claim submitted for Liam Varga (ID 78245-D) at Silver Pines Medical Group on 03/22/2023. Treatment included advanced immunotherapy for refractory eczema with secondary complications, coordinated by Dr. Elara Torin. Initial payment disbursed after network provider verification. Additional laboratory expenses ($1,890) pending reimbursement review.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "Research note from Horizons Health Initiatives reveals 12 cases of refractory eczema with secondary complications in Northeast region during Q2 2023, including Mr. Varga's case. Highlights challenges integrating new biologic treatments into standard formularies. Recommends revised prior authorization protocols for specialty medications.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Provider Update Memo (effective May 2023): Silver Pines Medical Group now requiring twin signatures for biologic therapy approvals following overutilization findings in dermatology department. Impact observed on claims processing timeline - average delay increased by 7 working days for immunomodulator cases.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Patient satisfaction survey completed by L. Varga (contact: liam.varga@phnxmail.com) notes 42-day wait for treatment approval with notable out-of-pocket expenses ($5,200 total). Praised coordination by Dr. Torin but frustrated by multiple appeals required for labwork coverage at MetroLab Diagnostics facility.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_1_doc5",
+      "content": "Audit of higher-cost dermatology cases identifies Mr. Varga (78245-D) among top 2% of expenditure recipients in 2023. Flags need for improved cost containment strategies when combining biologic agents with complex diagnostic workups. Case manager: Martine Hughes (mhughes@premierclaims.net).",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_1_doc6",
+      "content": "North-eastern Healthcare Journal reports on specialty medication access disparities following policy changes. Features interview with Silver Pines Medical Group director citing the Varga case (without identifier) as example where new approval process created care delays for refractory conditions.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "HIGH",
+    "content_summary": "Chronic eczema patient navigating complex treatment approvals, policy changes, and high-cost care environment with regional research context",
+    "person": {
+      "entities": [
+        [
+          "Liam Varga",
+          "NAME"
+        ],
+        [
+          "L. Varga",
+          "NAME"
+        ],
+        [
+          "Mr. Varga",
+          "NAME"
+        ],
+        [
+          "Varga",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "78245-D",
+          "PATIENT_ID"
+        ],
+        [
+          "03/22/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "$1,890",
+          "UNIQUE_FACT"
+        ],
+        [
+          "$5,200",
+          "UNIQUE_FACT"
+        ],
+        [
+          "42-day",
+          "UNIQUE_FACT"
+        ],
+        [
+          "advanced immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "refractory eczema",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "secondary complications",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the total out-of-pocket expense reported by Liam Varga for his treatment at Silver Pines Medical Group?",
+        "a": "$5,200 total out-of-pocket expenses were reported.",
+        "sources": [
+          "cluster_1_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did Q2 2023 policy changes affect biologic treatment approvals in the Northeast region?",
+        "a": "Twin signatures became required, causing 7-day approval delays.",
+        "sources": [
+          "cluster_1_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which three providers were involved in Liam Varga's (ID 78245-D) complex eczema treatment?",
+        "a": "Dr. Elara Torin, Martine Hughes, and MetroLab Diagnostics participated.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc4",
+          "cluster_1_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What common challenges were identified in high-cost dermatology cases and regional research during 2023?",
+        "a": "Delays in specialty medication approvals and formulary integration challenges.",
+        "sources": [
+          "cluster_1_doc2",
+          "cluster_1_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

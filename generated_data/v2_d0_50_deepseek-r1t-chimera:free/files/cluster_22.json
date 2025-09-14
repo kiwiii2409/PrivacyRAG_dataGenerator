@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_22_doc1",
+      "content": "The regional health network reported a 22% increase in telepsychiatry claims between Q3 and Q4 2023, attributed to expanded coverage under Policy #MH-4089. Providers noted particular adoption among educators in the Tri-Valley school district, with Lexapro and Buspar being the most commonly prescribed medications. Implementation challenges included verifying patient eligibility for virtual care across county lines.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_22_doc2",
+      "content": "Patient 88941-223P (DOB 04/18/1992) initiated trauma-focused therapy at Valley Behavioral Health on 11/07/2023, with four sessions approved under their employer-sponsored plan. Treatment notes indicate concurrent dietary interventions for comorbid insulin resistance. The case was flagged for potential peer support program referral due to workplace-related stress factors.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_22_doc3",
+      "content": "Research abstract from Tri-Valley Medical Journal examines care coordination gaps for educators with workplace-related mental health conditions. Study ID TVMJ-RES-883 followed 42 participants from 2022-2023, finding 60% had delayed treatment due to prior authorization requirements. Recommended solutions include standardized referral templates between school districts and behavioral health providers.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_22_doc4",
+      "content": "Community news brief highlights new youth mental health initiative between Pleasanton Unified School District and Valley Behavioral Health, funded through Policy #MH-4089 allocations. Program will provide on-site screenings starting 02/2024, targeting early intervention for anxiety disorders. Collaborative care model includes telepsychiatry options for families in rural parts of Alameda County.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_22",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Telepsychiatry claims trends, educator mental health patient journey, research study on care coordination, and school-based intervention program linked through Policy #MH-4089 implementation.",
+    "person": {
+      "entities": [
+        [
+          "88941-223P",
+          "PATIENT_ID"
+        ],
+        [
+          "04/18/1992",
+          "BIRTHDATE"
+        ],
+        [
+          "11/07/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "insulin resistance",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "workplace-related stress",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "trauma-focused therapy",
+          "TREATMENT"
+        ],
+        [
+          "dietary interventions",
+          "TREATMENT"
+        ],
+        [
+          "peer support program referral",
+          "EVENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What specific comorbid condition was documented alongside trauma-focused therapy for patient 88941-223P at Valley Behavioral Health?",
+        "a": "Insulin resistance was documented alongside trauma-focused therapy.",
+        "sources": [
+          "cluster_22_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of Tri-Valley Medical Journal study participants experienced treatment delays due to prior authorization?",
+        "a": "60% of participants experienced treatment delays.",
+        "sources": [
+          "cluster_22_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two medications were most prescribed under Policy #MH-4089's telepsychiatry expansion for Tri-Valley educators, and what new program was launched in Alameda County to support them?",
+        "a": "Lexapro and Buspar; new youth mental health initiative launched.",
+        "sources": [
+          "cluster_22_doc1",
+          "cluster_22_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new program combines school district screenings with telepsychiatry options in Alameda County starting 02/2024, and what percentage of educators experienced treatment delays due to prior authorization?",
+        "a": "Youth mental health initiative launched; 60% experienced delays.",
+        "sources": [
+          "cluster_22_doc3",
+          "cluster_22_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

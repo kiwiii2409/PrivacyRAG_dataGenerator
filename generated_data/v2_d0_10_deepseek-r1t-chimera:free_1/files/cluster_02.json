@@ -1,0 +1,91 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Renewal notification for policy GP-8824K effective March 2023 includes expanded physiotherapy coverage for chronic conditions. Toronto-based policyholders gain access to 12 additional network providers specializing in diabetes management. Standard annual deductible increases to $1,200 for tier-2 plans.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Quarterly utilization report shows 23% increase in physiotherapy claims from Toronto diabetics aged 45-65 following policy GP-8824K changes. Average claim processing time reduced to 4.2 days after implementing automated pre-approvals for Network Provider #3375 referrals.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Clinical outcomes study at Toronto West Medical Center tracked 142 diabetes patients receiving combined physiotherapy and nutritional counseling. Participants showed 18% greater mobility improvement compared to standard care groups. Study period: April-November 2023.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Network Provider #3375 (Toronto PhysioCare) submitted 82 claims for diabetic neuropathy physiotherapy in Q3 2023. Treatment protocol includes weekly 45-minute sessions combining therapeutic exercises and education, averaging $112 per session before policy deductible.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_2_doc5",
+      "content": "Member satisfaction survey results: 89% of Toronto respondents approved new physiotherapy access under policy GP-8824K. Top complaint (22% responses) concerned limited evening appointment availability. 68% reported improved diabetes symptom management.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_2_doc6",
+      "content": "Toronto Health Journal article highlights policy GP-8824K as case study in preventive care investment. Features interview with Network Provider #3375 director discussing reduced hospital admissions among diabetic patients receiving regular physiotherapy.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "LOW",
+    "content_summary": "Diabetes care initiative through policy GP-8824K featuring expanded physiotherapy access in Toronto, including provider performance, patient outcomes, and policy impact analysis",
+    "person": {
+      "entities": []
+    },
+    "questions": [
+      {
+        "q": "What was the average cost per session at Toronto PhysioCare for diabetic neuropathy under policy GP-8824K?",
+        "a": "$112 per session before deductible.",
+        "sources": [
+          "cluster_2_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What improvement did Toronto diabetes patients show in mobility from combined physiotherapy and nutritional counseling?",
+        "a": "18% greater mobility improvement compared to standard care.",
+        "sources": [
+          "cluster_2_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What physiotherapy access and deductible changes did policy GP-8824K introduce, and how did Toronto members respond?",
+        "a": "Added 12 providers, deductible $1,200; 89% of Toronto members approved the changes.",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What operational changes in 2023 improved claim processing times for Toronto physiotherapy providers, and what broader health impact was reported?",
+        "a": "Automated pre‑approvals cut processing to 4.2 days and lowered diabetic hospital admissions.",
+        "sources": [
+          "cluster_2_doc2",
+          "cluster_2_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

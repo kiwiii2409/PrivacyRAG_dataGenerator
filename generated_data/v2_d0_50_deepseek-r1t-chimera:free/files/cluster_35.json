@@ -1,0 +1,149 @@
+{
+  "documents": [
+    {
+      "id": "cluster_35_doc1",
+      "content": "Claims processing report for Midwest Regional from October 2023 shows a 12% increase in cataract surgery approvals. Policy MRH-459 took effect on 10/1/23, expanding coverage for advanced lens implants. Patient ID NP-8832-776 had bilateral surgery delayed due to policy transition coding errors. Dr. Elise Vang (Ophthalmology Associates) filed 8 appeals related to this issue in Q4.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_35_doc2",
+      "content": "Research note: Louisville Vision Study (LVS-208) interim results show 18% complication rate with multifocal lenses in diabetic patients aged 50-70. Participant #122 (dob 03/15/71) withdrew after developing cystoid macular edema five weeks post-op. This correlates with provider-reported complications at Lucas Eye Center in early November.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_35_doc3",
+      "content": "Provider memo from Lucas Eye Center dated 11/15/23 restricts multifocal lens approvals for patients with HbA1c above 7.5% following adverse event cluster. Three procedures scheduled for next week require peer review. Contact Dr. Vang at evang@ophthalmo.net for urgent surgical clearance questions.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_35_doc4",
+      "content": "News article in Louisville Medical Tribune (12/1/23 edition) discusses patient advocacy group protest outside Midwest Regional Hospital demanding faster appeals processing. Group spokesperson Terrell Matthews mentioned case ID NP-8832-776 as example of 'systemic delays harming vulnerable seniors.' Hospital administrators pledge resolution by end of quarter.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_35_doc5",
+      "content": "Audit of non-personal identifier NP-8832-776 shows two conflicting policy applications - MRH-459 and legacy policy OPH-772 - caused 31-day delay in care. Secondary review triggered when claim crossed $18,000 threshold. Resolution required manual intervention by senior claims analyst Maritza Chen (employee ID #4420).",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_35",
+    "cluster_risk": "HIGH",
+    "content_summary": "Cataract treatment ecosystem involving policy change impacts, surgical complications research, provider protocol updates, patient advocacy, and complex claims processing",
+    "person": {
+      "entities": [
+        [
+          "NP-8832-776",
+          "PATIENT_ID"
+        ],
+        [
+          "03/15/71",
+          "BIRTHDATE"
+        ],
+        [
+          "Elise Vang",
+          "PROVIDER"
+        ],
+        [
+          "evang@ophthalmo.net",
+          "EMAIL"
+        ],
+        [
+          "cystoid macular edema",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Louisville",
+          "LOCATION"
+        ],
+        [
+          "Lucas Eye Center",
+          "PROVIDER"
+        ],
+        [
+          "Midwest Regional",
+          "LOCATION"
+        ],
+        [
+          "MRH-459",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "OPH-772",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "LVS-208",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Participant #122",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Midwest Regional Hospital",
+          "LOCATION"
+        ],
+        [
+          "bilateral surgery",
+          "EVENT"
+        ],
+        [
+          "cataract surgery",
+          "EVENT"
+        ],
+        [
+          "31-day delay",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What surgical complication led participant #122 from LVS-208 study to withdraw from the research program?",
+        "a": "Cystoid macular edema five weeks post-op.",
+        "sources": [
+          "cluster_35_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new diabetic patient restriction did Lucas Eye Center implement in November 2023?",
+        "a": "Multifocal lens approvals restricted for HbA1c above 7.5%.",
+        "sources": [
+          "cluster_35_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two policies caused processing delays for patient NP-8832-776's cataract surgery?",
+        "a": "MRH-459 and legacy policy OPH-772.",
+        "sources": [
+          "cluster_35_doc1",
+          "cluster_35_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two issues were highlighted regarding the high-dollar cataract claim in Louisville?",
+        "a": "Protest over delays and conflict with OPH-772.",
+        "sources": [
+          "cluster_35_doc4",
+          "cluster_35_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

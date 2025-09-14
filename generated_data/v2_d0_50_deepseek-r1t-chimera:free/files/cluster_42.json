@@ -1,0 +1,152 @@
+{
+  "documents": [
+    {
+      "id": "cluster_42_doc1",
+      "content": "Patient Leland Korvin (ID# VX78291) initiated treatment for rare prion disease under Dr. Emilia Sartoro at Ridgeland Neurological Institute on March 15, 2023. Claims submitted show experimental immunosuppressant therapy costing $18k/month, initially denied under standard policies. Appeals cite groundbreaking research study NCT04566727.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_42_doc2",
+      "content": "Research protocol amendment filed April 2023 for NCT04566727 study at Ridgeland, including Korvin's case. Notes indicate exceptional response to combination therapy: 47% reduction in biomarker levels after 3 months. Requires weekly MRI monitoring and caregiver availability due to rapid symptom fluctuation.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_42_doc3",
+      "content": "Provider network memo alerts all Ridgeland-affiliated neurologists about new prior authorization requirements for prion disease therapies effective June 1, 2023. Lists Korvin's treatment regimen as benchmark for medical necessity documentation. Includes fax cover sheet to claims department (855-555-0194).",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_42_doc4",
+      "content": "Korvin's caregiver survey from August 2023 reports improved symptom management but cites transportation challenges from their rural address (1783 Wheatfield Rd, Terrebonne Parish). Mentions discontinuation risk without Medicaid waiver approval for out-of-state specialist visits to Dr. Sartoro.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_42_doc5",
+      "content": "Quarterly audit reveals 89% approval rate for prion disease claims at Ridgeland since policy update. Korvin's case flagged for exception processing due to research participation. Notes 12 similar cases pending across Louisiana network providers.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_42_doc6",
+      "content": "Terrebonne Gazette article (9/12/2023) profiles rare disease patients facing insurance gaps. Features Korvin's case and quotes Dr. Sartoro about treatment costs. Mentions legislative proposal HB422 to create state rare disease fund, vote scheduled November 2023.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_42",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's journey with rare prion disease treatment, including research participation, policy changes, and insurance challenges across multiple document types",
+    "person": {
+      "entities": [
+        [
+          "Leland Korvin",
+          "NAME"
+        ],
+        [
+          "VX78291",
+          "PATIENT_ID"
+        ],
+        [
+          "Dr. Emilia Sartoro",
+          "PROVIDER"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "prion disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "immunosuppressant therapy",
+          "TREATMENT"
+        ],
+        [
+          "weekly MRI monitoring",
+          "UNIQUE_FACT"
+        ],
+        [
+          "HB422",
+          "EVENT"
+        ],
+        [
+          "Ridgeland Neurological Institute",
+          "PROVIDER"
+        ],
+        [
+          "April 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "June 1, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "9/12/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "August 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "NCT04566727",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "November 2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What experimental treatment did Leland Korvin (ID# VX78291) receive for prion disease at Ridgeland Neurological Institute?",
+        "a": "Experimental immunosuppressant therapy costing $18k/month.",
+        "sources": [
+          "cluster_42_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What legislative proposal affecting rare disease patients was scheduled for vote in November 2023?",
+        "a": "HB422 to create state rare disease fund.",
+        "sources": [
+          "cluster_42_doc6"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "How did policy changes at Ridgeland affect both Korvin's case and similar patients across Louisiana?",
+        "a": "89% approval rate for prion disease claims post-update, with Korvin flagged for exception processing.",
+        "sources": [
+          "cluster_42_doc3",
+          "cluster_42_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What transportation and treatment continuity challenges emerged from combining research participation with rural care?",
+        "a": "Rural location caused transportation issues, risking discontinuation without Medicaid waiver.",
+        "sources": [
+          "cluster_42_doc2",
+          "cluster_42_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

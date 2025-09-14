@@ -1,0 +1,116 @@
+{
+  "documents": [
+    {
+      "id": "cluster_6_doc1",
+      "content": "A recent audit of pediatric asthma claims in Tucson revealed a 22% increase in nebulizer therapy approvals by Desert Care Pediatric Network. Providers noted a correlation with seasonal pollen counts. Claims filed between March and June 2023 showed higher approval rates for children under 12.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_6_doc2",
+      "content": "Blue Cross policy PX-4892-RW introduced new prior authorization requirements for biologic asthma medications in July 2023. The change affects patients over 6 years old, requiring documented failure of two corticosteroid inhalers. Pediatric pulmonologists reported adapting treatment plans accordingly.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_6_doc3",
+      "content": "A 9-year-old patient presented at Southwest Allergy Center with persistent nighttime wheezing despite using Flovent HFA. Treatment plan included omalizumab injections (150mg monthly) under prior auth CB-7829. The case was flagged for potential step therapy exemption due to clinical severity.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_6_doc4",
+      "content": "Tucson Medical Center launched a pilot program coordinating asthma care between primary providers and allergists. The initiative reduced ED visits by 18% in its first quarter. Participating providers received enhanced reimbursement rates under quality initiative QI-334-AZ.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_6_doc5",
+      "content": "Arizona Health Journal featured a study comparing asthma outcomes across payers. Children covered by Blue Cross had 14% lower hospitalization rates than regional averages. The analysis examined 1,200 claims processed through Desert Care network in 2023.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_6_doc6",
+      "content": "Claims document 44782-992T shows approval for 6 months of Xolair therapy following appeal. Review notes reference prior auth denial due to incomplete step therapy documentation, overridden based on ER visit records from Tucson Children's Hospital.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_6",
+    "cluster_risk": "LOW",
+    "content_summary": "Pediatric asthma care dynamics in Tucson including policy changes, treatment patterns, and care coordination initiatives during 2023",
+    "person": {
+      "entities": [
+        [
+          "44782-992T",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "9-year-old",
+          "AGE"
+        ],
+        [
+          "omalizumab",
+          "TREATMENT"
+        ],
+        [
+          "Flovent HFA",
+          "TREATMENT"
+        ],
+        [
+          "150mg monthly",
+          "TREATMENT"
+        ],
+        [
+          "Xolair therapy",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What prior authorization requirements were introduced by policy PX-4892-RW for biologic asthma medications in July 2023?",
+        "a": "Documented failure of two corticosteroid inhalers required for patients over 6 years old.",
+        "sources": [
+          "cluster_6_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did Tucson Medical Center's asthma care pilot program affect ED visits in its first quarter?",
+        "a": "Reduced emergency department visits by 18% through provider coordination.",
+        "sources": [
+          "cluster_6_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment, prior authorization, and claim approval details are documented for the 9-year-old asthmatic patient at Southwest Allergy Center?",
+        "a": "Omalizumab injections (150mg monthly) under prior auth CB-7829, approved for 6 months after appeal.",
+        "sources": [
+          "cluster_6_doc3",
+          "cluster_6_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What trends emerged from the audit of pediatric asthma claims processed through Desert Care network in 2023, and how did Blue Cross coverage affect hospitalization rates?",
+        "a": "Nebulizer approvals rose 22%, and Blue Cross patients had 14% lower hospitalization rates.",
+        "sources": [
+          "cluster_6_doc1",
+          "cluster_6_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

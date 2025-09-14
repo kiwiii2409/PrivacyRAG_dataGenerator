@@ -1,0 +1,135 @@
+{
+  "documents": [
+    {
+      "id": "cluster_23_doc1",
+      "content": "Arizona Horizon Health reported an unusual cluster of idiopathic cardiomyopathy cases linked to genetic markers in individuals of Polynesian descent. Patient ID# PX-88723 was admitted on 06/15/2023 for advanced cardiac monitoring. Treatment included a tailored regimen of sacubitril/valsartan and ongoing genetic counseling. Dr. Elena Varga noted the patient's participation in study NCT04567823 exploring familial cardiomyopathy patterns. Address on file: 2301 W. Catalina Dr., Phoenix, AZ 85029.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_23_doc2",
+      "content": "Notification: Policy revision #PHX-CARD-2023-09 effective October 1 mandates pre-authorization for advanced genetic testing related to cardiomyopathies. Impacted members include those with ICD-10 codes I42.8-I42.9 and participant IDs beginning with PX. Provider queries should be directed to geneticcounseling@azhh.com or (602) 555-0172. Processing times may increase during transition period.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_23_doc3",
+      "content": "Community Health Digest (09/10/2023): Phoenix cardiology practices see 37% increase in genetic testing volumes since January. Arizona Horizon Health's research division published interim findings from NCT04567823, showing 58% of participants with RBM20 variants required hospitalization within 12 months. Outreach events scheduled at Papago Cultural Center through Q4.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_23_doc4",
+      "content": "Claim #89022-331: 11/02/2023 echocardiogram and genetic panel for PX-88723 (DOB 04/19/1985) processed with partial denial. Code Z13.6 requires additional documentation per policy PHX-CARD-2023-09. Patient responsibility: $340. Coordinator notes indicate follow-up with Dr. Varga's office requested regarding variant interpretation.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_23",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex case linking genetic cardiomyopathy research, policy changes, and individual patient journey through Arizona Horizon Health system",
+    "person": {
+      "entities": [
+        [
+          "PX-88723",
+          "PATIENT_ID"
+        ],
+        [
+          "06/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "11/02/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "sacubitril/valsartan",
+          "TREATMENT"
+        ],
+        [
+          "ongoing genetic counseling",
+          "TREATMENT"
+        ],
+        [
+          "advanced cardiac monitoring",
+          "TREATMENT"
+        ],
+        [
+          "advanced genetic testing",
+          "TREATMENT"
+        ],
+        [
+          "genetic panel",
+          "TREATMENT"
+        ],
+        [
+          "echocardiogram",
+          "TREATMENT"
+        ],
+        [
+          "2301 W. Catalina Dr., Phoenix, AZ 85029",
+          "ADDRESS"
+        ],
+        [
+          "04/19/1985",
+          "BIRTHDATE"
+        ],
+        [
+          "Polynesian",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "idiopathic cardiomyopathy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "RBM20",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment combination and research study involved patient PX-88723 with idiopathic cardiomyopathy?",
+        "a": "Sacubitril/valsartan regimen and study NCT04567823 on familial patterns.",
+        "sources": [
+          "cluster_23_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new pre-authorization requirement took effect for Phoenix cardiomyopathy patients in October 2023?",
+        "a": "Policy PHX-CARD-2023-09 mandates approval for advanced genetic testing.",
+        "sources": [
+          "cluster_23_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What genetic variant and clinical outcome were reported for participant PX-88723 in the Arizona Horizon Health study?",
+        "a": "RBM20 variant with 58% hospitalization risk within 12 months.",
+        "sources": [
+          "cluster_23_doc1",
+          "cluster_23_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did policy changes impact genetic testing volumes and claim processing for cardiology patients?",
+        "a": "37% testing increase and partial denials requiring additional documentation.",
+        "sources": [
+          "cluster_23_doc2",
+          "cluster_23_doc3",
+          "cluster_23_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

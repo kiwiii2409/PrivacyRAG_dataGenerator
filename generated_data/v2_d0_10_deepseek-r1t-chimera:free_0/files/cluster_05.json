@@ -1,0 +1,128 @@
+{
+  "documents": [
+    {
+      "id": "cluster_5_doc1",
+      "content": "A recent audit revealed inconsistencies in claim processing for patients enrolled in policy HNX-882K at Crestview Medical Center. Several cases involving immunotherapy treatments for rare conditions were flagged due to missing pre-authorization documentation. The audit report notes a particular case where a 43-year-old patient underwent IL-2 therapy without proper coding.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_5_doc2",
+      "content": "Provider report from Dr. Ellison at Crestview Medical Oncology details treatment protocol adjustments for patient ID#3971-882K-55. The patient's combination immunotherapy regimen was modified on 11/03/2023 due to elevated liver enzymes, transitioning from IL-2 to interferon-alpha treatment under research protocol ONC-2023-441.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_5_doc3",
+      "content": "Crestview Tribune article highlights increased insurance denials for advanced therapies since policy HNX-882K implementation. The piece interviews a patient quoted as saying 'My immunotherapy was denied three times despite meeting criteria,' and references ongoing research studies at the medical center's oncology wing.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_5_doc4",
+      "content": "Memo from insurance underwriters details new documentation requirements for policy HNX-882K effective 01/15/2024. All immunotherapy claims must now include liver function panel results and biopsy confirmation of disease progression from within 60 days prior to treatment initiation.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_5_doc5",
+      "content": "Patient satisfaction survey submitted by participant in research study ONC-2023-441 reports difficulties navigating prior authorization process for medications. The respondent listed contact attempts through both 800-555-0199 and provider's direct line at 212-555-0167 before receiving approval.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_5_doc6",
+      "content": "Research note from Crestview Medical Center indicates that 68% of patients on policy HNX-882K receiving IL-2 therapy required treatment modifications within first three cycles. Secondary analysis shows improved tolerance in patients transitioning to interferon-alpha regimens as per study ONC-2023-441 protocols.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_5",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "A patient's journey through immunotherapy treatment at Crestview Medical under policy HNX-882K, including treatment modifications, insurance challenges, and research study participation.",
+    "person": {
+      "entities": [
+        [
+          "HNX-882K",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "3971-882K-55",
+          "PATIENT_ID"
+        ],
+        [
+          "43-year-old",
+          "AGE"
+        ],
+        [
+          "IL-2 therapy",
+          "TREATMENT"
+        ],
+        [
+          "interferon-alpha treatment",
+          "TREATMENT"
+        ],
+        [
+          "ONC-2023-441",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Crestview Medical Center",
+          "LOCATION"
+        ],
+        [
+          "Dr. Ellison",
+          "PROVIDER"
+        ],
+        [
+          "11/03/2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two immunotherapy treatments did patient ID#3971-882K-55 receive under research protocol ONC-2023-441 at Crestview Medical?",
+        "a": "IL-2 therapy followed by interferon-alpha treatment",
+        "sources": [
+          "cluster_5_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation requirements were added to policy HNX-882K effective January 2024?",
+        "a": "Liver function panels and recent biopsy confirmation",
+        "sources": [
+          "cluster_5_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Based on the audit report and provider report, what is the patient’s age and what treatment change was made due to elevated liver enzymes?",
+        "a": "43-year-old; switched from IL-2 to interferon‑alpha because of elevated liver enzymes.",
+        "sources": [
+          "cluster_5_doc1",
+          "cluster_5_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of HNX-882K patients needed IL-2 therapy modifications within three cycles, and which research protocol described the typical modification?",
+        "a": "68%; protocol ONC-2023-441.",
+        "sources": [
+          "cluster_5_doc6",
+          "cluster_5_doc2"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

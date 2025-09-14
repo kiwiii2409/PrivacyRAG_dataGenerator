@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "id": "cluster_43_docid1",
+      "content": "Coastal Health Insurance memo regarding policy #CHI-78432: Following recent audits, all claims for inpatient bariatric surgery at Mariposa Medical Center must include preoperative nutrition counseling documentation. This change affects patients aged 18-65 with BMI over 40. Dr. Evelyn Hartman's team reported a 37% increase in such surgeries from Q3 to Q4 2023.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_43_docid2",
+      "content": "Mariposa Medical Center surgery report for patient T385926: Successfully performed laparoscopic sleeve gastrectomy on 11/15/2023. Patient had completed 6-month supervised diet program. Medication list included vitamin D3 5000IU daily and fenofibrate 145mg. Follow-up scheduled with endocrinology clinic. Surgeon: Dr. Rajiv Patel. Referring provider: Dr. Mitchell Yuan.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_43_docid3",
+      "content": "Claims adjustment notice sent to T385926 on 12/01/2023: Partial denial for CPT 43775 due to missing behavioral health clearance. Claim resubmission deadline 01/15/2024. Contact claims specialist Vivian Torres at (805) 555-0198 or vtorres@coastalhealth.com with questions. Appeal rights printed on reverse.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_43_docid4",
+      "content": "National Obesity Research Consortium quarterly bulletin (Jan 2024): Coastal Health subscribers exhibit 22% higher adherence to postoperative protocols compared to other insurers. Dr. Hartman's bariatric outcomes study seeks participants with type 2 diabetes for Phase III trial - contact research coordinator Mara Jensen, mjensen@norc.org.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_43_docid5",
+      "content": "Ventura County Medical Journal breaking news: Mariposa Medical Center announces new robotic bariatric surgery suite opening March 2024. First in network to offer Revita duodenal mucosal resurfacing as adjunct to sleeve gastrectomy. Hospital administrator Clyde Rutherford credits policy CHI-78432 for enabling infrastructure investment.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_43",
+    "cluster_risk": "HIGH",
+    "content_summary": "Bariatric surgery patient journey involving claim denial, policy changes, and cutting-edge treatment technologies during 2023-2024 timeframe",
+    "person": {
+      "entities": [
+        [
+          "T385926",
+          "PATIENT_ID"
+        ],
+        [
+          "11/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "12/01/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "01/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "Mariposa Medical Center",
+          "LOCATION"
+        ],
+        [
+          "endocrinology clinic",
+          "LOCATION"
+        ],
+        [
+          "laparoscopic sleeve gastrectomy",
+          "TREATMENT"
+        ],
+        [
+          "CPT 43775",
+          "TREATMENT"
+        ],
+        [
+          "vitamin D3 5000IU daily",
+          "TREATMENT"
+        ],
+        [
+          "fenofibrate 145mg",
+          "TREATMENT"
+        ],
+        [
+          "6-month supervised diet program",
+          "TREATMENT"
+        ],
+        [
+          "behavioral health clearance",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two medications were prescribed to patient T385926 following bariatric surgery at Mariposa Medical Center?",
+        "a": "Vitamin D3 5000IU daily and fenofibrate 145mg.",
+        "sources": [
+          "cluster_43_docid2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new procedure will Mariposa Medical Center offer starting March 2024?",
+        "a": "Revita duodenal mucosal resurfacing with sleeve gastrectomy.",
+        "sources": [
+          "cluster_43_docid5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Why was the claim for patient T385926's procedure partially denied and what is the resubmission deadline?",
+        "a": "Missing behavioral health clearance, deadline 01/15/2024.",
+        "sources": [
+          "cluster_43_docid2",
+          "cluster_43_docid3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which policy change affected bariatric surgery prerequisites and which patient subgroup was highlighted in subsequent research?",
+        "a": "Preoperative nutrition counseling for BMI>40 patients; research focuses on type 2 diabetes.",
+        "sources": [
+          "cluster_43_docid1",
+          "cluster_43_docid4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "documents": [
+    {
+      "id": "cluster_0_doc1",
+      "content": "The provider network review highlighted increased referrals to Riverside Neurology Group for patients with idiopathic intracranial hypertension. Coverage expansion for vertical sleeve gastrectomy procedures was noted, particularly among patients aged 35-55 with BMI over 40. Prior authorization forms now require additional imaging documentation when submitting claims for these cases. The policy update took effect November 2022.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_0_doc2",
+      "content": "Patient 44892-AB71 presented with pseudotumor cerebri and underwent VP shunt placement on 05/15/2023 at Riverside Medical Center. Post-operative care included weekly intracranial pressure monitoring for 6 weeks. The medical team recommended bariatric surgery consultation due to failed medical management. Claim was processed under policy rider R-NEURO-2023.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_0_doc3",
+      "content": "Research study NCT05678335 examined outcomes of bariatric surgery in patients with neurological conditions in the Pacific Northwest region. Preliminary data shows 62% reduction in medication needs for subjects with pseudotumor cerebri who underwent vertical sleeve gastrectomy. Enrollment criteria required patients aged 30-60 with documented treatment-resistant symptoms.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_0_doc4",
+      "content": "Local healthcare costs analysis revealed Riverside Medical Center submitted 47% more complex neurology claims in Q2 2023 compared to regional averages. This correlates with their new neuro-gastric treatment pathway implementation. Claims with both VP shunt and bariatric procedure codes qualified for enhanced reimbursement rates.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_0",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Interconnected documents covering neurological-bariatric treatment pathway, insurance policy changes, and regional healthcare cost analysis.",
+    "person": {
+      "entities": [
+        [
+          "44892-AB71",
+          "PATIENT_ID"
+        ],
+        [
+          "pseudotumor cerebri",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "05/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Riverside Medical Center",
+          "LOCATION"
+        ],
+        [
+          "vertical sleeve gastrectomy",
+          "TREATMENT"
+        ],
+        [
+          "VP shunt",
+          "TREATMENT"
+        ],
+        [
+          "NCT05678335",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Pacific Northwest",
+          "LOCATION"
+        ],
+        [
+          "bariatric surgery consultation",
+          "TREATMENT"
+        ],
+        [
+          "R-NEURO-2023",
+          "INDIRECT_IDENTIFIER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the treatment recommendation for patient 44892-AB71 after failed medical management?",
+        "a": "Bariatric surgery consultation was recommended.",
+        "sources": [
+          "cluster_0_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What regional impact did the neuro-gastric treatment pathway implementation have?",
+        "a": "47% more complex neurology claims compared to regional averages.",
+        "sources": [
+          "cluster_0_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which interventions combined show improved outcomes for pseudotumor cerebri patients in the Pacific Northwest?",
+        "a": "VP shunt placement followed by vertical sleeve gastrectomy.",
+        "sources": [
+          "cluster_0_doc2",
+          "cluster_0_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy changes and reimbursement adjustments affected neurological treatment coverage in November 2022?",
+        "a": "Required imaging documentation and enhanced reimbursement for combined VP shunt and bariatric claims.",
+        "sources": [
+          "cluster_0_doc1",
+          "cluster_0_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

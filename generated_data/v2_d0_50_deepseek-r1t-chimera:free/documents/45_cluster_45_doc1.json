@@ -1,0 +1,7 @@
+{
+  "id": "cluster_45_doc1",
+  "content": "Strategic Health Alliance reported a 32% increase in processed claims across university research networks in fiscal Q2 2024. Analysis showed uneven distribution, with Coastal Research Institute representing 48% of all documentation delays due to EHR conflicts, while Mid-Atlantic Campus processed claims 15-18 days faster than industry benchmarks. System updates addressing congenital heart disease study billing are pending implementation by July 31. Affected PATIENT_ID: CRI79825B has outstanding claims requiring additional imaging documentation.",
+  "metadata": {
+    "format": "insurance_memo"
+  }
+}

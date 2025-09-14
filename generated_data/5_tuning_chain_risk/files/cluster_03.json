@@ -1,0 +1,132 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "Centennial Medical Group's quarterly provider report highlights increased referrals to Maplewood Rehabilitation Center following the implementation of new chronic pain management protocols. Patients aged 45-65 with degenerative disc disease showed 32% improvement in mobility scores when combining aquatic therapy with targeted nerve blocks. The center processed 142 prior authorizations for these treatments in Q3 2023, with an average approval time of 4.2 business days. Dr. Elena Marquez noted particular success in cases utilizing the updated phased treatment approach.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "Claims memo 234-8876 details coverage adjustments for multi-modal pain management at network facilities effective October 1, 2023. Aquatic therapy sessions now require documentation of functional improvement metrics when exceeding 12 visits per benefit period. Nerve block approvals mandate pre-treatment imaging confirmation for patients over age 55. These changes impact 17% of current Maplewood Rehabilitation Center cases according to internal audits.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Patient survey ID PT-6652 reflects experiences at Maplewood's chronic pain program: 'The warm water therapy pool provided better relief than previous treatments.' Respondent reported 3 functional improvement on the 5-point scale after completing 16 sessions. Survey noted moderate challenges with insurance documentation requirements for continued care. Participant was aged 58 and utilized both physical therapy and interventional pain management services.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "University of Denver Health Research study NCT04567823 interim analysis shows aquatic therapy reduces opioid use by 41% among participants with lumbar degenerative disc disease. The 2022-2024 study at Maplewood tracks outcomes for 78 enrollees using wearable mobility sensors. Preliminary data suggests greatest benefits for patients combining 2x weekly pool sessions with monthly nerve blocks. IRB approval extends through December 2024.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_3_doc5",
+      "content": "Rocky Mountain Health News article from November 15, 2023 details Maplewood Rehabilitation Center's innovative pain program expansion. The $1.2 million facility upgrade includes three therapeutic pools and upgraded sensor systems for gait analysis. Center director Dr. Raj Patel attributes 28% enrollment growth to insurance coverage changes and published research outcomes. Patient demographic data shows 68% of participants are aged 50-70 with chronic back conditions.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_3_doc6",
+      "content": "Audit report A-4492-23Q4 identifies inconsistencies in functional improvement documentation for Maplewood's aquatic therapy patients. 19% of reviewed charts lacked required mobility assessments before approval for extended sessions. Findings prompted updated staff training on capture standards for sensor-derived gait metrics. Compliance improved from 73% to 89% post-intervention among patients aged 55+ with degenerative disc disease.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Chronic pain management program implementation at Maplewood Rehabilitation Center involving aquatic therapy, nerve blocks, insurance coverage changes, and clinical research",
+    "person": {
+      "entities": [
+        [
+          "PT-6652",
+          "PATIENT_ID"
+        ],
+        [
+          "58",
+          "AGE"
+        ],
+        [
+          "degenerative disc disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "nerve blocks",
+          "TREATMENT"
+        ],
+        [
+          "Maplewood Rehabilitation Center",
+          "PROVIDER"
+        ],
+        [
+          "Centennial Medical Group",
+          "PROVIDER"
+        ],
+        [
+          "NCT04567823",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "2022-2024",
+          "EVENT_DATE"
+        ],
+        [
+          "functional improvement metrics",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What specific mobility score improvement did the 58-year-old participant ID PT-6652 report after aquatic therapy?",
+        "a": "3 functional improvement on the 5-point scale",
+        "sources": [
+          "cluster_3_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation requirements took effect October 2023 for aquatic therapy exceeding 12 sessions?",
+        "a": "Functional improvement metrics documentation required",
+        "sources": [
+          "cluster_3_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which treatments showed 41% opioid use reduction for degenerative disc disease patients in study NCT04567823?",
+        "a": "Aquatic therapy combined with monthly nerve blocks",
+        "sources": [
+          "cluster_3_doc4",
+          "cluster_3_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What facility improvements contributed to Maplewood Rehabilitation Center's 28% enrollment growth?",
+        "a": "Three therapeutic pools and upgraded gait analysis sensor systems",
+        "sources": [
+          "cluster_3_doc5",
+          "cluster_3_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

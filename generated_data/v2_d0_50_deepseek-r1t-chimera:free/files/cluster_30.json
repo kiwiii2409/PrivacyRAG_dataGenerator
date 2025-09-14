@@ -1,0 +1,132 @@
+{
+  "documents": [
+    {
+      "id": "cluster_30_doc1",
+      "content": "New policy amendment #THYR-774 effective June 1, 2023 expanded coverage for Hashimoto's thyroiditis antibody testing. Boise regional providers received updated guidelines requiring pre-authorization documentation for thyroid ultrasound referrals. Implementation followed clinical study THYROID-889 showing improved early detection rates.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_30_doc2",
+      "content": "35-year-old female teacher from Boise submitted claim for thyroid peroxidase antibody test under policy #THYR-774. Documentation included referral from Canyon View Endocrinology dated June 12, 2023. Claim processed without complications.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_30_doc3",
+      "content": "Regional audit of Hashimoto's claims shows 22% increase in antibody testing utilization since policy update. Boise accounts for 18% of regional volume. Teaching professionals represent disproportionate percentage of claims compared to other occupations.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_30_doc4",
+      "content": "Canyon View Endocrinology provider note: Patient presents with fatigue and weight gain. Family history of autoimmune disorders. Ordered full thyroid panel under new coverage guidelines. Patient advised to follow up for ultrasound if results indicate need.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_30_doc5",
+      "content": "Survey results from Boise-area teachers show 67% report difficulty accessing endocrine care. Long wait times cited as primary barrier despite expanded coverage. Several respondents mentioned utilizing ceramic studio wellness programs while awaiting appointments.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_30_doc6",
+      "content": "During June 2023 Thyroid Awareness Month, Boise hosted free screening events partially funded under policy #THYR-774. Local educators participated at higher than average rates. Next event scheduled to coincide with back-to-school health fairs.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_30",
+    "cluster_risk": "LOW",
+    "content_summary": "Policy expansion for thyroid testing affecting Boise-area teachers, with associated claims, provider interactions, and community events",
+    "person": {
+      "entities": [
+        [
+          "35",
+          "AGE"
+        ],
+        [
+          "teacher",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "ceramic studio",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Boise",
+          "LOCATION"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Hashimoto's thyroiditis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "thyroid peroxidase antibody test",
+          "TREATMENT"
+        ],
+        [
+          "thyroid panel",
+          "TREATMENT"
+        ],
+        [
+          "thyroid ultrasound",
+          "TREATMENT"
+        ],
+        [
+          "June 12, 2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What documentation was included with the thyroid antibody test claim submitted under policy #THYR-774 in June 2023?",
+        "a": "Referral from Canyon View Endocrinology dated June 12, 2023.",
+        "sources": [
+          "cluster_30_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage increase in Hashimoto's testing occurred after the policy amendment?",
+        "a": "22% increase in antibody testing utilization.",
+        "sources": [
+          "cluster_30_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two characteristics identify the Boise educator who benefited from thyroid coverage expansion in 2023?",
+        "a": "35-year-old teacher with ceramic studio involvement.",
+        "sources": [
+          "cluster_30_doc2",
+          "cluster_30_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did community events and professional demographics interact under policy #THYR-774 implementation?",
+        "a": "Teachers participated in free screenings at higher rates during Thyroid Awareness Month.",
+        "sources": [
+          "cluster_30_doc3",
+          "cluster_30_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "documents": [
+    {
+      "id": "cluster_8_doc1",
+      "content": "Dermatology consultation report from Granite Peak Health Services notes atypical presentation of hidradenitis suppurativa in a patient born in 1989. Recommended biological therapy initiation pending insurance approval. Documentation references prior unsuccessful antibiotic course at Mountain View Urgent Care.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_8_doc2",
+      "content": "Pre-authorization request HS-2023-0456 for adalimumab submitted March 10, 2023 by Dr. Ellen Voss at Granite Peak Dermatology. Justification cites failed conventional treatments and positive research outcomes from UCLA's 2022 HS clinical trial.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_8_doc3",
+      "content": "Approved procedure log shows laser excision of axillary lesions performed March 15, 2023 by Pine Ridge Surgical Associates under policy #DPX-3329. Notes indicate this as interim intervention while awaiting biological medication approval.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_8_doc4",
+      "content": "Regional Healthcare Review March 2023 highlights increased dermatology claim rates coinciding with new biological medication coverage policies. Article references 38% faster approval turnaround for inflammatory conditions compared to previous quarter's baseline metrics.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_8",
+    "cluster_risk": "LOW",
+    "content_summary": "Dermatology patient journey involving hidradenitis suppurativa treatment including biological therapy pre-authorization, surgical intervention, and policy context.",
+    "person": {
+      "entities": [
+        [
+          "1989",
+          "BIRTHDATE"
+        ],
+        [
+          "hidradenitis suppurativa",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "adalimumab",
+          "TREATMENT"
+        ],
+        [
+          "March 10, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which procedure did Granite Peak Health Services authorize for reference HS-2023-0456 on March 15, 2023?",
+        "a": "Laser excision of axillary lesions by Pine Ridge Surgical Associates.",
+        "sources": [
+          "cluster_8_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What treatment trend was reported in the Regional Healthcare Review for March 2023?",
+        "a": "Increased dermatology claim rates with faster biological medication approvals.",
+        "sources": [
+          "cluster_8_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What interventions were pursued for adalimumab pre‑authorization in early 2023?",
+        "a": "Adalimumab therapy and laser excision of axillary lesions.",
+        "sources": [
+          "cluster_8_doc2",
+          "cluster_8_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What was the approval time change for adalimumab pre‑authorization HS‑2023‑0456 in early 2023 according to insurance documents?",
+        "a": "Adalimumab pre‑authorization HS‑2023‑0456 saw 38% faster approval.",
+        "sources": [
+          "cluster_8_doc2",
+          "cluster_8_doc4"
+        ],
+        "type": "specific"
+      }
+    ]
+  }
+}

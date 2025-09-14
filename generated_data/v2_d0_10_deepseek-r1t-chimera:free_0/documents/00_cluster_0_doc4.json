@@ -1,0 +1,7 @@
+{
+  "id": "cluster_0_doc4",
+  "content": "Insurance provider alert: Policy HI-7744XZ beneficiary requested MRI pre-authorization due to worsening knee osteoarthritis on 2023-12-01. Claim initially denied due to out-of-network provider selection (RadNorthwest Imaging) before being reprocessed with Tier-2 approval after primary care escalation from Dr. L. Monteiro at Downtown West Clinic.",
+  "metadata": {
+    "format": "insurance_memo"
+  }
+}

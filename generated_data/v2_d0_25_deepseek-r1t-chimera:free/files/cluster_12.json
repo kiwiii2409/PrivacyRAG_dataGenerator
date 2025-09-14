@@ -1,0 +1,126 @@
+{
+  "documents": [
+    {
+      "id": "cluster_12_doc1",
+      "content": "Patient enrollment form for Blue Horizon insurance policy BHC45723-01 submitted on March 15, 2023 lists primary care provider as Dr. Elena Vasquez at Cedarwood Medical Group. Initial assessment noted elevated cholesterol levels and history of thyroidectomy. Patient resides at 2847 Willow Lane, Hartford, CT and provided contact number 203-555-0198.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_12_doc2",
+      "content": "Cedarwood Medical Group progress note from April 2, 2023 documents follow-up visit for lipid management. Atorvastatin 40mg prescribed with repeat labs ordered in 8 weeks. Patient reported difficulty maintaining diet compliance during business travel.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_12_doc3",
+      "content": "Blue Horizon claims processing memo highlights policy update BHP-2023-087 requiring prior authorization for statin prescriptions exceeding 90-day supplies. This change impacts approximately 12% of Medicare Advantage members in Hartford region according to internal analysis.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_12_doc4",
+      "content": "Comparative effectiveness study published in Journal of Managed Care Pharmacy August 2023 issue examined statin adherence patterns in patients with history of thyroidectomy. Findings suggest modified dosing schedules improved adherence by 22% in this population.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_12_doc5",
+      "content": "News article from Hartford Health Watch details upcoming insurance provider fair at Hartford Convention Center on September 9-10, 2023. Blue Horizon representatives will discuss pharmacy benefit changes and host screening events.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_12",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Patient's cholesterol management journey through insurance enrollment, provider visits, and policy changes, with related research and community events",
+    "person": {
+      "entities": [
+        [
+          "203-555-0198",
+          "PHONE_NUMBER"
+        ],
+        [
+          "2847 Willow Lane, Hartford, CT",
+          "ADDRESS"
+        ],
+        [
+          "BHC45723-01",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "elevated cholesterol levels",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "thyroidectomy",
+          "TREATMENT"
+        ],
+        [
+          "Dr. Elena Vasquez",
+          "PROVIDER"
+        ],
+        [
+          "Cedarwood Medical Group",
+          "PROVIDER"
+        ],
+        [
+          "Atorvastatin 40mg",
+          "TREATMENT"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "April 2, 2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What dosage of Atorvastatin was prescribed to the patient at 2847 Willow Lane, Hartford, CT during their April follow-up?",
+        "a": "Atorvastatin 40mg was prescribed.",
+        "sources": [
+          "cluster_12_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy update affected statin prescription approvals in Hartford during 2023?",
+        "a": "Policy BHP-2023-087 required prior authorization for 90+ day statin supplies.",
+        "sources": [
+          "cluster_12_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which medical condition and historical treatment influenced the prescribed cholesterol management plan for policy BHC45723-01?",
+        "a": "Elevated cholesterol and thyroidectomy history guided 40mg Atorvastatin, supported by adherence research.",
+        "sources": [
+          "cluster_12_doc1",
+          "cluster_12_doc2",
+          "cluster_12_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two types of public engagement activities did Blue Horizon plan for Hartford members in September 2023?",
+        "a": "Policy BHP-2023-087 will be discussed at the provider fair, which includes screening events.",
+        "sources": [
+          "cluster_12_doc3",
+          "cluster_12_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

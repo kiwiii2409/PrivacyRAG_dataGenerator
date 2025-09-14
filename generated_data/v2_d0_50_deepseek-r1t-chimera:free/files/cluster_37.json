@@ -1,0 +1,125 @@
+{
+  "documents": [
+    {
+      "id": "cluster_37_doc1",
+      "content": "The orthopedic department at Glen Oaks Medical Center reported increased MRI utilization for patients with suspected meniscal tears following policy update ORTHO-2023-07, which expanded coverage for advanced imaging. Dr. Emily Carter noted a 40% rise in pre-authorization requests since May 2023. PATIENT_ID XJ7294 was among those receiving expedited approval due to documented instability symptoms and failure of conservative treatment.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_37_doc2",
+      "content": "Claims analysis shows 78% of patients with UNIQUE_FACT bilateral meniscal repairs at Glen Oaks Medical Center between April-September 2023 were aged 30-45 and participated in recreational sports. EVENT_DATE 2023-08-15 audit identified 12 cases requiring additional documentation for POLICY_DOCUMENT ORTHO-2023-07 compliance, all subsequently resolved by EVENT_DATE 2023-09-01.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_37_doc3",
+      "content": "Patient survey from PATIENT_ID XJ7294 indicates satisfactory recovery progress following arthroscopic surgery at Glen Oaks on EVENT_DATE 2023-07-12. The patient reported completion of 8 weeks of post-op physical therapy at ADDRESS 3400 Maple Lane Sport Therapy Clinic and plans to resume recreational badminton by EVENT_DATE 2023-11-01.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_37_doc4",
+      "content": "Research note: Urban athletes aged 30-45 with MEDICAL_CONDITION bilateral meniscal injuries showed 28% faster functional recovery when combining arthroscopic surgery with accelerated rehab protocols versus standard care. STUDY_ID ORTHO-RECOV-23 tracked 142 PROCEDURE meniscal repair cases at 4 centers from EVENT_DATE 2023-05-15 to EVENT_DATE 2023-10-30.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_37_doc5",
+      "content": "Local news article highlights increased sports injury awareness in Glen Oaks area following community badminton tournament injuries. Event organizer PHONE_NUMBER (614) 555-0192 reported 12 participants requiring orthopedic care during summer 2023 season. The piece references POLICY_DOCUMENT ORTHO-2023-07 changes impacting access to specialized treatments.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_37",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Orthopedic care ecosystem involving policy changes, patient journey, provider reporting, research findings, and community impact related to meniscal injuries among recreational athletes",
+    "person": {
+      "entities": [
+        [
+          "XJ7294",
+          "PATIENT_ID"
+        ],
+        [
+          "2023-07-12",
+          "EVENT_DATE"
+        ],
+        [
+          "3400 Maple Lane Sport Therapy Clinic",
+          "ADDRESS"
+        ],
+        [
+          "bilateral meniscal injuries",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "2023-11-01",
+          "EVENT_DATE"
+        ],
+        [
+          "30-45",
+          "AGE"
+        ],
+        [
+          "arthroscopic surgery",
+          "TREATMENT"
+        ],
+        [
+          "post-op physical therapy",
+          "TREATMENT"
+        ],
+        [
+          "recreational badminton",
+          "EVENT"
+        ],
+        [
+          "Glen Oaks Medical Center",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which patient underwent arthroscopic surgery at Glen Oaks on July 12, 2023 and completed therapy at 3400 Maple Lane?",
+        "a": "Patient XJ7294 had surgery on July 12 and completed therapy at 3400 Maple Lane.",
+        "sources": [
+          "cluster_37_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of bilateral meniscal repair patients at Glen Oaks from April-September 2023 were recreational athletes aged 30-45?",
+        "a": "78% of bilateral repair patients were recreational athletes aged 30-45.",
+        "sources": [
+          "cluster_37_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which policy update affected MRI approval for PATIENT_ID XJ7294 and what audit resolved compliance issues?",
+        "a": "ORTHO-2023-07 expanded MRI coverage; audit resolved 12 compliance cases.",
+        "sources": [
+          "cluster_37_doc1",
+          "cluster_37_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did the ORTHO-RECOV-23 study findings relate to therapy protocols mentioned in the patient survey?",
+        "a": "Study showed accelerated rehab improved recovery, matching patient XJ7294's 8-week program.",
+        "sources": [
+          "cluster_37_doc3",
+          "cluster_37_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

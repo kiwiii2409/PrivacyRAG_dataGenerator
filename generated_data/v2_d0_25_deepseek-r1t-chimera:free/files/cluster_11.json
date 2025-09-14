@@ -1,0 +1,116 @@
+{
+  "documents": [
+    {
+      "id": "cluster_11_docid1",
+      "content": "Reassignment of Dr. Melinda Vasquez from Northgate Medical Group to Aurora Health Network effective January 15. Policy memo outlines transitional care protocols for existing patients, including those with complex rheumatology cases. Requires updated referral forms for patients under treatment plans longer than 6 months.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_11_docid2",
+      "content": "Patient JK-7743-22 (Miranda Eckert) attended follow-up at Silverthorne Rheumatology Clinic on 03/22. Bloodwork showed improved markers for ankylosing spondylitis. Adjusted biologics dosage per Dr. Vasquez's last consult notes. Next appointment scheduled with new provider at Aurora in April.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_11_docid3",
+      "content": "Research brief from Coastal University Medical Center: Biological switching patterns in ankylosing spondylitis patients aged 35-50 showed 62% reduced flare-ups when transitioning care mid-treatment vs therapy restarts. Study period covers cases from 2021-2023 across three health networks.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_11_docid4",
+      "content": "Claim #4458-MV: $2,830 denied for JK-7743-22's April biologics infusion at Aurora citing prior authorization gap during provider transition. Appeal submitted with continuity of care exception request referencing rheumatology network policy RNP-208.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_11_docid5",
+      "content": "Aurora Health Network press release: Rheumatology department implements new teleconsult system for transitioning patients. Software tracks medication adjustments across provider changes, flagging potential dosage conflicts. Pilot program reduced treatment gaps by 41% in first quarter.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_11_docid6",
+      "content": "Audit RN-2204-966 highlights three cases where biologics authorization delays occurred during provider transitions at Aurora, including JK-7743-22. Recommends system-wide review of RNP-208 exceptions processing timelines for high-risk therapies.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_11",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient journey through provider transition with rheumatology biologics treatment, policy impacts, and associated claims challenges",
+    "person": {
+      "entities": [
+        [
+          "Miranda Eckert",
+          "NAME"
+        ],
+        [
+          "JK-7743-22",
+          "PATIENT_ID"
+        ],
+        [
+          "ankylosing spondylitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "4458-MV",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "RN-2204-966",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "03/22",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment and dosage changes were made for Miranda Eckert (patient ID JK-7743-22) at Silverthorne Rheumatology Clinic on March 22?",
+        "a": "Biologics dosage adjusted per Dr. Vasquez's consult, with April appointment scheduled at Aurora.",
+        "sources": [
+          "cluster_11_docid2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What general operational improvement did Aurora Health Network implement for transitioning rheumatology patients?",
+        "a": "Teleconsult system tracking medication adjustments during provider changes reduced treatment gaps by 41%.",
+        "sources": [
+          "cluster_11_docid5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What claim details and audit findings relate to Miranda Eckert's biologics treatment disruption?",
+        "a": "Claim denied; audit cited authorization delays during provider transition.",
+        "sources": [
+          "cluster_11_docid4",
+          "cluster_11_docid6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What research findings and operational improvements support care continuity for mid-treatment rheumatology patients?",
+        "a": "Study shows 62% fewer flare-ups; teleconsult system reduced gaps by 41%.",
+        "sources": [
+          "cluster_11_docid3",
+          "cluster_11_docid5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "documents": [
+    {
+      "id": "cluster_5_doc1",
+      "content": "Phoenix Wellness Group updated their physical therapy referral protocols for Fall 2023, requiring pre-authorization documentation for high-frequency sessions. Changes impact coverage for patients utilizing multiple network providers. The new guidelines emphasize coordinated care plans for chronic pain management cases.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_5_doc2",
+      "content": "A 48-year-old female from Tucson received approvals for biweekly aquatic therapy at Desert Springs Rehab following shoulder arthroplasty. Treatment authorization includes coverage for 18 sessions under plan TWC-45Q8, with progress assessments scheduled after every 6 visits.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_5_doc3",
+      "content": "Aquatic therapy utilization reports show 22% increase among 45-55 year olds in Southern Arizona clinics during Q4 2023. Desert Springs Rehab accounted for 38% of approved claims, with average 14.7 sessions per treatment plan. Orthopedic recoveries represented 61% of cases.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_5_doc4",
+      "content": "Network alert: Temporary provider shortage at Tucson PT facilities anticipated November 15-30 due to annual conference. Patients may schedule at alternative Mesa or Flagstaff locations without pre-authorization revisions. Emergency coverage extended for post-surgical cases during this period.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_5_doc5",
+      "content": "Clinical outcomes review noted improved mobility scores in 78% of patients completing aquatic therapy programs at Desert Springs Rehab. Study period covered January-October 2023, with particular success in post-arthroplasty cases. Average treatment duration was 10.2 weeks per patient.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_5_doc6",
+      "content": "Specialist shortage leads to expanded telehealth options for follow-up care in Arizona. Effective December 1, physical therapy progress assessments may be conducted virtually for patients traveling more than 50 miles to network facilities. Eligible plans include TWC-series policies.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_5",
+    "cluster_risk": "LOW",
+    "content_summary": "Aquatic therapy treatment journey and policy updates in Southern Arizona network",
+    "person": {
+      "entities": [
+        [
+          "48",
+          "AGE"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Tucson",
+          "LOCATION"
+        ],
+        [
+          "shoulder arthroplasty",
+          "TREATMENT"
+        ],
+        [
+          "biweekly aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "Desert Springs Rehab",
+          "PROVIDER"
+        ],
+        [
+          "TWC-45Q8",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "How many aquatic therapy sessions were initially approved for the 48-year-old female from Tucson under plan TWC-45Q8?",
+        "a": "18 sessions with biweekly frequency.",
+        "sources": [
+          "cluster_5_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage increase in aquatic therapy utilization occurred among 45-55 year olds in Southern Arizona during Q4 2023?",
+        "a": "22% increase in utilization.",
+        "sources": [
+          "cluster_5_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which treatment and facility were associated with improved mobility scores in 78% of post-arthroplasty cases completed by October 2023?",
+        "a": "Aquatic therapy at Desert Springs Rehab.",
+        "sources": [
+          "cluster_5_doc5",
+          "cluster_5_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy changes affected both telehealth options and treatment pre-authorization requirements during Fall 2023?",
+        "a": "Virtual progress assessments allowed and high-frequency therapy pre-authorization required.",
+        "sources": [
+          "cluster_5_doc1",
+          "cluster_5_doc6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

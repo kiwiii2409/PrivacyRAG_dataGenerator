@@ -1,0 +1,7 @@
+{
+  "id": "cluster_5_doc2",
+  "content": "Patient 2387P (DOB 08/15/1985) underwent whole exome sequencing at Valley Genomics in April 2023 for unexplained neurological symptoms. Results revealed POLG mutation. Claim was initially denied due to missing counseling documentation but approved after appeal with additional provider notes. Patient resides at 451 Oakridge Lane, Mountain View.",
+  "metadata": {
+    "format": "claim_form"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Claim submitted by Mountain Peak Neurology for patient Gerald Kovac (ID PT-8872-3A) for specialized cognitive therapy sessions during 02/2024. Documentation includes referral from Dr. Emilia Torres at Summit Valley Hospital and prior authorization number PA-6653-9B. Patient diagnosed with early-onset Lewy body dementia and REM sleep behavior disorder.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Research protocol memo from Colorado Neurodegenerative Institute detailing participation criteria for study CNI-228 (Lewy spectrum disorders). Includes Gerald Kovac's screening results showing unusual treatment response pattern to cholinesterase inhibitors. Study coordinator: Lydia Marnell (lydia.marnell@cni-research.co), IRB approval expires 10/15/2025.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Internal audit of neurocognitive claims at Blue Horizon Insurance identified 43% increase in pre-authorization requests for Lewy body dementia treatments in Q1 2024. Notable case: PT-8872-3A required three peer-to-peer reviews due to combination therapy protocol. Regional manager: Arjun Patel (303-555-0187).",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "News article in Boulder Medical Times: 'Breakthrough in Dementia Care Coverage' mentions new state mandate requiring coverage for multi-modal therapies. Features patient story referencing Mountain Peak Neurology case with unusual sleep study findings (patient declined to be named but matches clinical details from PT-8872-3A).",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient Gerald Kovac's complex neurological care journey intersecting with specialized claims processing, clinical research participation, and policy changes regarding dementia treatments",
+    "person": {
+      "entities": [
+        [
+          "Gerald Kovac",
+          "NAME"
+        ],
+        [
+          "PT-8872-3A",
+          "PATIENT_ID"
+        ],
+        [
+          "early-onset Lewy body dementia",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "REM sleep behavior disorder",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "PA-6653-9B",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "CNI-228",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "02/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "Mountain Peak Neurology",
+          "PROVIDER"
+        ],
+        [
+          "unusual treatment response pattern",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two neurological conditions does Gerald Kovac (PT-8872-3A) have according to his Mountain Peak Neurology claim?",
+        "a": "Early-onset Lewy body dementia and REM sleep behavior disorder.",
+        "sources": [
+          "cluster_2_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage increase in pre-authorization requests for Lewy body dementia treatments did Blue Horizon's audit find in Q1 2024?",
+        "a": "43% increase in pre-authorization requests.",
+        "sources": [
+          "cluster_2_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What study number and unusual clinical feature are documented for Gerald Kovac's participation in Colorado Neurodegenerative Institute research?",
+        "a": "Study CNI-228 showed unusual treatment response to cholinesterase inhibitors.",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How do the Boulder Medical Times article and audit report collectively highlight changes in dementia care coverage?",
+        "a": "New state mandates require multi-modal therapy coverage following increased pre-authorization requests.",
+        "sources": [
+          "cluster_2_doc3",
+          "cluster_2_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

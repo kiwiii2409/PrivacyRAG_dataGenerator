@@ -1,0 +1,121 @@
+{
+  "documents": [
+    {
+      "id": "cluster_9_doc1",
+      "content": "The latest provider network update for Harmony Health Plan includes new gastroenterology specialists at Coastal Digestive Care in Wilmington. Patients with prior authorizations for advanced endoscopic procedures must submit updated documentation by October 15th. The system update also affects coverage criteria for anti-inflammatory biologics used in rare intestinal conditions.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_9_doc2",
+      "content": "A 48-year-old female patient (ID# GH7239K) underwent successful duodenal stent placement at Wilmington Medical Center on 09/12/2023. Post-procedure care included temporary TPN support and monitoring for stent migration. The case highlights challenges in managing strictures secondary to chronic autoimmune enteritis.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_9_doc3",
+      "content": "Research note: Harmony Health beneficiaries with autoimmune enteritis showed 42% reduced hospital admissions after implementation of the 2023 early intervention protocol. Key factors include faster specialist access at Coastal Digestive Care and expanded biologics coverage. Study period: 01/2023-08/2023.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_9_doc4",
+      "content": "Policy document revision 9.3.7 effective 08/01/2023 mandates quarterly provider audits for gastroenterology services. Requirements include verification of equipment calibration logs and documentation of multidisciplinary care conferences. Applies to all network providers in the Wilmington region.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_9_doc5",
+      "content": "Local news: Wilmington Medical Center recently partnered with the National Autoimmune Research Consortium to study long-term outcomes of duodenal stenting. The collaboration will analyze data from 150 patients treated between 2020-2023, including several Harmony Health Plan members.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_9",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Patient journey involving duodenal stenting for autoimmune enteritis, connected to provider network updates, research outcomes, and policy changes in Wilmington region",
+    "person": {
+      "entities": [
+        [
+          "GH7239K",
+          "PATIENT_ID"
+        ],
+        [
+          "48-year-old",
+          "AGE"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "autoimmune enteritis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "duodenal stent placement",
+          "TREATMENT"
+        ],
+        [
+          "temporary TPN support",
+          "TREATMENT"
+        ],
+        [
+          "09/12/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Wilmington Medical Center",
+          "PROVIDER"
+        ],
+        [
+          "Coastal Digestive Care",
+          "PROVIDER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What procedure was performed on patient GH7239K at Wilmington Medical Center and what was the underlying condition?",
+        "a": "Duodenal stent placement for autoimmune enteritis",
+        "sources": [
+          "cluster_9_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the key findings from the 2023 autoimmune enteritis study in the Wilmington region?",
+        "a": "42% reduced hospital admissions after early intervention protocol implementation",
+        "sources": [
+          "cluster_9_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two organizations were mentioned in relation to patient GH7239K's duodenal stent case and the related research partnership?",
+        "a": "Wilmington Medical Center and the National Autoimmune Research Consortium",
+        "sources": [
+          "cluster_9_doc2",
+          "cluster_9_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy changes and research initiatives affected autoimmune enteritis care in Wilmington during 2023?",
+        "a": "Quarterly provider audits mandated and National Autoimmune Research Consortium partnership established",
+        "sources": [
+          "cluster_9_doc4",
+          "cluster_9_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "cluster_5_doc1",
+  "content": "A recent audit revealed inconsistencies in claim processing for patients enrolled in policy HNX-882K at Crestview Medical Center. Several cases involving immunotherapy treatments for rare conditions were flagged due to missing pre-authorization documentation. The audit report notes a particular case where a 43-year-old patient underwent IL-2 therapy without proper coding.",
+  "metadata": {
+    "format": "audit_report"
+  }
+}

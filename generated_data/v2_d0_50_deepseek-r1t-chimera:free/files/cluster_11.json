@@ -1,0 +1,137 @@
+{
+  "documents": [
+    {
+      "id": "cluster_11_doc1",
+      "content": "The Kaiser Orthopedic Institute processed a claim for Adrienne Varga (ID# KT7845) involving bilateral knee arthroplasty on March 15, 2023. Post-operative care included aquatic therapy at Pacific Mobility Center covered under policy HCP-22-4890. Documentation shows outstanding balance of $2,150 related to specialized rehabilitation equipment.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_11_doc2",
+      "content": "Pacific Mobility Center quarterly report notes 42% increase in aquatic therapy utilization among patients aged 35-55 from Q2 to Q3 2023. K.O.I. referrals accounted for 68% of new cases. Insurance coverage challenges persist due to revised HCP-22 policy requirements for obesity-related comorbidities.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_11_doc3",
+      "content": "Adrienne Varga's medical records indicate BMI of 38 prior to weight loss surgery in 2021. Current treatment plan includes aquatic therapy 3x weekly supervised by Dr. Ellen Ramos. Recent progress notes show improved mobility but highlight need for extended therapy authorization beyond standard 12-week limit.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_11_doc4",
+      "content": "Newswire: Kaiser Foundation announced policy expansion for obesity-related ortho rehab services effective January 2024. HCP-22 updates will cover additional aquatic therapy sessions contingent on documented nutrition counseling. Pacific Mobility Center confirmed as preferred provider for bariatric orthopedic cases in Northern California region.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_11_doc5",
+      "content": "Authorization request KT-PT488 for Adrienne Varga denied due to missing documentation of pre-surgical weight loss attempts. Appeal filed by Dr. Ramos includes 2019-2021 nutrition counseling records from Golden State Wellness. Decision pending review by HCP-22 policy committee during June 15 quarterly meeting.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_11",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's orthopedic care journey involving weight loss surgery, knee replacements, aquatic therapy challenges, and evolving insurance policies with provider network changes in Northern California",
+    "person": {
+      "entities": [
+        [
+          "Adrienne Varga",
+          "NAME"
+        ],
+        [
+          "KT7845",
+          "PATIENT_ID"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "June 15",
+          "EVENT_DATE"
+        ],
+        [
+          "2019-2021",
+          "EVENT_DATE"
+        ],
+        [
+          "2019-2021 nutrition counseling records",
+          "UNIQUE_FACT"
+        ],
+        [
+          "pre-surgical weight loss attempts",
+          "UNIQUE_FACT"
+        ],
+        [
+          "extended therapy authorization beyond standard 12-week limit",
+          "UNIQUE_FACT"
+        ],
+        [
+          "12-week limit",
+          "UNIQUE_FACT"
+        ],
+        [
+          "weight loss surgery in 2021",
+          "EVENT"
+        ],
+        [
+          "BMI of 38",
+          "UNIQUE_FACT"
+        ],
+        [
+          "bilateral knee arthroplasty",
+          "TREATMENT"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two facilities provided care for patient KT7845 involving aquatic therapy in 2023, and what was the trend in aquatic therapy utilization at Pacific Mobility Center?",
+        "a": "Kaiser Orthopedic Institute and Pacific Mobility Center; 42% increase in utilization.",
+        "sources": [
+          "cluster_11_doc1",
+          "cluster_11_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation requirements were added to HCP-22 policy for extended aquatic therapy coverage?",
+        "a": "Documented nutrition counseling sessions.",
+        "sources": [
+          "cluster_11_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What was the reason for denial and appeal basis for authorization KT-PT488 regarding Adrienne Varga?",
+        "a": "Missing pre-surgical weight loss records; appealed with 2019-2021 nutrition counseling documentation.",
+        "sources": [
+          "cluster_11_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What regional and demographic trends affected Pacific Mobility Center's Q3 2023 operations, and what policy changes influenced them?",
+        "a": "42% increase in 35-55 age group; new policy expands aquatic therapy coverage.",
+        "sources": [
+          "cluster_11_doc2",
+          "cluster_11_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "cluster_3_doc1",
+  "content": "The recent implementation of policy LP-4482 requires prior authorization for advanced imaging services exceeding $2,500. Providers at Lakeside Regional Hospital reported a 22% decrease in MRI referrals during Q3 2023. This change particularly affected patients aged 55-70 requiring orthopedic evaluations.",
+  "metadata": {
+    "format": "insurance_memo"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "cluster_4_doc1",
+  "content": "A recent audit report on orthopedics claims at St. Michael's Hospital revealed a 40% increase in spinal fusion surgeries among patients aged 45-55 in Q2 2024. The report notes inconsistent pre-authorization documentation, particularly for patients with degenerative disc disease. Provider Dr. Elena Vasquez accounted for 28% of these procedures. Claims processing delays averaged 14 days due to missing surgical notes.",
+  "metadata": {
+    "format": "audit_report"
+  }
+}

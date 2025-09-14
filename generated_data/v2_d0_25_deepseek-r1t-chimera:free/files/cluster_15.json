@@ -1,0 +1,91 @@
+{
+  "documents": [
+    {
+      "id": "cluster_15_doc1",
+      "content": "A new telehealth initiative was launched in partnership with Coastline Health Network last month, focusing on chronic condition management. The program offers virtual consultations for patients across Oregon, with particular emphasis on coordinating care for those with autoimmune disorders. Initial uptake shows 23% enrollment among eligible members in the first two weeks.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_15_doc2",
+      "content": "Patient survey responses from participants in the Coastal Rheumatology study revealed that 68% of respondents reported improved medication adherence after switching to evening dosing schedules. The most frequently cited benefits included reduced morning stiffness and better overall symptom management for those with connective tissue disorders.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_15_doc3",
+      "content": "Claims processing updates for August show increased approvals of immunosuppressant medications among patients aged 45-60 in coastal regions. System logs indicate 87% approval rate for prior authorizations submitted through the new digital portal, with average turnaround time of 2.3 business days.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_15_doc4",
+      "content": "Marineview Specialty Clinic reported an unusual cluster of patients with autoimmune conditions responding exceptionally well to aquatic therapy protocols. Of 22 patients participating in the 12-week program, 18 showed measurable improvements in joint mobility tests. Treatment codes 97110 and 97112 were most frequently billed.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_15_doc5",
+      "content": "Pharmacy benefit changes effective October 1st will allow 90-day supplies of disease-modifying antirheumatic drugs for maintenance therapy patients. This update applies specifically to members enrolled in chronic care management programs through participating Oregon providers.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_15_doc6",
+      "content": "The Newport Health Bulletin featured an article about innovative community partnerships improving care access. Highlight was the collaboration between Marineview Clinic and local recreation centers offering therapeutic pool access six days per week to patients with documented mobility challenges.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_15",
+    "cluster_risk": "LOW",
+    "content_summary": "Telehealth initiatives and treatment effectiveness for autoimmune conditions in Oregon coastal regions",
+    "person": {
+      "entities": []
+    },
+    "questions": [
+      {
+        "q": "Which two treatments showed effectiveness for autoimmune patients at Marineview Specialty Clinic according to their August report?",
+        "a": "Aquatic therapy protocols and joint mobility exercises showed effectiveness.",
+        "sources": [
+          "cluster_15_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What administrative improvement was reported for Oregon's telehealth prescription approvals in August?",
+        "a": "87% approval rate with 2.3-day average turnaround through digital portal.",
+        "sources": [
+          "cluster_15_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What coordinated care benefits did Oregon patients receive from both Marineview Clinic and local recreation centers?",
+        "a": "Aquatic therapy protocols and therapeutic pool access improved mobility for patients.",
+        "sources": [
+          "cluster_15_doc6",
+          "cluster_15_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which two system improvements enhanced chronic care for Oregon autoimmune patients in this cluster?",
+        "a": "Telehealth initiative launch and 90-day DMARD supply policy change.",
+        "sources": [
+          "cluster_15_doc1",
+          "cluster_15_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

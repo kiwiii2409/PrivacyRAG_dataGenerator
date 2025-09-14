@@ -1,0 +1,148 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "Patient Harlow Quinlan (member ID XQ943-7782) underwent a specialized gene therapy treatment at Mercy West Oncology Center on 03/12/2024. The treatment targeted a rare genetic mutation linked to early-onset cardiomyopathy. Pre-authorization case notes indicate coverage was approved under clinical trial protocol GT-204-19C. Follow-up appointments scheduled with Dr. Elise Varga and Dr. Tomas Ruiz.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "Policy memo 2024-87 outlines new prior authorization requirements for advanced genetic therapies in Northern Nevada. Effective May 1st, all GT-204 series treatments require secondary review by the regional genetics panel. Exception process available for patients with documentation of rapid disease progression.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Mercy West Oncology Center submitted a provider network change request to include genetic counseling services under their existing contract. The proposal references increased demand from patients participating in GT-204-19C trial and similar protocols. Review scheduled for Q3 2024 credentialing cycle.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "Research bulletin from Nevada Health Institute shows 42% of GT-204-19C participants required medication adjustments within first 90 days. Most common side effects included elevated liver enzymes (23%) and neuropathic pain (18%). Study coordinator contact: genetherapy@nhi.nv.gov",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_3_doc5",
+      "content": "Patient satisfaction survey completed by Harlow Quinlan on 04/05/2024 noted challenges coordinating care between cardiology and genetics teams. Specifically mentioned 3-week delay in obtaining prior authorization for imaging. Survey ID: NV-PSS-44523",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_3_doc6",
+      "content": "Reno Tribune health section reported on 04/20/2024 about growing patient advocacy efforts around genetic therapy access in Northern Nevada. Featured interview with Mercy West patient highlighting insurance barriers for GT-204-19C participants.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's rare genetic treatment journey intersecting with policy changes, provider network updates, and regional research findings",
+    "person": {
+      "entities": [
+        [
+          "Harlow Quinlan",
+          "NAME"
+        ],
+        [
+          "XQ943-7782",
+          "PATIENT_ID"
+        ],
+        [
+          "03/12/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "early-onset cardiomyopathy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "GT-204-19C",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Mercy West Oncology Center",
+          "PROVIDER"
+        ],
+        [
+          "NV-PSS-44523",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Northern Nevada",
+          "LOCATION"
+        ],
+        [
+          "Dr. Elise Varga",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Tomas Ruiz",
+          "PROVIDER"
+        ],
+        [
+          "genetherapy@nhi.nv.gov",
+          "EMAIL"
+        ],
+        [
+          "04/05/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "patient satisfaction survey",
+          "EVENT"
+        ],
+        [
+          "specialized gene therapy treatment",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two specialists were scheduled for follow‑up care after Harlow Quinlan's gene therapy at Mercy West Oncology Center?",
+        "a": "Dr. Elise Varga and Dr. Tomas Ruiz were scheduled for follow‑up care.",
+        "sources": [
+          "cluster_3_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new prior authorization process takes effect May 1st for GT-204 series treatments in Northern Nevada?",
+        "a": "Requires secondary review by the regional genetics panel with exception process.",
+        "sources": [
+          "cluster_3_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What authorization challenges and treatment date did patient XQ943-7782 encounter for GT-204-19C?",
+        "a": "Approved on 03/12/2024; faced a 3‑week imaging authorization delay.",
+        "sources": [
+          "cluster_3_doc1",
+          "cluster_3_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What clinical findings and provider changes relate to the GT-204-19C trial in Northern Nevada?",
+        "a": "42% needed medication adjustments; Mercy West requested genetic counseling services.",
+        "sources": [
+          "cluster_3_doc3",
+          "cluster_3_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

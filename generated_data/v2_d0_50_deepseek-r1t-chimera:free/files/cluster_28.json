@@ -1,0 +1,129 @@
+{
+  "documents": [
+    {
+      "id": "cluster_28_doc1",
+      "content": "The recent implementation of Policy #NEURO-719 has significantly impacted coverage for experimental neurolinguistic therapy. Providers across the Connecticut network report increased claim denials for patients under 45 with chronic aphasia. The Hartford Clinic noted a 38% reduction in approved claims since March 2024, particularly affecting younger demographics seeking alternative treatments.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_28_doc2",
+      "content": "Patient M. Thorpe (DOB 10/22/1989) underwent intensive neurolinguistic rehabilitation at Silver Birch Neurocare Center following a cerebral venous thrombosis event on 02/14/2024. Treatment included daily transcranial magnetic stimulation sessions under Dr. Emilia Kostova. Claims submitted referenced research protocol NL-TMS-455.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_28_doc3",
+      "content": "The Neurocognitive Advancements Study (NL-TMS-455) at Yale-New Haven Hospital seeks participants aged 30-50 with post-thrombotic aphasia. Participants receive customized TMS regimens while insurers debate coverage under new neurological policy frameworks. Principal Investigator: Dr. Rajiv Mehta, r.mehta@yalenhn.org.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_28_doc4",
+      "content": "Lumina Health denied claim #CT-88392 for M. Thorpe's TMS treatments, citing Policy #NEURO-719 exclusion of experimental protocols without FDA approval. The decision letter was sent to 85 Willow Street, New Haven CT on 05/01/2024. Appeals must reference Case ID 4492-331.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_28_doc5",
+      "content": "Hartford Courant reports growing controversy over neurolinguistic therapy access. Feature story highlights M. Thorpe's case (35-year-old poet) and the broader impact of insurance restrictions on young stroke survivors. Article quotes State Rep. L. Carbajal calling for policy review.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_28",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex case linking experimental neurolinguistic therapy for post-thrombotic aphasia, policy changes (NEURO-719), research study (NL-TMS-455), and patient journey through Connecticut providers",
+    "person": {
+      "entities": [
+        [
+          "M. Thorpe",
+          "NAME"
+        ],
+        [
+          "10/22/1989",
+          "BIRTHDATE"
+        ],
+        [
+          "85 Willow Street, New Haven CT",
+          "ADDRESS"
+        ],
+        [
+          "NL-TMS-455",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "cerebral venous thrombosis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "02/14/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "Dr. Emilia Kostova",
+          "PROVIDER"
+        ],
+        [
+          "Silver Birch Neurocare Center",
+          "LOCATION"
+        ],
+        [
+          "transcranial magnetic stimulation",
+          "TREATMENT"
+        ],
+        [
+          "35-year-old poet",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Case ID 4492-331",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment protocol and research study reference were included in M. Thorpe's medical records from Silver Birch Neurocare Center?",
+        "a": "Transcranial magnetic stimulation sessions under research protocol NL-TMS-455.",
+        "sources": [
+          "cluster_28_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What demographic impact did Policy #NEURO-719 have on neurolinguistic therapy claims in Hartford?",
+        "a": "38% reduction in approved claims for patients under 45 with chronic aphasia.",
+        "sources": [
+          "cluster_28_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which identifying numbers (case + policy), address, and treatment protocol were involved in M. Thorpe's claim denial?",
+        "a": "Case 4492-331, Policy #NEURO-719, 85 Willow Street, TMS sessions under NL-TMS-455.",
+        "sources": [
+          "cluster_28_doc4",
+          "cluster_28_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What connections exist between Yale's research study and insurance coverage challenges for neurological treatments?",
+        "a": "Study NL-TMS-455 participants face coverage denials under Policy #NEURO-719.",
+        "sources": [
+          "cluster_28_doc3",
+          "cluster_28_doc1"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

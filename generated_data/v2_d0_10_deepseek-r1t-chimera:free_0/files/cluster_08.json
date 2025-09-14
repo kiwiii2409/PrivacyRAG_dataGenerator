@@ -1,0 +1,117 @@
+{
+  "documents": [
+    {
+      "id": "cluster_8_doc1",
+      "content": "Recent policy updates under WQZ-709F mandate pre-authorization for all advanced imaging services exceeding $3,000 starting July 2024. The Midwest Regional Health Network implemented new documentation requirements, citing rising costs in neuroimaging procedures. Providers must now submit clinical rationale and prior conservative treatment attempts for MRI approvals.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_8_doc2",
+      "content": "A 57-year-old teacher from Riverdale reported successful migraines management through combined botulinum toxin injections and vestibular therapy at Lakeside Neurology. The treatment plan involved quarterly injections over 18 months, with 73% reduction in severe episodes according to patient surveys. No related claims denials were recorded under policy WQZ-709F.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_8_doc3",
+      "content": "Research note: Midwestern University study shows migraine patients aged 50-65 receiving combination therapy had 31% fewer ER visits than monotherapy groups. Analysis included 28 patients from Lakeside Neurology between 2022-2023. Reimbursement patterns changed significantly after policy WQZ-709F implementation.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_8_doc4",
+      "content": "Audit of neuroimaging approvals revealed 17% decrease in high-cost scans since WQZ-709F enactment. Lakeside Neurology showed strongest compliance (92% proper documentation) among Midwest providers. Three outlier cases required appeals for specialized migraine imaging with contrast enhancement.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_8_doc5",
+      "content": "Riverdale Tribune: Local educators report mixed experiences with new prevention-focused migraine treatments. 'The pre-approval process added three weeks to my care timeline,' shared one participant in the Midwestern University study. Lakeside Neurology plans patient education sessions about policy changes.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_8",
+    "cluster_risk": "LOW",
+    "content_summary": "Policy changes impacting migraine treatment authorization and neuroimaging approvals in Midwest region, with patient experiences and provider compliance data",
+    "person": {
+      "entities": [
+        [
+          "57",
+          "AGE"
+        ],
+        [
+          "teacher",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Riverdale",
+          "LOCATION"
+        ],
+        [
+          "botulinum toxin injections",
+          "TREATMENT"
+        ],
+        [
+          "vestibular therapy",
+          "TREATMENT"
+        ],
+        [
+          "Lakeside Neurology",
+          "PROVIDER"
+        ],
+        [
+          "WQZ-709F",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "migraines",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two treatments achieved 73% reduction in severe migraine episodes for the teacher from Riverdale?",
+        "a": "Botulinum toxin injections and vestibular therapy.",
+        "sources": [
+          "cluster_8_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage decrease in high-cost scans occurred after WQZ-709F implementation?",
+        "a": "17% decrease in high-cost neuroimaging approvals.",
+        "sources": [
+          "cluster_8_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which provider treated the Riverdale teacher and also achieved 92% compliance with documentation requirements under policy WQZ-709F?",
+        "a": "Lakeside Neurology.",
+        "sources": [
+          "cluster_8_doc2",
+          "cluster_8_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "According to Midwestern University research, what were the effects of policy WQZ-709F on ER visit frequency and patient care timelines for migraine sufferers?",
+        "a": "31% fewer ER visits and three‑week longer care timelines.",
+        "sources": [
+          "cluster_8_doc3",
+          "cluster_8_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

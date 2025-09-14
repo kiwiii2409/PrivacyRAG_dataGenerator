@@ -1,0 +1,7 @@
+{
+  "id": "cluster_45_doc3",
+  "content": "PATIENT_ID CRI79825B shows completed step therapy requirements for congenital heart complications dated 04/12/2024 (EVENT_DATE), with 3 echocardiograms and 2 specialist consults documented. Claims processing indicates missing pre-cert for genetic testing panel CTN-11D (TREATMENT). Facility code A7L records Coastal Research Institute campus (LOCATION) as service location. Demographic sheet lists patient as 23-year-old male research participant (DEMOGRAPHIC) with student insurance extension.",
+  "metadata": {
+    "format": "medical_record"
+  }
+}

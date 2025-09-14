@@ -1,0 +1,114 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "Patient survey from April 2023 indicates challenges accessing in-network specialists for chronic Lyme disease treatment within the Northwest region. Participant ID: NWL198755 reported delayed referrals and inconsistent insurance coverage for initial IV antibiotic protocols, leading to prolonged symptoms. Survey highlights geographic disparities in provider availability, with longest wait times at clinics in Spokane. Participant requested anonymity but provided contact ZIP 99201 for follow-up.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "Insurance memo dated 2023-05-15 outlines new coverage guidelines for protracted Lyme disease treatments. Policy REF: NW-4763B mandates pre-authorization for IV antibiotics beyond 28 days in Spokane-area clinics. Memo references research study NCT04587611 on long-term outcomes and cost-effectiveness. Implementation team contact: lyme.coordinator@nw.ins.net, phone 509-345-2121 ext. 475.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Provider report from Evergreen Neurology details care plan for Lyme case (Patient ID NWL198755) with neurological manifestations. Treatment timeline shows oral doxycycline initiated 03/2023, transitioned to IV ceftriaxone in April after incomplete response. Document highlights insurance delays in approving at-home infusion services requested for Spokane address (99201). Patient demographic: female with worker's compensation claim related tick exposure.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "News article titled 'Lyme Treatment Access Debate Intensifies' published in The Northwest Health Journal, July 2023. Reports on insurance policy changes affecting Spokane patients and features anonymous interview with provider from Evergreen Neurology. Article references research study results presented at Infectious Disease Society of NW conference (Event ID CONF-6729). Policy advocates cite case numbers from ZIP 99201.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Chronic Lyme disease treatment challenges and policy changes in Spokane region",
+    "person": {
+      "entities": [
+        [
+          "NWL198755",
+          "PATIENT_ID"
+        ],
+        [
+          "99201",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Lyme disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "worker's compensation claim",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Spokane",
+          "LOCATION"
+        ],
+        [
+          "oral doxycycline",
+          "TREATMENT"
+        ],
+        [
+          "IV ceftriaxone",
+          "TREATMENT"
+        ],
+        [
+          "IV antibiotic protocols",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment transition occurred for patient NWL198755 in April 2023?",
+        "a": "Transitioned from oral doxycycline to IV ceftriaxone due to incomplete response.",
+        "sources": [
+          "cluster_3_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change affected antibiotic treatment for Lyme disease in Spokane clinics?",
+        "a": "Pre-authorization required for IV antibiotics beyond 28 days under policy NW-4763B.",
+        "sources": [
+          "cluster_3_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What challenges did patient NWL198755 face with insurance coverage for at-home IV treatments and initial IV protocols in ZIP 99201?",
+        "a": "Delayed at-home infusion approval and inconsistent initial IV coverage.",
+        "sources": [
+          "cluster_3_doc1",
+          "cluster_3_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What geographic disparities emerged from Lyme treatment accessibility research in Northwest clinics?",
+        "a": "Longest wait times occurred at Spokane-area clinics, particularly in ZIP 99201 facilities.",
+        "sources": [
+          "cluster_3_doc1",
+          "cluster_3_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

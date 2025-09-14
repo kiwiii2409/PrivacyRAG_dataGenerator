@@ -2,7 +2,7 @@
   "documents": [
     {
       "id": "cluster_0_doc1",
-      "content": "Ms. Aaliyah Khoury (PATIENT_ID 7R9T2P4E) initiated a prior authorization request for vestibular schwannoma surgery at Cedars-Sinai Medical Center, referencing POLICY_ID XQR88932. Her neurologist Dr. Helena Voss noted significant progression of bilateral acoustic neuromas despite previous gamma knife treatments. The surgical team highlighted concerns about cerebrospinal fluid leakage risks given the patient's history of arachnoid cysts.",
+      "content": "Ms. Aaliyah Khoury (PATIENT_ID 7R9T2P4E) initiated a prior authorization request for vestibular schwannoma surgery at Cedars-Sinai Medical Center, referencing policy XQR88932. Her neurologist Dr. Helena Voss noted significant progression of bilateral acoustic neuromas despite previous gamma knife treatments. The surgical team highlighted concerns about cerebrospinal fluid leakage risks given the patient's history of arachnoid cysts.",
       "metadata": {
         "format": "medical_record"
       }

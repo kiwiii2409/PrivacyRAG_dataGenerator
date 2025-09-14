@@ -1,0 +1,116 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "The recent implementation of policy LP-4482 requires prior authorization for advanced imaging services exceeding $2,500. Providers at Lakeside Regional Hospital reported a 22% decrease in MRI referrals during Q3 2023. This change particularly affected patients aged 55-70 requiring orthopedic evaluations.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "A 64-year-old male with degenerative disc disease underwent two epidural steroid injections at Lakeside Regional Hospital in September 2023. The treatment plan included physical therapy three times weekly for six weeks, with claims processed under authorization code GH78-2JK9.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Study published in October 2023 analyzed 450 chronic pain cases across five Midwestern facilities. Patients receiving multimodal treatment (medication + therapy) showed 35% better functional outcomes than medication-only groups. Lakeside Regional accounted for 18% of study participants.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "Claims data shows a 41% increase in denial rates for spinal procedures among patients over 60 since LP-4482 implementation. Appeal success rates remain highest when including both imaging results and functional capacity assessments from approved providers.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc5",
+      "content": "The Lakeside Health Network expanded its pain management program to include acupuncture coverage for degenerative conditions in November 2023. This change affects patients already enrolled in care plans with provider ID series 3000-3999.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc6",
+      "content": "Local news outlet reported three patient complaints about delayed orthopedic care approvals at Lakeside Regional during October-December 2023. Hospital administration cited staffing shortages in prior authorization department while implementing new policy requirements.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "LOW",
+    "content_summary": "Orthopedic care management under new imaging policy at Lakeside Regional Hospital with associated treatment patterns and policy impacts",
+    "person": {
+      "entities": [
+        [
+          "64",
+          "AGE"
+        ],
+        [
+          "degenerative disc disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "September 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "epidural steroid injections",
+          "TREATMENT"
+        ],
+        [
+          "GH78-2JK9",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "male",
+          "DEMOGRAPHIC"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment combination showed better outcomes in the Lakeside Regional chronic pain study from October 2023?",
+        "a": "Multimodal treatment (medication + therapy) showed 35% better functional outcomes.",
+        "sources": [
+          "cluster_3_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What two treatments were included in the care plan for the 64-year-old male under authorization code GH78-2JK9?",
+        "a": "Epidural steroid injections and physical therapy three times weekly.",
+        "sources": [
+          "cluster_3_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did policy LP-4482 affect MRI referrals and denial rates for older patients at Lakeside Regional?",
+        "a": "22% decrease in MRI referrals and 41% increase in spinal procedure denials.",
+        "sources": [
+          "cluster_3_doc1",
+          "cluster_3_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which therapeutic options became available to the patient with degenerative disc disease at Lakeside Regional in November 2023?",
+        "a": "Acupuncture coverage was added for degenerative conditions.",
+        "sources": [
+          "cluster_3_doc2",
+          "cluster_3_doc5"
+        ],
+        "type": "specific"
+      }
+    ]
+  }
+}

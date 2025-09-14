@@ -1,0 +1,128 @@
+{
+  "documents": [
+    {
+      "id": "cluster_17_doc1",
+      "content": "A recent audit report highlights discrepancies in claims processing for orthopedic procedures in the Midwest region. The review focused on 48 cases from Q2 2023 where providers submitted repeat billing codes for post-operative care. Notable findings include inconsistent documentation of rehabilitation milestones and frequent use of unspecified therapy duration codes (97110). Three facilities accounted for 62% of flagged claims.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_17_doc2",
+      "content": "Patient 448922 completed six sessions of aquatic therapy at Heartland Rehab Center (NPI 1234567893) following knee replacement surgery. Treatment records show measurable improvement in range of motion (105° flexion achieved) with concurrent pain reduction per visual analog scale. Next appointment scheduled for October 12th using authorization code GH7T9V.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_17_doc3",
+      "content": "New policy effective January 2024 requires prior authorization for all aquatic therapy exceeding eight sessions per calendar year. Providers must submit functional assessment scores using the OPTIMAL tool. Transition rules apply for patients mid-treatment as of December 15th (reference Policy Update PU-224R).",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_17_doc4",
+      "content": "Midwest Regional Health Network announced expanded coverage for three specialty rehabilitation providers. Heartland Rehab Center now in-network for Gold Tier plans with 90% reimbursement rate. Implementation date coincides with new aquatic therapy protocols (Memo 4412-9). Network ID: MHRN-882 applicable for IA, NE, MO.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_17_doc5",
+      "content": "Research study NCT05678231 examines outcomes of aquatic versus land-based therapy for patients aged 55-75 with unilateral knee replacements. Preliminary data from 112 participants shows 18% better functional recovery scores in the aquatic group. Full results expected Q3 2024. IRB approval extends through 12/2025.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_17_doc6",
+      "content": "Provider dispute resolution case #DR-44892 concerns denied claims for postoperative aquatic therapy. Initial denial cited missing functional assessment documentation. Appeal references study NCT05678231 and includes six-week progress notes showing improved mobility metrics. Decision pending secondary review by clinical team.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_17",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Orthopedic rehabilitation claims analysis with connected patient treatment records, policy changes, research study, and coverage expansion in Midwest region",
+    "person": {
+      "entities": [
+        [
+          "448922",
+          "PATIENT_ID"
+        ],
+        [
+          "GH7T9V",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "October 12th",
+          "EVENT_DATE"
+        ],
+        [
+          "knee replacement surgery",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "Midwest",
+          "LOCATION"
+        ],
+        [
+          "six sessions of aquatic therapy",
+          "UNIQUE_FACT"
+        ],
+        [
+          "105° flexion achieved",
+          "UNIQUE_FACT"
+        ],
+        [
+          "pain reduction per visual analog scale",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What measurable improvement did patient 448922 achieve through aquatic therapy at Heartland Rehab Center?",
+        "a": "105° flexion range of motion with concurrent pain reduction.",
+        "sources": [
+          "cluster_17_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which regions will the Midwest Regional Health Network expansion cover?",
+        "a": "Iowa, Nebraska, and Missouri under ID MHRN-882.",
+        "sources": [
+          "cluster_17_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What two documents support the appeal in case DR-44892 regarding aquatic therapy denials?",
+        "a": "Study NCT05678231 and six-week progress notes showing mobility improvements.",
+        "sources": [
+          "cluster_17_doc5",
+          "cluster_17_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What changes affect aquatic therapy coverage and policy at Heartland Rehab Center?",
+        "a": "Prior authorization beyond eight sessions, mandatory OPTIMAL tool, 90% Gold Tier reimbursement.",
+        "sources": [
+          "cluster_17_doc3",
+          "cluster_17_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

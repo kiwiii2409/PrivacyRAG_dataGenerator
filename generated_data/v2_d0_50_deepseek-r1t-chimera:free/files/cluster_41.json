@@ -1,0 +1,170 @@
+{
+  "documents": [
+    {
+      "id": "cluster_41_doc1",
+      "content": "Vivacity Health processed claim #VH2023-41892 for Konnor Zielinski (PATIENT_ID: VH-ZK418), involving a complex spinal fusion procedure at Lakeshore Surgical Center. The procedure was necessitated by progressive cauda equina syndrome, with pre-authorization granted on 08/15/2023. Documentation includes neurosurgeon Dr. Elise Woodward's operative notes and post-op care plan through 10/01/2023. Out-of-network coverage was approved under exception policy VP403-2H.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_41_doc2",
+      "content": "Lakeshore Surgical Center's quality assurance committee reviewed case VS-8294 involving Konnor Zielinski (DOB 06/04/1987). The 9-hour procedure on 09/12/2023 utilized experimental biocompatible stabilizers (study ID: SPI-09X). Post-operative complications included CSF leakage, managed with blood patching. Patient discharged to Horizonview Rehab on 09/22 under supervising physician Dr. A. Mirani (ext. 73230).",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_41_doc3",
+      "content": "Vivacity Health memo dated 11/10/2023 alerts providers about VP403-2H exception policy revisions. Effective 01/2024, reimbursement for experimental spinal stabilization devices requires IRB approval documentation. This impacts 47 ongoing claims including #VH2023-41892. Network adequacy analysis shows only 21% of haulage industry workers have accessible in-network spine care within 100 miles of Hebron, ND.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_41_doc4",
+      "content": "The Industrial Medicine Journal published retrospective analysis of 412 haulage workers with cauda equina syndrome. Study SPI-09X showed 38% shorter recovery times when combining traditional fusion with experimental retrofit stabilizers. Lead researcher Dr. Woodward will present findings at the 12/05 Tulsa Spine Symposium. Case examples include a 36-year-old male (VAKU97722) with post-op CSF complication resolved at 42 days.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_41",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex spinal fusion case involving experimental technology, policy exceptions, and haulage industry health trends",
+    "person": {
+      "entities": [
+        [
+          "Konnor Zielinski",
+          "NAME"
+        ],
+        [
+          "VH-ZK418",
+          "PATIENT_ID"
+        ],
+        [
+          "06/04/1987",
+          "BIRTHDATE"
+        ],
+        [
+          "cauda equina syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "CSF leakage",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "08/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "10/01/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "09/12/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "09/22",
+          "EVENT_DATE"
+        ],
+        [
+          "11/10/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "01/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "Lakeshore Surgical Center",
+          "LOCATION"
+        ],
+        [
+          "Horizonview Rehab",
+          "LOCATION"
+        ],
+        [
+          "Hebron, ND",
+          "LOCATION"
+        ],
+        [
+          "VH2023-41892",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "VS-8294",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "SPI-09X",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "haulage industry",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "complex spinal fusion procedure",
+          "TREATMENT"
+        ],
+        [
+          "experimental biocompatible stabilizers",
+          "TREATMENT"
+        ],
+        [
+          "experimental spinal stabilization devices",
+          "TREATMENT"
+        ],
+        [
+          "blood patching",
+          "TREATMENT"
+        ],
+        [
+          "post-op care plan",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What experimental treatment and post-operative complication were documented for Konnor Zielinski's procedure under study SPI-09X?",
+        "a": "Experimental biocompatible stabilizers were used, with post-op CSF leakage as complication.",
+        "sources": [
+          "cluster_41_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What industry demographic showed limited spinal care network adequacy near Hebron, ND?",
+        "a": "Only 21% of haulage industry workers have accessible in-network spine care.",
+        "sources": [
+          "cluster_41_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two providers were involved in Konnor Zielinski's spinal fusion and subsequent rehabilitation?",
+        "a": "Dr. Elise Woodward performed surgery and Dr. A. Mirani supervised rehab.",
+        "sources": [
+          "cluster_41_doc1",
+          "cluster_41_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change and clinical study impact claims involving experimental spine devices?",
+        "a": "VP403-2H policy now requires IRB approval, affecting study SPI-09X claims.",
+        "sources": [
+          "cluster_41_doc3",
+          "cluster_41_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

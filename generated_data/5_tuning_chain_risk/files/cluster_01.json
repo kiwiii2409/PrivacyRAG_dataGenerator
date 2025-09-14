@@ -1,0 +1,132 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "Amarillo General Hospital submitted a claim for patient Rex Marin regarding a coronary artery bypass grafting procedure performed on November 15, 2023. The patient's recovery included specialized cardiac rehabilitation at the hospital's Heart Wellness Center. Documentation indicates coverage under policy number GP-22987XL with Rocky Mountain Health Plans.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "Clinical research study NCT04567823 at University of Colorado Cardiac Center examined outcomes of patients aged 60-70 undergoing bypass surgery while participating in structured rehab programs. Participant Rex Marin showed exceptional progress, with 98% adherence to prescribed therapy sessions compared to study average of 82%.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "RMHP quarterly provider bulletin announced new prior authorization requirements for cardiac rehab services effective January 1, 2024. The changes specifically impact facilities without ACSM certification, requiring additional peer reviews for coverage approval. This affects approximately 12 clinics across the Denver metro area.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Patient satisfaction survey from Amarillo General's Heart Wellness Center highlighted Rex Marin's positive experience with therapist Corinne Varga. The survey cited excellent communication about exercise modifications for his rare transplanted organ condition, though noted longer-than-average wait times for equipment.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_1_doc5",
+      "content": "Denver Post Health section published an article about innovative cardiac care collaborations between academic medical centers and community hospitals, featuring Amarillo General's tele-rehab program. The piece mentioned unique challenges in treating transplant patients like Rex Marin who require customized rehab protocols.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_1_doc6",
+      "content": "Internal audit report for Rocky Mountain Health Plans revealed 19% increase in cardiac rehab claims from Q4 2023, particularly from Amarillo General Hospital. The spike correlated with their new Z initiative, showing 34% higher compliance rates compared to traditional programs.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's cardiovascular treatment journey intersecting with policy changes, research participation, and care innovation",
+    "person": {
+      "entities": [
+        [
+          "Rex Marin",
+          "NAME"
+        ],
+        [
+          "GP-22987XL",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Corinne Varga",
+          "PROVIDER"
+        ],
+        [
+          "11/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Amarillo General Hospital",
+          "LOCATION"
+        ],
+        [
+          "coronary artery bypass grafting",
+          "TREATMENT"
+        ],
+        [
+          "transplanted organ condition",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "NCT04567823",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Rocky Mountain Health Plans",
+          "PROVIDER"
+        ],
+        [
+          "tele-rehab program",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was Rex Marin's adherence percentage to therapy sessions in study NCT04567823 compared to the study average?",
+        "a": "98% adherence vs. 82% study average.",
+        "sources": [
+          "cluster_1_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change affected non-ACSM certified cardiac rehab facilities in January 2024?",
+        "a": "New prior authorization requiring additional peer reviews.",
+        "sources": [
+          "cluster_1_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two programs contributed to Rex Marin's cardiac care at Amarillo General Hospital?",
+        "a": "Coronary bypass surgery and specialized tele-rehab program.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What Q4 2023 trends did RMHP's audit reveal about Amarillo General's cardiac rehab services?",
+        "a": "19% claims increase with 34% higher compliance rates.",
+        "sources": [
+          "cluster_1_doc6",
+          "cluster_1_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

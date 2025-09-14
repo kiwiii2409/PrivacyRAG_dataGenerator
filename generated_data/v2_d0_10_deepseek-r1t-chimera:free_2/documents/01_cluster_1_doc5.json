@@ -1,0 +1,7 @@
+{
+  "id": "cluster_1_doc5",
+  "content": "Waived authorization requirements for existing patients transitioning to new mental health policy through December 31, 2024. This applies to members currently enrolled in IOP programs with demonstrated clinical need. Providers must flag claims with special code MH-TRANS and include baseline assessment scores.",
+  "metadata": {
+    "format": "provider_report"
+  }
+}

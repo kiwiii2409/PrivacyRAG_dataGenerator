@@ -1,0 +1,126 @@
+{
+  "documents": [
+    {
+      "id": "cluster_9_doc1",
+      "content": "The latest policy revision (TT-449K) for complex rheumatology cases now requires pre-authorization for biosimilar medications. Sunset Hills Regional Clinic reported a 38% increase in claims denials during Q3 2023, with most cases involving patients who received infliximab infusions. Dr. Elaine Martinson's research team published findings linking delayed treatment initiation to poorer outcomes in seronegative arthritis patients aged 45-65.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_9_doc2",
+      "content": "Patient HX99802 (Halim Najjar, dob 06/15/1978) was approved for golimumab therapy after initial denials under policy TT-449K. The appeals process involved documentation of failed methotrexate treatment and bilateral sacroiliitis confirmed by MRI. Coordination between Sunset Hills pharmacy and Horizon Specialty Infusion Center required three authorization resubmissions.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_9_doc3",
+      "content": "Surge in rheumatology claims at Sunset Hills prompted network adequacy review. Findings showed only 2/9 providers in the region were biosimilar-certified. Horizon Specialty logged 122 infusion visits for arthritis patients in November 2023 - 64% required peer-to-peer reviews. Martinson's research protocols now include adherence tracking through wearable sensors.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_9_doc4",
+      "content": "Investigational biosimilar SB-341 showed promising Phase 2 results for refractory spondyloarthritis. Study participants at Sunset Hills Regional received biweekly infusions with 73% showing 50% pain reduction. Lead researcher Dr. Elaine Martinson presented findings via PX203 encrypted teleconference on 12/05/2023. Next-phase enrollment requires documented TNF inhibitor failure.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_9",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex rheumatology treatment pathway involving biosimilar medications under policy TT-449K at Sunset Hills Regional Clinic, including patient-specific appeals, provider network challenges, and research integration",
+    "person": {
+      "entities": [
+        [
+          "Halim Najjar",
+          "NAME"
+        ],
+        [
+          "HX99802",
+          "PATIENT_ID"
+        ],
+        [
+          "06/15/1978",
+          "BIRTHDATE"
+        ],
+        [
+          "bilateral sacroiliitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "methotrexate treatment",
+          "TREATMENT"
+        ],
+        [
+          "golimumab therapy",
+          "TREATMENT"
+        ],
+        [
+          "Sunset Hills pharmacy",
+          "PROVIDER"
+        ],
+        [
+          "Horizon Specialty Infusion Center",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Elaine Martinson",
+          "PROVIDER"
+        ],
+        [
+          "12/05/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "SB-341",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "seronegative arthritis",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment and patient identifier were involved in the successful TT-449K policy appeal for Halim Najjar?",
+        "a": "Golimumab therapy for patient HX99802",
+        "sources": [
+          "cluster_9_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of biosimilar-certified providers were available in the Sunset Hills region during the network adequacy review?",
+        "a": "22% (2 of 9 providers)",
+        "sources": [
+          "cluster_9_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which pharmacy coordinated patient HX99802's golimumab therapy and which researcher led the SB-341 study?",
+        "a": "Sunset Hills pharmacy; Dr. Elaine Martinson",
+        "sources": [
+          "cluster_9_doc2",
+          "cluster_9_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What protocol adaptation was added after the Q3 2023 TT-449K claim denials?",
+        "a": "Adherence tracking via wearable sensors",
+        "sources": [
+          "cluster_9_doc1",
+          "cluster_9_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "cluster_48_doc1",
+  "content": "A new claims processing integration was implemented at Riverview Specialty Clinic in August 2023, affecting physical therapy authorization workflows. The system update requires providers to submit detailed treatment plans for chronic pain management cases exceeding 12 sessions. Clinic administrators noted a 22% reduction in claim denials during Q4 following the change, particularly for patients aged 40-55 with occupational strain injuries. Parallel upgrades to the provider portal simplified documentation submission for complex cases.",
+  "metadata": {
+    "format": "insurance_memo"
+  }
+}

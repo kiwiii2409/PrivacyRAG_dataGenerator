@@ -1,0 +1,117 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "Sunrise Medical Group in Fort Collins reported a 22% increase in prior authorization requests for anticoagulant therapies during Q3 2023. Internal audit identified processing delays affecting patients with combined venous thromboembolism and valvular heart disease. Clinical coordinator established new triage protocols effective November 15th.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Patient #FC-88245 (52 y/o male) underwent mitral valve repair at Poudre Valley Hospital on 2023-09-05. Post-op care included novel pulsed-field ablation treatment protocol not currently covered under standard Blue Cross Blue Shield benefits, requiring special exception review. Physical therapy referrals sent to Summit Rehabilitation Center.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "BCBS policy update memo #2023-114 details expanded anticoagulant coverage effective January 2024 following FDA approval of new monitoring device. Implementation requires specific diagnostic codes and pre-certification documentation. Affects all in-network providers within Larimer County service area.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Survey respondent #R71902 reported satisfaction with Poudre Valley cardiac care but frustration with insurance processing delays. Patient described 6-week wait for pulsed ablation approval. Feedback forwarded to quality improvement committee at staff meeting 2023-12-04.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_4_doc5",
+      "content": "Research brief from Colorado State University highlights cost-effectiveness of combined mitral repair/pulsed ablation approach. Study ID CSU-CV23 tracked 142 patients through PVH cardiology department. Findings submitted to Journal of Interventional Cardiology on 2023-11-29.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Mitral valve repair patient journey intersecting with novel ablation therapy, anticoagulant policy changes, and research validation in Fort Collins healthcare system",
+    "person": {
+      "entities": [
+        [
+          "FC-88245",
+          "PATIENT_ID"
+        ],
+        [
+          "52",
+          "AGE"
+        ],
+        [
+          "Poudre Valley Hospital",
+          "LOCATION"
+        ],
+        [
+          "2023-09-05",
+          "EVENT_DATE"
+        ],
+        [
+          "mitral valve repair",
+          "TREATMENT"
+        ],
+        [
+          "pulsed-field ablation",
+          "TREATMENT"
+        ],
+        [
+          "Summit Rehabilitation Center",
+          "PROVIDER"
+        ],
+        [
+          "#R71902",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What novel cardiac treatment for patient FC-88245 required special insurance exception at Poudre Valley Hospital?",
+        "a": "Pulsed-field ablation protocol following mitral valve repair.",
+        "sources": [
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which policy update affected anticoagulant coverage in Larimer County effective January 2024?",
+        "a": "BCBS memo #2023-114 expanded coverage with new diagnostic requirements.",
+        "sources": [
+          "cluster_4_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment combination and insurance challenge did patient #FC-88245 experience at Summit Rehabilitation Center?",
+        "a": "Mitral repair with pulsed ablation requiring special review.",
+        "sources": [
+          "cluster_4_doc2",
+          "cluster_4_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which research findings and operational changes addressed cardiac care delays at PVH?",
+        "a": "CSU study validated pulsed ablation effectiveness; new triage protocols implemented.",
+        "sources": [
+          "cluster_4_doc1",
+          "cluster_4_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

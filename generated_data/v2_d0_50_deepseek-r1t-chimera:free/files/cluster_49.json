@@ -1,0 +1,145 @@
+{
+  "documents": [
+    {
+      "id": "cluster_49_doc1",
+      "content": "The policy update effective April 2024 introduces new prior authorization requirements for spinal cord stimulation devices at Midwest Neurocare. Providers must submit detailed clinical documentation including failed conservative treatments and psychological evaluation. Processing time is estimated at 10-14 business days. Claims submitted without complete documentation after April 1 will be automatically denied.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_49_doc2",
+      "content": "Patient J2415-A8R (Theodore Wexler, dob 03/15/1978) underwent spinal cord stimulator implantation at Midwest Neurocare on 02/28/2024 for refractory neuropathic pain. Previous treatments included gabapentin and physical therapy. The provider, Dr. Elena Voss, submitted the pre-authorization request on 01/10/2024. Current estimated recovery period is 6-8 weeks with biweekly follow-ups.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_49_doc3",
+      "content": "The quarterly provider network report shows Midwest Neurocare added two new pain management specialists in Q1 2024. Dr. Raj Patel (Board Certified since 2019) and Dr. Natalia Ivanova (fellowship-trained at Johns Hopkins) joined the team. Their participation status for all major insurance plans begins April 15. Facility capacity increased by 30% with new EMG-guided procedure suites.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_49_doc4",
+      "content": "Research study NCT041235 enrolled 45 participants for spinal cord stimulation outcomes tracking. Patient ID J2415-A8R shows 78% pain reduction at 4-week follow-up. Study coordinator contact: lwells@neuroresearch.org. Preliminary findings suggest higher efficacy when combined with cognitive behavioral therapy. Data presented at ICAPM March 2024 conference.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_49_doc5",
+      "content": "Health industry news: Midwest Neurocare announced $2.4M expansion for advanced neuromodulation services. The facility at 414 Innovation Parkway will triple its procedure capacity. New payment models being negotiated with major insurers for value-based care contracts. Expected completion Q3 2024 with 12 new clinical staff positions.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_49",
+    "cluster_risk": "HIGH",
+    "content_summary": "Comprehensive cluster tracking spinal cord stimulation patient journey, policy updates, provider network expansion, related research study, and facility development.",
+    "person": {
+      "entities": [
+        [
+          "Theodore Wexler",
+          "NAME"
+        ],
+        [
+          "03/15/1978",
+          "BIRTHDATE"
+        ],
+        [
+          "J2415-A8R",
+          "PATIENT_ID"
+        ],
+        [
+          "refractory neuropathic pain",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "spinal cord stimulator implantation",
+          "TREATMENT"
+        ],
+        [
+          "Midwest Neurocare",
+          "LOCATION"
+        ],
+        [
+          "Dr. Elena Voss",
+          "PROVIDER"
+        ],
+        [
+          "lwells@neuroresearch.org",
+          "EMAIL"
+        ],
+        [
+          "NCT041235",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "78% pain reduction",
+          "UNIQUE_FACT"
+        ],
+        [
+          "02/28/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "01/10/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "gabapentin",
+          "TREATMENT"
+        ],
+        [
+          "physical therapy",
+          "TREATMENT"
+        ],
+        [
+          "4-week follow-up",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What new prior authorization requirements were introduced for spinal cord stimulation at Midwest Neurocare effective April 2024?",
+        "a": "Detailed clinical documentation including failed conservative treatments and psychological evaluation.",
+        "sources": [
+          "cluster_49_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What percentage pain reduction did patient J2415-A8R show at 4-week follow-up in study NCT041235?",
+        "a": "78% pain reduction was observed.",
+        "sources": [
+          "cluster_49_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What treatments did Theodore Wexler receive before his spinal cord stimulator implantation and what pain reduction was observed at 4-week follow-up?",
+        "a": "Gabapentin, physical therapy, and 78% pain reduction at 4 weeks.",
+        "sources": [
+          "cluster_49_doc2",
+          "cluster_49_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What facility improvements and staff changes are planned at Midwest Neurocare's Innovation Parkway location?",
+        "a": "Added two specialists, 30% capacity increase, $2.4M expansion, 12 new staff.",
+        "sources": [
+          "cluster_49_doc3",
+          "cluster_49_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

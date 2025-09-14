@@ -1,0 +1,7 @@
+{
+  "id": "cluster_3_doc4",
+  "content": "Claims data shows a 41% increase in denial rates for spinal procedures among patients over 60 since LP-4482 implementation. Appeal success rates remain highest when including both imaging results and functional capacity assessments from approved providers.",
+  "metadata": {
+    "format": "audit_report"
+  }
+}

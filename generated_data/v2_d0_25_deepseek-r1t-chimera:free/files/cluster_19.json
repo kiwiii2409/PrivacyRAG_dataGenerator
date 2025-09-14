@@ -1,0 +1,118 @@
+{
+  "documents": [
+    {
+      "id": "cluster_19_doc1",
+      "content": "St. Helena Memorial Hospital submitted a claim for patient LC457832 regarding a rare prion disease treatment on 03/15/2024. The treatment involved an experimental protocol combining immunotherapies. Dr. Elias Vanderbilt from Pacific Neurospecialists coordinated care. The patient resides at 1889 Oak Ridge Lane, Napa Valley.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_19_doc2",
+      "content": "Research note from Pacific Neurospecialists details outcomes of prion disease patients in Northern California vineyards region. Patient ID LC457832 showed 40% symptom reduction post-treatment. Unusual case: former winery worker with prolonged pesticide exposure history. Study ID PN-2024-188.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_19_doc3",
+      "content": "Policy memo from BlueCross California: Effective April 2024, coverage for prion diseases requires pre-approval and regional center evaluation. Exception granted for patient LC457832 under Study PN-2024-188. Contact: approvals@bluecrossca.com, 916-555-0199.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_19_doc4",
+      "content": "Napa Valley Tribune health section reports on vineyard workers' neurological conditions. Mentions 54-year-old patient with rare prion disease successfully treated at St. Helena Memorial. Article references ongoing Pacific Neurospecialists study involving pesticide exposure cases.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_19",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex case involving rare prion disease treatment, pesticide exposure history, and specialized policy exceptions in Northern California wine region",
+    "person": {
+      "entities": [
+        [
+          "LC457832",
+          "PATIENT_ID"
+        ],
+        [
+          "1889 Oak Ridge Lane, Napa Valley",
+          "ADDRESS"
+        ],
+        [
+          "54-year-old",
+          "AGE"
+        ],
+        [
+          "prion disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "former winery worker",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "prolonged pesticide exposure",
+          "UNIQUE_FACT"
+        ],
+        [
+          "immunotherapies",
+          "TREATMENT"
+        ],
+        [
+          "40% symptom reduction",
+          "UNIQUE_FACT"
+        ],
+        [
+          "03/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "PN-2024-188",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment protocol and outcome percentage were documented for patient LC457832 with prion disease?",
+        "a": "Immunothepies protocol with 40% symptom reduction post-treatment",
+        "sources": [
+          "cluster_19_doc1",
+          "cluster_19_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What unique work exposure history does the prion disease patient in Study PN-2024-188 have?",
+        "a": "Prolonged pesticide exposure as former winery worker",
+        "sources": [
+          "cluster_19_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which regional neurological study of vineyard workers involved patient LC457832?",
+        "a": "Pacific Neurospecialists Study PN-2024-188, ongoing in Napa Valley.",
+        "sources": [
+          "cluster_19_doc2",
+          "cluster_19_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What policy change occurred in April 2024 for prion disease coverage in California?",
+        "a": "Requires pre-approval and regional center evaluation",
+        "sources": [
+          "cluster_19_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

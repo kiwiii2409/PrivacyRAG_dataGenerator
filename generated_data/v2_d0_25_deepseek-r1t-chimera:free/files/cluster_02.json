@@ -1,0 +1,120 @@
+{
+  "documents": [
+    {
+      "id": "cluster_2_doc1",
+      "content": "Maplewood Community Hospital submitted a physiotherapy claim for 24 sessions of graded exercise therapy. The treatment plan targets chronic fatigue syndrome management with prescribed heart rate monitoring. Authorization was granted under policy section 14.3 for patients aged 40-50.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_2_doc2",
+      "content": "Internal memo regarding updated durable medical equipment coverage: Effective November 2023, actigraphy devices now require prior approval for sleep disorder diagnoses. This change follows increased utilization rates at Midwestern regional facilities.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_2_doc3",
+      "content": "Provider report from Maplewood Rehabilitation Services details a 48-year-old patient showing 30% improvement after 12 weeks of PEMF therapy combined with cognitive pacing strategies. Next evaluation scheduled for December 15th.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_2_doc4",
+      "content": "Longitudinal study abstract published in Journal of Insurance Medicine shows ME/CFS patients using heart rate variability biofeedback had 22% fewer ER visits. Research conducted at 5 Midwestern centers through 2023.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_2_doc5",
+      "content": "Quarterly audit of Maplewood Community Hospital revealed 18% of chronic fatigue claims lacked required activity logs. New documentation requirements implemented October 1st for all persistent fatigue cases.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_2_doc6",
+      "content": "Therapeutic support coverage update: As of September 2023, occupational therapy visits for energy management training now count toward deductible under preventive care benefits for qualifying chronic conditions.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_2",
+    "cluster_risk": "LOW",
+    "content_summary": "Chronic fatigue management claims and policy updates at Maplewood facilities",
+    "person": {
+      "entities": [
+        [
+          "48",
+          "AGE"
+        ],
+        [
+          "chronic fatigue syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Maplewood Community Hospital",
+          "LOCATION"
+        ],
+        [
+          "2023-11-15",
+          "EVENT_DATE"
+        ],
+        [
+          "30% improvement after 12 weeks of PEMF therapy combined with cognitive pacing strategies",
+          "UNIQUE_FACT"
+        ],
+        [
+          "2023-12-15",
+          "EVENT_DATE"
+        ],
+        [
+          "PEMF therapy combined with cognitive pacing strategies",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What therapy combination showed 30% improvement for the 48-year-old chronic fatigue patient at Maplewood?",
+        "a": "PEMF therapy combined with cognitive pacing strategies",
+        "sources": [
+          "cluster_2_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new documentation took effect October 1st for persistent fatigue cases?",
+        "a": "Required activity logs for all chronic fatigue claims",
+        "sources": [
+          "cluster_2_doc5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two treatments were approved for chronic fatigue patients aged 40-50 at Maplewood facilities?",
+        "a": "Graded exercise therapy and occupational energy management training",
+        "sources": [
+          "cluster_2_doc1",
+          "cluster_2_doc6"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What 2023 findings and policy updates affected ME/CFS treatment in the Midwest?",
+        "a": "22% fewer ER visits with heart rate variability biofeedback; actigraphy devices require prior approval.",
+        "sources": [
+          "cluster_2_doc4",
+          "cluster_2_doc2"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

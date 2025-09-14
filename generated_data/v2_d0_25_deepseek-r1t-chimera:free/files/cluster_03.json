@@ -1,0 +1,157 @@
+{
+  "documents": [
+    {
+      "id": "cluster_3_doc1",
+      "content": "A new outpatient treatment protocol for early-stage glioblastoma was approved by Silverpine Health Network, effective July 2023. The protocol combines targeted immunotherapy with reduced radiation exposure, requiring pre-authorization for patients aged 50-65. Dr. Elena Vargas from NeuroOncology Associates will oversee implementation at Ridgeview Medical Center. Claims submitted without CPT code 77385 will be automatically rejected.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_3_doc2",
+      "content": "Patient TQ-2189 (58yo male) was admitted to Ridgeview Medical Center on 08/15/2023 for glioblastoma treatment under the new protocol. Comprehensive genomic testing revealed TP53 mutation. Treatment plan includes monthly pembrolizumab infusions and hypofractionated radiotherapy. Next provider consultation scheduled with Dr. Raj Patel on 10/05/2023.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_3_doc3",
+      "content": "Silverpine Health Network reported a 42% increase in glioblastoma claims from Ridgeview area providers during Q3 2023. Internal audit flagged 18% of these claims for missing therapeutic monitoring documentation. Network updates submission requirements for all neuro-oncology cases starting November 1st.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_3_doc4",
+      "content": "NeuroCare Quarterly publication (September 2023 edition) highlights improved outcomes with combination immunotherapy for TP53-positive glioblastoma patients. Study cohort included 127 patients from 6 centers, including Ridgeview Medical Center. Median progression-free survival increased by 3.2 months compared to standard therapy.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_3_doc5",
+      "content": "Patient satisfaction survey from TQ-2189 received 10/20/2023 noted excellent coordination between NeuroOncology Associates and Ridgeview radiation oncology team. However, concerns were raised about insurance coverage uncertainties for continued immunotherapy beyond 6 months. Case manager Michael Torres assigned to assist with benefits verification.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_3",
+    "cluster_risk": "HIGH",
+    "content_summary": "Glioblastoma treatment protocol implementation with associated patient journey, claims trends, and research outcomes",
+    "person": {
+      "entities": [
+        [
+          "TQ-2189",
+          "PATIENT_ID"
+        ],
+        [
+          "58",
+          "AGE"
+        ],
+        [
+          "male",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "glioblastoma",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "TP53 mutation",
+          "UNIQUE_FACT"
+        ],
+        [
+          "pembrolizumab",
+          "TREATMENT"
+        ],
+        [
+          "monthly pembrolizumab infusions",
+          "TREATMENT"
+        ],
+        [
+          "hypofractionated radiotherapy",
+          "TREATMENT"
+        ],
+        [
+          "immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "immunotherapy beyond 6 months",
+          "TREATMENT"
+        ],
+        [
+          "Ridgeview Medical Center",
+          "LOCATION"
+        ],
+        [
+          "NeuroOncology Associates",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Elena Vargas",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Raj Patel",
+          "PROVIDER"
+        ],
+        [
+          "Silverpine Health Network",
+          "PROVIDER"
+        ],
+        [
+          "08/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "10/05/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "10/20/2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two treatments were administered to patient TQ-2189 under the new glioblastoma protocol at Ridgeview Medical Center?",
+        "a": "Monthly pembrolizumab infusions and hypofractionated radiotherapy",
+        "sources": [
+          "cluster_3_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What Silverpine Health Network policy change affected neuro-oncology claim submissions starting November 1st?",
+        "a": "Updated therapeutic monitoring documentation requirements for all cases",
+        "sources": [
+          "cluster_3_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which genetic marker and medical center were associated with improved outcomes for patient TQ-2189's treatment?",
+        "a": "TP53 mutation at Ridgeview Medical Center",
+        "sources": [
+          "cluster_3_doc2",
+          "cluster_3_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two factors contributed to increased glioblastoma treatment efficacy in the NeuroCare Quarterly study, and what CPT code was required for the protocol?",
+        "a": "Combination immunotherapy, TP53-positive selection; CPT 77385.",
+        "sources": [
+          "cluster_3_doc1",
+          "cluster_3_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

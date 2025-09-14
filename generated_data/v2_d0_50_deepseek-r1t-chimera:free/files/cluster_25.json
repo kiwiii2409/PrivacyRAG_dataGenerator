@@ -1,0 +1,106 @@
+{
+  "documents": [
+    {
+      "id": "cluster_25_doc1",
+      "content": "Claim submitted for narrowband UVB phototherapy sessions at Dermatology Specialists of Central Texas. Policy #SKIN-5570 covers 12 sessions annually for documented photosensitivity disorders. Patient is 34-year-old outdoor worker with provider-diagnosed polymorphous light eruption. Initial claim processing shows $150 copay per session under new 2024 benefit guidelines.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_25_doc2",
+      "content": "Clinical notes from 03/15/2024 visit: Patient presents with recurrent rash consistent with polymorphous light eruption. Recommended course includes 12-week narrowband UVB protocol. Practice alert: New coverage requirements under Policy #SKIN-5570 require pre-authorization and severity grading scales for phototherapy approval.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_25_doc3",
+      "content": "Internal memo RE: Policy #SKIN-5570 implementation. Effective March 2024, Austin-area providers must use standardized assessment tools for phototherapy approvals. Dermatology Specialists of Central Texas identified as regional center of excellence. New documentation requirements reduce claim denials by 18% in first quarter.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_25_doc4",
+      "content": "Updated coverage guidelines for Policy #SKIN-5570 now include narrowband UVB for five specific photodermatoses. Requirements: baseline severity score ≥6 on STANDARD-PLE scale, failure of topical treatments, and provider certification. Applies to commercial plans in Travis County through 2025.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_25",
+    "cluster_risk": "LOW",
+    "content_summary": "Phototherapy treatment case and policy changes for polymorphous light eruption in Austin",
+    "person": {
+      "entities": [
+        [
+          "34",
+          "AGE"
+        ],
+        [
+          "outdoor worker",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "polymorphous light eruption",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "narrowband UVB phototherapy",
+          "TREATMENT"
+        ],
+        [
+          "03/15/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "recurrent rash",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "12-week narrowband UVB protocol",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which phototherapy treatment was prescribed for the 34-year-old outdoor worker with polymorphous light eruption in Austin?",
+        "a": "12-week course of narrowband UVB phototherapy",
+        "sources": [
+          "cluster_25_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new assessment tool was introduced in Policy #SKIN-5570 in March 2024?",
+        "a": "Standardized assessment tools",
+        "sources": [
+          "cluster_25_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment regimen and policy number apply to polymorphous light eruption cases under 2024 guidelines?",
+        "a": "12 sessions of narrowband UVB covered under Policy #SKIN-5570",
+        "sources": [
+          "cluster_25_doc1",
+          "cluster_25_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which dermatology provider and coverage criteria were implemented in Travis County under the revised phototherapy policy?",
+        "a": "Dermatology Specialists of Central Texas with severity score ≥6 requirement",
+        "sources": [
+          "cluster_25_doc3",
+          "cluster_25_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

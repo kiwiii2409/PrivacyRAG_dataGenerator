@@ -1,0 +1,122 @@
+{
+  "documents": [
+    {
+      "id": "cluster_7_doc1",
+      "content": "A recent internal memo from CoastalCare Network highlights challenges in processing claims for patients with advanced prion disease under policy RG-718T. Providers in the rural Midwest region report delays averaging 21 days for prior authorization requests. The memo references study NCT04562102 investigating experimental antibody therapies, with 12 patients currently enrolled through Sandridge Medical Center.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_7_doc2",
+      "content": "Patient #28843-177B (DOB 10/15/1978) underwent two weeks of intensive cognitive rehabilitation at Sandridge Medical following failed immunoglobulin therapy. The treatment plan included daily transcranial magnetic stimulation sessions. Claims were processed under diagnostic code G23.9 for progressive neurodegenerative disorder with matching provider network exception VX-445.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_7_doc3",
+      "content": "The Midwest Health Journal reports Sandridge Medical Center saw a 40% increase in prion disease cases among agricultural workers aged 39-55 from 2020-2023. Researchers attribute this cluster to unique environmental exposures in the region's processing plants. Current treatment protocols remain largely palliative, though policy RG-718T now covers emerging diagnostics.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_7_doc4",
+      "content": "An audit of transcranial magnetic stimulation claims under provider #NPL-228 reveals 18% were incorrectly coded across five Midwest facilities. CoastalCare Network implemented new verification protocols effective March 2024, requiring dual documentation of medical necessity for reimbursement under policy RG-718T. Sandridge Medical accounted for 61% of reviewed cases.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_7",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Claims processing challenges for prion disease treatments under policy RG-718T involving Sandridge Medical Center, including cognitive rehabilitation, research studies, and regional disease patterns",
+    "person": {
+      "entities": [
+        [
+          "28843-177B",
+          "PATIENT_ID"
+        ],
+        [
+          "10/15/1978",
+          "BIRTHDATE"
+        ],
+        [
+          "Sandridge Medical Center",
+          "LOCATION"
+        ],
+        [
+          "prion disease",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "G23.9",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "transcranial magnetic stimulation",
+          "TREATMENT"
+        ],
+        [
+          "NCT04562102",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Midwest",
+          "LOCATION"
+        ],
+        [
+          "immunoglobulin therapy",
+          "TREATMENT"
+        ],
+        [
+          "cognitive rehabilitation",
+          "TREATMENT"
+        ],
+        [
+          "VX-445",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which experimental treatment study is referenced for patients with advanced prion disease under policy RG-718T?",
+        "a": "Study NCT04562102 investigating experimental antibody therapies with 12 enrolled patients.",
+        "sources": [
+          "cluster_7_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new verification requirements were implemented for transcranial magnetic stimulation claims in March 2024?",
+        "a": "Dual documentation of medical necessity for reimbursement under policy RG-718T.",
+        "sources": [
+          "cluster_7_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What study is referenced in the internal memo and what diagnosis code is used for patient 28843-177B at Sandridge Medical?",
+        "a": "Study NCT04562102; diagnosis code G23.9.",
+        "sources": [
+          "cluster_7_doc1",
+          "cluster_7_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What regional trend in prion disease cases and what verification protocol change occurred in March 2024 at Sandridge Medical?",
+        "a": "Increase among agricultural workers 39‑55; dual documentation required for TMS claims.",
+        "sources": [
+          "cluster_7_doc3",
+          "cluster_7_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

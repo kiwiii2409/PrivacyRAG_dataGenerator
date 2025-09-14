@@ -1,0 +1,146 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "A 47-year-old female patient (ID: PAC41732) presented with recurrent orbital cellulitis and comorbid type 2 diabetes. Initial treatment included intravenous ampicillin-sulbactam administered at Brightshore Medical Center. Subsequent referrals were made to ophthalmology and endocrinology specialists - Dr. Emilia Voss and Dr. Henrik Lund, respectively. Patient reported previous adverse reaction to ciprofloxacin during 2020 treatment at Lakeside Urgent Care.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "Policy update HX-882TN effective March 2024 modifies coverage criteria for biologic treatments of refractory orbital infections. Requires prior authorization documentation including failed conventional antibiotic regimens. Applies specifically to Brightshore Medical Center formulary under network agreement NH-1047. Exceptions may apply for patients with concurrent autoimmune conditions per new rheumatology guidelines.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Provider memo: PAC41732's claim for xerubimab infusion denied due to incomplete documentation of prior treatment failures. Submitted records showed only one failed antibiotic course (ampicillin-sulbactam). Require additional documentation of ciprofloxacin reaction from Lakeside Urgent Care per HX-882TN coverage criteria. Denial reviewed by claims supervisor Tara Nesbit (ID: CS-8832).",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Research note: Brightshore antibiotic resistance study (protocol BRS-224) identified 12 cases of treatment-resistant orbital cellulitis in diabetic patients with notable geographic clustering in the Harborview district. Mean age 49.3 years, 58% female. Hospitalization rates increased 37% Q1 2024 compared to previous year. Study presented at IDWeek 2024 conference (abstract #4417).",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "HIGH",
+    "content_summary": "A diabetic patient's journey through orbital cellulitis treatment intersecting with policy changes, claim denials, and regional antibiotic resistance patterns",
+    "person": {
+      "entities": [
+        [
+          "PAC41732",
+          "PATIENT_ID"
+        ],
+        [
+          "47",
+          "AGE"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "orbital cellulitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "recurrent orbital cellulitis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "type 2 diabetes",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "ampicillin-sulbactam",
+          "TREATMENT"
+        ],
+        [
+          "Brightshore Medical Center",
+          "PROVIDER"
+        ],
+        [
+          "Emilia Voss",
+          "PROVIDER"
+        ],
+        [
+          "Henrik Lund",
+          "PROVIDER"
+        ],
+        [
+          "ciprofloxacin",
+          "TREATMENT"
+        ],
+        [
+          "Lakeside Urgent Care",
+          "PROVIDER"
+        ],
+        [
+          "2020",
+          "EVENT_DATE"
+        ],
+        [
+          "xerubimab",
+          "TREATMENT"
+        ],
+        [
+          "Tara Nesbit",
+          "PROVIDER"
+        ],
+        [
+          "CS-8832",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Harborview district",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two medications failed for PATIENT_ID PAC41732's orbital cellulitis treatment at Brightshore Medical Center?",
+        "a": "Ampicillin‑sulbactam and ciprofloxacin failed for PAC41732.",
+        "sources": [
+          "cluster_1_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What geographic area showed increased orbital cellulitis hospitalizations in Brightshore's antibiotic resistance study BRS-224?",
+        "a": "Harborview district showed increased orbital cellulitis hospitalizations.",
+        "sources": [
+          "cluster_1_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which specialists were consulted for PAC41732 and why was her xerubimab claim denied?",
+        "a": "Ophthalmologist Emilia Voss and endocrinologist Henrik Lund; claim denied for missing prior antibiotic failure documentation.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What does the HX‑882TN policy require, and which district showed a rise in orbital cellulitis hospitalizations?",
+        "a": "It requires documentation of multiple failed antibiotics; Harborview district showed the rise.",
+        "sources": [
+          "cluster_1_doc2",
+          "cluster_1_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "documents": [
+    {
+      "id": "cluster_15_doc1",
+      "content": "A recent investigation revealed discrepancies in allergy testing claims processed through the Mountain View Clinic network. During Q3 2023, over 23% of claims flagged for manual review involved non-standard antigen panels. Meanwhile, a separate 12-patient research cohort at Riverside Medical evaluated novel immunotherapy protocols for egg protein allergies matching specific IgE thresholds. Preliminary data indicates higher success rates with combination oral/sublingual approaches.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_15_doc2",
+      "content": "Patient 44938-Z, born 04/12/2008, completed stage 2 of dual-phase immunotherapy at Fair Oaks Allergy Center. Treatment plan includes biweekly sublingual doses (15.8 mcg egg white protein) paired with monthly oral challenges. Progress tracking shows 64% reduction in skin prick test reactivity since intervention began. Care team recommends continuing protocol through 2024, with neurology consult scheduled for potential migraine comorbidity.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_15_doc3",
+      "content": "Effective immediately, Sunrise Health Network requires prior authorization for all sublingual immunotherapy claims exceeding 12-month duration. New claim code bundles (TX815-TX817) must accompany supporting medical necessity documentation. Exception process available for clinical trial participants through the Mountain View research office, subject to IRB verification. Policy impacts approximately 18% of pediatric allergy cases network-wide.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_15_doc4",
+      "content": "Recent case conference highlighted challenges coordinating food allergy care across Sunrise Network providers. Dr. Ellen Matsuo from Fair Oaks presented Treatment-resistant Egg Protein Syndrome (TREPS) diagnostic criteria matching 6 active cases. Network data shows pediatric TREPS patients require 38% more specialty visits than standard food allergies. Quality improvement team developing care pathway with neurology integration by Q2 2024.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_15_doc5",
+      "content": "Northern California food allergy support groups report confusion about updated Sunrise Network coverage policies. For sublingual therapy under TX815 coding, members cite inconsistent approval timelines ranging 8-28 days. Activist parents circulated guide to navigating exception processes through Mountain View research office, particularly for dual-phase immunotherapy cases with documented migraine comorbidities.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_15",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Pediatric egg allergy immunotherapy case with migraine comorbidity, connected to Sunrise Network policy changes and Mountain View research protocols",
+    "person": {
+      "entities": [
+        [
+          "44938-Z",
+          "PATIENT_ID"
+        ],
+        [
+          "04/12/2008",
+          "BIRTHDATE"
+        ],
+        [
+          "15.8 mcg egg white protein",
+          "TREATMENT"
+        ],
+        [
+          "Fair Oaks Allergy Center",
+          "PROVIDER"
+        ],
+        [
+          "64% reduction in skin prick test reactivity",
+          "UNIQUE_FACT"
+        ],
+        [
+          "dual-phase immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "migraine comorbidity",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Treatment-resistant Egg Protein Syndrome (TREPS)",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "stage 2 of dual-phase immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "biweekly sublingual doses",
+          "TREATMENT"
+        ],
+        [
+          "monthly oral challenges",
+          "TREATMENT"
+        ],
+        [
+          "egg protein allergies",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "sub-lingual immunotherapy",
+          "TREATMENT"
+        ],
+        [
+          "neurology consult scheduled",
+          "EVENT"
+        ],
+        [
+          "2024",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment dosage and protocol shows 64% reduced reactivity for patient 44938-Z at Fair Oaks Allergy Center?",
+        "a": "15.8 mcg egg white protein in biweekly sublingual doses with monthly oral challenges",
+        "sources": [
+          "cluster_15_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change affects 18% of pediatric allergy cases in Sunrise Network based on treatment duration?",
+        "a": "Prior authorization required for sublingual immunotherapy exceeding 12-month duration",
+        "sources": [
+          "cluster_15_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which neurologically-linked condition and specialized syndrome both impact treatment for patient 44938-Z?",
+        "a": "Migraine comorbidity and Treatment-resistant Egg Protein Syndrome (TREPS)",
+        "sources": [
+          "cluster_15_doc2",
+          "cluster_15_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How do clinical trial participants obtain exceptions through Mountain View research office under Sunrise policy?",
+        "a": "Clinical trial participants obtain exceptions through Mountain View research office with IRB verification",
+        "sources": [
+          "cluster_15_doc3",
+          "cluster_15_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

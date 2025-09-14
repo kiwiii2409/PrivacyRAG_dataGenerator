@@ -1,0 +1,138 @@
+{
+  "entities": {
+    "cluster_0_doc0": ["Sunrise Rehabilitation", "Colorado Springs"],
+    "cluster_0_doc1": [
+      "19-year-old skateboarder",
+      "Memorial Hospital Colorado Springs",
+      "complex wrist fracture",
+      "novel bone-grafting technique",
+      "Horizon Behavioral Health's pilot sports medicine program",
+      "12 weeks of specialized PT",
+      "DR-48922",
+      "Sunrise Rehabilitation"
+    ],
+    "cluster_0_doc2": ["Sunrise Rehabilitation's skate injury program"],
+    "cluster_0_doc3": [
+      "Colorado Sports Medicine Journal",
+      "bone-graft technique",
+      "Sunrise Rehabilitation"
+    ],
+    "cluster_1_doc1": ["Rex Marin", "2023-11-15", "GP-22987XL"],
+    "cluster_1_doc2": ["Rex Marin", "NCT04567823"],
+    "cluster_1_doc3": [],
+    "cluster_1_doc4": [
+      "Rex Marin",
+      "Corinne Varga",
+      "rare transplanted organ condition"
+    ],
+    "cluster_1_doc5": ["Rex Marin"],
+    "cluster_1_doc6": [],
+    "cluster_2_doc1": [
+      "Gerald Kovac",
+      "PT-8872-3A",
+      "2024-02",
+      "early-onset Lewy body dementia",
+      "REM sleep behavior disorder",
+      "Dr. Emilia Torres",
+      "PA-6653-9B"
+    ],
+    "cluster_2_doc2": [
+      "Gerald Kovac",
+      "CNI-228",
+      "Lydia Marnell",
+      "2025-10-15",
+      "unusual treatment response pattern to cholinesterase inhibitors"
+    ],
+    "cluster_2_doc3": ["PT-8872-3A", "Arjun Patel"],
+    "cluster_2_doc4": [],
+    "cluster_3_doc1": ["Dr. Elena Marquez"],
+    "cluster_3_doc2": ["234-8876", "2023-10-01"],
+    "cluster_3_doc3": ["PT-6652", "58"],
+    "cluster_3_doc4": ["NCT04567823"],
+    "cluster_3_doc5": ["Dr. Raj Patel"],
+    "cluster_3_doc6": ["A-4492-23Q4"],
+    "cluster_4_doc1": ["Sunrise Medical Group", "Fort Collins", "2023-11-15"],
+    "cluster_4_doc2": [
+      "FC-88245",
+      "52",
+      "male",
+      "mitral valve repair",
+      "2023-09-05",
+      "Poudre Valley Hospital",
+      "novel pulsed-field ablation treatment protocol"
+    ],
+    "cluster_4_doc3": ["2023-114", "2024-01-01", "Larimer County"],
+    "cluster_4_doc4": [
+      "R71902",
+      "2023-12-04",
+      "Poudre Valley",
+      "6-week wait for pulsed ablation approval"
+    ],
+    "cluster_4_doc5": ["CSU-CV23", "2023-11-29", "PVH cardiology department"]
+  },
+  "links": [
+    ["cluster_0_doc0", "cluster_0_doc1"],
+    ["cluster_0_doc0", "cluster_0_doc3"],
+    ["cluster_0_doc1", "cluster_0_doc3"],
+    ["cluster_0_doc2", "cluster_0_doc3"],
+    ["cluster_0_doc0", "cluster_0_doc1", "cluster_0_doc3"],
+
+    ["cluster_1_doc1", "cluster_1_doc2"],
+    ["cluster_1_doc1", "cluster_1_doc4"],
+    ["cluster_1_doc1", "cluster_1_doc5"],
+    ["cluster_1_doc1", "cluster_1_doc6"],
+    ["cluster_1_doc2", "cluster_1_doc4"],
+    ["cluster_1_doc2", "cluster_1_doc5"],
+    ["cluster_1_doc4", "cluster_1_doc5"],
+    ["cluster_1_doc1", "cluster_1_doc2", "cluster_1_doc4"],
+    ["cluster_1_doc1", "cluster_1_doc2", "cluster_1_doc5"],
+    ["cluster_1_doc1", "cluster_1_doc4", "cluster_1_doc5"],
+    ["cluster_1_doc2", "cluster_1_doc4", "cluster_1_doc5"],
+
+    ["cluster_2_doc1", "cluster_2_doc2"],
+    ["cluster_2_doc1", "cluster_2_doc3"],
+    ["cluster_2_doc3", "cluster_2_doc4"],
+    ["cluster_2_doc1", "cluster_2_doc4"],
+    ["cluster_2_doc1", "cluster_2_doc2", "cluster_2_doc3"],
+    ["cluster_2_doc1", "cluster_2_doc2", "cluster_2_doc4"],
+    ["cluster_2_doc1", "cluster_2_doc3", "cluster_2_doc4"],
+    ["cluster_2_doc2", "cluster_2_doc3"],
+
+    ["cluster_3_doc1", "cluster_3_doc2"],
+    ["cluster_3_doc1", "cluster_3_doc3"],
+    ["cluster_3_doc1", "cluster_3_doc4"],
+    ["cluster_3_doc1", "cluster_3_doc6"],
+    ["cluster_3_doc4", "cluster_3_doc6"],
+
+    ["cluster_4_doc2", "cluster_4_doc4"],
+    ["cluster_4_doc2", "cluster_4_doc5"]
+  ],
+  "redaction": [
+    "19-year-old",
+    "Sunrise Rehabilitation",
+    "bone-grafting technique",
+
+
+    "Rex Marin",
+    "Amarillo General hospital",
+    "cardiac rehabilitation",
+    "GP-22987XL",
+    "rare transplanted organ condition",
+    "coronary artery bypass grafting",
+
+    "Gerald Kovac",
+    "PT-8872-3A",
+    "Lewy body dementia",
+    "Mountain Peak Neurology",
+
+    "PT-6652",
+    "58",
+    "Maplewood Rehabilitation Center",
+
+    "#FC-88245",
+    "mitral valve repair",
+    "52",
+    "pulsed-field ablation",
+    "R71902"
+  ]
+}

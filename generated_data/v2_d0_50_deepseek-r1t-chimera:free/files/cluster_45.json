@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_45_doc1",
+      "content": "Strategic Health Alliance reported a 32% increase in processed claims across university research networks in fiscal Q2 2024. Analysis showed uneven distribution, with Coastal Research Institute representing 48% of all documentation delays due to EHR conflicts, while Mid-Atlantic Campus processed claims 15-18 days faster than industry benchmarks. System updates addressing congenital heart disease study billing are pending implementation by July 31. Affected PATIENT_ID: CRI79825B has outstanding claims requiring additional imaging documentation.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_45_doc2",
+      "content": "University Health providers identified a pattern of monoclonal antibody pre-authorizations taking 8-12 business days within endovascular therapy networks during March-May 2024, against plan SLA of 72 hours. Dr. Martinez (PROVIDER #338950) flagged resolution delays impacting congenital heart patients participating in longitudinal LIFESTUDY-45. Update: Non-stationary monitoring devices approved for home use effective June 1, requiring modified billing codes under policy document HB-2245-UC.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_45_doc3",
+      "content": "PATIENT_ID CRI79825B shows completed step therapy requirements for congenital heart complications dated 04/12/2024 (EVENT_DATE), with 3 echocardiograms and 2 specialist consults documented. Claims processing indicates missing pre-cert for genetic testing panel CTN-11D (TREATMENT). Facility code A7L records Coastal Research Institute campus (LOCATION) as service location. Demographic sheet lists patient as 23-year-old male research participant (DEMOGRAPHIC) with student insurance extension.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_45_doc4",
+      "content": "Health Network Quarterly identifies genetic panel CTN-11D as presenting unique claim adjudication challenges, with 37% processing errors across research institutions. Coastal Research Institute introduced rapid pre-cert exception process for study participants subsequent to March 27 system outage. Latest payment pipeline shows student health plans averaging 28-day turnaround for advanced cardiology procedures since October 2023 policy revision.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_45",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Research patient's congenital heart disease treatment journey through academic medical system, including insurance processing challenges and policy updates affecting genetic testing.",
+    "person": {
+      "entities": [
+        [
+          "CRI79825B",
+          "PATIENT_ID"
+        ],
+        [
+          "23-year-old male research participant",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "congenital heart complications",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Coastal Research Institute campus",
+          "LOCATION"
+        ],
+        [
+          "CTN-11D",
+          "TREATMENT"
+        ],
+        [
+          "04/12/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "LIFESTUDY-45",
+          "EVENT"
+        ],
+        [
+          "student insurance extension",
+          "INDIRECT_IDENTIFIER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What missing pre-certification is delaying processing for patient CRI79825B at Coastal Research Institute?",
+        "a": "Missing pre-cert for genetic testing panel CTN-11D.",
+        "sources": [
+          "cluster_45_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which policy document covers billing modifications for non-stationary monitoring devices effective June 2024?",
+        "a": "Policy document HB-2245-UC authorizes modified billing codes.",
+        "sources": [
+          "cluster_45_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment requirements and missing documentation affect patient CRI79825B's congenital heart condition claims?",
+        "a": "Completed step therapy with echoes/consults, missing genetic test pre-cert.",
+        "sources": [
+          "cluster_45_doc1",
+          "cluster_45_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did Coastal Research Institute adjust processing after the CTN-11D panel errors and March system outage?",
+        "a": "Rapid pre-cert exceptions for study participants, guided by policy HB‑2245‑UC.",
+        "sources": [
+          "cluster_45_doc2",
+          "cluster_45_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

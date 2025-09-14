@@ -1,0 +1,7 @@
+{
+  "id": "cluster_33_doc1",
+  "content": "A recent audit of claims processed through the RapidCare network in Albany revealed a 22% increase in genetic testing approvals for rare metabolic disorders during Q3 2023. The audit report highlighted inconsistent documentation practices across participating providers, particularly for patients receiving concurrent enzyme replacement therapies. Several cases showed missing prior authorization forms for Panel-8G tests, triggering automatic claim denials and subsequent appeals.",
+  "metadata": {
+    "format": "audit_report"
+  }
+}

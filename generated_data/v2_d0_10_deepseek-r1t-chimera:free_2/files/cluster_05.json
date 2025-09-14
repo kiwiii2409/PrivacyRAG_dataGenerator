@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_5_doc1",
+      "content": "March 2023 claims review identified increased prior authorization requests for genetic testing in Mountain View region. Dr. Lin at Valley Genomics reported a 45% increase in test orders, primarily for rare mitochondrial disorders. The insurance memo highlights new documentation requirements effective June 1st, including pre-test counseling verification and detailed family history forms.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_5_doc2",
+      "content": "Patient 2387P (DOB 08/15/1985) underwent whole exome sequencing at Valley Genomics in April 2023 for unexplained neurological symptoms. Results revealed POLG mutation. Claim was initially denied due to missing counseling documentation but approved after appeal with additional provider notes. Patient resides at 451 Oakridge Lane, Mountain View.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_5_doc3",
+      "content": "2023 Q2 Provider Network Update: Valley Genomics added to Tier 1 network for neurological genetic testing after demonstrating 92% prior authorization approval rate. Authorization turnaround time improved to 48 hours for urgent cases. New billing code GTRX-2387 introduced for comprehensive mitochondrial disorder panels.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_5_doc4",
+      "content": "Mountain View Tribune health section (May 2023) featured Valley Genomics' research on early-onset mitochondrial disorders. Study participants with POLG mutations showed 60% response rate to targeted antioxidant therapy. Article mentions insurance barriers for genetic testing despite clinical guidelines recommending early diagnosis.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_5",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Genetic testing claims and policy changes for mitochondrial disorders in Mountain View region, focusing on patient 2387P and Valley Genomics provider network updates",
+    "person": {
+      "entities": [
+        [
+          "2387P",
+          "PATIENT_ID"
+        ],
+        [
+          "08/15/1985",
+          "BIRTHDATE"
+        ],
+        [
+          "451 Oakridge Lane, Mountain View",
+          "ADDRESS"
+        ],
+        [
+          "POLG mutation",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "whole exome sequencing",
+          "TREATMENT"
+        ],
+        [
+          "Valley Genomics",
+          "PROVIDER"
+        ],
+        [
+          "April 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "unexplained neurological symptoms",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What new documentation was required starting June 1st for genetic testing claims at Valley Genomics?",
+        "a": "Pre-test counseling verification and detailed family history forms.",
+        "sources": [
+          "cluster_5_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What specific testing did patient 2387P undergo in April 2023 for neurological symptoms?",
+        "a": "Whole exome sequencing at Valley Genomics.",
+        "sources": [
+          "cluster_5_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What genetic mutation and corresponding treatment response rate were reported for Valley Genomics patients in Mountain View?",
+        "a": "POLG mutations with 60% response to targeted antioxidant therapy.",
+        "sources": [
+          "cluster_5_doc2",
+          "cluster_5_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What documentation changes and prior‑authorization metrics followed Valley Genomics' Tier 1 designation for neurological testing?",
+        "a": "New pre‑test counseling and family history documentation, plus 92% approval and 48‑hour turnaround.",
+        "sources": [
+          "cluster_5_doc1",
+          "cluster_5_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

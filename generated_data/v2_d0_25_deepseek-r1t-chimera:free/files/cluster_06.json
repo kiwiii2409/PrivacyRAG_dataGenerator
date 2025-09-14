@@ -1,0 +1,113 @@
+{
+  "documents": [
+    {
+      "id": "cluster_6_doc1",
+      "content": "Recent analysis of pediatric asthma cases in Bozeman revealed higher-than-average emergency department utilization during winter months. New clinic policies effective 01/2024 mandate specialized inhalation therapy protocols for patients under 12. Regional providers reported a 22% increase in steroid prescriptions compared to previous year.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_6_doc2",
+      "content": "Dawson Medical Group updated its network agreement to include enhanced reimbursement for asthma education services (code 94664). Providers must complete certification by 03/2024 to qualify. The changes particularly impact rural clinics in Montana implementing new pediatric care initiatives.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_6_doc3",
+      "content": "A 9-year-old patient presented with persistent wheezing and nocturnal symptoms. Treatment plan includes flutter valve therapy and dietary modifications. Initial claims were processed under old coding standards but will be resubmitted under the updated respiratory care bundle (CT-998).",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_6_doc4",
+      "content": "HealthPartners Northwest announced concierge services for families navigating complex pediatric asthma cases. The program coordinates between pulmonology specialists, school nurses, and environmental assessors. Services include home air quality testing paired with treatment plans (reference form HP-AB12).",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_6_doc5",
+      "content": "Q1 2024 audit shows Montana providers submitted 143 claims under respiratory care bundle CT-998, with 89% processed within 7 days. Denials primarily involved missing environmental assessment documentation. Payment accuracy improved 18% following coding updates.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_6",
+    "cluster_risk": "LOW",
+    "content_summary": "Pediatric asthma care improvements in Montana involving treatment protocols, network updates, and claims processing changes",
+    "person": {
+      "entities": [
+        [
+          "9-year-old",
+          "AGE"
+        ],
+        [
+          "persistent wheezing",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "nocturnal symptoms",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "flutter valve therapy",
+          "TREATMENT"
+        ],
+        [
+          "dietary modifications",
+          "TREATMENT"
+        ],
+        [
+          "respiratory care bundle CT-998",
+          "UNIQUE_FACT"
+        ],
+        [
+          "HP-AB12",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What specific therapies were included in the treatment plan for the 9-year-old asthma patient with nocturnal symptoms?",
+        "a": "flutter valve therapy and dietary modifications",
+        "sources": [
+          "cluster_6_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage of CT-998 bundle claims were processed within one week during Q1 2024 in Montana?",
+        "a": "89% processed within 7 days",
+        "sources": [
+          "cluster_6_doc5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What therapies were included in the 9-year-old patient's treatment plan and what services are integrated in HP-AB12 program?",
+        "a": "Flutter valve therapy, dietary modifications, home air quality testing, treatment plans.",
+        "sources": [
+          "cluster_6_doc3",
+          "cluster_6_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What programmatic changes impacted winter asthma care for Montana children under 12?",
+        "a": "new inhalation therapy protocols and enhanced reimbursement for asthma education",
+        "sources": [
+          "cluster_6_doc1",
+          "cluster_6_doc2"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

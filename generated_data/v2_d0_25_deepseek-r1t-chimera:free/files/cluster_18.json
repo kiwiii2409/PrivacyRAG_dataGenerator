@@ -1,0 +1,113 @@
+{
+  "documents": [
+    {
+      "id": "cluster_18_doc1",
+      "content": "A policy update indicates enhanced coverage for advanced imaging in chronic pain cases. Riverside Medical Group reports a 22% increase in MRI utilization. Providers must now submit prior authorization forms for non-emergent scans, effective July 2023. The new protocol applies to patients aged 40-70 with documented persistent symptoms exceeding six months.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_18_doc2",
+      "content": "Research note from August 2023 details outcomes of pain management interventions at Horizon Care Facility. Patients receiving combined physio-cognitive therapy showed 35% better adherence compared to medication-only approaches. Notable improvement seen in demographic strata aged 55-65 with axial joint degeneration.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_18_doc3",
+      "content": "Claim form #CT-4882 processed for lumbar facet injection administered at Horizon Care's interventional suite. Procedure performed by Dr. Ellen Voss on 09/14/2023. Approval required supporting documentation confirming failed conservative treatments over 120 days.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_18_doc4",
+      "content": "Provider audit reveals 18% of interventional pain procedures at Horizon Care lack complete conservative therapy records. Compliance memo issued October 2023 mandates checklist verification for all facet joint interventions. Noncompliant cases may face reimbursement delays under new imaging policy.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_18_doc5",
+      "content": "Lakeview Health Journal reports on regional pain management trends. Horizon Care Facility ranks top in Northwestern states for minimally invasive interventions. Their 2023 Q3 data shows 62% of patients originate from industrial sectors with repetitive strain histories.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_18",
+    "cluster_risk": "LOW",
+    "content_summary": "Chronic pain management policies, provider practices, and patient outcomes in Northwestern states",
+    "person": {
+      "entities": [
+        [
+          "CT-4882",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "lumbar facet injection",
+          "TREATMENT"
+        ],
+        [
+          "Dr. Ellen Voss",
+          "PROVIDER"
+        ],
+        [
+          "09/14/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Horizon Care's interventional suite",
+          "LOCATION"
+        ],
+        [
+          "failed conservative treatments over 120 days",
+          "UNIQUE_FACT"
+        ],
+        [
+          "Horizon Care Facility",
+          "PROVIDER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What new requirement was introduced for MRI coverage of chronic pain patients aged 40-70 in July 2023?",
+        "a": "Providers must submit prior authorization forms for non-emergent scans.",
+        "sources": [
+          "cluster_18_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What outcomes were observed in pain management interventions at Horizon Care Facility?",
+        "a": "Combined physio-cognitive therapy improved adherence by 35% over medication-only.",
+        "sources": [
+          "cluster_18_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What documentation was required for claim CT-4882's lumbar facet injection approval and what policy update applies to MRI coverage for chronic pain patients aged 40-70?",
+        "a": "Proof of failed treatments; prior authorization for MRI required.",
+        "sources": [
+          "cluster_18_doc3",
+          "cluster_18_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What compliance changes followed the audit of interventional pain procedures at Horizon Care and which facility ranked highest for minimally invasive pain interventions in Northwestern states during 2023 Q3?",
+        "a": "Checklist verification mandated; Horizon Care ranked highest.",
+        "sources": [
+          "cluster_18_doc4",
+          "cluster_18_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

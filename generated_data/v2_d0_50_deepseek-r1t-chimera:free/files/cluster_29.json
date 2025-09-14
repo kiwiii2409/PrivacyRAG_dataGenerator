@@ -1,0 +1,114 @@
+{
+  "documents": [
+    {
+      "id": "cluster_29_docid1",
+      "content": "Auburn Regional Clinic's quarterly audit report highlights a 38% increase in claims related to vestibular schwannoma treatments among policyholders aged 25-40 in the Puget Sound region. Dr. Elaine Voss at Seattle Neurocare initiated a pilot program using gamma knife radiosurgery, with Policy #GKRS-229 requiring pre-authorization for metastatic cases. Patient ID N7742 underwent treatment on 03/15/2023 with notable balance improvement documented at 6-week follow-up.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_29_docid2",
+      "content": "Research Note (Study ACU-445): Participant RK-29 (DOB 08/12/1991) completed vestibular rehabilitation at Bothell Balance Center under Dr. Mira Patel's supervision. Treatment included weekly sessions using computerized dynamic posturography from 04/2023-06/2023. Concurrent insurance claims show coordination between Policy #GKRS-229 coverage and supplemental PT benefits under Group Plan NW-882.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_29_docid3",
+      "content": "Insurance memo dated 07/01/2023 announces Policy #GKRS-229 updates: Requires vestibular testing within 14 days prior to radiosurgery for non-metastatic schwannoma cases in Washington State. Claims processor Renata Okoye noted increased approvals for younger patients after implementing the 15-point quality checklist developed by Dr. Voss's team.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_29_docid4",
+      "content": "Seattle Times health section reports on innovative schwannoma treatments at regional centers (08/04/2023). Features patient Christopher Duvall (Policy NW-882 holder) describing his recovery journey through combined gamma knife and rehabilitation at Bothell Balance Center. Article mentions upcoming congressional hearing about insurance coverage for rare neurological conditions.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_29",
+    "cluster_risk": "HIGH",
+    "content_summary": "Coordinated case of vestibular schwannoma treatment through gamma knife radiosurgery (Policy #GKRS-229) and rehabilitation via Study ACU-445, with associated policy changes and media coverage",
+    "person": {
+      "entities": [
+        [
+          "N7742",
+          "PATIENT_ID"
+        ],
+        [
+          "Policy #GKRS-229",
+          "UNIQUE_FACT"
+        ],
+        [
+          "gamma knife radiosurgery",
+          "TREATMENT"
+        ],
+        [
+          "vestibular schwannoma",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Puget Sound region",
+          "LOCATION"
+        ],
+        [
+          "Auburn Regional Clinic",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Elaine Voss",
+          "PROVIDER"
+        ],
+        [
+          "Seattle Neurocare",
+          "PROVIDER"
+        ],
+        [
+          "03/15/2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two treatments did Christopher Duvall receive for vestibular schwannoma under Policy NW-882?",
+        "a": "Gamma knife radiosurgery and vestibular rehabilitation at Bothell Balance Center",
+        "sources": [
+          "cluster_29_docid4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy update implemented a 15-point checklist for vestibular schwannoma treatment approvals?",
+        "a": "Policy #GKRS-229 update effective July 2023",
+        "sources": [
+          "cluster_29_docid3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What diagnostic test and treatment timeline occurred for patient ID N7742 and study participant RK-29?",
+        "a": "Vestibular testing within 14 days prior to 03/15/2023 gamma knife procedure",
+        "sources": [
+          "cluster_29_docid1",
+          "cluster_29_docid3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What regional trend and policy change addressed vestibular schwannoma treatment for patients aged 25-40?",
+        "a": "38% claims increase led to Policy #GKRS-229 requiring pre-authorization for metastatic cases",
+        "sources": [
+          "cluster_29_docid1",
+          "cluster_29_docid3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

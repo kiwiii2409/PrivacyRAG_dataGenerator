@@ -1,0 +1,148 @@
+{
+  "documents": [
+    {
+      "id": "cluster_20_doc1",
+      "content": "Aetna received a prior authorization request from Dr. Elise Brenner at North Pines Clinic for patient R-289450 (Jamison Kroft, DOB 08/15/1965) regarding cervical disc replacement surgery. The request noted prior unsuccessful physical therapy and worsening radiculopathy symptoms. Approval was granted with additional requirements for post-op monitoring.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_20_doc2",
+      "content": "Hillcrest Rehabilitation submitted progress notes for Jamison Kroft showing 16 PT sessions focusing on cervical stabilization post-surgery. Treatment plan includes continued home exercises and reevaluation in 30 days. Documentation notes improved grip strength but persistent bilateral shoulder discomfort.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_20_doc3",
+      "content": "HealthFirst Community Hospital discharge summary indicates Jamison Kroft (ID VR0184657) was admitted 03/12/2023 for cervical spinal fusion complications including dysphagia. Treatment included ENT consultation, modified swallow techniques, and NewHaven pain management protocol due to opioid sensitivity.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_20_doc4",
+      "content": "Blue Cross Research Division analysis identified surgical fusion patients aged 55-70 with opioid sensitivities had 23% higher readmission risk when standard pain protocols were used. NewHaven protocol implementation began March 2023 across partner facilities.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_20_doc5",
+      "content": "Policy Bulletin #23 Clerk.534: Effective 5/1/2023, all employer-sponsored plans must cover NewHaven pain management alternatives for members with documented opioid sensitivities. Verification requires submission of adverse reaction documentation.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_20_doc6",
+      "content": "Healthcare Today article discusses North Pines Clinic's innovative approach to spinal surgery recovery, highlighting Jamison Kroft's case combining modified pain management and occupational therapy adaptions. Mentions upcoming NPI network expansion for complex spinal cases.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_20",
+    "cluster_risk": "HIGH",
+    "content_summary": "A 57-year-old male's cervical spine treatment journey involving multiple providers, policy changes regarding pain management protocols for opioid-sensitive patients, and research intersecting with clinical care.",
+    "person": {
+      "entities": [
+        [
+          "Jamison Kroft",
+          "NAME"
+        ],
+        [
+          "08/15/1965",
+          "BIRTHDATE"
+        ],
+        [
+          "R-289450",
+          "PATIENT_ID"
+        ],
+        [
+          "VR0184657",
+          "PATIENT_ID"
+        ],
+        [
+          "cervical disc replacement surgery",
+          "TREATMENT"
+        ],
+        [
+          "radiculopathy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "NewHaven pain management protocol",
+          "TREATMENT"
+        ],
+        [
+          "opioid sensitivity",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "dysphagia",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "cervical spinal fusion",
+          "TREATMENT"
+        ],
+        [
+          "post-op monitoring",
+          "TREATMENT"
+        ],
+        [
+          "home exercises",
+          "TREATMENT"
+        ],
+        [
+          "rehabilitation",
+          "TREATMENT"
+        ],
+        [
+          "16 PT sessions",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What specific post-surgery complication did Jamison Kroft experience that required ENT consultation on March 12, 2023?",
+        "a": "Dysphagia requiring modified swallow techniques.",
+        "sources": [
+          "cluster_20_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change took effect May 2023 regarding pain management for opioid-sensitive patients?",
+        "a": "Mandated coverage of NewHaven protocol with adverse reaction documentation.",
+        "sources": [
+          "cluster_20_doc5"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two unique identifiers appear across Jamison Kroft's surgical authorization and hospitalization records?",
+        "a": "Patient IDs R-289450 and VR0184657.",
+        "sources": [
+          "cluster_20_doc1",
+          "cluster_20_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What clinical finding and policy implementation coincided in March 2023 for spinal fusion patients?",
+        "a": "23% higher readmission risk and NewHaven protocol rollout.",
+        "sources": [
+          "cluster_20_doc3",
+          "cluster_20_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

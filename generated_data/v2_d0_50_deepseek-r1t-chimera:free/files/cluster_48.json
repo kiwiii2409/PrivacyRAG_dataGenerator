@@ -1,0 +1,114 @@
+{
+  "documents": [
+    {
+      "id": "cluster_48_doc1",
+      "content": "A new claims processing integration was implemented at Riverview Specialty Clinic in August 2023, affecting physical therapy authorization workflows. The system update requires providers to submit detailed treatment plans for chronic pain management cases exceeding 12 sessions. Clinic administrators noted a 22% reduction in claim denials during Q4 following the change, particularly for patients aged 40-55 with occupational strain injuries. Parallel upgrades to the provider portal simplified documentation submission for complex cases.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_48_doc2",
+      "content": "Research note from December 2023 highlights outcomes of aquatic therapy for chronic low back pain among construction workers. The 18-week pilot program at Riverview Specialty Clinic involved 47 participants with mean age 49. Results showed 68% reduction in pain medication usage and 41% decrease in associated insurance claims. Program expansion plans include collaboration with three regional occupational health networks starting Q2 2024.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_48_doc3",
+      "content": "Patient survey from November 2023 details experience with chronic pain management at Riverview Specialty Clinic. Participant reported satisfaction with aquatic therapy program but expressed frustration with initial insurance authorization delays. Notable improvement in functional mobility after 14 sessions allowed return to modified construction work. Survey emphasized value of multidisciplinary care coordination between physiatrists and occupational therapists.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_48_doc4",
+      "content": "Provider report from January 2024 outlines optimized chronic pain treatment protocol for patients aged 40-55 with occupational injuries. The Riverview Wellness Initiative incorporates aquatic therapy, cognitive behavioral components, and workplace ergonomic assessments. Early data shows 30% faster claim processing times compared to standard physical therapy approaches, attributed to improved documentation quality and clearer outcome metrics.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_48",
+    "cluster_risk": "LOW",
+    "content_summary": "Chronic pain management program for occupational injuries at Riverview Specialty Clinic, including claims processing improvements and aquatic therapy outcomes",
+    "person": {
+      "entities": [
+        [
+          "chronic low back pain",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "construction workers",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Riverview Specialty Clinic",
+          "LOCATION"
+        ],
+        [
+          "August 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "occupational strain injuries",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "November 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "14 sessions",
+          "UNIQUE_FACT"
+        ],
+        [
+          "modified construction work",
+          "INDIRECT_IDENTIFIER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment protocol showed 30% faster claim processing times for occupational injury patients at Riverview Specialty Clinic in January 2024?",
+        "a": "The Riverview Wellness Initiative incorporating aquatic therapy and ergonomic assessments.",
+        "sources": [
+          "cluster_48_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did the August 2023 claims system update at Riverview affect physical therapy authorizations?",
+        "a": "It required detailed treatment plans for chronic pain cases exceeding 12 sessions.",
+        "sources": [
+          "cluster_48_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What aquatic therapy outcomes were reported by both the research note and patient survey from Riverview Specialty Clinic?",
+        "a": "68% medication reduction in research, functional mobility improvement in patient experience.",
+        "sources": [
+          "cluster_48_doc2",
+          "cluster_48_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What improvements in chronic pain management were documented for patients aged 40-55 with occupational injuries across the clinic memo and provider report?",
+        "a": "22% fewer claim denials and 30% faster processing with specialized protocols.",
+        "sources": [
+          "cluster_48_doc1",
+          "cluster_48_doc4"
+        ],
+        "type": "specific"
+      }
+    ]
+  }
+}

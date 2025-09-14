@@ -1,0 +1,164 @@
+{
+  "documents": [
+    {
+      "id": "cluster_19_doc1",
+      "content": "Initial diagnostic report confirms moderate obstructive sleep apnea for patient enrolled in employer-sponsored plan. Recommended CPAP therapy with follow-up after 60 days. Sleep study conducted at Nashville General Hospital on 09/15/2023 showed AHI of 28. Provider notes compliance challenges in urban work environment.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_19_doc2",
+      "content": "Claims processing memo regarding PT437291 highlights 23-day turnaround for DME authorization, above network average. File indicates coordination between pulmonary department at Nashville General and home health supplier ApexCare regarding CPAP unit model RESmart Auto.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_19_doc3",
+      "content": "Provider report from Dr. Helen Marquez details metabolic biomarkers in sleep apnea patients using CPAP. Case PT437291 shows remarkable improvement in blood pressure (142/88 to 128/82) after 8 weeks of therapy. Recommended continued monitoring for cardiovascular comorbidities.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_19_doc4",
+      "content": "Policy update circular modifies coverage criteria for bilevel devices effective Q4 2023. Requires documented failure of CPAP trial for patients with BMI <35. Impacts approximately 18% of active sleep study participants systemwide.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_19_doc5",
+      "content": "Longitudinal research note tracks CPAP adherence metrics among Nashville cohort. Participant 437291 maintained 88% nightly usage (6.2 hrs avg) between October-December 2023. Study correlates >4hrs usage with 32% reduced cardiovascular event risk.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_19_doc6",
+      "content": "Patient satisfaction survey from zip 37211 praises NPAP assistance program but criticizes DME supplier response times. Mentions positive experience with respiratory therapist J. Coleman at Nashville General during CPAP fitting.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_19",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Middle-aged sleep apnea patient's treatment journey involving CPAP therapy, claims processing, and research participation at Nashville General Hospital during 2023 policy changes",
+    "person": {
+      "entities": [
+        [
+          "PT437291",
+          "PATIENT_ID"
+        ],
+        [
+          "Nashville General Hospital",
+          "LOCATION"
+        ],
+        [
+          "1981-05-23",
+          "BIRTHDATE"
+        ],
+        [
+          "Dr. Helen Marquez",
+          "PROVIDER"
+        ],
+        [
+          "CPAP therapy",
+          "TREATMENT"
+        ],
+        [
+          "09/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "AHI of 28",
+          "UNIQUE_FACT"
+        ],
+        [
+          "37211",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "moderate obstructive sleep apnea",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "CPAP unit model RESmart Auto",
+          "UNIQUE_FACT"
+        ],
+        [
+          "88% nightly usage",
+          "UNIQUE_FACT"
+        ],
+        [
+          "6.2 hrs avg",
+          "UNIQUE_FACT"
+        ],
+        [
+          "blood pressure (142/88 to 128/82)",
+          "UNIQUE_FACT"
+        ],
+        [
+          "32% reduced cardiovascular event risk",
+          "UNIQUE_FACT"
+        ],
+        [
+          "8 weeks of therapy",
+          "UNIQUE_FACT"
+        ],
+        [
+          "60 days follow-up",
+          "UNIQUE_FACT"
+        ],
+        [
+          "23-day turnaround for DME authorization",
+          "UNIQUE_FACT"
+        ],
+        [
+          "October-December 2023",
+          "UNIQUE_FACT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was patient PT437291's apnea-hypopnea index during the September 2023 sleep study?",
+        "a": "The sleep study showed an AHI of 28.",
+        "sources": [
+          "cluster_19_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What cardiovascular improvement was observed after 8 weeks of CPAP use for sleep apnea patients?",
+        "a": "Blood pressure improved from 142/88 to 128/82.",
+        "sources": [
+          "cluster_19_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which provider and facility managed PT437291's CPAP treatment and research participation?",
+        "a": "Dr. Helen Marquez at Nashville General Hospital.",
+        "sources": [
+          "cluster_19_doc1",
+          "cluster_19_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did 2023 policy changes impact device authorization requirements for sleep apnea patients and what effect did it have on CPAP adherence among participants?",
+        "a": "Policy required documented CPAP failure; adherence stayed at 88%.",
+        "sources": [
+          "cluster_19_doc4",
+          "cluster_19_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

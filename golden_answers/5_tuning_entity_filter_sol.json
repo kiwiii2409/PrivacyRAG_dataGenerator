@@ -1,0 +1,208 @@
+{
+  "entities": {
+    "cluster_0_doc1": [
+      "8892-45F",
+      "Mountainview Urology",
+      "HIFU",
+      "prostate issues",
+      "elevated PSA levels",
+      "April 2024",
+      "Fernwood Radiation Center"
+    ],
+    "cluster_0_doc2": [
+      "Fernwood Radiation Center",
+      "Mountainview",
+      "Lakeside Oncology",
+      "Q2 2024",
+      "65"
+    ],
+    "cluster_0_doc3": [
+      "HIFU",
+      "prostate treatment",
+      "58-72",
+      "Northwest region",
+      "2022"
+    ],
+    "cluster_0_doc4": [
+      "8892-45F",
+      "Lakeside Oncology",
+      "Mountainview",
+      "2024-03-12",
+      "advanced imaging"
+    ],
+    "cluster_1_doc1": [
+      "Marcus Veyrat",
+      "42",
+      "PHV765432",
+      "Alpine Medical Center",
+      "2023-10-14",
+      "INS-90876-23A",
+      "limb reconstruction",
+      "neurological assessments"
+    ],
+    "cluster_1_doc2": [
+      "PCD-4309",
+      "November 1",
+      "Alpine Medical Center orthopedic department"
+    ],
+    "cluster_1_doc3": [
+      "PHV765432",
+      "physical therapy",
+      "neuromuscular retraining program",
+      "tibial nerve damage",
+      "reflex sympathetic dystrophy",
+      "Dr. Esmé Laurent",
+      "Chamonix Rehab Institute"
+    ],
+    "cluster_1_doc4": [
+      "Dr. Laurent",
+      "Chamonix",
+      "VA-56F",
+      "2023-12-05",
+      "Savoie"
+    ],
+    "cluster_2_doc1": [
+      "Lincoln Kaur",
+      "PA-4892-LK",
+      "CAR-T cell therapy",
+      "Hemisphere Oncology",
+      "2023-10-15 - 2023-11-03",
+      "Dr. Elise Varga",
+      "refractory mantle cell lymphoma",
+      "Brightview Care",
+      "675 Magnolia Blvd Suite 210"
+    ],
+    "cluster_2_doc2": [
+      "Hemisphere Oncology",
+      "2023-12-01",
+      "Dr. Varga",
+      "CARES-2",
+      "CD19+ status"
+    ],
+    "cluster_2_doc3": [
+      "PA-4892-LK",
+      "2024-02-20",
+      "autoimmune thyroiditis",
+      "CAR-T infusion",
+      "CARES-2"
+    ],
+    "cluster_2_doc4": [
+      "2023-11-20",
+      "PA-4892-LK",
+      "CD19+/CD22+",
+      "CAR-T access expansion",
+      "Hemisphere Oncology"
+    ],
+
+    "cluster_3_doc1": [
+      "Cimzia",
+      "rheumatoid arthritis",
+      "Tacoma WA",
+      "Tacoma General",
+      "6-month authorization"
+    ],
+    "cluster_3_doc2": [
+      "rheumatoid arthritis",
+      "11/2022",
+      "methotrexate",
+      "48",
+      "freelance graphic designer"
+    ],
+    "cluster_3_doc3": [
+      "2023-11",
+      "SupremeDrug Co",
+      "genetic testing",
+      "Northwest region",
+      "Pierce County",
+      "02/2024"
+    ],
+    "cluster_3_doc4": [
+      "Tacoma Arthritis Center",
+      "NSAIDs",
+      "methotrexate",
+      "Cimzia",
+      "18 months",
+      "biweekly self-injections"
+    ],
+    "cluster_3_doc5": [
+      "rheumatoid arthritis",
+      "Pacific Northwest",
+      "40-55",
+      "2020"
+    ],
+    "cluster_3_doc6": ["autoimmune patients"],
+    "cluster_4_doc1": [
+      "POL-2023-089",
+      "January 2023",
+      "April 15 2023",
+      "virtual physical therapy",
+      "65+",
+      "Midwest region",
+      "post-stroke rehabilitation"
+    ],
+    "cluster_4_doc2": [
+      "88945-23A",
+      "1957-07-15",
+      "Mercy Hospital",
+      "Peoria, IL",
+      "ischemic stroke",
+      "virtual PT",
+      "osteoporosis",
+      "RehabPlus Network"
+    ],
+    "cluster_4_doc3": ["Q2 2023", "Midwest region", "Mercy Hospital"],
+    "cluster_4_doc4": [
+      "NCT04567823",
+      "68 years old",
+      "Medicare Advantage members",
+      "stroke patients"
+    ],
+    "cluster_4_doc5": [
+      "05/01/2023",
+      "GRV-IL-557",
+      "PT445-9Z",
+      "RehabPlus Network",
+      "auth# PT445-9Z",
+      "stroke history",
+      "virtual program",
+      "NCT04567823"
+    ],
+    "cluster_4_doc6": [
+      "Mercy Hospital",
+      "POL-2023-089",
+      "rural stroke survivors",
+      "elderly patients",
+      "virtual PT"
+    ]
+  },
+  "links": [
+    ["cluster_0_doc0", "cluster_0_doc1"],
+    ["cluster_0_doc0", "cluster_0_doc2"],
+
+    
+    ["cluster_0_doc1", "cluster_0_doc2"],
+    ["cluster_0_doc1", "cluster_0_doc4"],
+    
+    ["cluster_0_doc1", "cluster_0_doc2", "cluster_0_doc4"],
+    ["cluster_0_doc1", "cluster_0_doc4"],
+    ["cluster_13", "cluster_1_doc1"],
+    ["cluster_1_doc3", "cluster_1_doc4"],
+    ["cluster_2_doc1", "cluster_2_doc2"],
+    ["cluster_2_doc1", "cluster_2_doc3"],
+    ["cluster_2_doc1", "cluster_2_doc4"],
+    ["cluster_3_doc1", "cluster_3_doc2"],
+    ["cluster_4_doc2", "cluster_4_doc5"],
+    ["cluster_4_doc2", "cluster_4_doc6"]
+  ],
+  "redaction": [
+    "8892-45F",
+    "PHV765432",
+    "Marcus Veyrat",
+    "Lincoln Kaur",
+    "PA-4892-LK",
+    "Tacoma, WA",
+    "48",
+    "88945-23A",
+    "1957-07-15"
+  ]
+}

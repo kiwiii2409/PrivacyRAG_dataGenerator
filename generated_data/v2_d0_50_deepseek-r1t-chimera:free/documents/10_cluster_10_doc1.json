@@ -1,0 +1,7 @@
+{
+  "id": "cluster_10_doc1",
+  "content": "A recent audit of claims processed through the Summit Health Network revealed discrepancies in billing for advanced imaging services. Patients aged 50-65 with spinal stenosis showed higher denial rates when referred by out-of-network providers. The report highlights inconsistent application of policy #SHN-4356 regarding prior authorizations for MRIs.",
+  "metadata": {
+    "format": "audit_report"
+  }
+}

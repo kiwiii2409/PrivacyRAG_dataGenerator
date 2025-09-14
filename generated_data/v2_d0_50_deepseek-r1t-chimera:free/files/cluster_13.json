@@ -1,0 +1,164 @@
+{
+  "documents": [
+    {
+      "id": "cluster_13_docid1",
+      "content": "FlexCare Health Partners submitted a claim for Lila Voss (ID# FC-89235) regarding rheumatoid arthritis treatment. The procedure included biweekly actemra infusions at Mountain View Specialty Clinic. Documentation indicates prior authorization was approved under policy RV-2023-45. Coordinator notes mention potential coordination with a concurrent lupus study at UC Pacific Health Institute.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_13_docid2",
+      "content": "UC Pacific's June 2023 research memo details enrollment metrics for autoimmune drug trial NCT05678218. 42 participants with dual rheumatoid arthritis/lupus diagnoses were recruited from Mountain View Specialty Clinic referrals. Demographics show 83% female participants aged 28-45. Notable outlier: Participant FC-89235 required customized infusion scheduling due to transportation barriers stemming from rural Gilbert Canyon residency.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_13_docid3",
+      "content": "Provider report from Dr. Elise Tan (ID 45TX982) outlines treatment complications for patient Lila Voss. Concurrent actemra infusions and lupus study participation caused elevated hepatic enzymes (ALT 78 U/L). Recommended protocol adjustments: reduce infusion frequency to 3-week intervals and add monthly liver function panels through Desert Valley Labs.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_13_docid4",
+      "content": "Policy update RV-2023-45 revision 3 expands biologic therapy coverage for members enrolled in qualifying clinical trials. Effective 9/1/2023, prior authorization waivers apply when studies meet NIH registry standards. Implementation note: Mountain View Specialty Clinic has 12 active patients affected, including 5 dual-diagnosis cases.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_13_docid5",
+      "content": "Patient survey response from [Redacted ID] describes challenges coordinating care between Mountain View Specialty Clinic and UC Pacific. Infusion appointments conflicted with study visits 3 times during Q3. Additional feedback mentions difficulty obtaining liver panel results from Desert Valley Labs - took 11 days via standard mail to reach Gilbert Canyon address.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_13_docid6",
+      "content": "HealthWire News article 'Autoimmune Treatment Parity Gains Traction' highlights policy RV-2023-45's impact. Features anonymous patient quote describing improved access through clinical trial participation. Details UC Pacific's enrollment surge: 68% increase in rural participants since policy implementation, with special accommodation protocols developed for Gilbert Canyon residents.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_13",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient Lila Voss' rheumatoid arthritis/lupus treatment journey interconnected with clinical trial participation, policy changes, and rural care coordination challenges",
+    "person": {
+      "entities": [
+        [
+          "Lila Voss",
+          "NAME"
+        ],
+        [
+          "FC-89235",
+          "PATIENT_ID"
+        ],
+        [
+          "Gilbert Canyon",
+          "LOCATION"
+        ],
+        [
+          "biweekly actemra infusions",
+          "TREATMENT"
+        ],
+        [
+          "3-week intervals",
+          "TREATMENT"
+        ],
+        [
+          "monthly liver function panels",
+          "TREATMENT"
+        ],
+        [
+          "transportation barriers stemming from rural Gilbert Canyon residency",
+          "UNIQUE_FACT"
+        ],
+        [
+          "customized infusion scheduling",
+          "UNIQUE_FACT"
+        ],
+        [
+          "policy RV-2023-45",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "NCT05678218",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "45TX982",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Dr. Elise Tan",
+          "PROVIDER"
+        ],
+        [
+          "UC Pacific Health Institute",
+          "PROVIDER"
+        ],
+        [
+          "Mountain View Specialty Clinic",
+          "PROVIDER"
+        ],
+        [
+          "Desert Valley Labs",
+          "PROVIDER"
+        ],
+        [
+          "female",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "rheumatoid arthritis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "lupus",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What specific protocol adjustments were made for patient FC-89235's actemra infusions due to elevated liver enzymes?",
+        "a": "Reduced to 3-week intervals with added monthly liver function panels.",
+        "sources": [
+          "cluster_13_docid3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did policy RV-2023-45 revision 3 impact biologic therapy coverage for clinical trial participants?",
+        "a": "It waived prior authorization requirements for NIH-registered studies.",
+        "sources": [
+          "cluster_13_docid4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which two medical facilities did patient Lila Voss from Gilbert Canyon use for autoimmune treatment and research?",
+        "a": "Mountain View Specialty Clinic and UC Pacific Health Institute.",
+        "sources": [
+          "cluster_13_docid1",
+          "cluster_13_docid2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What geographic and demographic trends emerged from UC Pacific's autoimmune study after policy RV-2023-45 implementation?",
+        "a": "68% rural enrollment increase, particularly from Gilbert Canyon residents.",
+        "sources": [
+          "cluster_13_docid2",
+          "cluster_13_docid6"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

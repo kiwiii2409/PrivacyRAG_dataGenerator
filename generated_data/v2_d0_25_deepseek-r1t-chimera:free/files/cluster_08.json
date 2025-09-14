@@ -1,0 +1,138 @@
+{
+  "documents": [
+    {
+      "id": "cluster_8_doc1",
+      "content": "Laurel Health Services issued a provider alert regarding new prior authorization requirements for lumbar fusion surgeries effective November 1, 2023. The policy update affects patients aged 50-75 with degenerative disc disease treated at outpatient surgical centers. Network providers must submit surgical navigation records and post-op rehabilitation plans for claims processing. Implementation follows recent studies showing 27% complication rates in this demographic.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_8_doc2",
+      "content": "Patient 88345-JR completed a satisfaction survey at Desert Spine Institute after receiving aquatic therapy and minimally invasive decompression surgery. The 62-year-old reported 80% pain reduction post-treatment but noted challenges scheduling post-op evaluations. Clinical notes indicate exceptional response to combination therapy despite multiple comorbid conditions. Follow-up scheduled with Dr. Vargas at Mountain View Rehab Center.",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_8_doc3",
+      "content": "Claims audit revealed 18 denied lumbar fusion cases at Desert Spine Institute from 11/15/23-12/31/23 due to missing surgical navigation documentation. 75% involved patients aged 57-68 covered under Gold Coast PPO plans. Resolution required coordination between billing department and Laurel Health Services claims specialists. Three cases required appeals with supplemental provider justification.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_8_doc4",
+      "content": "Medical Journal West published a retrospective analysis of 1,200 degenerative disc patients showing aquatic therapy reduced opioid use by 42% compared to standard PT alone. The study highlighted Mountain View Rehab Center's integrated program achieving highest adherence rates (89%) among facilities using protocol 88345-JR. Researchers noted demographic-specific benefits for patients aged 55-70 with central stenosis.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_8",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Spinal care treatment ecosystem involving policy changes, patient experience, claims processing, and research outcomes for degenerative disc disease patients aged 50-75",
+    "person": {
+      "entities": [
+        [
+          "88345-JR",
+          "PATIENT_ID"
+        ],
+        [
+          "62-year-old",
+          "AGE"
+        ],
+        [
+          "Desert Spine Institute",
+          "LOCATION"
+        ],
+        [
+          "Mountain View Rehab Center",
+          "LOCATION"
+        ],
+        [
+          "Dr. Vargas",
+          "PROVIDER"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "minimally invasive decompression surgery",
+          "TREATMENT"
+        ],
+        [
+          "post-op evaluations",
+          "EVENT"
+        ],
+        [
+          "Follow-up scheduled",
+          "EVENT"
+        ],
+        [
+          "satisfaction survey",
+          "EVENT"
+        ],
+        [
+          "80% pain reduction",
+          "UNIQUE_FACT"
+        ],
+        [
+          "post-op rehabilitation plans",
+          "TREATMENT"
+        ],
+        [
+          "protocol 88345-JR",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Gold Coast PPO plans",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "combination therapy",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What new documentation requirements did Laurel Health Services implement for lumbar fusion surgeries starting November 2023?",
+        "a": "Surgical navigation records and post‑op rehabilitation plans must be submitted for claims processing.",
+        "sources": [
+          "cluster_8_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which treatment combination resulted in 80% pain reduction for patient 88345-JR at Desert Spine Institute?",
+        "a": "Aquatic therapy and minimally invasive decompression surgery provided significant relief.",
+        "sources": [
+          "cluster_8_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What were the primary reasons for denied claims and required resolution steps for Gold Coast PPO patients at Desert Spine Institute?",
+        "a": "Denied due to missing navigation records; resolved via billing coordination and appeals.",
+        "sources": [
+          "cluster_8_doc1",
+          "cluster_8_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which facility's integrated program achieved highest adherence rates for protocol 88345-JR, and which facility is recommended for follow-up after aquatic therapy?",
+        "a": "Mountain View Rehab Center achieved adherence rates and is recommended for follow-up after aquatic therapy.",
+        "sources": [
+          "cluster_8_doc2",
+          "cluster_8_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

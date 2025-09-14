@@ -1,0 +1,101 @@
+{
+  "documents": [
+    {
+      "id": "cluster_4_doc1",
+      "content": "A recent audit revealed inconsistencies in claim processing for HomeSleep Pro devices under policy HH-8832 at Alpine Sleep Clinic. Patients aged 40-55 with sleep apnea receiving CPAP alternatives showed 22% higher approval rates compared to other demographics. Provider Dr. E. Samuels noted increased documentation requirements since March 2023 impacting submission timelines.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_4_doc2",
+      "content": "Patient #88245-1N initiated oral appliance therapy at Alpine Sleep Clinic on 04/12/2023 after failed CPAP titration. Records show concurrent diagnosis of bruxism and moderate OSA. Rental authorization form lists contact number 415-555-0192 for NorCal Medical Equipment regarding delivery logistics.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_4_doc3",
+      "content": "Policy memo HH4/W-2023 distributed to Northern California networks clarifies coverage criteria for mandibular advancement devices. Requires prior authorization demonstrating CPAP intolerance and documented bruxism comorbidity. Effective immediately for claims with service dates after 02/01/2023.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_4_doc4",
+      "content": "Research brief from UC Davis Sleep Center shows 35% better adherence with oral appliances versus CPAP in patients with comorbid bruxism. Study ID# SLP-44-2023 tracked 182 participants through Alpine Clinic's network over 18 months. Full findings under peer review.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_4_doc5",
+      "content": "Service ticket #4412 logged 05/01/2023 regarding delayed payment for HomeSleep Pro invoice from NorCal Medical Equipment. Claims specialist flagged missing prior auth form from Alpine Clinic. Resolution pending provider documentation upload per policy HH-8832 section 4.2.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_4",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Sleep apnea treatment pathway involving oral appliance therapy at Alpine Sleep Clinic under policy HH-8832, including claim processing issues, research context, and equipment supplier interactions.",
+    "person": {
+      "entities": [
+        [
+          "88245-1N",
+          "PATIENT_ID"
+        ],
+        [
+          "04/12/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "bruxism",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "moderate OSA",
+          "MEDICAL_CONDITION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two medical conditions were documented for patient #88245-1N initiating oral appliance therapy at Alpine Sleep Clinic?",
+        "a": "Bruxism and moderate obstructive sleep apnea.",
+        "sources": [
+          "cluster_4_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What percentage improvement in device adherence was found in the UC Davis study SLP-44-2023 for bruxism patients?",
+        "a": "35% better adherence with oral appliances versus CPAP.",
+        "sources": [
+          "cluster_4_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which provider and equipment supplier are associated with patient #88245-1N's sleep therapy, and what billing issue was noted?",
+        "a": "Alpine Sleep Clinic, NorCal Medical Equipment; delayed payment flagged.",
+        "sources": [
+          "cluster_4_doc2",
+          "cluster_4_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What documentation requirements were added in policy HH4/W-2023 for oral appliance coverage, and what audit finding about claim approval rates for patients aged 40-55 was reported?",
+        "a": "Require CPAP intolerance proof and bruxism; audit showed 22% higher approvals for 40‑55 age group.",
+        "sources": [
+          "cluster_4_doc1",
+          "cluster_4_doc3"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

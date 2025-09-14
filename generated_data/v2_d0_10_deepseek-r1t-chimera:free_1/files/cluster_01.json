@@ -1,0 +1,110 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "Patient 45-8923 filed a claim for arrhythmia treatment at Pacific Heart Institute on March 15, 2023. The claim includes cardiac ablation under physician Dr. M. Hernandez. Patient has a history of hypertension and is enrolled in SilverCare Plus plan. Billing department noted incomplete prior authorization documentation requiring follow-up.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "SilverCare network analytics report shows 22% increase in cardiology claims at Pacific Heart Institute during Q2 2023. New prior authorization requirements for ablation procedures took effect April 1st. Institute accounting shows average claim processing time increased to 18 days for complex cardiology cases.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Research summary from Pacific Cardio Study documents increased arrhythmia prevalence among patients aged 50-65 with hypertension. Participants in treatment group A showed 35% reduction in episodes following ablation procedures when combined with medication regimen. Study ID: PCS-8824.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Local health journal reports Pacific Heart Institute expanding electrophysiology department to meet increased demand. Construction will double lab capacity by Q4 2023. Dr. Hernandez quoted saying new equipment will reduce procedure times by 15% for complex arrhythmia cases.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Cardiology patient journey through claim processing during policy changes, including research context and facility expansion",
+    "person": {
+      "entities": [
+        [
+          "45-8923",
+          "PATIENT_ID"
+        ],
+        [
+          "arrhythmia",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "hypertension",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Pacific Heart Institute",
+          "LOCATION"
+        ],
+        [
+          "Dr. M. Hernandez",
+          "PROVIDER"
+        ],
+        [
+          "cardiac ablation",
+          "TREATMENT"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "SilverCare Plus",
+          "INDIRECT_IDENTIFIER"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What treatment and plan information was submitted for patient 45-8923's arrhythmia claim?",
+        "a": "Cardiac ablation procedure under SilverCare Plus plan for arrhythmia.",
+        "sources": [
+          "cluster_1_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did prior authorization policy changes affect Pacific Heart Institute's claim processing?",
+        "a": "Increased processing time to 18 days for cardiology cases after April 1st.",
+        "sources": [
+          "cluster_1_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What significant health factors and treatment outcomes relate to patient 45-8923's profile?",
+        "a": "50-65 hypertensive patient showing 35% episode reduction after ablation plus medication.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What capacity and efficiency improvements are planned for arrhythmia treatment at PCS-8824 study site?",
+        "a": "Lab capacity doubling and 15% procedure time reduction with new equipment.",
+        "sources": [
+          "cluster_1_doc3",
+          "cluster_1_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

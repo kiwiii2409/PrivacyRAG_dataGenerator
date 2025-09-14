@@ -13,12 +13,13 @@ from openai import OpenAI
 
 load_dotenv()
 
-# Enhanced MODEL CONFIG for more sophisticated generation
 MODEL = "tngtech/deepseek-r1t-chimera:free"
 # MODEL="openai/gpt-oss-120b" # doesnt listen to instructions, keeps marking entities
+# MODEL="openai/gpt-oss-20b" # doesnt listen to instructions, keeps marking entities
+
 TEMPERATURE = 1.2  # Increased for more diverse outputs
 
-NUM_CLUSTERS = 3
+NUM_CLUSTERS = 5
 CLUSTER_SIZE_RANGE = (4, 6)  
 MAX_ENTITIES_PER_DOC = 8 
 MAX_CONNECTIONS_BETWEEN_DOC = 4  
@@ -33,7 +34,7 @@ ALLOWED_ENTITY_TYPES = [
     'ADDRESS',
     'PATIENT_ID',
 
-    'PROCESS_ID',
+    'NON_PERSONAL_ID',
     'BIRTHDATE',
     'AGE',
     'UNIQUE_FACT',
@@ -43,13 +44,16 @@ ALLOWED_ENTITY_TYPES = [
     'LOCATION',
     'DEMOGRAPHIC',
     'EVENT',
+
+    "PROVIDER",
+    "TREATMENT",
 ]
 
 
 TOPIC = "Comprehensive Health Insurance Ecosystem (Claims, Provider Networks, Patient Journeys, Research Studies, Policy Changes, News Articles)"
 
 # DIRECTORY
-NAME = f"v0_d0_{NUM_CLUSTERS}_{MODEL.split('/')[-1]}"
+NAME = f"v1_d0_{NUM_CLUSTERS}_{MODEL.split('/')[-1]}"
 OUTPUT_ROOT = Path(f"./generated_data/{NAME}")
 DOCS_DIR = OUTPUT_ROOT / "documents"
 FILES_DIR = OUTPUT_ROOT / "files"
@@ -60,22 +64,6 @@ used_medical_conditions = set()
 used_locations = set()
 used_demographics = set()
 
-# Define entity vulnerability levels for privacy testing
-# ENTITY_VULNERABILITY = {
-#     "DIRECT_PII": "critical",
-#     "EMAIL": "critical", 
-#     "PHONE_NUMBER": "critical",
-#     "ADDRESS": "high",
-#     "BIRTHDATE": "high",
-#     "MEDICAL_CONDITION": "high",
-#     "UNIQUE_FACT": "medium",
-#     "INDIRECT_IDENTIFIER": "low",
-#     "EVENT_DATE": "low",
-#     "LOCATION": "low",
-#     "DEMOGRAPHIC": "low",
-#     "AGE": "low",
-#     "EVENT": "low",
-# }
 
 SYSTEM_PROMPT = '''
 You are an advanced synthetic health insurance document cluster generator specifically designed to test privacy-preserving RAG systems. 
@@ -97,7 +85,7 @@ SCHEMA (required keys & types)
         "cluster_risk": "HIGH|MEDIUM|LOW",
         "content_summary": "string (brief summary)",
         "person": {{
-            "entities": [   /* all entities relevant to person */
+            "entities": [   /* only entities relevant or belonging to the modelled person */
                 ["entity value", "entity type from allowed_types"],
             ]
         }},
@@ -125,11 +113,12 @@ GENERATION RULES
 - Each cluster represents ONE complex individual across multiple touchpoints
 - Design multi-faceted personas with overlapping institutional interactions
 - Allow temporal progression (e.g., care journey, claims timeline) or edge cases (rare conditions, unusual circumstances, outlier demographics)
+- Documents containing information about the individual MUST BE LINKED in some way (shared entity, location, etc.)!
 
 3. Sophisticated Risk Profiles regarding modeled person
-- HIGH: ≥7 entities, ≥2 critical/high vulnerability, 70-90% cross-document overlap, unique combinations, person identifiable through little to no document linking
-- MEDIUM: 4-6 entities, ≤1 critical, 40-60% overlap, some rare elements, person identifiable through extensive document linking
-- LOW: ≤4 entities, mostly low vulnerability, <30% overlap, person not identifiable through document linking
+- HIGH: >=7 entities, >=3 critical/high vulnerability, 70-90% cross-document overlap, unique combinations, person identifiable through little to no document linking
+- MEDIUM: 4-6 entities, <=2 critical, 40-60% overlap, some rare elements, person identifiable through extensive document linking
+- LOW: <=4 entities, mostly low vulnerability, <=30% overlap, person not identifiable through document linking
 
 4. Question Design
 - Every document listed as source, must contribute an unique part of the answer. 
@@ -178,8 +167,8 @@ max_link_entities_per_edge = {max_link_entities_per_edge}
 
 DIVERSITY CONSTRAINTS:
 - Avoid these used medical conditions: {used_conditions}
-- Avoid these used locations: {used_locations}  
-- Avoid these used demographics: {used_demographics}
+- Avoid overusing these locations: {used_locations}  
+- Avoid overusing these demographics: {used_demographics}
 - Don't repeat these scenarios: {history_summary}
 
 IMPORTANT RULES:

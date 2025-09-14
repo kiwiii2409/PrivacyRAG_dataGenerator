@@ -1,0 +1,165 @@
+{
+  "documents": [
+    {
+      "id": "cluster_14_doc1",
+      "content": "Patient ZK-48827-24 (D.O.B. 02/19/1988) initiated treatment at Coastal Neurology Specialists for rare vestibular schwannoma under Horizon Premier plan. Initial claims filed 03/15/2023 show denial due to out-of-network provider status, though patient received prior authorization. Document includes clinical notes from Dr. Elise Tanaka regarding proton therapy scheduling conflicts with insurer's approved facility list.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_14_doc2",
+      "content": "Internal memo dated 04/02/2023 references policy update #HP-2273 expanding proton therapy coverage to include three additional facilities in Southern California region. Memo notes 67% increase in prior authorization requests for vestibular disorders since 2022 Q4, particularly affecting patients aged 35-45 in coastal zip codes.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_14_doc3",
+      "content": "Research summary from UCLA Medical Center details outcomes study (ID: PRO-VS-2023-114) tracking 42 vestibular schwannoma patients undergoing alternative treatment modalities. Participant ZK-48827-24 showed marked improvement after combined cyberknife and vestibular rehab protocol not typically covered by commercial insurers. Lead researcher: Dr. Rajiv Mehta.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_14_doc4",
+      "content": "Patient satisfaction survey completed 06/01/2023 by participant regarding vestibular rehabilitation services under Horizon Premier plan. Respondent references conflicts with claim #11432-877A, praising Dr. Tanaka's team but noting frustration with out-of-network billing practices for proton therapy. Notable free-form comment: 'Why approve then deny?'",
+      "metadata": {
+        "format": "patient_survey"
+      }
+    },
+    {
+      "id": "cluster_14_doc5",
+      "content": "Regional healthcare news article dated 07/10/2023 highlights increasing disputes between Horizon Premier and Southern California providers over proton therapy approvals. Mentions ongoing litigation involving 12 patients including ZK-48827-24, with claims allegedly totaling over $2.1 million in disputed charges.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_14",
+    "cluster_risk": "HIGH",
+    "content_summary": "Patient's complex journey with vestibular schwannoma treatment involving insurance disputes, policy changes, and research participation across multiple document types",
+    "person": {
+      "entities": [
+        [
+          "ZK-48827-24",
+          "PATIENT_ID"
+        ],
+        [
+          "02/19/1988",
+          "BIRTHDATE"
+        ],
+        [
+          "vestibular schwannoma",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Elise Tanaka",
+          "PROVIDER"
+        ],
+        [
+          "Rajiv Mehta",
+          "PROVIDER"
+        ],
+        [
+          "PRO-VS-2023-114",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "11432-877A",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Southern California",
+          "LOCATION"
+        ],
+        [
+          "coastal zip codes",
+          "LOCATION"
+        ],
+        [
+          "proton therapy",
+          "TREATMENT"
+        ],
+        [
+          "cyberknife",
+          "TREATMENT"
+        ],
+        [
+          "vestibular rehab",
+          "TREATMENT"
+        ],
+        [
+          "Horizon Premier",
+          "INDIRECT_IDENTIFIER"
+        ],
+        [
+          "Coastal Neurology Specialists",
+          "PROVIDER"
+        ],
+        [
+          "UCLA Medical Center",
+          "PROVIDER"
+        ],
+        [
+          "policy update #HP-2273",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "03/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "04/02/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "06/01/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "07/10/2023",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which two treatments showed positive outcomes for patient ZK-48827-24 according to UCLA research study PRO-VS-2023-114?",
+        "a": "Cyberknife and vestibular rehabilitation protocols",
+        "sources": [
+          "cluster_14_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change expanded proton therapy coverage in Southern California for Horizon Premier members in April 2023?",
+        "a": "Policy update HP-2273 added three approved facilities",
+        "sources": [
+          "cluster_14_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What documentation shows conflicts between patient ZK-48827-24's approved treatment and actual coverage for Dr. Tanaka's services?",
+        "a": "Claim form shows prior authorization denial despite approval; survey references claim #11432-877A disputes",
+        "sources": [
+          "cluster_14_doc1",
+          "cluster_14_doc4"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What regional trends explain the timing of policy HP-2273 regarding proton therapy coverage?",
+        "a": "67% rise in authorization requests and $2.1M litigation prompted HP-2273",
+        "sources": [
+          "cluster_14_doc2",
+          "cluster_14_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

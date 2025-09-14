@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "id": "cluster_16_doc1",
+      "content": "Brightwood Health System submitted an outpatient claim for CPT 99214 and 20610 for patient #45T9R7P2 on 10/12/2023. The claim notes indicate treatment for bilateral carpal tunnel syndrome with corticosteroid injections. Documentation includes referral from Dr. E. Larson at Northshore Neurology and occupational therapy progress notes from Lakeview Rehab Clinic.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_16_doc2",
+      "content": "Lakeview Rehab Clinic progress report dated 11/01/2023 details work capacity evaluation for factory worker with repetitive stress injuries. Patient demonstrates improved grip strength (45 psi right/38 psi left) but requires modified duty restrictions. Next appointment scheduled with Dr. Samuels in orthopedic department.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_16_doc3",
+      "content": "HealthPlus Insurance policy memo from 09/2023 outlines new coverage requirements for repetitive motion disorders: 1) EMG confirmation required before surgical approval 2) Mandatory 6-week conservative therapy trial 3) Provider network restrictions apply to facilities with certified ergonomics programs.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_16_doc4",
+      "content": "Industrial Health Journal study (2022-2023) found packaging plant workers in Port Austin, MI had 3.2x higher carpal tunnel incidence than national average. Study participants received wrist splints and job modification counseling through workplace insurance programs.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_16_doc5",
+      "content": "Port Austin Times article (12/15/2023) reports local factory implementing 4-day work weeks after multiple worker compensation claims related to musculoskeletal disorders. Management cites collaboration with HealthPlus insurance wellness program and Lakeview Rehab Clinic.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_16",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Worker's carpal tunnel treatment journey involving multiple providers, policy changes for repetitive stress injuries, and regional occupational health trends",
+    "person": {
+      "entities": [
+        [
+          "45T9R7P2",
+          "PATIENT_ID"
+        ],
+        [
+          "10/12/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "11/01/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "bilateral carpal tunnel syndrome",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "corticosteroid injections",
+          "TREATMENT"
+        ],
+        [
+          "Lakeview Rehab Clinic",
+          "PROVIDER"
+        ],
+        [
+          "Dr. E. Larson",
+          "PROVIDER"
+        ],
+        [
+          "Northshore Neurology",
+          "PROVIDER"
+        ],
+        [
+          "Dr. Samuels",
+          "PROVIDER"
+        ],
+        [
+          "factory worker",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Port Austin, MI",
+          "LOCATION"
+        ],
+        [
+          "6-week conservative therapy trial",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What dual interventions did patient 45T9R7P2 receive for carpal tunnel syndrome on 10/12/2023?",
+        "a": "CPT 99214 office visit and 20610 corticosteroid injections",
+        "sources": [
+          "cluster_16_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new approval requirements did HealthPlus implement for repetitive motion disorders in September 2023?",
+        "a": "EMG confirmation, 6-week therapy trial, and network restrictions",
+        "sources": [
+          "cluster_16_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which healthcare facilities were involved in the treatment of patient 45T9R7P2's repetitive stress injuries, and where is the next appointment scheduled?",
+        "a": "Northshore Neurology, Lakeview Rehab Clinic, and Dr. Samuels in orthopedic department.",
+        "sources": [
+          "cluster_16_doc1",
+          "cluster_16_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What workplace changes and health programs impacted musculoskeletal claims in Port Austin during 2023, and what was the incidence rate compared to national average?",
+        "a": "4-day work weeks, HealthPlus wellness program, 3.2x higher carpal tunnel incidence.",
+        "sources": [
+          "cluster_16_doc4",
+          "cluster_16_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

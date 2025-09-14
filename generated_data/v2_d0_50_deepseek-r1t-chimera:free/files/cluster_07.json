@@ -1,0 +1,106 @@
+{
+  "documents": [
+    {
+      "id": "cluster_7_doc1",
+      "content": "The recent audit of Valley Health Systems revealed discrepancies in out-of-network billing practices for orthopedic procedures. Provider organization VHS-48922-OR reported 45% higher charges compared to regional averages, primarily affecting patients receiving spinal decompression treatments. Beacon Insurance initiated enhanced claims review protocols starting November 22, 2023 for all members with policy prefix BIS-ORN.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_7_doc2",
+      "content": "Patient 76438-Q underwent three epidural steroid injections at Desert Spine Clinic between January and March 2024. The treatment plan included diagnostic code M54.5 for chronic lumbar pain. Beacon Insurance authorization records show a denied appeal for additional sessions due to questionable provider network status. Patient birth year confirmed as 1987.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_7_doc3",
+      "content": "News article highlights patient advocacy groups protesting Beacon's new prior authorization requirements across Nevada clinics. Particular concern about delayed spinal treatments - Phoenix Health Journal interviewed Desert Spine Clinic director regarding case 76438-Q's denied appeal. New policies effective Q1 2024 require second opinions beyond initial diagnostic imaging.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_7_doc4",
+      "content": "Comparative effectiveness research (ID: CER-2345-ORTHO) analyzed 1,200 spinal procedure claims from 2022-2023. Findings show significantly better outcomes with early intervention methods (45% pain reduction vs 22%) but higher complication risks for patients aged 35-45. Study funded through Beacon's provider quality initiative program.",
+      "metadata": {
+        "format": "research_note"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_7",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Orthopedic billing audit, spinal treatment appeal denial, prior authorization policy changes, and effectiveness research linkages",
+    "person": {
+      "entities": [
+        [
+          "76438-Q",
+          "PATIENT_ID"
+        ],
+        [
+          "1987",
+          "BIRTHDATE"
+        ],
+        [
+          "M54.5",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Desert Spine Clinic",
+          "PROVIDER"
+        ],
+        [
+          "epidural steroid injections",
+          "TREATMENT"
+        ],
+        [
+          "January 2024",
+          "EVENT_DATE"
+        ],
+        [
+          "March 2024",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What spinal condition was documented for patient 76438-Q receiving treatment at Desert Spine Clinic?",
+        "a": "Chronic lumbar pain (diagnostic code M54.5).",
+        "sources": [
+          "cluster_7_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy change affected orthopedic billing reviews starting November 22, 2023?",
+        "a": "Enhanced claims review protocols for Beacon BIS-ORN policy members.",
+        "sources": [
+          "cluster_7_doc1"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatments did patient 76438-Q receive and why were additional sessions denied?",
+        "a": "Three epidural steroid injections denied due to provider network status and new prior authorization.",
+        "sources": [
+          "cluster_7_doc2",
+          "cluster_7_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which demographic had higher complication risks in recent spinal procedure research, and how did out-of-network billing practices affect these patients?",
+        "a": "Patients aged 35-45 had higher complication risks; out-of-network billing inflated costs.",
+        "sources": [
+          "cluster_7_doc1",
+          "cluster_7_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

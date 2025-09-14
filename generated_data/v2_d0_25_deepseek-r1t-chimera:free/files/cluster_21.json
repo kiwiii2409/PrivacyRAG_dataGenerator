@@ -1,0 +1,126 @@
+{
+  "documents": [
+    {
+      "id": "cluster_21_doc1",
+      "content": "A recent audit of orthopedic claims revealed standard shoulder arthroscopy procedures at Timber Ridge Medical Group have increased 22% since Q3 2022. Authorization denials for post-operative physical therapy at this facility now require documented functional improvement milestones. The memo notes patient S489302 was part of a pilot program tracking outcomes.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_21_doc2",
+      "content": "Provider note from 03/15/2023: Patient ID S489302 presented with chronic rotator cuff tear exacerbated by workplace activities. Recommended arthroscopic repair with Dr. Marquez at Timber Ridge, followed by 12-week PT regimen. Patient has secondary diagnosis of controlled hypertension but no contraindications to surgery. Predicted recovery timeline 4-6 months.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_21_doc3",
+      "content": "Claims processing alert: New policy P8764-RT effective June 1st modifies orthopedic physical therapy approval criteria in Jackson County. Patients over 45 with workplace-related injuries require additional occupational medicine provider sign-off on therapy plans exceeding 8 weeks. Claim IDs affected: 39028 series.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_21_doc4",
+      "content": "Local healthcare journal reports Jackson County saw 18% increase in workplace shoulder injuries among manufacturing workers aged 40-55 last fiscal year. Timber Ridge Medical Group expanded their orthopedic clinic hours to accommodate demand. Occupational health experts cite repetitive overhead motions as primary contributor.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_21",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Workplace-related shoulder injury treatment trajectory with policy changes impacting physical therapy approvals in Jackson County",
+    "person": {
+      "entities": [
+        [
+          "S489302",
+          "PATIENT_ID"
+        ],
+        [
+          "chronic rotator cuff tear",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "controlled hypertension",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "workplace activities",
+          "EVENT"
+        ],
+        [
+          "45",
+          "AGE"
+        ],
+        [
+          "Jackson County",
+          "LOCATION"
+        ],
+        [
+          "orthopedic physical therapy",
+          "TREATMENT"
+        ],
+        [
+          "12-week PT regimen",
+          "TREATMENT"
+        ],
+        [
+          "03/15/2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Dr. Marquez",
+          "PROVIDER"
+        ],
+        [
+          "Timber Ridge Medical Group",
+          "LOCATION"
+        ],
+        [
+          "arthroscopic repair",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two medical conditions did patient S489302 have when recommended for shoulder surgery?",
+        "a": "Chronic rotator cuff tear and controlled hypertension.",
+        "sources": [
+          "cluster_21_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new requirement applies to physical therapy plans exceeding 8 weeks under policy P8764-RT?",
+        "a": "Additional occupational medicine provider sign-off required.",
+        "sources": [
+          "cluster_21_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What treatment plan was recommended for patient S489302 and what audit trend was observed for shoulder arthroscopy at Timber Ridge?",
+        "a": "Arthroscopic repair, 12-week PT; 22% increase in procedures.",
+        "sources": [
+          "cluster_21_doc1",
+          "cluster_21_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What factors contributed to increased shoulder injuries in Jackson County's manufacturing sector?",
+        "a": "Repetitive overhead motions in workers aged 40-55.",
+        "sources": [
+          "cluster_21_doc1",
+          "cluster_21_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

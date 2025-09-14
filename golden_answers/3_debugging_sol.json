@@ -1,0 +1,82 @@
+{
+  "entities": [
+    "2022-03",
+    "2022-08",
+    "2022-10-15",
+    "2022-Q2",
+    "2023-07",
+    "2023-11-15",
+    "2023-11-20",
+    "2023-12-01",
+    "2024-02",
+    "2254 Willow Lane",
+    "47823-9K",
+    "50+",
+    "58",
+    "6-week",
+    "CM-8871",
+    "Fabrizio Wasicki",
+    "MetroCare diabetes study",
+    "PX-908712",
+    "Polk Health Network",
+    "Rivertown Clinic",
+    "Silver Pine Clinic",
+    "antibody deficiency",
+    "autoimmune responses",
+    "gene therapy",
+    "hyper-inflammatory reactions",
+    "neuropathy",
+    "targeted immunotherapy",
+    "type 2 diabetes"
+  ],
+  "links": [
+    [
+      "cluster_0_doc1",
+      "cluster_0_doc3",
+      "cluster_0_doc4"
+    ],
+    [
+      "cluster_1_doc2",
+      "cluster_1_doc4"
+    ],
+    [
+      "cluster_1_doc2",
+      "cluster_1_doc5"
+    ],
+    [
+      "cluster_2_doc1",
+      "cluster_2_doc2"
+    ],
+    [
+      "cluster_2_doc1",
+      "cluster_2_doc3"
+    ]
+  ],
+  "redaction": [
+    {
+      "cluster_id": [
+        "Fabrizio Wasicki",
+        "PX-908712",
+        "2023-11-15",
+        "2023-12-01",
+        "2023-11-20",
+        "Polk Health Network",
+        "50+"
+      ]
+    },
+    {
+      "cluster_id": [
+        "58",
+        "2023-07",
+        "MetroCare diabetes study"
+      ]
+    },
+    {
+      "cluster_2": [
+        "47823-9K",
+        "2254 Willow Lane",
+        "6-week"
+      ]
+    }
+  ]
+}

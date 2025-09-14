@@ -1,0 +1,133 @@
+{
+  "documents": [
+    {
+      "id": "cluster_8_doc1",
+      "content": "A recent audit of Eastern Coastal Health Network revealed a 32% increase in orthopedic claims among beneficiaries aged 55-70, particularly for knee arthroplasty procedures. The spike correlates with Policy OP-9924's expanded coverage for minimally invasive techniques. Documentation submitted between January-March 2024 shows Dr. Ellen Voss at Mariner's Point Orthopedics accounted for 18% of these claims, frequently pairing procedures with aquatic therapy scripts.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_8_doc2",
+      "content": "Patient 88734-AT5 (DOB 04/15/1968) underwent bilateral knee replacement at Seaview Surgical Center on 02/22/2024 under Policy OP-9924. Post-op care included six weeks of aquatic therapy at Tidepool Rehabilitation. The claim initially denied due to missing prior authorization, but was reprocessed after Mariner's Point Orthopedics submitted supplemental documentation on 03/05/2024.",
+      "metadata": {
+        "format": "claim_form"
+      }
+    },
+    {
+      "id": "cluster_8_doc3",
+      "content": "Research note: Ocean County demographics show increased prevalence of osteoarthritis among commercial fishing workers. Preliminary data from ongoing study OC-557T indicates aquatic therapy adherence rates improve by 28% when prescribed alongside peer support groups. Current approval process requires provider attestation of occupation-specific needs for prior authorization under Policy OP-9924.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_8_doc4",
+      "content": "Provider memo: All Seaview Surgical Center patients prescribed aquatic therapy through Tidepool Rehabilitation must now include occupational hazard documentation for Policy OP-9924 claims. New requirement effective 04/01/2024 addresses audit findings about inconsistent eligibility verification. Questions contact billing coordinator at 555-901-2345 or seaviewbilling@ech.org.",
+      "metadata": {
+        "format": "provider_report"
+      }
+    },
+    {
+      "id": "cluster_8_doc5",
+      "content": "Eastern Coastal Health announced temporary prior authorization exemptions for knee procedures through June 2024, citing system upgrades. Patients must still submit occupational documentation within 14 days post-procedure. The policy adjustment follows complaints about delayed approvals affecting commercial fishing workers in Ocean County.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_8",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Orthopedic claims surge under Policy OP-9924 involving knee procedures and aquatic therapy for occupational demographics in Ocean County.",
+    "person": {
+      "entities": [
+        [
+          "88734-AT5",
+          "PATIENT_ID"
+        ],
+        [
+          "04/15/1968",
+          "BIRTHDATE"
+        ],
+        [
+          "bilateral knee replacement",
+          "TREATMENT"
+        ],
+        [
+          "aquatic therapy",
+          "TREATMENT"
+        ],
+        [
+          "Policy OP-9924",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Seaview Surgical Center",
+          "PROVIDER"
+        ],
+        [
+          "Mariner's Point Orthopedics",
+          "PROVIDER"
+        ],
+        [
+          "Tidepool Rehabilitation",
+          "PROVIDER"
+        ],
+        [
+          "02/22/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "03/05/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "commercial fishing workers",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "Ocean County",
+          "LOCATION"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the reason for the initial denial of patient 88734-AT5's knee procedure claim under Policy OP-9924?",
+        "a": "Missing prior authorization documentation.",
+        "sources": [
+          "cluster_8_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new requirement was implemented for aquatic therapy claims at Seaview Surgical Center starting April 2024?",
+        "a": "Occupational hazard documentation must accompany all aquatic therapy claims.",
+        "sources": [
+          "cluster_8_doc4"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which provider is highlighted in the audit for orthopedic claims, and where did patient 88734-AT5 receive aquatic therapy?",
+        "a": "Mariner's Point Orthopedics; aquatic therapy at Tidepool Rehabilitation.",
+        "sources": [
+          "cluster_8_doc1",
+          "cluster_8_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did the temporary prior authorization exemptions announced in June 2024 interact with the new occupational hazard documentation requirement for aquatic therapy claims at Seaview Surgical Center?",
+        "a": "Exemptions removed prior auth, but occupational documentation still required for aquatic therapy.",
+        "sources": [
+          "cluster_8_doc4",
+          "cluster_8_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

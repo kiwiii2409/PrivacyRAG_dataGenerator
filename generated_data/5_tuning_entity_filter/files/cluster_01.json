@@ -1,0 +1,122 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "Marcus Veyrat, age 42 with patient ID PHV765432, was admitted to Alpine Medical Center on October 14, 2023 following complications from off-piste skiing injuries. Treatment included specialized limb reconstruction procedures and neurological assessments. Documentation shows two prior insurance claims this year under policy number INS-90876-23A related to extreme sports coverage limitations.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "New policy directive PCD-4309 effective November 1 restricts coverage for high-risk sports at elevation above 2,500 meters, prompted by recent trauma cases. Claims department memo highlights increased processing delays for winter sports injuries at Alpine Medical Center's orthopedic department.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "Research note regarding post-trauma care coordination: Patient PHV765432 showing positive response to neuromuscular retraining program but requiring extended physical therapy due to rare combination of tibial nerve damage and reflex sympathetic dystrophy. Referral made to Dr. Esmé Laurent at Chamonix Rehab Institute.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Provider network update: Dr. Laurent's specialized rehabilitation program at Chamonix now requires pre-authorization document VA-56F for insurance coverage after three major insurers reported adverse selection in extreme sports participants. Implementation began December 5th across Savoie region clinics.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "HIGH",
+    "content_summary": "Skiing injury patient's complex care intersects with new high-risk sports policy changes and provider network pre-authorization requirements",
+    "person": {
+      "entities": [
+        [
+          "Marcus Veyrat",
+          "NAME"
+        ],
+        [
+          "PHV765432",
+          "PATIENT_ID"
+        ],
+        [
+          "42",
+          "AGE"
+        ],
+        [
+          "October 14, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Alpine Medical Center",
+          "LOCATION"
+        ],
+        [
+          "tibial nerve damage",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "reflex sympathetic dystrophy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Dr. Esmé Laurent",
+          "PROVIDER"
+        ],
+        [
+          "Chamonix Rehab Institute",
+          "LOCATION"
+        ],
+        [
+          "INS-90876-23A",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "VA-56F",
+          "NON_PERSONAL_ID"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What rare conditions complicate Marcus Veyrat's rehabilitation after the October alpine skiing accident?",
+        "a": "Tibial nerve damage combined with reflex sympathetic dystrophy.",
+        "sources": [
+          "cluster_1_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new winter sports policy took effect in November for Savoie region medical centers?",
+        "a": "Coverage restrictions for activities above 2,500 meters via directive PCD-4309.",
+        "sources": [
+          "cluster_1_doc2"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which treatments and insurance challenges did Marcus Veyrat face under policy INS-90876-23A?",
+        "a": "Limb reconstruction, neurological assessments, and sports coverage limitations with processing delays.",
+        "sources": [
+          "cluster_1_doc1",
+          "cluster_1_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What provider network changes affected rehabilitation programs in December 2023?",
+        "a": "Dr. Laurent's program now requires VA-56F pre-authorization at Chamonix Rehab Institute.",
+        "sources": [
+          "cluster_1_doc3",
+          "cluster_1_doc4"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

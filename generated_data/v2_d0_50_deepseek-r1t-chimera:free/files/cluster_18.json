@@ -1,0 +1,130 @@
+{
+  "documents": [
+    {
+      "id": "cluster_18_doc0",
+      "content": "Golden Valley Health recently updated its provider network to include integrative oncology services under policy document GVH-ONC-2024-03. This change affects coverage for patients undergoing concurrent chemotherapy and acupuncture treatments. The memo notes increased coordination between providers at the Rockwood Medical Complex and affiliated holistic care centers. Implementation began January 15th with external audits scheduled bi-monthly.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    },
+    {
+      "id": "cluster_18_doc1",
+      "content": "Patient #489227 received radiation therapy at Rockwood Medical Complex on 02/28/2024, with follow-up integrative sessions approved through prior authorization GVH-PA-489227-OC2. Treatment plan includes weekly acupuncture targeting chemotherapy-induced peripheral neuropathy. Demographic data shows patient is 42-year-old commercial policyholder residing at 1845 Evergreen Terrace, Apt 3B.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_18_doc2",
+      "content": "Claims data reveals 18% increase in prior authorizations for integrative oncology services since policy GVH-ONC-2024-03 took effect. Rockwood Medical Complex accounts for 37% of these claims. The audit flags irregular timing patterns with 15% of acupuncture sessions billed within 2 hours of chemotherapy administration, triggering additional documentation requirements.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_18_doc3",
+      "content": "Local news reports Rockwood Medical Complex facing staff shortages in oncology department, particularly affecting afternoon appointments. Patient advocates cite increased wait times for integrative therapies since the policy change. Golden Valley Health representatives confirm additional funding allocated for provider training through Q2 2024.",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_18",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Integrative oncology policy change impacts patient treatments and provider operations at Rockwood Medical Complex",
+    "person": {
+      "entities": [
+        [
+          "489227",
+          "PATIENT_ID"
+        ],
+        [
+          "1845 Evergreen Terrace, Apt 3B",
+          "ADDRESS"
+        ],
+        [
+          "42",
+          "AGE"
+        ],
+        [
+          "chemotherapy-induced peripheral neuropathy",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "GVH-PA-489227-OC2",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "Rockwood Medical Complex",
+          "LOCATION"
+        ],
+        [
+          "02/28/2024",
+          "EVENT_DATE"
+        ],
+        [
+          "radiation therapy",
+          "EVENT"
+        ],
+        [
+          "radiation therapy",
+          "TREATMENT"
+        ],
+        [
+          "acupuncture",
+          "TREATMENT"
+        ],
+        [
+          "integrative sessions",
+          "TREATMENT"
+        ],
+        [
+          "commercial policyholder",
+          "DEMOGRAPHIC"
+        ],
+        [
+          "chemotherapy",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "Which patient ID and authorization number are associated with integrative oncology treatments at Rockwood Medical Complex?",
+        "a": "Patient #489227 with authorization GVH-PA-489227-OC2",
+        "sources": [
+          "cluster_18_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What policy document initiated coverage changes for integrative oncology services?",
+        "a": "GVH-ONC-2024-03 implemented changes for integrative oncology",
+        "sources": [
+          "cluster_18_doc0"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What two issues affected patient #489227's treatment plan at Rockwood Medical Complex?",
+        "a": "Patient #489227 faced longer wait times for integrative therapies due to staff shortages.",
+        "sources": [
+          "cluster_18_doc1",
+          "cluster_18_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How did policy GVH-ONC-2024-03 impact claims patterns at Rockwood Medical Complex?",
+        "a": "18% increase in prior authorizations with 15% of acupuncture sessions billed near chemotherapy",
+        "sources": [
+          "cluster_18_doc0",
+          "cluster_18_doc2"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "documents": [
+    {
+      "id": "cluster_1_doc1",
+      "content": "Kai Zheng, a 48-year-old with insulin-dependent diabetes, was admitted to Cedar Haven Medical Center on March 15, 2023 after developing diabetic ketoacidosis. The admission notes indicate stabilization with IV fluids and insulin protocol adjustments. Patient ID# DIA-33789 shows prior gastroparesis complications.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_1_doc2",
+      "content": "Blueprint Health claims audit reveals unsual frequency of continuous glucose monitor claims from Cedar Haven providers. August 2023 memorandum flags provider #CHP-4551 (Dr. Elara Voss) for potential upcoding patterns based on analysis of patient cohort including DIA-33789.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_1_doc3",
+      "content": "New MetroCare policy effective October 1 requires dual physician authorization for all advanced diabetes devices in members over 40 with comorbidities. Implementation follows unusual cost patterns at Cedar Haven location tracking to cases like DIA-33789.",
+      "metadata": {
+        "format": "policy_document"
+      }
+    },
+    {
+      "id": "cluster_1_doc4",
+      "content": "Quality improvement initiative at Cedar Haven shows 37% reduction in DKA readmissions among insulin-dependent patients after implementing 72-hour post-discharge monitoring (case example: Zheng, March 2023). Program uses wireless CGM integration with EHR.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_1_doc5",
+      "content": "Healthcare Tribune article (Sept 28, 2023) profiles Cedar Haven's diabetes program controversy: 'While readmissions dropped, some question if expensive CGM systems were overprescribed to meet quality metrics, citing case DIA-33789 as catalyst for policy changes.'",
+      "metadata": {
+        "format": "news_article"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_1",
+    "cluster_risk": "HIGH",
+    "content_summary": "Complex diabetes care case with associated provider audit, policy changes, and media attention around Cedar Haven Medical Center",
+    "person": {
+      "entities": [
+        [
+          "Kai Zheng",
+          "NAME"
+        ],
+        [
+          "DIA-33789",
+          "PATIENT_ID"
+        ],
+        [
+          "48",
+          "AGE"
+        ],
+        [
+          "insulin-dependent diabetes",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "diabetic ketoacidosis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "gastroparesis",
+          "MEDICAL_CONDITION"
+        ],
+        [
+          "Cedar Haven Medical Center",
+          "LOCATION"
+        ],
+        [
+          "March 15, 2023",
+          "EVENT_DATE"
+        ],
+        [
+          "Dr. Elara Voss",
+          "PROVIDER"
+        ],
+        [
+          "CHP-4551",
+          "NON_PERSONAL_ID"
+        ],
+        [
+          "72-hour post-discharge monitoring",
+          "TREATMENT"
+        ],
+        [
+          "October 1",
+          "EVENT_DATE"
+        ],
+        [
+          "wireless CGM integration",
+          "TREATMENT"
+        ],
+        [
+          "IV fluids",
+          "TREATMENT"
+        ],
+        [
+          "insulin protocol adjustments",
+          "TREATMENT"
+        ],
+        [
+          "continuous glucose monitor",
+          "TREATMENT"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What two complications did patient DIA-33789 experience during their March 2023 admission to Cedar Haven?",
+        "a": "Diabetic ketoacidosis requiring stabilization and prior gastroparesis history.",
+        "sources": [
+          "cluster_1_doc1"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What new authorization requirement did MetroCare implement for diabetic devices in October 2023?",
+        "a": "Dual physician authorization for members over 40 with comorbidities.",
+        "sources": [
+          "cluster_1_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "Which provider and quality metric were associated with case DIA-33789 in audit and news reports?",
+        "a": "Dr. Elara Voss (CHP-4551) and CGM overprescription concerns.",
+        "sources": [
+          "cluster_1_doc2",
+          "cluster_1_doc5"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "What two outcomes followed Cedar Haven's discharge monitoring program implementation?",
+        "a": "37% DKA readmission reduction and subsequent policy scrutiny.",
+        "sources": [
+          "cluster_1_doc4",
+          "cluster_1_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}

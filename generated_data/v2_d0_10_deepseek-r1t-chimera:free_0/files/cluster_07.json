@@ -1,0 +1,109 @@
+{
+  "documents": [
+    {
+      "id": "cluster_7_doc1",
+      "content": "A recent audit revealed discrepancies in claims processing for lumbar decompression procedures under policy LNK-441R at Oakridge Hospital. Over 30% of claims from Q3 2023 required additional documentation review, particularly for patients receiving pre-authorization through the SilverCross provider network. Common issues included incomplete operative notes and missing anesthesia records.",
+      "metadata": {
+        "format": "audit_report"
+      }
+    },
+    {
+      "id": "cluster_7_doc2",
+      "content": "Patient GX8327 (DOB 1958-11-14) underwent posterior spinal fusion on 2023-08-22 at Oakridge Hospital. Treatment included off-label use of teriparatide postoperatively to enhance bone healing. The claim was initially denied due to lack of prior authorization through CoreCare Connect, requiring peer-to-peer review before approval.",
+      "metadata": {
+        "format": "medical_record"
+      }
+    },
+    {
+      "id": "cluster_7_doc3",
+      "content": "The regional spine surgery quality initiative shows 62% of lumbar fusion patients at Oakridge Hospital now receive postoperative bone metabolism therapies. This reflects new clinical guidelines referenced in policy LNK-441R, though coverage remains subject to individual plan formularies and step therapy requirements.",
+      "metadata": {
+        "format": "research_note"
+      }
+    },
+    {
+      "id": "cluster_7_doc4",
+      "content": "Editorial in The Spine Journal highlights reimbursement challenges for osteobiologic agents in elderly spinal surgery patients. Oakridge Hospital case studied demonstrates 37-day average delay in medication approval through SilverCross-backed plans compared to 12-day average for other networks.",
+      "metadata": {
+        "format": "news_article"
+      }
+    },
+    {
+      "id": "cluster_7_doc5",
+      "content": "Internal memo outlines forthcoming changes to SilverCross network credentialing requirements for orthopedic surgeons. Effective 2024-03-01, providers must complete 8 hours of continuing education in bone metabolism therapies and submit three recent surgical outcomes reports for quality review.",
+      "metadata": {
+        "format": "insurance_memo"
+      }
+    }
+  ],
+  "metadata": {
+    "category": "cluster",
+    "cluster_id": "cluster_7",
+    "cluster_risk": "MEDIUM",
+    "content_summary": "Spinal surgery treatment trends and insurance challenges at Oakridge Hospital involving policy LNK-441R, SilverCross network, and patient GX8327's care journey with teriparatide therapy.",
+    "person": {
+      "entities": [
+        [
+          "GX8327",
+          "PATIENT_ID"
+        ],
+        [
+          "1958-11-14",
+          "BIRTHDATE"
+        ],
+        [
+          "posterior spinal fusion",
+          "TREATMENT"
+        ],
+        [
+          "teriparatide",
+          "TREATMENT"
+        ],
+        [
+          "Oakridge Hospital",
+          "LOCATION"
+        ],
+        [
+          "2023-08-22",
+          "EVENT_DATE"
+        ]
+      ]
+    },
+    "questions": [
+      {
+        "q": "What was the initial reason for denial of patient GX8327's spinal fusion claim at Oakridge Hospital?",
+        "a": "Lack of prior authorization through CoreCare Connect provider network.",
+        "sources": [
+          "cluster_7_doc2"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "Which policy document governs coverage requirements for osteobiologic agents in spinal surgery?",
+        "a": "Policy LNK-441R outlines the coverage guidelines.",
+        "sources": [
+          "cluster_7_doc3"
+        ],
+        "type": "general"
+      },
+      {
+        "q": "What two factors, from the patient record and policy LNK-441R, affected patient GX8327's treatment?",
+        "a": "Off‑label teriparatide use and policy‑mandated step‑therapy requirement.",
+        "sources": [
+          "cluster_7_doc2",
+          "cluster_7_doc3"
+        ],
+        "type": "specific"
+      },
+      {
+        "q": "How do approval timelines and credentialing requirements for osteobiologics differ between SilverCross and other networks?",
+        "a": "SilverCross: 37‑day delay and new 8‑hour CE requirement; others: 12‑day average.",
+        "sources": [
+          "cluster_7_doc4",
+          "cluster_7_doc5"
+        ],
+        "type": "general"
+      }
+    ]
+  }
+}
