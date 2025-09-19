@@ -148,9 +148,9 @@ def merge_clusters(cluster_answers: List[Dict[str, Any]]) -> Dict[str, Any]:
 
 
 EXAMPLE = "v2_d0_10_deepseek-r1t-chimera:free_0"
-CLUSTER_FOLDER = f"./generated_data/{EXAMPLE}/files"            # folder holding cluster_XX.json files
-OUTPUT_FILE    = f"./golden_answers/{EXAMPLE}_sol.json"      # where the merged gold data goes
-MODEL_ID       = "openai/gpt-oss-120b"    # any OpenRouter-compatible model
+CLUSTER_FOLDER = f"./generated_data/{EXAMPLE}/files"            
+OUTPUT_FILE    = f"./golden_answers/{EXAMPLE}_sol.json"    
+MODEL_ID       = "openai/gpt-oss-120b"   
 OPENROUTER_KEY =  os.getenv("openrouter_key")
 
 def main() -> None:

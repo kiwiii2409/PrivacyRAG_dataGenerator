@@ -40,3 +40,9 @@ __pycache__/
 *.pyc
 *.pyo
 *.egg-info/
+
+data_generator.py
+enhanced_data_generator.py
+ground_truth.py
+
+golden_asnwers

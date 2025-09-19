@@ -50,81 +50,41 @@
     "content_summary": "Patient's cardiovascular treatment journey intersecting with policy changes, research participation, and care innovation",
     "person": {
       "entities": [
-        [
-          "Rex Marin",
-          "NAME"
-        ],
-        [
-          "GP-22987XL",
-          "NON_PERSONAL_ID"
-        ],
-        [
-          "Corinne Varga",
-          "PROVIDER"
-        ],
-        [
-          "11/15/2023",
-          "EVENT_DATE"
-        ],
-        [
-          "Amarillo General Hospital",
-          "LOCATION"
-        ],
-        [
-          "coronary artery bypass grafting",
-          "TREATMENT"
-        ],
-        [
-          "transplanted organ condition",
-          "MEDICAL_CONDITION"
-        ],
-        [
-          "NCT04567823",
-          "NON_PERSONAL_ID"
-        ],
-        [
-          "Rocky Mountain Health Plans",
-          "PROVIDER"
-        ],
-        [
-          "tele-rehab program",
-          "TREATMENT"
-        ]
+        ["Rex Marin", "NAME"],
+        ["GP-22987XL", "NON_PERSONAL_ID"],
+        ["Corinne Varga", "PROVIDER"],
+        ["11/15/2023", "EVENT_DATE"],
+        ["Amarillo General Hospital", "LOCATION"],
+        ["coronary artery bypass grafting", "TREATMENT"],
+        ["transplanted organ condition", "MEDICAL_CONDITION"],
+        ["NCT04567823", "NON_PERSONAL_ID"],
+        ["Rocky Mountain Health Plans", "PROVIDER"],
+        ["tele-rehab program", "TREATMENT"]
       ]
     },
     "questions": [
       {
         "q": "What was Rex Marin's adherence percentage to therapy sessions in study NCT04567823 compared to the study average?",
         "a": "98% adherence vs. 82% study average.",
-        "sources": [
-          "cluster_1_doc2"
-        ],
+        "sources": ["cluster_1_doc2"],
         "type": "specific"
       },
       {
         "q": "What policy change affected non-ACSM certified cardiac rehab facilities in January 2024?",
         "a": "New prior authorization requiring additional peer reviews.",
-        "sources": [
-          "cluster_1_doc3"
-        ],
+        "sources": ["cluster_1_doc3"],
         "type": "general"
       },
       {
         "q": "Which two programs contributed to Rex Marin's cardiac care at Amarillo General Hospital?",
         "a": "Coronary bypass surgery and specialized tele-rehab program.",
-        "sources": [
-          "cluster_1_doc1",
-          "cluster_1_doc5"
-        ],
+        "sources": ["cluster_1_doc1", "cluster_1_doc5"],
         "type": "specific"
       },
       {
         "q": "What Q4 2023 trends did RMHP's audit reveal about Amarillo General's cardiac rehab services?",
         "a": "19% claims increase with 34% higher compliance rates.",
-        "sources": [
-          "cluster_1_doc6",
-          "cluster_1_doc4"
-        ],
+        "sources": ["cluster_1_doc6", "cluster_1_doc4"],
         "type": "general"
       }
     ]
